@@ -1,0 +1,21 @@
+<%@ page pageEncoding="UTF-8" %>
+<div class="qb-panel-input-number-topic-rows qb-dig-tools-edit">
+	<div class="form-group">
+		<div class="form-group-content ">
+			<input style="border: 1px solid #e8e8e8; border-radius: 5px;
+			    box-shadow: none;
+			    float: left;
+			    height: 30px;
+			    margin-top: 10px;
+			    text-align: left;
+			    width: 100%;" onkeyup="this.value=this.value.replace(/[^\d]/,'')" id="input-number-topic-rows" />
+		</div>
+	</div>
+	<div class="form-group-btn">
+		<button id="btn-save-number-of-topic">
+			<img src="${CONTEXT_PATH}/html/images/btn-save.png" /><spring:message code='save' />
+		</button>
+	</div>
+</div>
+
+

@@ -1,0 +1,289 @@
+<%@ page pageEncoding="UTF-8" %>
+<!-- RENDER BY LANGUAGE -->
+<c:set var="DIGI_LINK" value="https://www.digistore24.com/product/" />
+<c:choose>
+	<c:when test="${pageContext.response.locale== 'vi'}">
+		<c:set var="DIGI_LINK_OP" value="75873" />
+		<c:set var="DIGI_LINK_EX" value="75875" />
+		<c:set var="DIGI_LINK_PR" value="75877" />
+		<c:set var="DIGI_LINK_DE" value="75879" />
+	</c:when>
+	<c:when test="${pageContext.response.locale== 'de'}">
+		<c:set var="DIGI_LINK_OP" value="74161" />
+		<c:set var="DIGI_LINK_EX" value="74229" />
+		<c:set var="DIGI_LINK_PR" value="74225" />
+		<c:set var="DIGI_LINK_DE" value="74227" />
+	</c:when>
+	<c:otherwise>
+		<c:set var="DIGI_LINK_OP" value="75873" />
+		<c:set var="DIGI_LINK_EX" value="75875" />
+		<c:set var="DIGI_LINK_PR" value="75877" />
+		<c:set var="DIGI_LINK_DE" value="75879" />
+	</c:otherwise>
+</c:choose>
+<!-- END RENDER BY LANGUAGE -->
+<div class="container-pricing">
+	<div class="pricing-top-head">
+		<div class="item-fix-data">
+			<%@include file="../includes/bonevo-header.html" %>
+			<article id="content">
+				<section class="title-content">
+					<div class="name-title text-center">
+						<h1>
+							<spring:message code='prcig.title1' />
+						</h1>
+						<p>
+							<spring:message code='prcig.title2' />
+						</p>
+					</div>
+				</section>
+				<!-- TOP INTRO -->
+				<div class="text-center container">
+					<section class="item-content container clearfix">
+						<div class="item">
+							<div class="seo-prc col-sm-3">
+								<span class="iconmoon-pricing iconmoon-pricingserver"></span>
+								<spring:message code='prcig.title36' />
+							</div>
+							<div class="seo-prc col-sm-3">
+								<span class="iconmoon-pricing iconmoon-pricingsettings"></span>
+								<spring:message code='prcig.title37' />
+							</div>
+							<div class="seo-prc col-sm-3">
+								<span class="iconmoon-pricing iconmoon-pricingGroup"></span>
+								<spring:message code='prcig.title38' />
+							</div>
+							<div class="seo-prc col-sm-3">
+								<span class="iconmoon-pricing iconmoon-pricingnewspaper-folded"></span>
+								<spring:message code='prcig.title39' />
+							</div>
+						</div>
+						<div class="content-itc clearfix"></div>
+						<div class="item">
+							<div class="seo-prc col-sm-4">
+								<span class="iconmoon-pricing iconmoon-pricingShape"></span>
+								<spring:message code='prcig.title40' />
+							</div>
+							<div class="seo-prc col-sm-4">
+								<span class="iconmoon-pricing iconmoon-pricingline-chart"></span>
+								<spring:message code='prcig.title41' />
+							</div>
+							<div class="seo-prc col-sm-4">
+								<span class="iconmoon-pricing iconmoon-pricingcomputer"></span>
+								<span class="my-fontawesome"> <spring:message
+										code='prcig.title42' />
+								</span>
+							</div>
+						</div>
+					</section>
+				</div>
+		</div>
+	</div>
+	<!-- END TOP INTRO -->
+	<section class="main-content container clearfix">
+		<div class="container">
+			<!-- FREE PLAN -->
+			<div class="col-md-15 col-sm-3">
+				<div class="free-content plan">
+					<div class="title-content text-center">
+						<p class="style">
+							<spring:message code='free' />
+						</p>
+						<p class="price">0</p>
+						<!-- <p>
+							<span class="glyphicon glyphicon glyphicon-euro"></span> /
+							<spring:message code='chart.time_2' />
+						</p> -->
+					</div>
+					<div class="detail-content main-bg">
+						<p class="main-detail">
+							<span class="number-detail">5</span> <span><spring:message code='prcig.title43' /></span>
+						</p>
+
+					</div>
+					<div class="footer-content text-center main-bg">
+						<c:choose>
+							<c:when test="${(not empty userLogin)}">
+								<c:if test="${userLogin.packet == 1}">
+									<a href="#" class="btn btn-curent"> <spring:message
+											code='prcig.title13' />
+									</a>
+								</c:if>
+							</c:when>
+							<c:otherwise>
+								<a href="${CONTEXT_URL}/signup" target="_blank"
+									class="btn btn-upload-plan"> <spring:message
+										code='prcig.title31' />
+								</a>
+							</c:otherwise>
+						</c:choose>
+					</div>
+				</div>
+			</div>
+			<!-- END FREE PLAN -->
+			<!-- OPTIMAL PLAN -->
+			<div class="col-md-15 col-sm-3">
+				<div class="optimal-content plan">
+					<div class="title-content text-center">
+						<p class="style">
+							<spring:message code='prcig.optimal' />
+						</p>
+						<p class="price">1,99</p>
+						<!-- <p>
+							<span class="glyphicon glyphicon glyphicon-euro"></span> /
+							<spring:message code='chart.time_2' />
+						</p> -->
+					</div>
+					<div class="detail-content main-bg">
+						<p class="main-detail">
+							<span class="number-detail">10</span> <span><spring:message code='prcig.title43' /></span>
+						</p>
+						<p class="main-detail">
+							<span class="number-detail">1</span> <span><spring:message code='prcig.title44' /></span>
+						</p>
+
+					</div>
+					<div class="footer-content text-center main-bg">
+						<c:choose>
+							<c:when test="${(not empty userLogin) && userLogin.packet == 2}">
+								<a href="#" class="btn btn-curent"> <spring:message
+										code='prcig.title13' />
+								</a>
+							</c:when>
+							<c:when test="${(not empty userLogin)}">
+								<c:if test="${userLogin.packet < 2}">
+									<a href="${CONTEXT_URL}/pricing/${DIGI_LINK_OP}"
+										class="btn btn-upload-plan"> <spring:message
+											code='prcig.update' />
+									</a>
+								</c:if>
+							</c:when>
+							<c:otherwise>
+								<a href="${DIGI_LINK}${DIGI_LINK_OP}" target="_blank"
+									class="btn btn-upload-plan"> <spring:message
+										code='prcig.title31' />
+								</a>
+							</c:otherwise>
+						</c:choose>
+					</div>
+				</div>
+			</div>
+			<!-- END OPTIMAL PLAN -->
+			<!-- EXPERT PLAN -->
+			<div class="col-md-15 col-sm-3">
+				<div class="expert-content plan">
+					<div class="title-content text-center">
+						<p class="style">
+							<spring:message code='prcig.expert' />
+							*
+						</p>
+						<p class="price">4,99</p>
+					<!-- 	<p>
+							<span class="glyphicon glyphicon glyphicon-euro"></span> /
+							<spring:message code='chart.time_2' />
+						</p> -->
+					</div>
+					<div class="detail-content main-bg">
+						<p class="main-detail">
+							<span class="number-detail">30</span> <span><spring:message code='prcig.title43' /></span>
+						</p>
+						<p class="main-detail">
+							<span class="number-detail">2</span> <span><spring:message code='prcig.title44' /></span>
+						</p>
+						<p class="main-detail">
+							<span class="number-detail"></span> <span><spring:message code='prcig.title45' /></span>
+						</p>
+
+					</div>
+					<div class="footer-content text-center main-bg">
+						<c:choose>
+							<c:when test="${(not empty userLogin) && userLogin.packet == 3}">
+								<a href="#" class="btn btn-curent"> <spring:message
+										code='prcig.title13' />
+								</a>
+							</c:when>
+							<c:when test="${(not empty userLogin)}">
+								<c:if test="${userLogin.packet < 3}">
+									<a href="${CONTEXT_URL}/pricing/${DIGI_LINK_EX}"
+										class="btn btn-upload-plan"> <spring:message
+											code='prcig.update' />
+									</a>
+								</c:if>
+							</c:when>
+							<c:otherwise>
+								<a href="${DIGI_LINK}${DIGI_LINK_EX}" target="_blank"
+									class="btn btn-upload-plan"> <spring:message
+										code='prcig.title31' />
+								</a>
+							</c:otherwise>
+						</c:choose>
+					</div>
+				</div>
+			</div>
+			<!-- END EXPERT PLAN -->
+			<!-- PRO PLAN -->
+			<div class="col-md-15 col-sm-3">
+				<div class="pro-content plan">
+					<div class="title-content text-center">
+						<p class="style">pro *</p>
+						<p class="price">9,99</p>
+						<!-- <p>
+							<span class="glyphicon glyphicon glyphicon-euro"></span> /
+							<spring:message code='chart.time_2' />
+						</p> -->
+					</div>
+					<div class="detail-content main-bg">
+						<p class="main-detail">
+							<span class="number-detail">&infin;</span> <span><spring:message code='prcig.title43' /></span>
+						</p>
+						<p class="main-detail">
+							<span class="number-detail">3</span> <span><spring:message code='prcig.title44' /></span>
+						</p>
+						<p class="main-detail">
+							<span class="number-detail"></span> <span><spring:message code='prcig.title45' /></span>
+						</p>
+
+					</div>
+					<div class="footer-content text-center main-bg">
+						<c:choose>
+							<c:when test="${(not empty userLogin) && userLogin.packet == 4}">
+								<a href="#" class="btn btn-curent"> <spring:message
+										code='prcig.title13' />
+								</a>
+							</c:when>
+							<c:when test="${(not empty userLogin)}">
+								<c:if test="${userLogin.packet < 4}">
+									<a href="${CONTEXT_URL}/pricing/${DIGI_LINK_PR}"
+										class="btn btn-upload-plan"> <spring:message
+											code='prcig.update' />
+									</a>
+								</c:if>
+							</c:when>
+							<c:otherwise>
+								<a href="${DIGI_LINK}${DIGI_LINK_PR}" target="_blank"
+									class="btn btn-upload-plan"> <spring:message
+										code='prcig.title31' />
+								</a>
+							</c:otherwise>
+						</c:choose>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<!-- END PRO PLAN -->
+			<div class="text-content text-message-pricing">
+				<p><spring:message code='prcig.title46' /></p>
+				<p><spring:message code='prcig.title47' /></p>
+			</div>
+		</div>
+	</section>
+
+	<!-- DESIGNER FEATURES -->
+
+	<!-- END DESIGNER FEATURES -->
+	</article>
+
+</div>
+<!-- FOOTER BOX -->
+<%@include file="../includes/evo-footer.html" %>
+<!-- END FOOTER BOX -->

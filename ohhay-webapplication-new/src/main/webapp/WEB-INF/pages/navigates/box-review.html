@@ -1,0 +1,272 @@
+<%@page contentType="text/html; charset=UTF-8" %> <%@taglib
+uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <%@taglib
+uri="http://www.springframework.org/tags/form" prefix="form"%> <%@
+taglib uri="http://www.springframework.org/tags/form"
+prefix="springForm"%> <%@ taglib prefix="spring"
+uri="http://www.springframework.org/tags" %> <%@ taglib
+uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> <%@ page
+pageEncoding="UTF-8" %> <%@ taglib prefix="fn"
+uri="http://java.sun.com/jsp/jstl/functions" %>  <%@include
+file="../includes/constant.html" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset='UTF-8'>
+<meta http-equiv="Cache-control" content="no-cache">
+<!-------- CSS MAIN -------->
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/style.css" />
+<!-------- END CSS MAIN -------->
+
+		<!-- DIALOG -->
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/dialog/dialog.css" />
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/dialog/dialog-cathy.css" />
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/dialog/ohhay-dialog.css" />
+		<!-- END DIALOG -->
+		<!-- CSS DIALOG ALERT -->
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/edit-web/alert/dialogalert.css"  />
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/edit-web/confirm/dialogconfirm.css"  />
+		<!-- END DIALOG ALERT -->
+	<!-------- CSS PLUGIN -------->
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/bootstrap/bootstrap.min.css"  />
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/font-awesome.min.css">
+		<!-- ANIMATED -->
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/animate.css" />
+		<!-- END ANIMATED -->
+	<!-------- END CSS PLUGIN -------->
+	
+	<!-------- JS UTILL -------->
+		<script src="${CONTEXT_PATH}/html/js/plugin/jquery-1.11.1.min.js"></script>
+		<script src="${CONTEXT_PATH}/html/js/main/ohhay.js"></script>
+		<script src="${CONTEXT_PATH}/html/js/constants.js"></script>
+	<!-------- END JS UTIL -------->
+	
+	<!-------- JS PLUGIN -------->
+		<script src="${CONTEXT_PATH}/html/js/plugin/bootstrap/bootstrap.min.js"></script>
+		<script src="${CONTEXT_PATH}/html/js/plugin/jquery-ui.js"></script>
+		<script src="${CONTEXT_PATH}/html/js/status-loading/status-loading.js"></script>
+		<script src="${CONTEXT_PATH}/html/js/plugin/scroll.js"></script>
+		<!-- DIALOG -->
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/dialog/modernizr.custom.71258.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/dialog/ohhay-dialog.js"></script>
+		<!-- END DIALOG -->
+	<!-------- END JS PLUGIN -------->
+	<!-------- WEB EVO MODULES-------->
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/tools/utils/css/qb-dialog-tool.css" />
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/box/css/bigbox.css" />
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/box/css/smallbox.css" />
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/box/js/bigbox.js"></script>
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/box/js/smallbox.js"></script>
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/box/js/template/bigbox.js"></script>
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/box/js/gridbox.js"></script>
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/webutils/web-utils.js"></script>
+		<!-- BOX -->
+		<!-- COMPONENTS -->
+			<!-- IFRAMES -->
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/iframes/js/template/iframe.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/iframes/js/iframe.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/iframes/js/youtube.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/iframes/js/vimeo.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/iframes/js/bootstrap-switch.js"></script>
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/components/iframes/css/iframe.css"/>
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/components/iframes/css/bootstrap-switch.css"/>
+			<!-- END IFRAMES -->
+			<!-- SWEETALERT -->
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/sweetalert/sweetalert.css" />
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/sweetalert/sweetalert.min.js"></script>
+			<!-- END SWEETALERT -->
+			<!-- IMAGE -->
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/components/image-tool/plugins/cropbox/jquery.cropbox.css" />
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/components/image-tool/css/oimages.css" />
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/image-tool/plugins/cropbox/jquery.cropbox.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/image-tool/plugins/bg-check/background-check.min.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/image-tool/js/image-util.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/image-tool/js/image-template.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/image-tool/js/image-controller.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/image-tool/plugins/jquery.lazy.min.js"></script>
+			<!-- END IMAGE -->
+			<!-- TEXT -->
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/components/texts/css/otext.css" />
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/texts/js/template/otext.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/texts/js/otext.js"></script>
+			<!-- END TEXT -->
+			<!-- GMAP -->
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/components/gmap/css/gmap.css" />
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules//components/gmap/js/template/gmap.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/gmap/js/gmap.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/gmap/js/gmap-controller.js"></script>
+			<!-- END GMAP -->	
+			<!-- EMBED CODE -->
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/components/embed-code/css/embed-code.css" />
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/embed-code/js/template/embed-code.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/embed-code/js/embed-code-controller.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/embed-code/js/embed-code.js"></script>
+			<!-- END EMBED CODE -->
+			<!-- LAYOUT -->
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/components/layout/css/layout.css" />
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/layout/js/layout.js"></script>
+			<!-- END LAYOUT -->
+			<!-- BUTTON -->
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/components/buttons/css/obutton.css"/>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/buttons/js/obutton-controller.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/buttons/js/obutton-template.js"></script>
+			<!-- END BUTTON -->
+			<!-- LAYER -->
+			<!-- <link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/components/buttons/css/obutton.css"/> -->
+			<!-- <script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/layer/js/layer-controller.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/layer/js/layer-template.js"></script> -->
+			<!-- END LAYER -->
+			<!-- MENU -->
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/components/menus/css/menu.css"/>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/menus/template/menu.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/menus/js/menu.js"></script>
+			<!-- END MENU -->
+			<!-- CONTACT FORM -->
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/components/contact-form/css/contact-form-edit-field.css"/>
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/components/contact-form/css/contact-form-edit-tool.css"/>
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/components/contact-form/css/contact-form.css"/>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/contact-form/js/template/contact-form.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/contact-form/js/contact-form.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/contact-form/js/contact-form-front-end.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/contact-form/js/contact-form-edit-field.js"></script>
+			<!-- END CONTACT FORM -->
+		<!-- END COMPONENTS -->
+		<!-- MODELS -->
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/models/bigBoxModelManager.js"></script>
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/models/componentModelManager.js"></script>
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/models/web-builder.js"></script>
+		<!-- END MODELS -->
+		<!-- GRID -->
+		<c:choose>
+			<c:when test="${not empty e400mg && not empty e400mg.fm150 && e400mg.fm150 > 0}">
+				<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/js/newsletter/gridstack.css" />
+			</c:when>
+			<c:otherwise>
+				<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/grid/plugins/gridstack/css/gridstack.css" />
+			</c:otherwise>
+		</c:choose>
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/grid/css/grid-responsive.css" />
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/grid/css/grid-mobile-editor.css" />
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/grid/css/grid-tablet-preview.css" />
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/grid/plugins/gridstack/js/lodash.js"></script>
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/grid/plugins/gridstack/js/gridstack.js"></script>
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/grid/css/grid.css" />
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/grid/js/grid.js"></script>
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/grid/js/grid-config.js"></script>
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/grid/js/ogrid-plugin.js"></script>
+		<!-- END GRID -->
+		<!-- WEB BG -->
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/web-bg/js/web-bg.js"></script>	
+		<!-- END WEB BG -->
+		<!-- WEB CONFIG -->
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/web-config/css/web-config.css" />
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/web-config/js/web-config.js"></script>				
+		<!-- END WEB CONFIG -->
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/web.js"></script>
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/webrule.js"></script>
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/jquery.json.js"></script>
+	<!-------- END WEB EVO MODULES -------->
+	<!-- TRACKING -->
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/tracking/tracking.js"></script>
+	
+
+<!-- LOCALIZE -->
+<%@ include file="/WEB-INF/pages/includes/localizeClient.html" %>
+<!-- END LOCALIZE -->
+<style>
+.content-box .menu-right, .qb-edit-tool {
+	display: none !important;
+}
+
+#content-wrapper .content-box, #content-wrapper .content-box .grid-stack .grid-stack-item-content,
+	#content-wrapper .content-box .grid-stack {
+	border: none;
+}
+
+#content-wrapper {
+	margin-top: 0px;
+}
+
+#content-wrapper .content-box .grid-stack:last-child {
+	border-bottom: medium none;
+}
+</style>
+<script>
+	$(document).ready(function(){
+		/*
+		* tracking 
+		*/
+		var currentLanguage = "${pageContext.response.locale}";
+        trackingAjax.init({
+        	fo100:0,
+        	webId:9,
+        	currentLanguage:currentLanguage,
+        });
+        trackingAjax.trackingViewer();
+		try {
+			$('#content-wrapper').css('zoom', '80%'); // Webkit
+			// browsers
+			$('#content-wrapper').css('zoom', '0.8'); // Other
+			// non-webkit
+			// browsers
+			$('#content-wrapper').css('-moz-transform', 'scale(0.8, 0.8)'); // Moz-browsers
+		} catch (e) {
+			// TODO: handle exception
+		}
+		$(".grid-stack-item-content").each(function(){
+			$(this).css('top',$(this).attr('qb-top'));
+			$(this).css('height',$(this).attr('qb-height'));
+		});
+		$('[contenteditable="true"]').attr("contenteditable","false");
+		//ANPH: process image filter
+		$('img.has-effect').each(function(){
+			$(this).css('filter', $(this).data('filter'));
+			$(this).css('-webkit-filter', $(this).data('filter'));
+		});
+		
+		//ANPH:
+		$("img[data-src]").attr("src","${CONTEXT_PATH}/html/images/bg-none.png");
+		$("img[data-src]").lazy({
+			effect: "fadeIn",
+	        effectTime: 300
+		});
+		//THIENND:
+			$('a.obutton-link[data-action-tracking="1"]').click(function(){
+				var objectName = $(this).parents('.grid-stack-item-content.qb-component-button.obutton').attr('qb-component-id');
+				var fo100 = $('#qb-input-fo100').val();
+			   	/* var currentLanguage = $('#qb-input-currentLanguage').val(); */
+			    var extend = 1;
+		    var webId = $('#qb-input-pe400').val();
+		    $.ajaxSetup({
+			    beforeSend : function()  {
+			    },
+			    complete : function() {
+			     setDefaultAjaxStatus();
+			    }
+			   });
+		    $.ajax({
+			    type : "POST",
+			    url : encodeUrl("webTrackingBean.tracking"),
+			    data : "fo100=" + encodeURIComponent(fo100) + 
+			        "&objectName=" + encodeURIComponent(objectName)+
+			        "&languageCode=en" +
+			        "&extend=" + encodeURIComponent(extend)+
+			        "&webId=" + encodeURIComponent(webId),
+			    success : function(response) {
+			    	console.log('tracking '+objectName);
+			    },
+			    error : function(e) {
+			    }
+			   });
+		});
+		webCreater.getWebDataViewer(); 
+		contactFormFrontEnd.init();
+	});
+			   
+</script>
+</head>
+<body class="evo-web-public">
+	<input id="contextPath" type="hidden" value="${CONTEXT_URL}">
+	${html}
+</body>
+</html>

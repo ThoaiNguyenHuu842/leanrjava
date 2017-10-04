@@ -1,0 +1,318 @@
+<%@ page pageEncoding="UTF-8" %>
+<div class="qb-setting-input-content qb-setting-input-upgrade" style="height:auto">
+	<div class="qb-setting-input-header">
+		<div class="qb-setting-input-header-content">
+			<div class="qb-setting-input-header-back qb-button-setting">
+				<span>&#xf104;</span>
+				<label><spring:message code='back' /></label>
+			</div>
+			<div class="qb-setting-input-header-title">
+				<label><spring:message code="info.account" /></label>
+			</div>
+		</div>
+	</div>
+	<div class="qb-setting-input-body">
+	<c:if test="${userLogin.packet ==  0}">
+		<div class="qb-setting-input-upgrade-item qb-setting-input-upgrade-version">
+			<div class="sett-tab-title">
+				<label>OPTIMAL</label>
+			</div>
+			<div class="qb-setting-input-panel">
+				<div class="qb-setting-input-sub-panel qb-setting-input-panel-upgrade">
+					<div class="upgrade-item">
+						<div>
+							<!-- <a target="_blank" href="https://oohhay.com:3006/getHtmlCode?type=P&sku=9f2baa4ad4feba2c4c0c723a8d547d53">Basic<span>(1,99 EUR)</span></a> -->
+							<h3>1.99</h3>
+							<h5>EUR / <spring:message code="month"/></h5>
+							<!-- <a class="btn-upgrade" id="btn-upgrade-basic"><spring:message code="upgrade"/></a> -->
+						</div>
+<!-- 						<ul>
+							<li><i class="fa fa-check"></i><label><spring:message code="setting.upgrade.language.basic"/></label></li>
+							<li><i class="fa fa-check"></i><label><spring:message code="setting.upgrade.domain.basic"/></label></li>
+							<li><i class="fa fa-check"></i><label><spring:message code="setting.upgrade.topic.basic"/></label></li>
+							<li><i class="fa fa-check"></i><label><spring:message code="setting.upgrade.shop.basic"/></label></li>
+						</ul> -->
+					</div>
+					<div class="upgrade-action">
+						<div class="item">
+							<p class="qb-radio" packid="0-1">
+								<span><i class="fa fa-check-circle"></i></span>
+							</p>
+							<p class="lbl-title">
+								<spring:message code="setting.upgrade.packet1"/> 
+							</p>
+						</div>
+<!-- 						<div class="item">
+							<p class="qb-radio" packid="0-2">
+								<span><i class="fa fa-check-circle"></i></span>
+							</p>
+							<p class="lbl-title">
+								<spring:message code="setting.upgrade.packet2"/>
+							</p>
+						</div>
+						<div class="item">
+							<p class="qb-radio" packid="0-3">
+								<span><i class="fa fa-check-circle"></i></span>
+							</p>
+							<p class="lbl-title">
+								<spring:message code="setting.upgrade.packet3"/>
+							</p>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</c:if>
+	<div class="qb-setting-input-upgrade-item qb-setting-input-upgrade-version">
+			<div class="sett-tab-title">
+				<label>EXPERT</label>
+			</div>
+			<div class="qb-setting-input-panel">
+				<div class="qb-setting-input-sub-panel qb-setting-input-panel-upgrade">
+					<div class="upgrade-item">
+						<div>
+							<h3>4.99</h3>
+							<h5>EUR / <spring:message code="month"/></h5>
+						</div>
+<!-- 						<ul>
+							<li><i class="fa fa-check"></i><label><spring:message code="setting.upgrade.language.basic"/></label></li>
+							<li><i class="fa fa-check"></i><label><spring:message code="setting.upgrade.domain.basic"/></label></li>
+							<li><i class="fa fa-check"></i><label><spring:message code="setting.upgrade.topic.basic"/></label></li>
+							<li><i class="fa fa-check"></i><label><spring:message code="setting.upgrade.shop.basic"/></label></li>
+						</ul> -->
+					</div>
+					<div class="upgrade-action">
+						<div class="item">
+							<p class="qb-radio" packid="1-1">
+								<span><i class="fa fa-check-circle"></i></span>
+							</p>
+							<p class="lbl-title">
+								<spring:message code="setting.upgrade.packet1"/> 
+							</p>
+						</div>
+<!-- 						<div class="item">
+							<p class="qb-radio" packid="0-2">
+								<span>î �</span>
+							</p>
+							<p class="lbl-title">
+								<spring:message code="setting.upgrade.packet2"/>
+							</p>
+						</div>
+						<div class="item">
+							<p class="qb-radio" packid="0-3">
+								<span>î �</span>
+							</p>
+							<p class="lbl-title">
+								<spring:message code="setting.upgrade.packet3"/>
+							</p>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="qb-setting-input-upgrade-item qb-setting-input-upgrade-version">
+			<div class="sett-tab-title">
+				<label>PRO</label>
+			</div>
+			<div class="qb-setting-input-panel">
+				<div class="qb-setting-input-sub-panel qb-setting-input-panel-upgrade">
+					<div class="upgrade-item">
+						<div>
+							<h3>9.99</h3>
+							<h5>EUR / <spring:message code="month"/></h5>
+						</div>
+<!-- 						<ul>
+							<li><i class="fa fa-check"></i><label><spring:message code="setting.upgrade.language.basic"/></label></li>
+							<li><i class="fa fa-check"></i><label><spring:message code="setting.upgrade.domain.basic"/></label></li>
+							<li><i class="fa fa-check"></i><label><spring:message code="setting.upgrade.topic.basic"/></label></li>
+							<li><i class="fa fa-check"></i><label><spring:message code="setting.upgrade.shop.basic"/></label></li>
+						</ul> -->
+					</div>
+					<div class="upgrade-action">
+						<div class="item">
+							<p class="qb-radio" packid="2-1">
+								<span><i class="fa fa-check-circle"></i></span>
+							</p>
+							<p class="lbl-title">
+								<spring:message code="setting.upgrade.packet1"/> 
+							</p>
+						</div>
+<!-- 						<div class="item">
+							<p class="qb-radio" packid="0-2">
+								<span>î �</span>
+							</p>
+							<p class="lbl-title">
+								<spring:message code="setting.upgrade.packet2"/>
+							</p>
+						</div>
+						<div class="item">
+							<p class="qb-radio" packid="0-3">
+								<span>î �</span>
+							</p>
+							<p class="lbl-title">
+								<spring:message code="setting.upgrade.packet3"/>
+							</p>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="qb-setting-input-upgrade-item qb-setting-input-upgrade-version">
+			<div class="sett-tab-title">
+				<label>DESIGNER</label>
+			</div>
+			<div class="qb-setting-input-panel">
+				<div class="qb-setting-input-sub-panel qb-setting-input-panel-upgrade">
+					<div class="upgrade-item">
+						<div>
+							<h3>99</h3>
+							<h5>EUR / <spring:message code="month"/></h5>
+						</div>
+<!-- 						<ul>
+							<li><i class="fa fa-check"></i><label><spring:message code="setting.upgrade.language.pro"/></label></li>
+							<li><i class="fa fa-check"></i><label><spring:message code="setting.upgrade.domain.pro"/></label></li>
+							<li><i class="fa fa-check"></i><label><spring:message code="setting.upgrade.topic.pro"/></label></li>
+							<li><i class="fa fa-check"></i><label><spring:message code="setting.upgrade.shop.pro"/></label></li>
+						</ul> -->
+					</div>
+					<div class="upgrade-action">
+						<div class="item">
+							<p class="qb-radio " packid="3-1">
+								<span><i class="fa fa-check-circle"></i></span>
+							</p>
+							<p class="lbl-title">
+								Packet 1 month
+							</p>
+						</div>
+<!-- 						<div class="item">
+							<p class="qb-radio" packid="1-2">
+								<span>î �</span>
+							</p>
+							<p class="lbl-title">
+								<spring:message code="setting.upgrade.packet2"/>
+							</p>
+						</div>
+						<div class="item">
+							<p class="qb-radio" packid="1-3">
+								<span>î �</span>
+							</p>
+							<p class="lbl-title">
+								<spring:message code="setting.upgrade.packet3"/>
+							</p>
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<div>
+				<a class="btn-upgrade"><spring:message code="upgrade"/></a>
+			</div>
+		</div>
+		<!-- INPUT UNGRADE INFO -->
+		<div class="qb-setting-input-upgrade-item qb-setting-input-upgrade-account-infor">
+			<div>
+				<div class="qb-setting-input-panel">
+					<div class="qb-setting-input-sub-panel qb-setting-input-upgrade-info">
+						<ul>
+							<li>
+								<label><spring:message code="home.first_name"/></label>
+								<input id="input-fname" disabled="true" type="text" value="${userLogin.m900mg.mv901Decrypt}"/>
+							</li>
+							<li>
+								<label><spring:message code="home.last_name"/></label>
+								<input id="input-lname" disabled="true" type="text" value="${userLogin.m900mg.mv902Decrypt}"/>
+							</li>
+							<li>
+								<label><spring:message code="gender"/></label>
+								<c:choose>
+									<c:when test="${userLogin.m900mg.mv905 == 'F'}">
+										<input id="input-gender" disabled="true" type="text" value="<spring:message code="female"/>" />
+									</c:when>
+									<c:otherwise>
+										<input id="input-gender" disabled="true" type="text" value="<spring:message code="male"/>" />
+									</c:otherwise>
+								</c:choose>
+								<!-- <div class="dropdown upgrade-gender">
+									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownUpgrade1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								    	<b>Nam</b>
+								    	<span class="caret"></span>
+								  	</button>
+								  	<ul class="dropdown-menu" aria-labelledby="dropdownUpgrade1">
+								   		<li><a href="#"><spring:message code="male"/></a></li>
+								    	<li><a href="#"><spring:message code="female"/></a></li>
+								  	</ul>
+								</div> -->
+							</li>
+							<li>
+								<label><spring:message code="birthday"/></label>
+								<input id="input-birthday" disabled="true" value="${userLogin.m900mg.md904String}">
+							</li>
+							<li>
+								<label><spring:message code="country"/></label>
+								<!-- <input type="text" id="input-country"/> -->
+								<div class="dropdown" id="input-country">
+									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownUpgrade2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" value="1">
+								    	<b>Vietnam</b>
+								    	<span class="caret"></span>
+								  	</button>
+								  	<ul class="dropdown-menu" aria-labelledby="dropdownUpgrade2">
+								   		<!-- <li><a href="#">Action</a></li> -->
+								  	</ul>
+								</div>
+							</li>
+							<li>
+								<label><spring:message code="city"/></label>
+								<input type="text" id="input-city"/>
+								<!-- <div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownUpgrade3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								    	<b>Dropdown</b>
+								    	<span class="caret"></span>
+								  	</button>
+								  	<ul class="dropdown-menu" aria-labelledby="dropdownUpgrade3">
+								   		<li><a href="#">Action</a></li>
+								    	<li><a href="#">Another action</a></li>
+								    	<li><a href="#">Something else here</a></li>
+								    	<li><a href="#">Separated link</a></li>
+								  	</ul>
+								</div> -->
+							</li>
+							<li>
+								<label><spring:message code="state"/></label>
+								<input type="text" id="input-state"/>
+								<!-- <div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownUpgrade4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								    	Dropdown
+								    	<span class="caret"></span>
+								  	</button>
+								  	<ul class="dropdown-menu" aria-labelledby="dropdownUpgrade4">
+								   		<li><a href="#">Action</a></li>
+								    	<li><a href="#">Another action</a></li>
+								    	<li><a href="#">Something else here</a></li>
+								    	<li><a href="#">Separated link</a></li>
+								  	</ul>
+								</div> -->
+							</li>
+							<li>
+								<label><spring:message code="address"/></label>
+								<input type="text" id="input-address"/>
+							</li>
+							<li>
+								<label><spring:message code="zipcode"/></label>
+								<input type="text" id="input-zipcode"/>
+							</li>
+							<li>
+								<label><spring:message code="email"/></label>
+								<input id="input-email" disabled="true" type="email" value="${userLogin.m900mg.mv903Decrypt}"/>
+							</li>
+							<li>
+								<label>&nbsp;</label>
+								<a style="float: right; margin-right: 13px;" class="btn-upgrade-nextstep"><spring:message code="continue"/></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END INPUT UNGRADE INFO -->
+		<div class="qb-setting-input-upgrade-item qb-setting-input-upgrade-payment-ui"></div>
+	</div>
+</div>

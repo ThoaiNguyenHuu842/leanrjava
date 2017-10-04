@@ -1,0 +1,98 @@
+.qb-tab-panel {
+	border-radius: 3px;
+	float: left;
+	min-height: 300px;
+	width: 100%;
+}
+
+/*
+* full screen image
+*/
+
+.qb-tab-panel.qb-tab-img-album{
+	height: 100vh;
+}
+
+.qb-tab-panel .header {
+	background: none;
+	float: left;
+	height: 40px;
+	width: 100%;
+}
+
+.qb-tab-panel .header .tab-menu {
+	background: #313b3f;
+	border-right: 1px solid #fff;
+	float: left;
+	height: 100%;
+	padding: 9px 39px;
+	width: auto;
+	cursor: pointer;
+}
+
+.qb-tab-panel .header .tab-menu:hover {
+	background: #3899ec;
+}
+
+.qb-tab-panel .header .tab-menu:last-child {
+	border-right: none;
+}
+
+.qb-tab-panel .header .tab-menu p {
+	color: #fff;
+}
+
+.qb-tab-panel .body {
+	overflow: auto;
+	float: left;
+	width: 100%;
+}
+
+.qb-tab-panel .body .tab-panel {
+	float: left;
+	height: 100%;
+	overflow: auto;
+	width: 100%;
+	display: none;
+	background: #ffffff;
+}
+
+.qb-tab-panel .body .tab-panel.active {
+	display: block;
+}
+
+/*
+* style tab image
+*/
+.qb-tab-panel.qb-tab-img-album .header {
+	background: #ebebeb;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	padding-left: 62px;
+}
+
+.qb-tab-panel.qb-tab-img-album .header .tab-menu.active {
+	border-bottom: 2px solid #009cff;
+}
+
+.qb-tab-panel.qb-tab-img-album .header .tab-menu {
+	background: transparent;
+	border-right: 0;
+}
+
+.qb-tab-panel.qb-tab-img-album .header .tab-menu p {
+	color: #000;
+	font-size: 13px;
+}
+
+/* .qb-tab-panel.qb-tab-img-album .header .tab-menu:after {
+	display: block;
+	content: '';
+	border-bottom: solid 2px #009cff;
+	transform: scaleX(0);
+	transition: transform 150ms ease-in-out;
+}
+
+.qb-tab-panel.qb-tab-img-album .header .tab-menu:hover:after {
+	transform: scaleX(1);
+} */

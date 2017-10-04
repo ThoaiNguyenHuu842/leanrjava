@@ -1,0 +1,94 @@
+.content-box .menu-right, .qb-edit-tool {
+	display: none !important;
+}
+
+#content-wrapper .content-box, #content-wrapper .content-box .grid-stack .grid-stack-item-content{
+	border: none;
+}
+#content-wrapper .content-box .grid-stack{outline: 10px solid #fff; border: none !important;}
+#content-wrapper .content-box .grid-stack:before, #content-wrapper .content-box .grid-stack:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 28px 4px rgba(0, 0, 0, 0.35);
+  transform: rotate(-3deg);
+  border: none !important;
+} 
+#content-wrapper .content-box .grid-stack:after
+{
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+#content-wrapper {
+	margin-top: 50px;overflow: initial !important;
+}
+
+#content-wrapper .content-box .grid-stack:last-child {
+	border-bottom: medium none;
+}
+.wrapper-background{
+    background-image: url("../../images/card-bg.jpg") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    position: fixed !important;
+    background-color: initial !important;
+    width: 100% !important;
+    background-attachment: fixed !important;
+    background-position: center top !important;
+    z-index: -10;
+    height: 1361px !important;
+}
+.web-card-panel{
+	float: left;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+    z-index: 1000;
+}
+.web-card-panel .button-wrapper{
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.web-card-panel button{
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.35);
+    cursor: pointer;
+	border: none;
+    font-size: 20px;    
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #fff 0%, #dadada 100%) repeat scroll 0 0;
+    border-radius: 30px;
+    color: #6d6d6d;
+    display: block;
+    font-family:HelveticaNeue;font-weight:300;
+    height: 50px;
+    line-height: 50px;
+    margin: 0px auto;
+    text-decoration: none;
+    width: 260px;
+}
+#content-wrapper .content-box .grid-stack{
+	width: 500px !important;
+}
+.web-card-panel button.share-facebook{background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #26a3e5 0%, #066eb7 100%) repeat scroll 0 0;color: #fff;}
+@media ( max-width : 350px) {
+	#content-wrapper {
+   	 	width: 100% !important;
+   	 	margin-top: 0px !important;
+	}
+	#content-wrapper .content-box .grid-stack{outline: none !important;width: 100% !important;}
+}
+@media ( max-width : 500px) and ( min-width : 351px) {
+	#content-wrapper {
+   	 	width: 100% !important;
+	}
+	#content-wrapper .content-box .grid-stack{width: 350px !important;}
+}

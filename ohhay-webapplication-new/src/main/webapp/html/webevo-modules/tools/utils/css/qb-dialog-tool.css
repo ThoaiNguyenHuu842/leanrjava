@@ -1,0 +1,139 @@
+.qb-component {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.qb-dig-tools-edit {
+	float: left;
+	width: 100%;
+	background: #fff;
+}
+
+.qb-dig-tools-edit .input-fied {
+	float: left;
+}
+
+.qb-dig-tools-edit input:FOCUS {
+	outline: none;
+}
+
+.qb-dig-tools-edit .form-group {
+	margin: 0px;
+	padding: 0px 0px 8px 0px;
+	float: left;
+	width: 100%;
+}
+
+.qb-dig-tools-edit .form-group:last-child {
+	border-bottom: none;
+}
+
+.qb-dig-tools-edit .form-group-title {
+	margin: 0px;
+	display: block;
+	background: #eee;
+	color: #4b4e5b;
+	font-family: Roboto-Regular;
+	font-size: 14px;
+	line-height: 24px;
+	padding-left: 18px;
+	margin-bottom: 8px;
+	float: left;
+	width: 100%;
+}
+.qb-dig-tools-edit .form-group-title span{
+	margin-right: 10px;
+}
+
+.qb-dig-tools-edit .form-group-content {
+	list-style: none;
+	margin: 0px;
+	padding: 0px 18px;
+}
+.qb-dig-tools-edit .fixcss span.ui-spinner{
+	margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 10px!important
+}
+
+.qb-dig-tools-edit .fixcss label{
+    margin-top: 18px !important;
+}
+
+.qb-dig-tools-edit .form-group-btn {
+	text-align: right;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	border-top: 2px solid #eee;
+	display: table;
+	float: left;
+	width: 100%;
+}
+
+.qb-dig-tools-edit .form-group-content label {
+	display: inline-block;
+	background: transparent;
+	margin: 0px;
+	color: #333;
+	float: left;
+	font-family: roboto-regular;
+	font-size: 12px;
+	font-weight: inherit;
+	line-height: 24px;
+	min-width: 78px;
+	margin: 0px;
+}
+
+.qb-dig-tools-edit .form-group-content label input {
+	float: left;
+	margin-top: 3px;
+}
+
+.qb-dig-tools-edit .form-group-content label span.unit{
+	margin-left: 5px;
+}
+
+.qb-dig-tools-edit  input {
+	display: inline-block;
+	font-size: 12px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 0px 0 0;
+	text-align: right;
+	width: 26px;
+}
+
+.qb-dig-tools-edit  input[type='checkbox'], .qb-dig-tools-edit  input[type='radio']
+	{
+	margin-top: 2px;
+	width: auto;
+}
+
+.qb-dig-tools-edit .form-group-btn button {
+	background: #0099ff;
+	color: #fff;
+	border: none;
+	height: 40px;
+	width: auto;
+	font-size: 14px;
+	padding: 0px 16px;
+	font-family: Roboto-Regular;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.qb-dig-tools-edit .form-group-btn button[id^="btn-save"],#qb-dlg-add-to-lib .form-group-btn .btn-done-add-to-lib{
+	width: 105px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.qb-dig-tools-edit .form-group-btn button img {
+	width: 16px;
+	margin-right: 8px;
+	display: inline-block;
+}

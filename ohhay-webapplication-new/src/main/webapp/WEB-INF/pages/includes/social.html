@@ -1,0 +1,28 @@
+<meta property="fb:app_id" content="381681832036999" />
+<g:compress>
+	<script type="text/javascript" src="${CONTEXT_PATH_COMPRESS}/html/js/social/social.js"></script>
+	<!-- TRACKING -->
+	<script type="text/javascript" src="${CONTEXT_PATH_COMPRESS}/html/js/tracking/tracking.js"></script>
+</g:compress>
+<!-- DROPBOX API -->
+<script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="vcgti2md8egsoi3"></script>
+<!-- FACEBOOK SDK -->
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '381681832036999',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- END FACEBOOK SDK -->

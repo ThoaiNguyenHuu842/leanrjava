@@ -1,0 +1,146 @@
+<div
+	class="qb-content-administrator-child qb-administrator-account-management">
+	<div class="total-data">
+		<div class="container total">
+			<div class="col-sm-2">
+				<p>
+					Total : <span class="total-value"></span>
+				</p>
+			</div>
+			<div class="col-sm-2">
+				<span>Current Online : <span class="total-account-online">0</span></span>
+			</div>
+			<div class="col-sm-8 data-account-online">
+				<button class="btn btn-primary btn-account-show-all-online">
+					Account Online <i class="fa fa-user"></i>
+				</button>
+				<div class="list-current-online"></div>
+			</div>
+
+		</div>
+		<div class="container">
+			<div class="item-for-total funct-sort col-sm-1" value-check="0"
+				type="date">
+				<span class="text-total">Date</span><i class="fa fa-angle-right"></i>
+			</div>
+			<div class="item-for-total funct-sort col-sm-1" value-check="0"
+				type="name">
+				<span class="text-total">Name</span><i class="fa fa-angle-right"></i>
+			</div>
+			<div class="item-for-total col-sm-2">
+				<div class="combox-my-filter dropdown" type-sort="0">
+					<div class="bootstrap-filestyle input-group" data-toggle="dropdown">
+						<input type="text" class="form-control " placeholder="All"
+							disabled="true"> <span
+							class="dropdown-toggle group-span-filestyle input-group-btn"
+							data-dropdown="dropdown" tabindex="0"><label
+							for="filestyle-9" class="btn btn-default fix-btn-default">
+								<span class="buttonText"><i class="fa fa-angle-down"></i></span>
+						</label></span>
+
+					</div>
+					<ul class="dropdown-menu">
+						<li data="0"><span>All</span></li>
+						<li data="1"><span>Payment</span></li>
+						<li data="2"><span>On Refund</span></li>
+						<li data="3"><span>On Payment Missed</span></li>
+						<li data="4"><span>On Chargeback</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="item-for-total col-sm-2">
+				<input type="text" placeholder="From..."
+					class="form-control content-date date-from">
+			</div>
+			<div class="item-for-total col-sm-2">
+				<input type="text" placeholder="To..."
+					class="form-control content-date date-to">
+			</div>
+			<div class="search-data col-sm-3 col-sm-offset-1">
+				<input class="box-data-search" typeSearch="account"
+					placeholder="<spring:message code='admp.title7' />" />
+			</div>
+			<a class="icon-search btn"><i class="fa fa-search"></i></a>
+		</div>
+		<!-- 	<span> Total user : <span class="total-number-account"></span>
+			<span style="margin-left: 30px; position: relative;"> Current
+				online : <span class="total-number-online"></span>
+				<button class="btn-account-show-all-online">Show all</button>
+				<div class="list-current-online"></div>
+		</span>
+
+			<div class="search-data pull-right">
+				<input class="box-data-search form-control" type="text"
+					class="form-control"
+					placeholder="<spring:message code='admp.title7' />" />
+			</div> -->
+	</div>
+	<div class="account-manager-info content-data-load-item">
+		<div class="container">
+			<table class="table data-my-table">
+				<thead>
+					<tr>
+						<th class="title-table">
+							<div class="item">
+								<p>Name / Email</p>
+								<p>DigiStore ID</p>
+							</div>
+						</th>
+						<th class="title-table">
+							<div class="item">
+								<p>Registration date</p>
+								<p>Tariff</p>
+							</div>
+						</th>
+						<th class="title-table">
+							<div class="item">
+								<p>Payment interval</p>
+								<p>Next payment</p>
+							</div>
+						</th>
+						<th class="title-table">
+							<div class="item">
+								<p>Activate / Deactivate</p>
+								<p>Payment Status</p>
+							</div>
+						</th>
+						<th class="title-table">
+							<div class="item">
+								<p>Action</p>
+							</div>
+						</th>
+						<th class="title-table">
+							<div class="item">
+								<p>Login time</p>
+							</div>
+						</th>
+						<th class="title-table"><div class="item">
+								<p>Devices / Browser</p>
+							</div></th>
+						<th class="title-table">
+							<div class="item">
+								<p>Country / IP</p>
+							</div>
+						</th>
+						<th class="title-table">
+							<div class="item">
+								<p>Login</p>
+							</div>
+						</th>
+					</tr>
+				</thead>
+				<tbody class="content-data">
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<div id="dialog-confirm-admin-login" title="Confirm login account">
+	<p class="title-account">
+		Confirm login account <span class="title-account-is"></span>
+	</p>
+	<p class="info-data">Do you want disconnect current account ? Then
+		login with account you selected ?</p>
+</div>

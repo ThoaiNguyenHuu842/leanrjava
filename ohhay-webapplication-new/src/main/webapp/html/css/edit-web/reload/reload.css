@@ -1,0 +1,20 @@
+body .dialogreload {
+	padding: 26px 29px;
+}
+
+body .dialogreload .header-reload {
+	color: rgb(68, 68, 68);
+	font-family: Roboto-Regular;
+	font-size: 20px;
+	line-height: 30px;
+}
+body .dialogreload .message-reload {
+	color: rgb(115, 115, 115);
+	font-family: Roboto-Regular;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+body .ui-dialog-buttonpane .ui-dialog-buttonset .ui-button.dialogreload-submit_class_name,body .ui-dialog-buttonpane .ui-dialog-buttonset .ui-button.dialogreload-submit_class_name1 {
+	border-radius: 5px;
+}

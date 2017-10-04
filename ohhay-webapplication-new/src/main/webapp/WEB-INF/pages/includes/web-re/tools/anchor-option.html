@@ -1,0 +1,21 @@
+<%@page contentType="text/html; charset=UTF-8" %>
+
+<div class="anchor-option-panel">
+	<div class="anchor-component">
+		<input type="text" class="anchor-text" name="anchor-name">
+		<div class="anchor-name-check">
+			<i class="fa fa-times-circle anchor-name-icon anchor-name-wrong"></i>
+			<i class="fa fa-check-circle anchor-name-icon anchor-name-right"></i>
+		</div>
+	</div>
+	<div class="anchor-component">
+		<span><spring:message code='ano.name_rule' />:</span>
+		<ul>
+			<li class="anchor-name-rule anchor-name-space"><spring:message code='ano.title1' /></li>
+			<li class="anchor-name-rule anchor-name-unique"><spring:message code='ano.title2' /></li>
+		</ul>
+	</div>
+	<div class="anchor-component bottom-menu">
+		<button class="btn-save"><img src="${CONTEXT_PATH}/html/images/btn-save.png" /><spring:message code='save' /></button>
+	</div>
+</div>

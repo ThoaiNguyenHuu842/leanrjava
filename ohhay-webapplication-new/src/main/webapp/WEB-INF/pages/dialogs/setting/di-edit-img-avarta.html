@@ -1,0 +1,55 @@
+<div class="qb-form-content">
+	<div class="dialog-edittext-header">
+		<!-- <div class="col-xs-2 edittext-action"><p><spring:message code="cancel"/></p></div> 
+		<div class="col-xs-9 qb-fn-edit-img" style="text-align: center;display:none;">
+			<input type="hidden" id='getData' />
+		</div>
+		<!-- <div class="col-xs-2 edittext-action" style="float: right;"><p><spring:message code="done"/></p></div> -->
+	</div>
+	<div class="editweb-toolbar">
+		<div class="input-field">
+			<!-- <label><spring:message code="edit.mess_select_img" /></label> -->
+			<button type='button' class="qb-btn-upload" data-toggle="tooltip" data-placement="bottom" title="<spring:message code='edit.chosse_file'/>"
+				onclick="$('#dialog-image-avarta .qb-input-img-upload-avarta').trigger('click');">
+				<i class="fa fa-picture-o"></i>
+			</button>
+		</div>
+	</div>
+	
+	<!-- CROP CONTAINER -->
+	<div class="input-field container-crop-image" id="container-crop-gallery-item-edit-image-avarta">
+		<input class="qb-input-img-upload-avarta" id="id-file-upload" type="file" name="file"  style="display:none !important;"/>
+		<input class="qb-input-img-upload-avarta-background" id="id-file-edit-upload" type="file" name="file" style="display:none !important;"/>
+		<div class="eg-wrapper">
+			<img class="cropper-edit-img-avarta imageBox center-block" alt="Picture">
+		</div>
+<!-- 		<div class='action'> -->
+<!-- 			<button class="btn btn-info" id="rotateLeft" type="button"><spring:message code="edit.rotate_left"/></button> -->
+<!--         	<button class="btn btn-info" id="rotateRight" type="button"><spring:message code="edit.rotate_right"/></button> -->
+ 		<div class="func_data">
+ 	<!--
+			  <button type="button" id="btnCancel" value="Cancel" class="btn btn-info">Cancel</button> 
+		  -->
+	 		 <button type="button" id="btnCrop" value="Crop" class="btn btn-info"><img class="icon-check-done" src="${CONTEXT_PATH}/html/images/btn-save.png">Done</button> 
+		</div>
+<!-- 			<button type="button" id="btnZoomIn" value="+" class="btn btn-info"><spring:message code="edit.zoom_in"/></button> -->
+<!-- 			<button type="button" id="btnZoomOut" value="-" class="btn btn-info"><spring:message code="edit.zoom_out"/></button> -->
+<!-- 			<input type="text" style="display: none;" id='getData' value=""  /> -->
+<!-- 		</div> -->
+		<div class="img-base64-edit-img-avarta">
+			<input type="hidden" id="input-img64-edit-img-avarta" />
+		</div>
+	</div>
+	<div class="input-field">
+		<div id="cropped-ItemHome"></div>
+	</div>
+	<!-- END CROP CONTAINER -->
+	
+	<!-- HIDDEN FIELD -->
+	<input type="hidden" id="inputpc900ImageHome" path="pc900" /> 
+	<input type="hidden" id="inputcv902ImageHome" path="cv902" />
+	<div class="input-field">
+		<span class="qb-error error-edit-image" id="id-error-edit-image"></span>
+	</div>
+</div>
+

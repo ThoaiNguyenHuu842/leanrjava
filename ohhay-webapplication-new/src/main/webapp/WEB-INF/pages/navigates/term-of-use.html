@@ -1,0 +1,102 @@
+<%@page contentType="text/html; charset=UTF-8" %> <%@taglib
+uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <%@taglib
+uri="http://www.springframework.org/tags/form" prefix="form"%> <%@
+taglib prefix="spring" uri="http://www.springframework.org/tags" %> <%@
+taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@include file="../includes/constant.html" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<c:set var="PAGE_NAME" value="home" />
+<html  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<%@include file="../includes/social.html" %>
+<title>BonEvo - <spring:message code='tnvp.title21' /></title>
+<meta http-equiv="Cache-control" content="public" max-age="2592000">
+<meta http-equiv="Pragma" content="public" max-age="2592000" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="${CONTEXT_PATH}/html/images/fav1.png" type="image/png" rel="shortcut icon">
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/style.css" />
+<!-- CROSS DOMAIN LOGIN -->
+<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/webrule.js"></script>
+<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/crossLogin/detect-private-browsing.js"></script>
+<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/crossLogin/fingerprint2.js"></script>
+<script	src="https://imgprocessing.bonevo.net:3006/socket.io/socket.io.js"></script>
+<!-- CROSS DOMAIN LOGIN -->
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/term-of-use.css" />
+	<!-- DIALOG -->
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/dialog/dialog.css" />
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/dialog/dialog-cathy.css" />
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules/tools/utils/css/qb-dialog-tool.css" />
+	<!-- END DIALOG -->
+	<!-- CSS DIALOG ALERT -->
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/edit-web/alert/dialogalert.css"  />
+	<!-- END DIALOG ALERT -->
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/ohhay-login.css" />
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/hover/hover-min.css" />
+	<!-- HEADER AND FOOTER EVO -->
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/include/evo-footer/evo-footer.css" />
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/include/evo-header/evo-header.css" />
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/include/evo-logined-header/evo-logined-header.css" />
+	<!-- END HEADER AND FOOTER EVO -->
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/constants.js"></script>
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/main/ohhay.js"></script>
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/scroll.js"></script>
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/jquery-ui.js"></script>
+	<!-- DIALOG -->
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/dialog/modernizr.custom.71258.js"></script>
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/dialog/ohhay-dialog.js"></script>
+	<!-- END DIALOG -->	
+	<!-- NPROGRESS -->
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/nprogress/nprogress.js"></script>
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/js/plugin/nprogress/nprogress.css" />
+	<!-- NPROGRESS -->
+	
+	<script>
+	 	$(document).ready(function() {
+			/*
+			* tracking 
+			*/
+			var currentLanguage = "${pageContext.response.locale}";
+	        trackingAjax.init({
+	        	fo100:0,
+	        	webId:3,
+	        	currentLanguage:currentLanguage,
+	        });
+	        trackingAjax.trackingViewer();
+	        util.headerMobile();
+	        $('body').niceScroll({	
+	        	cursorcolor: "#2fa8de",
+		        background: "",
+		        cursorborder: "",
+		        cursorwidth: "7px",
+		        cursorborderradius :"4px",
+		        autohidemode: false
+		    });
+		});		
+	</script>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<!-- GOOGLE LOGIN -->
+<script type="text/javascript" src="https://apis.google.com/js/api:client.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+</head>
+<body>
+	<input id="contextPath" type="hidden" value="${CONTEXT_URL}">
+	<div class="qb-ohhay-ajax-content">
+		<div class="content">
+			<label><spring:message code="loading" /></label>
+			<img width="30" alt="" src="${CONTEXT_PATH}/html/images/ajax-loader.gif">
+		</div>
+	</div>
+
+	<%@include file="../mainpages/term-of-use.html" %>
+	<!-- FOOTER BOX -->
+	<%@include file="../includes/evo-footer.html" %>
+	<!-- END FOOTER BOX -->
+</body>
+</html>

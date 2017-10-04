@@ -1,0 +1,100 @@
+<%@page contentType="text/html; charset=UTF-8" %>
+<div id="web-tools" class="qb-edit-tool">
+	<!-- EXTEND -->
+	<div class="item menu-extend" data-toggle="tooltip"
+	data-placement="right" title="">
+		<div class="item-icon-panel">
+			<img style="width: 15px;" alt="" src="${CONTEXT_PATH}/html/images/addbox.png">
+		</div>
+	</div>
+	<!-- END EXTEND -->
+
+	<div class="web-tools-content">
+		<!-- TEXT -->
+		<div class="item" id="normal-text">
+			<div class="item-icon-panel">
+				<i class="fa fa-text-width item-icon" data-toggle="tooltip"
+				data-placement="right" title="<spring:message code='mnl.add_text' />"></i>
+			</div>
+			<%@ include file="web-sub-menu-left/sub-menu-text.html" %>
+		</div>
+		<!-- END TEXT -->
+		<!-- IMG -->
+		<div class="item" id="normal-image">
+			<div class="item-icon-panel">
+				<i class="fa fa-picture-o item-icon" title="<spring:message code='mnl.add_image' />" data-toggle="tooltip"
+				data-placement="right"></i>
+			</div>
+			<%@ include file="web-sub-menu-left/sub-menu-image.html" %>
+		</div>
+		<!-- END IMG -->
+		<!-- IFRAME -->
+		<div class="item" id="normal-iframe" >
+			<div class="item-icon-panel">
+				<i class="fa fa-video-camera item-icon" data-toggle="tooltip"
+		data-placement="right" title="<spring:message code='mnl.title1' />"></i>
+			</div>
+			<%@ include file="web-sub-menu-left/sub-menu-iframe.html" %>
+		</div>
+		<!-- END IFRAME -->
+		<!-- BUTTON -->
+		<div class="item" id="normal-button" >
+			<div class="item-icon-panel">
+				<i class="fa fa-square item-icon" data-toggle="tooltip"
+		data-placement="right" title="<spring:message code='mnl.add_button' />"></i>
+			</div>
+			<%@ include file="web-sub-menu-left/sub-menu-button.html" %>
+		</div>
+		<!-- END BUTTON -->
+		<!-- GMAP -->
+		<div class="item single-comp-item" id="normal-gmap" >
+			<div class="item-icon-panel">
+				<i class="fa fa-map-marker item-icon" data-toggle="tooltip"
+		data-placement="right" title="<spring:message code='mnl.title2' />"></i>
+			</div>
+		</div>
+		<!-- END GMAP -->
+		<!-- GALLERY -->
+		<!-- <div class="item" data-toggle="tooltip"
+		data-placement="right" title="<spring:message code='mnl.add_gallery' />">
+		<div class="item-icon-panel">
+		<i class="fa   fa-map item-icon"></i>
+		</div>
+		</div> -->
+		<!-- END GALLERY -->
+		<!-- MENU -->
+		<div class="item single-comp-item" id="normal-menu" >
+			<div class="item-icon-panel">
+				<i class="fa  fa-navicon item-icon" data-toggle="tooltip"
+		data-placement="right" title="<spring:message code='mnl.add_menu' />"></i>
+			</div>
+		</div>
+		<!-- END MENU -->
+		<!-- CONTACT FORM -->
+		<div class="item single-comp-item" id="normal_contact_form">
+			<div class="item-icon-panel">
+				<i class="fa fa-envelope item-icon" data-toggle="tooltip"
+		data-placement="right" title="<spring:message code='mnl.title3' />"></i>
+			</div>
+		</div>
+		<!-- END CONTACT FORM -->
+		<!-- EMBED CODE -->
+		<div class="item single-comp-item" id="normal_embed_code" >
+			<div class="item-icon-panel">
+				<i class="fa fa-code" style="color:white" data-toggle="tooltip"
+		data-placement="right" title="<spring:message code='mnl.title4' />"></i>
+			</div>
+		</div>
+		<!-- END EMBED CODE -->
+
+	</div><!-- END web-tools-content -->
+
+	<!-- COLLAPSE  -->
+	<div class="item menu-collapse" data-toggle="tooltip"
+	data-placement="right" title="">
+		<div class="item-icon-panel">
+			<img style="width: 11px;" alt="" src="${CONTEXT_PATH}/html/images/menu-close.png">
+		</div>
+	</div>
+	<!-- END COLLAPSE -->
+</div>

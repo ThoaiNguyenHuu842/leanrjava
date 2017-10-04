@@ -1,0 +1,79 @@
+.qb-dig-tools-edit ul.form-group-content li{
+	display: inline-block;
+}
+.qb-dig-tools-edit ul.form-group-content li .ui-spinner{
+	display: block;
+}
+.qb-dig-tools-edit ul.form-group-content img{
+	width: 16px;
+	float: none;
+	display: block;
+	margin: 0px auto 5px auto;
+}
+.qb-dig-tools-edit .form-group-content span.ui-spinner{
+	margin-right: 5px;display: inline-flex;
+}
+.qb-dig-tools-edit  select.option-shadow{
+	margin-top: 5px;
+}
+.qb-dig-tools-edit  input.color-val{
+	width: 64px;
+	padding-right: 2px;
+	height: 23px;
+	line-height: 23px;
+	margin: 0px 5px;
+}
+.qb-dig-tools-edit .color-show{
+	display: inline-flex;margin: 0px 10px;
+	padding: 6px 20px;z-index: 10;height: 22px;
+}
+.qb-dig-tools-edit .option-shadow.color-show{margin-top: 5px;}
+
+.qb-dig-tools-edit .rotate-angel{
+    background-color: #639dbc;display:inline-block;
+    border-radius: 25px;
+    color: #ddd;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.component-option .dropdown{display: inline-block;position: relative;}
+.component-option .dropdown button{padding: 2px 6px;font-size: 12px;}
+.component-option .dropdown button span.dd-title{width: 46px;display: inline-block;}
+.component-option .dropdown button span.dd-title[data-type="solid"]{height: 6px;border-top: 4px solid #666;}
+.component-option .dropdown button span.dd-title[data-type="dotted"]{height: 6px;border-top: 4px dotted #666;}
+.component-option .dropdown button span.dd-title[data-type="dashed"]{height: 6px;border-top: 4px dashed #666;}
+.component-option .dropdown button span.dd-title[data-type="double"]{height: 6px;border-top: 4px double #666;}
+.component-option .dropdown button span.dd-title[data-type="ridge"]{height: 6px;border-top: 4px ridge #666;}
+.component-option .dropdown button span.dd-title[data-type="groove"]{height: 6px;border-top: groove #666;}
+.component-option .dropdown button span.dd-title[data-type="inset"]{height: 6px;border-top: 4px inset #666;}
+.component-option .dropdown button span.dd-title[data-type="outset"]{height: 6px;border-top: 4px outset #666;}
+.component-option .dropdown ul li{cursor: pointer;}
+.component-option .dropdown ul li a{height: 24px;width: 100%;position: relative;}
+.component-option .dropdown ul .border-solid:AFTER{content: "";height: 10px;border-top: 4px solid #666;position: absolute;top: 11px;width: calc(100% - 40px);}
+.component-option .dropdown ul .border-dotted:AFTER{content: "";height: 10px;border-top: 4px dotted #666;position: absolute;top: 11px;width: calc(100% - 40px);}
+.component-option .dropdown ul .border-dashed:AFTER{content: "";height: 10px;border-top: 4px dashed #666;position: absolute;top: 11px;width: calc(100% - 40px);}
+.component-option .dropdown ul .border-double:AFTER{content: "";height: 10px;border-top: 4px double #666;position: absolute;top: 11px;width: calc(100% - 40px);}
+.component-option .dropdown ul .border-ridge:AFTER{content: "";height: 10px;border-top: 4px ridge #666;position: absolute;top: 11px;width: calc(100% - 40px);}
+.component-option .dropdown ul .border-groove:AFTER{content: "";height: 10px;border-top: 4px groove #666;position: absolute;top: 11px;width: calc(100% - 40px);}
+.component-option .dropdown ul .border-inset:AFTER{content: "";height: 10px;border-top: 4px inset #666;position: absolute;top: 11px;width: calc(100% - 40px);}
+.component-option .dropdown ul .border-outset:AFTER{content: "";height: 10px;border-top: 4px outset #666;position: absolute;top: 11px;width: calc(100% - 40px);}
+
+.component-option .dropup{display: inline-block;position: relative;}
+.component-option .dropup button{padding: 2px 6px;font-size: 12px;}
+.component-option .dropup button span.dd-title{width: 46px;display: inline-block;}
+.component-option .dropup ul li{cursor: pointer;}
+.component-option .dropup ul li a{height: 24px;width: 100%;position: relative;}
+.component-option .dropup button span.dd-title[data-type="x"]{height: 13px;position: relative;top: 2px;background: -webkit-linear-gradient(red, blue);background: -o-linear-gradient(red, blue);background: -moz-linear-gradient(red, blue);background: linear-gradient(red, blue);}
+.component-option .dropup button span.dd-title[data-type="y"]{height: 13px;position: relative;top: 2px;background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(255,0,0,1));background: -o-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1));background: -moz-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1));background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));}
+.component-option .dropup ul .gradient-x{height: 20px;margin: 4px auto;width: calc(100% - 40px);background: -webkit-linear-gradient(red, blue);background: -o-linear-gradient(red, blue);background: -moz-linear-gradient(red, blue);background: linear-gradient(red, blue);}
+.component-option .dropup ul .gradient-y{height: 20px;margin: 4px auto;width: calc(100% - 40px);background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(255,0,0,1));background: -o-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1));background: -moz-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,1));background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));}
+.component-blur{
+	position: absolute;top: 0px;left: 0px;z-index: -1;width: 100%;height: 100%;background-size:cover;background-attachment:fixed;
+}

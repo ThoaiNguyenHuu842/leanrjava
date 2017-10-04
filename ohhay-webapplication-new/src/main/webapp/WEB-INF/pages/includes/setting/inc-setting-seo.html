@@ -1,0 +1,58 @@
+<%@ page pageEncoding="UTF-8" %>
+<input type="file" class="upload_seo_thumb" style="display: none;" />
+<input type="file" class="upload_seo_fav_icon" style="display: none;" />
+<div class="qb-setting-content-child qb-setting-seo">
+	<div class="col-xs-8" style="margin-left: 14%;">
+		<div class="qb-setting-input-panel">
+			<label><spring:message code='title.web' /></label> 
+			<input value="${e400mg.n950mg.nv951}" class="seo-title" type="text" style="width: 480px;"></input>
+		</div>
+		<div class="qb-setting-input-panel seo-description-parent">
+			<label><spring:message code='descript.web' /></label>
+			<textarea class="seo-description" style="width: 480px; height: 100px; resize: none;">${e400mg.n950mg.nv952}</textarea>
+			<div class="text-limit-description">
+				<div class="content">
+				<!-- <label>180</label> -->
+				<!-- <span>character</span> -->
+				</div>
+			</div>
+		</div>
+		<div class="qb-setting-input-panel">
+			<label><spring:message code='isseo.title1' /></label>
+			<!-- RENDER THUMB -->
+			<c:choose>
+				<c:when test="${fn:length(e400mg.n950mg.nv953)>0}">
+					<div class="feauture-image" style="background-image: url('${e400mg.n950mg.nv953}')">
+				</c:when>
+				<c:otherwise>
+					<div class="feauture-image">
+				</c:otherwise>
+			</c:choose>
+			<!-- END RENDER THUMB -->
+				<span class="fa fa-plus"></span>
+			</div>
+		</div>
+		<div class="qb-setting-input-panel hidden-onmobile">
+			<label><spring:message code='isseo.favicon' /></label>
+			<!-- RENDER THUMB -->
+			<c:choose>
+				<c:when test="${fn:length(e400mg.n950mg.nv954)>0}">
+					<div class="fav-icon" style="background-image: url('${e400mg.n950mg.nv954}')">
+				</c:when>
+				<c:otherwise>
+					<div class="fav-icon">
+				</c:otherwise>
+			</c:choose>
+			<!-- END RENDER THUMB -->
+				<span class="fa fa-plus"></span>
+			</div>
+		</div>
+		<div class="qb-setting-input-panel">
+			<label>Tracking code</label>
+			<textarea class="seo-tracking-script" style="width: 480px; height: 200px; resize: none;">${e400mg.n950mg.nv955}</textarea>
+		</div>
+		<div class="qb-setting-input-panel">
+			<div class="qb-button-setting qb-button-submit-onpage btn-save-seo"><spring:message code='save' /></div>
+		</div>
+	</div>
+</div>

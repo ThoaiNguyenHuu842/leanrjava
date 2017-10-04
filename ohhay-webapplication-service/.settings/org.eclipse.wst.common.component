@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Ohhay">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <dependent-module archiveName="ohhay-service-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ohhay-service/ohhay-service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ohhay-module-other-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ohhay-module-other/ohhay-module-other">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ohhay-core-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ohhay-core/ohhay-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ohhay-base-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ohhay-base/ohhay-base">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ohhay-base-rest-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ohhay-base-rest/ohhay-base-rest">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ohhay-module-web-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ohhay-module-web/ohhay-module-web">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ohhay-module-web-other-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ohhay-module-web-other/ohhay-module-web-other">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ohhay-module-web-core-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ohhay-module-web-core/ohhay-module-web-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ohhay-module-search-engine-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ohhay-module-search-engine/ohhay-module-search-engine">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ohhay-module-web-lego-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ohhay-module-web-lego/ohhay-module-web-lego">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ohhay-module-piepme-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ohhay-module-piepme/ohhay-module-piepme">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="Ohhay"/>
+        <property name="java-output-path" value="/ohhay-webapplication-service/target/classes"/>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,430 @@
+ <%@ page pageEncoding="UTF-8" %>
+<div class="qb-setting-content-child qb-setting-content-account">
+	<div class="col-xs-3 full-width-on-mobile-account">
+		<!-- GROUP AVARTA -->
+		<div class="sett-tab-account-info">
+			<!--edit avarta -->
+			<div class="sett-tab-account-info-img">
+				<p>
+					<c:choose>
+						<c:when test="${fn:length(userLogin.m900mg.mv908)>0}">
+							<img alt="" id="image_account"
+								src="${userLogin.m900mg.urlAvarta}" />
+						</c:when>
+						<c:otherwise>
+							<img alt="" id="image_account" src="${CONTEXT_PATH}/html/images/44.png" />
+						</c:otherwise>
+					</c:choose>
+					<!-- <span><i class="fa fa-pencil editavarta"></i></span> -->
+				</p>
+			</div>
+
+			<div class="btn-upload-new-image center-block">
+				<a class="btn-button-upload">
+					<button class="hvr-shrink">
+						<span style="color: black;"> <spring:message
+								code="seta.title1" />
+						</span>
+					</button>
+				</a>
+			</div>
+
+			<div class="info-user">
+				<div class="sett-tab-title">
+					<label class="lb_account"> <spring:message code="account" />
+					</label>
+				</div>
+				<ul class="qb-sett-plugin-list qb-sett-profile-list">
+					<!-- UPGRADE -->
+					<li>
+						<!-- NOT UPGRADE PRO PACKET -->
+						<c:choose>
+							<c:when test="${userLogin.packet != 5}">
+								<div class="col-sm-6 sett-plugin-list-content">
+							</c:when>
+							<c:otherwise>
+								<div class="col-sm-12 sett-plugin-list-content">
+							</c:otherwise>
+						</c:choose>
+							<h4 class="account-upgrade"
+								style="font-family: helvetica; color: rgb(255, 255, 255); font-size: 14px; line-height: 25px;">
+								<c:choose>
+									<c:when test="${userLogin.packet == 1}">
+										<spring:message code="free" />
+									</c:when>
+									<c:when test="${userLogin.packet == 2}">
+										Optimal
+										/
+										<spring:message code="date.expired" />
+										${userLogin.qd104}
+									</c:when>
+									<c:when test="${userLogin.packet == 3}">
+										Expert
+										/
+										<spring:message code="date.expired" />
+										${userLogin.qd104}
+									</c:when>
+									<c:when test="${userLogin.packet == 4}">
+										Pro
+										/
+										<spring:message code="date.expired" />
+										${userLogin.qd104}
+									</c:when>
+									<c:otherwise>
+										Designer
+										/
+										<spring:message code="date.expired" />
+										${userLogin.qd104}
+									</c:otherwise>
+								</c:choose>
+							</h4>
+
+							<c:if test="${userLogin.packet == 1}">
+								<span style="color: white; font-size: 10px;" class="fa fa-star"></span>
+							</c:if>
+
+						</div>
+						 <!-- NOT UPGRADE PRO PACKET -->
+						 <c:if test="${userLogin.packet != 5}"> 
+							<div
+								class="col-sm-6 sett-plugin-list-btn btn-edit-upgrade color-active"
+								style="margin: 0; margin-top: 22px">
+								<a style="text-decoration: none;" href="${CONTEXT_URL}/pricing">
+									<label class="center-block" style="color: black; padding: 5px 5px 0; text-align: center; vertical-align: middle; font-size: 14px;">
+										<spring:message code="upgrade" />
+									</label>
+								</a>
+							</div>
+						</c:if>
+					</li>
+					<!-- END UPGRADE -->
+				</ul>
+			</div>
+			<div class="sett-tab-account-info-phone" style="display: none">
+				<p class="col-xs-4" style="text-align: right;">
+					<span class="fa fa-phone"></span>
+				</p>
+				<p class="col-xs-6" style="text-align: left; padding: 0px;">
+					<label>${userLogin.qv101}</label>
+				</p>
+			</div>
+		</div>
+		<!-- END GROUP AVARTA -->
+	</div>
+
+	<div class="col-xs-9 full-width-on-mobile-account"
+		id="info_data_account">
+		<div class="sett-tab-title ">
+			<p class="info-data"
+				style="font-family: Roboto-Regular; font-size: 30px; text-transform: capitalize; padding-left: 15px;">
+				<spring:message code='setting.personal_info' />
+			</p>
+		</div>
+		<ul class="qb-sett-plugin-list qb-sett-profile-list"
+			id="profile_account">
+			<!-- EMAIL -->
+			<li>
+				<div class="col-xs-11 sett-plugin-list-content">
+					<div class="col-sm-4 col-lg-3 titledata"><spring:message code="home.email" /></div>
+					<div class="col-sm-8 col-lg-7 datatext"><h4 id="qb-account-enail">${userLogin.m900mg.mv903Decrypt}</h4></div>
+				</div>
+			</li>
+			<!-- END EMAIL -->
+			<!-- FIRST NAME -->
+			<li>
+				<div class="col-xs-11 sett-plugin-list-content">
+					<div class="col-sm-4 col-lg-3 titledata">
+						<spring:message code="home.first_name" />
+					</div>
+					<div class="col-sm-8 col-lg-7 datatext">
+						<h4 id="qb-account-firstname">${userLogin.m900mg.mv901Decrypt}</h4>
+					</div>
+				
+				</div>
+					<span class="col-xs-1 sett-plugin-list-btn btn-edit-firstname">
+						<span class="fa fa-pencil"></span>
+					</span>
+			</li>
+			<!-- END FIRST NAME -->
+			<!-- LAST NAME -->
+			<li>
+				<div class="col-xs-11 sett-plugin-list-content">
+					<div class="col-sm-4 col-lg-3 titledata">
+						<spring:message code="home.last_name" />
+					</div>
+					<div class="col-sm-8 col-lg-7 datatext">
+						<c:choose>
+							<c:when test="${not empty userLogin.m900mg.mv902Decrypt}">
+								<h4 id="qb-account-lastname">${userLogin.m900mg.mv902Decrypt}</h4>
+							</c:when>
+							<c:otherwise>
+								<h4 id="qb-account-lastname">
+									<spring:message code="noupdate" />
+								</h4>
+							</c:otherwise>
+						</c:choose>
+					</div>
+				</div>
+				<p class="col-xs-1 sett-plugin-list-btn btn-edit-lastname">
+					<span class="fa fa-pencil"></span>
+				</p>
+			</li>
+			<!-- END LAST NAME -->
+			<!-- PHONE -->
+			<!-- <li>
+				<div class="col-xs-11 sett-plugin-list-content">
+					<div class="col-sm-3">
+						Mobile No.
+					</div>
+					<div class="col-sm-9">
+						<h4>  </h4>
+					</div>
+				</div>
+				<p class="col-xs-1 sett-plugin-list-btn btn-edit-lastname">
+					<span class="fa fa-pencil"></span>
+				</p>
+			</li> -->
+			<!-- END PHONE -->
+			<!-- EMAIL -->
+			<!-- <li>
+				<div class="col-xs-11 sett-plugin-list-content">
+					<div class="col-sm-3">
+						Email.
+					</div>
+					<div class="col-sm-9">
+						<h4>  </h4>
+					</div>
+				</div>
+				<p class="col-xs-1 sett-plugin-list-btn btn-edit-lastname">
+					<span class="fa fa-pencil"></span>
+				</p>
+			</li> -->
+			<!-- END EMAIL -->
+			<!-- PASSWORD -->
+			<!-- <c:if test="${userLogin.ov108 != 'fb' && userLogin.ov108 != 'gg'}">
+				<li>
+					<div class="col-xs-11 sett-plugin-list-content">
+						<div class="col-sm-3 titledata">
+							<spring:message code="password" />
+						</div>
+						<div class="col-sm-9 datatext">
+							<h4 id='qb-account-rpassword'>
+								<i class="fa fa-circle"></i>&nbsp<i class="fa fa-circle"></i>&nbsp<i
+									class="fa fa-circle"></i>&nbsp<i class="fa fa-circle"></i>&nbsp<i
+									class="fa fa-circle"></i>&nbsp<i class="fa fa-circle"></i>&nbsp<i
+									class="fa fa-circle"></i>&nbsp<i class="fa fa-circle"></i>
+							</h4>
+						</div>
+					</div>
+					<p class="col-xs-1 sett-plugin-list-btn btn-edit-password">
+						<span class="fa fa-pencil"></span>
+					</p>
+				</li>
+			</c:if> -->
+			<!-- END PASSWORD -->
+			<!-- BIRTHDATE -->
+			<li>
+				<div class="col-xs-11 sett-plugin-list-content">
+					<div class="col-sm-4 col-lg-3 titledata">
+						<spring:message code="birthday" />
+					</div>
+					<div class="col-sm-8 col-lg-7 datatext">
+						<c:choose>
+							<c:when test="${not empty userLogin.m900mg.md904String}">
+								<h4 id="qb-account-birthdate">${userLogin.m900mg.md904String}</h4>
+							</c:when>
+							<c:otherwise>
+								<h4 id="qb-account-birthdate">
+									<spring:message code="noupdate" />
+								</h4>
+								<!-- <h4 id="qb-account-birthdate-no"></h4> -->
+							</c:otherwise>
+						</c:choose>
+					</div>
+				</div>
+				<p class="col-xs-1 sett-plugin-list-btn btn-edit-birthdate">
+					<span class="fa fa-pencil"></span>
+				</p>
+			</li>
+			<!-- END BIRTHDATE -->
+			<!-- SEXINESS -->
+			<li>
+				<div class="col-xs-11 sett-plugin-list-content">
+					<div class="col-sm-4 col-lg-3 titledata">
+						<spring:message code="sexiness" />
+					</div>
+					<div class="col-sm-8 col-lg-7 datatext">
+						<c:choose>
+							<c:when test="${not empty userLogin.m900mg.mv905}">
+								<h4 id="qb-account-sexiness" value="${userLogin.m900mg.mv905}">
+									<c:choose>
+										<c:when test="${userLogin.m900mg.mv905 == 'F'}">
+											<spring:message code="female" />
+										</c:when>
+										<c:when test="${userLogin.m900mg.mv905 == 'M'}">
+											<spring:message code="male" />
+										</c:when>
+										<c:otherwise>
+											<spring:message code="undefined" />
+										</c:otherwise>
+									</c:choose>
+								</h4>
+							</c:when>
+							<c:otherwise>
+								<h4 id="qb-account-sexiness">
+									<spring:message code="noupdate" />
+								</h4>
+							</c:otherwise>
+						</c:choose>
+					</div>
+				</div>
+				<p class="col-xs-1 sett-plugin-list-btn btn-edit-sexiness">
+					<span class="fa fa-pencil"></span>
+				</p>
+			</li>
+			<!-- END SEXINESS -->
+			<!-- SMTP EMAIL -->
+			<!-- <li>
+				<div class="col-xs-11 sett-plugin-list-content">
+					<div class="col-sm-4 col-lg-3 titledata">SMTP EMAIL</div>
+					<div class="col-sm-8 col-lg-7 datatext">
+						<c:choose>
+							<c:when test="${not empty userLogin.nv120}">
+								<h4 id="qb-account-smtp">${userLogin.nv120}</h4>
+							</c:when>
+							<c:otherwise>
+								<h4 id="qb-account-smtp">
+									<spring:message code="noupdate" />
+								</h4>
+							</c:otherwise>
+						</c:choose>
+					</div>
+				</div>
+				<p class="col-xs-1 sett-plugin-list-btn btn-edit-smtp">
+					<span class="fa fa-pencil"></span>
+				</p>
+			</li> -->
+			<!-- END SMTP EMAIL -->
+			<!-- JOB -->
+			<!-- <li>
+				<div class="col-xs-11 sett-plugin-list-content">
+					<div class="col-sm-3">
+						<spring:message code="setting.professional" />
+					</div>
+					<div class="col-sm-9">
+						<h4 val='${userLogin.m900mg.m920MG.val}' id="qb-account-pro"></h4>
+					</div>
+				</div>
+				<p class="col-xs-1 sett-plugin-list-btn btn-edit-pro">
+					<span class="fa fa-pencil"></span>
+				</p>
+			</li> -->
+			<!-- END JOB -->
+			<!-- LANGUAGE -->
+			<li>
+				<div class="col-xs-11 sett-plugin-list-content">
+					<div class="col-sm-4 col-lg-3 titledata">
+						<spring:message code="language" />
+					</div>
+					<div class="col-sm-8 col-lg-7 datatext">
+						<h4 id='qb-account-rlang' value='${userLogin.m900mg.language}'>
+							<c:choose>
+								<c:when test="${userLogin.m900mg.language == 'vi'}">
+									<spring:message code="language.vie" />
+								</c:when>
+								<c:when test="${userLogin.m900mg.language == 'de'}">
+									<spring:message code="language.german" />
+								</c:when>
+								<c:when test="${userLogin.m900mg.language == 'en'}">
+									<spring:message code="language.english" />
+								</c:when>
+							</c:choose>
+						</h4>
+					</div>
+				</div>
+				<p class="col-xs-1 sett-plugin-list-btn btn-edit-language">
+					<span class="fa fa-pencil"></span>
+				</p>
+			</li>
+			<!-- END LANGUAGE -->
+		</ul>
+
+
+		<!-- <div class="sett-tab-title">
+		<label><spring:message code="setting.tab.bank_account" /></label>
+		<span class="sett-tab-title-btn">+</span>
+		</div>
+		<ul class="qb-sett-plugin-list qb-sett-profile-list">
+		<li>
+		<div class="col-xs-11 sett-plugin-list-content"><label>Master card</label><h4>CitiBank Ho Chi Minh city</h4></div>
+		<p class="col-xs-1 sett-plugin-list-btn"><span class="fa fa-pencil"></span></p>
+		</li>
+		</ul> -->
+
+	</div>
+</div>
+<div class="qb-setting-account-management">
+	<!-- CHANGE MAIN ACCOUNT PASSWORD -->
+	<div lang="${pageContext.response.locale}" class="account-panel qb-setting-input-panel full-width-on-mobile-account" style="margin-right: 0.5%;">
+		<div class="panel-title"><h4><spring:message code='aci.title1'/></h4></div>
+		<div class="input-field">
+			<label><spring:message code='setting.pass_passold'/></label>
+			<input id="qb-input-password-old" type="password"/ >
+		</div>
+		<div class="input-field">
+			<label><spring:message code='setting.pass_passnew'/></label>
+			<input data-toggle="tooltip" data-placement="top" title="<spring:message code='signup.title1'/>" id="qb-input-password-new" type="password"/ >
+		</div>
+		<div class="input-field">
+			<label><spring:message code='setting.pass_passagain'/></label>
+			<input data-toggle="tooltip" data-placement="top" title="<spring:message code='signup.title1'/>" id="qb-input-password-new-again" type="password"/ >
+		</div>
+		<div class="input-field">
+			<label style="border-radius: 4px;width: auto; color: #5A95CF; font-style: italic;" class="error-mess-change-pass"></label>
+			<button class="btn-save-pass-bonevo"><spring:message code="save" /></button>
+		</div>
+	</div>
+	<!-- END CHANGE MAIN ACCOUNT PASSWORD -->
+	<div lang="${pageContext.response.locale}" class="account-panel qb-setting-input-panel full-width-on-mobile-account" style="margin-left: 0.5%;">
+		<div class="panel-title"><h4><spring:message code='aci.title2'/></h4></div>
+		<div class="input-field">
+			<label style="width: 100%;"><spring:message code='aci.title3'/></label>
+		</div>
+		<!-- FB ACCOUNT -->
+		<div class="input-field">
+			<button class="social-icon" style="background: #4C66A4;">
+				<span class="fa fa-facebook"></span>
+			</button>
+			<c:choose>
+				<c:when test="${not empty fbAccount}">
+					<label class="lb-extend" style="width: 60%;"><spring:message code='aci.title4'/>: <span data-toggle="tooltip" title="${fbAccount.email}" style="color: #5695D0;">${fbAccount.email}</span></label>
+					<button class="btn-account" id="btn-remove-account-fb"><spring:message code='aci.title5'/></button>
+				</c:when>
+				<c:otherwise>
+					<label class="lb-extend" style="width: 60%;"><spring:message code='aci.title6'/></label>
+					<button class="btn-account" id="btn-set-account-fb""><spring:message code='aci.title7'/></button>
+				</c:otherwise>
+			</c:choose>
+			<!--  <span style="color: #5695D0;">backstreet_backstreet2000@yahoo.com</span> -->
+		</div>
+		<!-- GG ACCOUNT -->
+		<div class="input-field fix-margin-ipad" lang="${pageContext.response.locale}">
+			<button class="social-icon" style="background: #D7462F;">
+				<span class="fa fa-google"></span>
+			</button>
+			<c:choose>
+				<c:when test="${not empty ggAccount}">
+					<label class="lb-extend" style="width: 60%;"><spring:message code='aci.title8'/>: <span data-toggle="tooltip" title="${ggAccount.email}" style="color: #5695D0;">${ggAccount.email}</span></label>
+					<button class="btn-account" id="btn-remove-account-gg"><spring:message code='aci.title5'/></button>
+				</c:when>
+				<c:otherwise>
+					<label class="lb-extend" style="width: 60%;"><spring:message code='aci.title9'/></label>
+					<button class="btn-account" id="btn-set-account-gg"><spring:message code='aci.title7'/></button>
+				</c:otherwise>
+			</c:choose>
+		</div>
+		<div class="input-field">
+			<label class="lb-footer" style="width: 100%;"><spring:message code='aci.title10'/></label>
+		</div>
+	</div>
+</div>

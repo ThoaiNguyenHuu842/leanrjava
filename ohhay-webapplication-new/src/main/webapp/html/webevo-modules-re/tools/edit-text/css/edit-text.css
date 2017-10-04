@@ -1,0 +1,39 @@
+#qb-edit-text-option .form-group .font-edit-text .dropdown-toggle, #qb-edit-text-option .form-group .font-type-edit-text .dropdown-toggle {
+	height: 24px;
+	padding: 0 10px;
+	font-size:13px;
+}
+
+#qb-edit-text-option .form-group .form-group-content .edit-text-item{
+	margin-top: 7px;
+}
+#qb-edit-text-option .form-group .form-group-content .edit-text-item .item-content > div,#qb-edit-text-option .form-group .form-group-content .edit-text-item .item-text-align-content .edit-text-align 
+,#qb-edit-text-option .form-group .form-group-content .edit-text-item .item-text-decoration-content .edit-text-decoration,
+#qb-edit-text-option .form-group .form-group-content .edit-text-item .item-text-transform-content .edit-text-transform{
+	display: inline-block;
+	cursor: pointer;
+}
+#qb-edit-text-option .form-group .form-group-content .edit-text-item .item-text-decoration-content .edit-text-decoration{
+	margin-right: 10px;
+	font-size: 1.2em
+}
+#qb-edit-text-option .form-group .form-group-content .edit-text-item .item-content .font-size-edit-text input[type="number"],#qb-edit-text-option .form-group .form-group-content .edit-text-item .distance-edit-text input[type="number"]{
+	height: 24px;
+	width: 40px;
+}
+#qb-edit-text-option .form-group .form-group-content .edit-text-item .item-content .color-edit-text{
+	background: black none repeat scroll 0 0;
+    height: 24px;
+    position: relative;
+    top: 7px;
+    width: 40px;
+}
+#qb-edit-text-option .form-group .font-edit-text .dropdown-menu {
+	overflow: auto;
+	height: 100px;
+}
+
+#qb-edit-text-option .form-group .form-group-content .edit-text-item .item-text-align-content .edit-text-align i{
+	font-size: 1.4em;
+	cursor: pointer;
+}

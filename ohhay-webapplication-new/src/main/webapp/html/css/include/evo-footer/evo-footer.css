@@ -1,0 +1,146 @@
+/*
+ * footer-web-data
+ */
+.footer-web-data {
+	font-family: 'Nunito', sans-serif;
+	height: 158px;
+	color: #292e44;
+	position: relative;
+	background: #292e44;	
+}
+
+.footer-web-data *:not(.fa){
+	font-family: 'Nunito', sans-serif;
+}
+.footer-web-data .content-data {
+	padding: 42px 141px;
+	padding-bottom: 15px;
+}
+
+.footer-web-data .content-data img {
+	height: 75px;
+}
+
+.footer-web-data .content-data .text-1, .footer-web-data .content-data .text-2
+	{
+	color: rgb(199, 199, 199);
+	font-family: Open Sans;
+	font-weight: 400;
+	word-spacing: 0px;
+	letter-spacing: 0.3px;
+	line-height: 19px;
+	font-size: 14px;
+}
+
+.footer-web-data .content-data .item {
+	margin-top: 90px;
+}
+
+.footer-web-data .content-data .item .text-2 .info-mobile {
+	display: none;
+}
+
+.footer-web-data .content-data .item .text-2 .info-pc {
+	display: block;
+}
+
+.footer-web-data .content-data .text-2 span a {
+	text-decoration: none;
+	color: rgb(191, 191, 191);
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.footer-web-data .content-data .text-2, .footer-web-data .content-data .item,
+	.footer-web-data .content-data .item p {
+	display: inline-block
+}
+
+.footer-web-data .content-data .item {
+	width: 100%;
+}
+
+.footer-web-data .content-data .item .funct {
+	float: right;
+}
+
+.footer-web-data .content-data .item .funct p i {
+	color: rgb(194, 194, 194);
+	font-size: 20px;
+	letter-spacing: -3px;
+	word-spacing: 21px;
+}
+
+.footer-web-data .content-data .item .funct p:first-child {
+	margin-right: 20px;
+}
+
+.footer-web-data .content-data .item .text-2 {
+	text-align: left;
+}
+
+.footer-web-data *:not(.emphasize ){
+	color: #c7c7c7;
+}
+
+.footer-web-data .content {
+	position: absolute;
+	width: 100%;
+	bottom: 45px;
+}
+
+
+.footer-web-data .content .info-pc span {
+	margin-left: 40px;
+}
+
+.footer-web-data .content .info-pc span a:hover{
+	color: #F43C61;
+}
+
+.footer-web-data .content .emphasize a {
+	color: #e23a5e
+}
+
+.footer-web-data .content .emphasize a:hover,.footer-web-data .content .info-pc span a:hover{
+	text-decoration: none;
+}
+
+.footer-web-data .content .info-pc {
+    margin: 1em 0 1em 0;
+}
+
+.footer-web-data .hidden-pc{
+	display: none;
+}
+
+/*
+ * css responsive
+ */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.footer-web-data{
+		height: 225px
+	}
+	.footer-web-data .content .info-pc span{
+		display: block;
+		width: 100%;
+		margin-left: 0;
+		line-height: 27px;
+	}
+	.footer-web-data *:not(.emphasize){
+		float: left !important;
+		width: 100%
+	}
+	.footer-web-data .content{
+		bottom: 15px !important;
+	}
+	.footer-web-data .hidden-pc{
+		display: block;
+		width: 100%;
+    	text-align: center;
+    	margin-top: 15px;
+	}
+	.footer-web-data .hidden-mobile{
+		display: none;
+	}
+}

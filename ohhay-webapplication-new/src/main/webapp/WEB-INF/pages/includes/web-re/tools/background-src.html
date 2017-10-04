@@ -1,0 +1,110 @@
+<%@page contentType="text/html; charset=UTF-8" %>
+<div class="background-edit-panel background-edit-panel-src">
+	<div class="menu">
+		<div class="button-menu btn-none-bg">
+			<i class="fa  fa-circle-o"></i>
+			<p>
+				<spring:message code='bgs.none' />
+			</p>
+			<i class="stt-checked fa fa-check"></i>
+		</div>
+		<div class="button-menu sample_backgrounds">
+			<i class="fa fa-file-picture-o"></i>
+			<p>
+				<spring:message code='bgs.back_repeat' />
+			</p>
+			<i class="stt-checked fa fa-check"></i>
+		</div>
+		<div class="button-menu sample_videos">
+			<i class="fa  fa-video-camera"></i>
+			<p>
+				<spring:message code='bgs.video' />
+			</p>
+			<i class="stt-checked fa fa-check"></i>
+		</div>
+		<div class="button-menu qb-btn-color">
+			<i class="fa fa-paint-brush"></i>
+			<p>
+				<spring:message code='bgs.color' />
+			</p>
+			<i class="stt-checked fa fa-check"></i>
+		</div>
+		<div class="button-menu last button-menu-image">
+			<i class="fa fa-picture-o"></i>
+			<p>
+				<spring:message code='bgs.image' />
+			</p>
+			<i class="stt-checked fa fa-check"></i>
+		</div>
+		<div class="button-menu button-menu-position">
+			<i class="fa fa-arrows"></i>
+			<p>Position</p>
+			<i class="stt-checked fa fa-check"></i>
+			<ul class="content">
+				<li>
+					<div class="dropup option-horizontal">
+						<button class="btn btn-default dropdown-toggle" type="button"
+							id="dropdownMenu12" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="true">
+							<span class="dd-title" data-type="solid">initial</span> <span
+								class="caret"></span>
+						</button>
+						<ul class="dropdown-menu " aria-labelledby="dropdownMenu12">
+							<li data-val="initial"><a>initial</a></li>
+							<li data-val="left"><a>left</a></li>
+							<li data-val="right"><a>right</a></li>
+							<li data-val="center"><a>center</a></li>
+							<li data-val="manual"><a>manual</a></li>
+						</ul>
+					</div>
+
+					<div class="dropup option-vertical">
+						<button class="btn btn-default dropdown-toggle" type="button"
+							id="dropdownMenu12" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="true">
+							<span class="dd-title" data-type="solid">top</span> <span
+								class="caret"></span>
+						</button>
+						<ul class="dropdown-menu " aria-labelledby="dropdownMenu12">
+							<li data-val="top"><a>top</a></li>
+							<li data-val="center"><a>center</a></li>
+							<li data-val="bottom"><a>bottom</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<input type="text" class="form-control bg-position bg-position-hon" data-type="horizontal" /> 
+					<input type="text" class="form-control bg-position bg-position-ver" data-type="vertical" />
+				</li>
+			</ul>
+		</div>
+		<div class="button-menu button-menu-size">
+			<i class="fa fa-expand"></i>
+			<p>Size</p>
+			<i class="stt-checked fa fa-check"></i>
+			<ul class="content">
+				<li>
+					<div class="dropup option-bg-size">
+						<button class="btn btn-default dropdown-toggle" type="button"
+							id="dropdownMenu12" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="true">
+							<span class="dd-title" data-type="solid">auto</span> <span
+								class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu12">
+							<li data-val="auto"><a>auto</a></li>
+							<li data-val="contain"><a>contain</a></li>
+							<li data-val="cover"><a>cover</a></li>
+							<li data-val="initial"><a>initial</a></li>
+							<li data-val="manual"><a>manual</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<input type="text" class="form-control bg-size bg-size-w"	data-type="width" />
+					<input type="text" class="form-control bg-size bg-size-h" data-type="height" />
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

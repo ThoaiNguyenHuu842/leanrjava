@@ -1,0 +1,95 @@
+@CHARSET "UTF-8";
+
+.unsupportdevice {
+	background-image:
+		url(https://d2g7dc0hcuz3eo.cloudfront.net/629/lib-28f88be1e22cad823ca399b927a538ca1488161382045.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: fixed;
+	background-color: initial;
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center top;
+	top: 0px;
+	height: 100%;
+	z-index: -10;
+}
+
+.unsupportdevice .convert-bg-unsupport {
+	background-image: initial;
+	background-position: initial;
+	background-size: initial;
+	background-repeat: initial;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: rgba(0, 0, 0, 0.54902);
+	filter: none;
+	width: 100%;
+	height: 100%;
+}
+
+.unsupportdevice .convert-bg-unsupport .content-unssuport {
+	width: 50%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.unsupportdevice .convert-bg-unsupport .content-unssuport .center-content
+	{
+	background-image: initial;
+	background-position: initial;
+	background-size: initial;
+	background-repeat: initial;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: rgba(33, 34, 38, 0.85098);
+	filter: none;
+	border-width: 0px;
+	border-style: solid;
+	border-color: rgb(0, 0, 0);
+	padding: 26px 26px 26px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.unsupportdevice .convert-bg-unsupport .content-unssuport  .logo-bonevo
+	{
+	width: 22%;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 40px;
+}
+
+.unsupportdevice .convert-bg-unsupport .content-unssuport p {
+	color: white;
+	text-align: center;
+	font-size: 1.1em;
+	text-transform: capitalize;
+}
+
+.unsupportdevice .convert-bg-unsupport .content-unssuport p.title-ct {
+	font-size: 1.6em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.unsupportdevice .convert-bg-unsupport .content-unssuport p.title-act .link{
+	color: #7D94C0;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+
+
+/*
+ * css responsive
+ */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.unsupportdevice .convert-bg-unsupport .content-unssuport {
+	width: 90%;
+	}
+}

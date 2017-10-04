@@ -1,0 +1,535 @@
+<!-- PUBLISH_SITE flag de off cac js,css edit web khi vao publish site -->
+<!-------- CSS MAIN -------->
+<link rel="stylesheet" type="text/css"
+	href="${CONTEXT_PATH}/html/css/style.css" />
+<link rel="stylesheet" type="text/css"
+	href="${CONTEXT_PATH}/html/fonts/IconQB/stylesheet.css" />
+<!-------- END CSS MAIN -------->
+
+<!-- YOUTUBE API -->
+<script src="https://www.youtube.com/player_api"></script>
+<!-- END YOUTUBE API -->
+<!-- GOOGLE API -->
+<script type="text/javascript"
+	src="https://apis.google.com/js/client.js?onload=youtu.init"></script>
+<script
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqCLc3kC6ldcexnFi3o_5v459UkZd5gg8&v=3.exp&signed_in=true&libraries=places"></script>
+<script type="text/javascript"
+	src="${CONTEXT_PATH}/html/webevo-modules-re/models/web-creater.js"></script>
+<!-- END GOOGLE API -->
+
+
+	<!-------- CSS PLUGIN -------->
+	<!-- DIALOG -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/plugin/dialog/dialog.css" />
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/plugin/dialog/dialog-cathy.css" />
+	<!-- END DIALOG -->
+	<!-- CSS DIALOG -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/edit-web/alert/dialogalert.css" />
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/edit-web/confirm/dialogconfirm.css" />
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/edit-web/reload/reload.css" />
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/edit-web/alert/dialogalert.css" />
+	<!-- END DIALOG -->
+
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/plugin/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/plugin/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/plugin/font-awesome.min.css">
+	<!-- ANIMATED -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/plugin/animate.css" />
+	<!-- END ANIMATED -->
+	<!-- STATUS_LOADING -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/plugin/status_loading.css" />
+	<!-- END STATUS_LOADING -->
+	<!-- DIALOG -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/plugin/dialog/dialog.css" />
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/plugin/dialog/dialog-cathy.css" />
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/edit-web/save/save-success.css" />
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/edit-web/confirm/dialogconfirm.css" />
+	<!-- END CSS DIALOG -->
+	<!-- HOVER -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/plugin/hover/hover-min.css" />
+	<!-- END HOVER -->
+	<!-- TAB PANEL -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/css/plugin/tabpanel/tabpanel.css" />
+	<!-- TAB PANEL -->
+	<!-------- END CSS PLUGIN -------->
+
+	<!-------- JS UTILL -------->
+	<script
+		src="${CONTEXT_PATH}/html/js/plugin/jquery-1.11.1.min.js"></script>
+	<script src="${CONTEXT_PATH}/html/js/main/ohhay.js"></script>
+	<script src="${CONTEXT_PATH}/html/js/constants.js"></script>
+	<!-------- END JS UTIL -------->
+
+	<!-------- JS PLUGIN -------->
+	<!--<script src="${CONTEXT_PATH}/html/js/plugin/bootstrap/bootstrap.min.js"></script>-->
+	<script src="${CONTEXT_PATH}/html/js/plugin/jquery-ui.js"></script>
+	<script
+		src="${CONTEXT_PATH}/html/js/plugin/bootstrap/bootstrap.min.js"></script>
+	<script
+		src="${CONTEXT_PATH}/html/js/status-loading/status-loading.js"></script>
+	<script src="${CONTEXT_PATH}/html/js/plugin/scroll.js"></script>
+	<!-- DIALOG -->
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/js/plugin/dialog/modernizr.custom.71258.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/js/plugin/dialog/ohhay-dialog.js"></script>
+	<!-- END DIALOG -->
+	<!-------- END JS PLUGIN -------->
+	<!-------- WEB EVO MODULES-------->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/tools/utils/css/qb-dialog-tool.css" />
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/box/css/bigbox.css" />
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/box/css/smallbox.css" />
+    <link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/box/css/subox.css" />		
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/box/js/bigbox.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/box/js/subbox.js"></script>	
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/box/js/smallbox.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/box/js/template/bigbox.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/box/js/gridbox.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/webutils/web-utils.js"></script>
+	<!-- BOX -->
+	<!-- COMPONENTS -->
+
+	<!-------- WIDGETWEBINARIS -------->
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/components/widgetwebinaris/widgetwebinaris.js"></script>
+	<!-------- END WIDGETWEBINARIS -------->
+
+	<!-- IFRAMES -->
+	<c:if test="${PUBLISH_SITE != 'on'}">
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/components/iframes/js/template/iframe.js"></script>
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/components/iframes/js/iframe.js"></script>
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/components/iframes/js/iframe-topic.js"></script>
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/components/iframes/js/youtube.js"></script>
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/components/iframes/js/vimeo.js"></script>
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/components/iframes/js/bootstrap-switch.js"></script>
+		<link rel="stylesheet" type="text/css"
+			href="${CONTEXT_PATH}/html/webevo-modules-re/components/iframes/css/bootstrap-switch.css" />
+	</c:if>
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/components/iframes/css/iframe.css" />
+	<!-- END IFRAMES -->
+	<!-- SWEETALERT -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/sweetalert/sweetalert.css" />
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/sweetalert/sweetalert.min.js"></script>
+	<!-- END SWEETALERT -->
+
+<!-- ANPH : IMAGE -->
+<script type="text/javascript"
+	src="${CONTEXT_PATH}/html/js/plugin/crossLogin/detect-private-browsing.js"></script>
+<script type="text/javascript"
+	src="${CONTEXT_PATH}/html/js/plugin/crossLogin/fingerprint2.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="${CONTEXT_PATH}/html/webevo-modules-re/components/image-tool/plugins/cropbox/jquery.cropbox.css" />
+<link rel="stylesheet" type="text/css"
+	href="${CONTEXT_PATH}/html/webevo-modules-re/components/image-tool/css/oimages.css" />
+<script type="text/javascript"
+	src="${CONTEXT_PATH}/html/webevo-modules-re/components/image-tool/js/image-util.js"></script>
+<c:if test="${PUBLISH_SITE != 'on'}">
+	<script type="text/javascript"
+		src="//cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.5/hammer.js"></script>
+	<script type="text/javascript"
+		src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.6/jquery.mousewheel.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/components/image-tool/plugins/cropbox/jquery.cropbox.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/components/image-tool/plugins/bg-check/background-check.min.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/components/image-tool/js/image-template.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/components/image-tool/js/image-controller.js"></script>
+	<!-- SOCKET IO -->
+	<script
+		src="https://imgprocessing.bonevo.net:3006/socket.io/socket.io.js"></script>
+	<!-- SOCKET IO -->
+</c:if>
+<script type="text/javascript"
+	src="${CONTEXT_PATH}/html/webevo-modules-re/components/image-tool/plugins/jquery.lazy.min.js"></script>
+<!-- END IMAGE -->
+
+	<!-- TEXT -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/components/texts/css/otext.css" />
+	<c:if test="${PUBLISH_SITE != 'on'}">
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/components/texts/js/template/otext.js"></script>
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/components/texts/js/otext.js"></script>
+	</c:if>
+	<!-- END TEXT -->
+	<!-- GMAP -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/components/gmap/css/gmap.css" />
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/components/gmap/js/template/gmap.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/components/gmap/js/gmap.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/components/gmap/js/gmap-controller.js"></script>
+	<!-- END GMAP -->
+	<!-- EMBED CODE -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/components/embed-code/css/embed-code.css" />
+	<c:if test="${PUBLISH_SITE != 'on'}">
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/components/embed-code/js/template/embed-code.js"></script>
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/components/embed-code/js/embed-code-controller.js"></script>
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/components/embed-code/js/embed-code.js"></script>
+	</c:if>
+	<!-- END EMBED CODE -->
+	<!-- LAYOUT -->
+	<c:if test="${PUBLISH_SITE != 'on'}">
+		<link rel="stylesheet" type="text/css"
+			href="${CONTEXT_PATH}/html/webevo-modules-re/components/layout/css/layout.css" />
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/components/layout/js/layout.js"></script>
+	</c:if>
+	<!-- END LAYOUT -->
+	<!-- BUTTON -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/components/buttons/css/obutton.css" />
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/components/buttons/js/obutton-controller.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/components/buttons/js/obutton-template.js"></script>
+	<!-- END BUTTON -->
+	<!-- LAYER -->
+	<!-- <link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules-re/components/buttons/css/obutton.css"/> -->
+	<!-- <script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules-re/components/layer/js/layer-controller.js"></script>
+			<script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules-re/components/layer/js/layer-template.js"></script> -->
+	<!-- END LAYER -->
+	<!-- MENU -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/components/menus/css/menu.css" />
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/components/menus/template/menu.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/components/menus/js/menu.js"></script>
+	<!-- END MENU -->
+	<!-- CONTACT FORM -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/components/contact-form/css/contact-form-edit-field.css" />
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/components/contact-form/css/contact-form-edit-tool.css" />
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/components/contact-form/css/contact-form.css" />
+	<c:if test="${PUBLISH_SITE != 'on'}">
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/components/contact-form/js/template/contact-form.js"></script>
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/components/contact-form/js/contact-form.js"></script>
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/components/contact-form/js/contact-form-edit-field.js"></script>
+	</c:if>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/components/contact-form/js/contact-form-front-end.js"></script>
+	<!-- END CONTACT FORM -->
+	<!-- YOUTUBE PLAYLIST -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/components/video-playlist/css/youtube-playlist.css" />
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/components/video-playlist/css/playlist-style.css" />
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/components/video-playlist/js/template/youtube-playlist.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/components/video-playlist/js/youtube-playlist.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/components/video-playlist/js/playlist-change-style.js"></script>
+	<!-- END YOUTUBE PLAYLIST -->
+	<!-- END COMPONENTS -->
+	<!-- MODELS -->
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/models/bigBoxModelManager.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/models/componentModelManager.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/models/web-builder.js"></script>
+	<!-- END MODELS -->
+	<!-- GRID -->
+	<c:choose>
+		<c:when
+			test="${not empty e400mg && not empty e400mg.fm150 && e400mg.fm150 > 0}">
+			<link rel="stylesheet" type="text/css"
+				href="${CONTEXT_PATH}/html/js/newsletter/gridstack.css" />
+		</c:when>
+		<c:otherwise>
+			<link rel="stylesheet" type="text/css"
+				href="${CONTEXT_PATH}/html/webevo-modules-re/grid/plugins/gridstack/css/gridstack.css" />
+		</c:otherwise>
+	</c:choose>
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/grid/css/grid-responsive.css" />
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/grid/css/grid-mobile-editor.css" />
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/grid/css/grid-tablet-preview.css" />
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/grid/plugins/gridstack/js/lodash.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/grid/plugins/gridstack/js/gridstack.js"></script>
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/grid/css/grid.css" />
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/grid/js/grid.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/grid/js/grid-config.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/grid/js/ogrid-plugin.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/grid/js/box-plugin.js"></script>
+	<!-- END GRID -->
+	<!-- TOOLS -->
+	<c:if test="${PUBLISH_SITE != 'on'}">
+		<!-- VIDEO COLLECTION -->
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/tools/video-collection/js/video-collection.js"></script>
+		<!-- END VIDEO COLLECTION -->
+		<!-- BACKGROUND SRC -->
+		<link rel="stylesheet" type="text/css"
+			href="${CONTEXT_PATH}/html/webevo-modules-re/tools/background-src/css/background-src.css" />
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/tools/background-src/js/background-src.js"></script>
+		<!-- END BACKGROUND SRC -->
+		<!-- COLOR PICKER -->
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/tools/edit-text/js/edit-text.js"></script>
+		<link rel="stylesheet" type="text/css"
+			href="${CONTEXT_PATH}/html/webevo-modules-re/tools/edit-text/css/edit-text.css" />
+		<!-- END COLOR PICKER -->
+		<!-- EDIT TEXT -->
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/tools/color-picker/js/color-picker.js"></script>
+		<link rel="stylesheet" type="text/css"
+			href="${CONTEXT_PATH}/html/webevo-modules-re/tools/color-picker/plugins/colorpicker/css/colorpicker.css" />
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/tools/color-picker/plugins/colorpicker/js/colorpicker.js"></script>
+		<!-- END EDIT TEXT -->
+		<!-- MY COLLECTION -->
+		<link rel="stylesheet" type="text/css"
+			href="${CONTEXT_PATH}/html/webevo-modules-re/tools/my-collection/css/my-collection.css" />
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/tools/my-collection/js/bgrepeat-collection.js"></script>
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/tools/my-collection/js/image-album.js"></script>
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/tools/my-collection/js/my-collection-utils.js"></script>
+		<!-- END MY COLLECTION -->
+		<!-- OPTION -->
+		<link rel="stylesheet" type="text/css"
+			href="${CONTEXT_PATH}/html/webevo-modules-re/tools/option/css/option.css" />
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/tools/option/js/option.js"></script>
+		<!-- END OPTION -->
+		<!-- EDITOR -->
+		<!-- <link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/webevo-modules-re/tools/editor/css/jquery-te-1.4.0.css" /> -->
+	</c:if>
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/tools/editor/css/editor.css" />
+
+<c:if test="${PUBLISH_SITE != 'on'}">
+	<!-- EDITOR -->
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/tools/editor/js/jqte-editor.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/tools/editor/js/editor.js"></script>
+	<!-- END EDITOR -->
+	
+		<!-- ACTION OPTION -->
+		<link rel="stylesheet" type="text/css"
+			href="${CONTEXT_PATH}/html/webevo-modules-re/tools/action-option/css/action-option.css" />
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/tools/action-option/js/action-option.js"></script>
+		<!-- ACTION OPTION -->
+		<!-- HOVER OPTION -->
+		<link rel="stylesheet" type="text/css"
+			href="${CONTEXT_PATH}/html/webevo-modules-re/tools/hover-option/css/hover-option.css" />
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/tools/hover-option/js/hover-option.js"></script>
+		<!-- HOVER OPTION -->
+		<!-- ANCHOR OPTION -->
+		<link rel="stylesheet" type="text/css"
+			href="${CONTEXT_PATH}/html/webevo-modules-re/tools/anchor-option/css/anchor-option.css" />
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/tools/anchor-option/js/anchor-option.js"></script>
+		<!-- ANCHOR OPTION -->
+		<!-- ANIMATION COMPOMENT OPTION -->
+		<link rel="stylesheet" type="text/css"
+			href="${CONTEXT_PATH}/html/webevo-modules-re/tools/animation-option/css/animation.css" />
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/tools/animation-option/js/animation-option.js"></script>
+		<!-- ANIMATION COMPOMENT OPTION -->
+	
+</c:if>
+<!-- END TOOLS -->
+
+	<!-- WEB BG -->
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/web-bg/js/web-bg.js"></script>
+	<!-- END WEB BG -->
+	<!-- WEB CONFIG -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/web-config/css/web-config.css" />
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/web-config/js/web-config.js"></script>
+	<!-- END WEB CONFIG -->
+	<c:if test="${PUBLISH_SITE != 'on'}">
+		<!-- WEB MENU LEFT -->
+		<link rel="stylesheet" type="text/css"
+			href="${CONTEXT_PATH}/html/webevo-modules-re/web-menu-left/css/web-menu-left.css" />
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/web-menu-left/js/web-menu-left.js"></script>
+		<!-- END WEB MENU LEFT -->
+		<!-- WEB MENU TOP -->
+		<link rel="stylesheet" type="text/css"
+			href="${CONTEXT_PATH}/html/webevo-modules-re/web-menu-top/css/web-menu-top.css" />
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/web-menu-top/js/web-menu-top.js"></script>
+		<!-- END WEB MENU TOP -->
+		<!-- RULER -->
+		<link rel="stylesheet" type="text/css"
+			href="${CONTEXT_PATH}/html/webevo-modules-re/web-ruler/plugins/jquery.ruler/css/ruler.css" />
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/web-ruler/js/web-ruler.js"></script>
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/web-ruler/plugins/jquery.ruler/js/jquery.ruler.js"></script>
+		<!-- END RULER -->
+		<!-- MOBILE EDITOR -->
+		<!-- HIDDEN ELEMENTS -->
+		<link rel="stylesheet" type="text/css"
+			href="${CONTEXT_PATH}/html/webevo-modules-re/mobile-editor/hidden-elements/css/hidden-elements.css" />
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/mobile-editor/hidden-elements/js/hidden-elements.js"></script>
+		<!-- END HIDDEN ELEMENTS -->
+		<!-- FONT MOBILE EDITOR -->
+		<link rel="stylesheet" type="text/css"
+			href="${CONTEXT_PATH}/html/webevo-modules-re/mobile-editor/editor/css/mobile-editor.css" />
+		<script type="text/javascript"
+			src="${CONTEXT_PATH}/html/webevo-modules-re/mobile-editor/editor/js/mobile-editor.js"></script>
+		<!-- END FONT MOBILE EDITOR -->
+		<!-- END MOBILE EDITOR -->
+	</c:if>
+	<!-- EVO LIBRARY -->
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/evolib/css/evo-add-to-lib.css" />
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/evolib/js/evo-add-to-lib.js"></script>
+	<link rel="stylesheet" type="text/css"
+		href="${CONTEXT_PATH}/html/webevo-modules-re/evolib/css/evo-lib.css" />
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/evolib/js/evo-lib.js"></script>
+	<!-- END EVO LIBRARY -->
+	<!-- EVO WIDGET -->
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/js/widget/regis-webinaris-edit.js"></script>
+	<!-- END EVO WIDGET -->
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/web.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/webevo-modules-re/webrule.js"></script>
+	<script type="text/javascript"
+		src="${CONTEXT_PATH}/html/js/plugin/jquery.json.js"></script>
+	<!-------- END WEB EVO MODULES -------->
+	<script type="text/javascript">
+		function currentYPosition() {
+			// Firefox, Chrome, Opera, Safari
+			if (self.pageYOffset)
+				return self.pageYOffset;
+			// Internet Explorer 6 - standards mode
+			if (document.documentElement && document.documentElement.scrollTop)
+				return document.documentElement.scrollTop;
+			// Internet Explorer 6, 7 and 8
+			if (document.body.scrollTop)
+				return document.body.scrollTop;
+			return 0;
+		}
+		function elmYPosition(eID) {
+			var elm = document.getElementById(eID);
+			var y = elm.offsetTop;
+			var node = elm;
+			while (node.offsetParent && node.offsetParent != document.body) {
+				node = node.offsetParent;
+				y += node.offsetTop;
+			}
+			return y;
+		}
+		function smoothScroll(eID) {
+			var startY = currentYPosition();
+			var stopY = elmYPosition(eID);
+			var distance = stopY > startY ? stopY - startY : startY - stopY;
+			if (distance < 100) {
+				scrollTo(0, stopY);
+				return;
+			}
+			var speed = Math.round(distance / 100);
+			if (speed >= 20)
+				speed = 20;
+			var step = Math.round(distance / 25);
+			var leapY = stopY > startY ? startY + step : startY - step;
+			var timer = 0;
+			if (stopY > startY) {
+				for (var i = startY; i < stopY; i += step) {
+					setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
+					leapY += step;
+					if (leapY > stopY)
+						leapY = stopY;
+					timer++;
+				}
+				return;
+			}
+			for (var j = startY; j > stopY; j -= step) {
+				setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
+				leapY -= step;
+				if (leapY < stopY)
+					leapY = stopY;
+				timer++;
+			}
+		}
+	</script>
+
+<script>
+	$(document).ready(function() {
+		$('[data-toggle="tooltip"]').tooltip();
+		$.fn.bootstrapBtn = $.fn.button.noConflict();
+	});
+</script>
+<!-- LOCALIZE -->
+<%@ include file="/WEB-INF/pages/includes/localizeClient.html" %>
+<!-- END LOCALIZE -->
+<%@include file="../includes/social.html" %>

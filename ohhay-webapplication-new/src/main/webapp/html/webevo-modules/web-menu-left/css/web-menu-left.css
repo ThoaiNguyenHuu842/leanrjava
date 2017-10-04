@@ -1,0 +1,90 @@
+#web-tools {height: auto;position: fixed;top: 68px;width: 52px;z-index: 100;background: #1caa00;box-shadow: 2.5px 2.5px 5px 0px rgba(0,0,0,0.46);border-radius: 0px 8px 8px 0px;}
+#web-tools .web-tools-content{display: block; transition: all 0.01s; padding-top: 6px;}
+#web-tools .menu-collapse{border-top: 1px solid rgba(0,0,0,0.2);display: block;}
+#web-tools .menu-extend{display: none;}
+#web-tools .item {
+	cursor: pointer;position: relative;
+    float: left;
+    height: 50px;
+    text-align: center;
+    width: 100%;padding: 8px;
+}
+#web-tools .item .item-icon-panel{
+	width: 36px;height: 36px;border-radius: 50%;display: table-cell;vertical-align: middle; 
+}
+#web-tools .item:hover .item-icon-panel{
+	 background: #555;
+	 transition: 0.1s;
+}
+#web-tools  .item .item-icon{
+	/* color: #92e282; */
+	color: #fff; 
+    font-size: 15px;
+    line-height: 36px;
+}
+.sub-menu {
+	background: #fff none repeat scroll 0 0;
+    border: 1px solid #e8e8e8;
+    color: black;
+    display: none;
+    font-weight: bold;
+    height: auto;
+    left: 50px;
+    overflow:hidden;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    width: 290px;
+    height: auto;
+    box-shadow: 2px 0 5px #000;
+}
+.sub-menu.sub-menu-new{
+	width: 53px;background: #ebebeb;box-shadow: 2.5px 2.5px 5px 0px rgba(0,0,0,0.46);text-align: center;left: 52px;border-radius: 0px 8px 8px 0px;
+}
+.sub-menu.sub-menu-new .sub-item{
+	padding: 8px;display: table;
+}
+.sub-menu.sub-menu-new .sub-item div{display: table-cell;vertical-align: middle;border-radius: 50%;width: 36px;height: 36px;color: #666;}
+.sub-menu.sub-menu-new .sub-item:HOVER div{background: #ccc;}
+.sub-menu.sub-menu-new .sub-item div i{font-size: 15px;}
+.sub-menu.sub-menu-new .sub-item div span{background: #666;box-shadow: none;}
+.sub-menu.sub-menu-new .sub-item div label{font-weight: inherit;font-size: 10px;margin: 0px;}
+.sub-menu .sub-menu-title{
+	background: #e8e8e8 none repeat scroll 0 0;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-top: 7px;
+    width: 100%;
+}
+.sub-menu .sub-menu-body{
+	float: left;
+    height: auto;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+.sub-menu .sub-menu-title p{
+	color: #313b3f;
+    font-size: 12px;
+}
+#sub-menu i{
+    color: black !important;
+}
+
+.sub-menu .sub-item {
+    padding: 16px 6px;
+    border-bottom: 1px solid #e8e8e8;
+    float: left;
+    width: 100%;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+/*
+ * fix tool tip not show
+ */
+.tooltip {
+    position: fixed;
+}
+

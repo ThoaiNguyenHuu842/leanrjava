@@ -1,0 +1,77 @@
+<%@page contentType="text/html; charset=UTF-8" %> 
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <%@taglib
+uri="http://www.springframework.org/tags/form" prefix="form"%> <%@
+taglib uri="http://www.springframework.org/tags/form"
+prefix="springForm"%> <%@ taglib prefix="spring"
+uri="http://www.springframework.org/tags" %> <%@ taglib
+uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> <%@ page
+pageEncoding="UTF-8" %> <%@ taglib prefix="fn"
+uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@include file="../includes/constant.html" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset='UTF-8'>
+<meta http-equiv="Cache-control" content="no-cache">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-------- CSS MAIN -------->
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/style.css" />
+<!-------- END CSS MAIN -------->
+
+<!-------- CSS PLUGIN -------->
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/bootstrap/bootstrap.min.css"  />
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/font-awesome.min.css">
+	<!-- ANIMATED -->
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/animate.css" />
+	<!-- END ANIMATED -->
+	<!-- STATUS_LOADING -->
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/status_loading.css" />
+	<!-- END STATUS_LOADING -->
+	<!-- DIALOG -->
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/dialog/dialog.css" />
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/dialog/dialog-cathy.css" />
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/dialog/ohhay-dialog.css" />
+	<!-- END DIALOG -->
+<!-------- END CSS PLUGIN -------->
+
+<!-------- JS UTILL -------->
+	<script src="${CONTEXT_PATH}/html/js/plugin/jquery-1.11.1.min.js"></script>
+	<script src="${CONTEXT_PATH}/html/js/main/ohhay.js"></script>
+	<script src="${CONTEXT_PATH}/html/js/constants.js"></script>
+<!-------- END JS UTIL -------->
+<!-------- JS PLUGIN -------->
+	<script src="${CONTEXT_PATH}/html/js/plugin/bootstrap/bootstrap.min.js"></script>
+	<script src="${CONTEXT_PATH}/html/js/plugin/jquery-ui.js"></script>
+	<script src="${CONTEXT_PATH}/html/js/status-loading/status-loading.js"></script>
+	<script src="${CONTEXT_PATH}/html/js/plugin/scroll.js"></script>
+	<!-- DIALOG -->
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/dialog/modernizr.custom.71258.js"></script>
+		<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/dialog/ohhay-dialog.js"></script>
+	<!-- END DIALOG -->
+<!-------- END JS PLUGIN -------->
+<!-- MYSITES -->
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/mysites/mysites.css" />
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/hover/hover-min.css" />
+
+<script type="text/javascript" src="${CONTEXT_PATH}/html/js/mysites/mysites.js"></script>
+<!-- END MYSITES -->
+<script>
+	$(document).ready(function(){
+		mySites.init();
+	});
+</script>
+</head>
+<body>
+	<%@include file="../includes/hidden-info.html" %>
+	<div class="qb-ohhay-ajax-content">
+		<div class="content">
+			<label><spring:message code="loading" /></label>
+			<img width="30" alt="" src="${CONTEXT_PATH}/html/images/ajax-loader.gif">
+		</div>
+	</div>
+	<div class="qb-ohhay-notfound-wrapper">
+		<%@include file="../mainpages/landing.html" %>
+	</div>
+</body>
+</html>

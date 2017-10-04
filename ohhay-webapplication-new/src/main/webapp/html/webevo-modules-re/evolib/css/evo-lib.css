@@ -1,0 +1,218 @@
+.ui-dialog[aria-describedby=qb-dlg-evo-lib] .ui-dialog-titlebar{
+	/* background: #fff; */
+	color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 700;
+}
+.ui-dialog[aria-describedby=qb-dlg-evo-lib] .ui-dialog-titlebar .ui-dialog-title{
+/* 	color: rgb(135, 135, 135); */
+    float: left;
+    font-family: Roboto-Regular,Fontawesome-Webfont;
+    font-size: 16px;
+/*     font-weight: 300; */
+    margin: 0.1em 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 90%;
+}
+.ui-dialog[aria-describedby=qb-dlg-evo-lib] .ui-dialog-titlebar .ui-dialog-titlebar-close .ui-icon {
+  /*   background-image: url("../../../../html/images/menu-close-2.png");
+    background-position: center center;
+    background-size: 10px auto; */
+}
+#dia-evo-lib .qb-tab-panel{
+	min-height: 700px;
+}
+#dia-evo-lib .qb-tab-panel .header {
+	background: white;
+	height: 60px;
+	position: relative
+}
+#dia-evo-lib .qb-tab-panel .header .menu-seleted,#dia-evo-lib .type_box_search .dropdown_type {
+	display: inline-block;
+}
+#dia-evo-lib .qb-tab-panel .header .menu-seleted {
+	height: 100%;
+	margin-left: -24px;
+}
+#dia-evo-lib .qb-tab-panel .header .menu-seleted .menu_chooise {
+	list-style: none;
+	margin-bottom: 0;
+	height: 100%;
+}
+#dia-evo-lib .type_box_search .dropdown_type{font-size: 14px;}
+#dia-evo-lib  .lib-privacy, #dia-evo-lib  .lib-editale{
+	font-size: 12px; color: rgb(79, 79, 79);
+    margin-left: 10px;
+}
+#dia-evo-lib  .lib-editale-title{
+	font-size: 12px; color: rgb(79, 79, 79);
+    margin-left: 5px;
+    font-style: normal;
+}
+
+#dia-evo-lib .qb-tab-panel .header .menu-seleted .menu_chooise li {
+	height: 100%;
+	display: inline-block;
+	border-bottom: 2px solid #BDBDBD;
+	min-width: 75px;
+	cursor: pointer;
+}
+#dia-evo-lib .qb-tab-panel .header .menu-seleted .menu_chooise li .text {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+#dia-evo-lib .qb-tab-panel .header .menu-seleted .menu_chooise li a {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 10px;
+	font-family: Roboto;
+	color: rgb(107, 107, 107);
+	font-size: 14px;
+	text-decoration: none;
+}
+#dia-evo-lib .qb-tab-panel .header .menu-seleted .menu_chooise li.active{
+	border-color: #0099ff;
+}
+#dia-evo-lib .qb-tab-panel .header .menu-seleted .menu_chooise li.active a{
+	color: #0099ff;
+}
+#dia-evo-lib .qb-tab-panel .header .menu-seleted .menu_chooise li:(2n)
+a {
+	font-family: Roboto;
+	color: rgb(107, 107, 107);
+	font-size: 14px;
+	color: blue;
+}
+#dia-evo-lib .type_box_search {
+	position: absolute;
+	right: 10px;
+	top: 14px;display: flex;
+}
+#dia-evo-lib .type_box_search .input_search_text {
+	border-radius: 4px;margin-right: 6px;
+	border: 1px solid #B8B8B8;
+	height: 32px;
+	width: 292px;
+	position: relative;
+}
+#dia-evo-lib .type_box_search .dropdown_type .dropdown .btn-primary {
+	background: #0099FF;
+	border: none;
+	height: 32px;
+}
+#dia-evo-lib .type_box_search .dropdown_type .dropdown .btn-primary .title{padding-right: 10px;}
+#dia-evo-lib .type_box_search .dropdown_type .dropdown .dropdown-menu .tab-menu {
+	padding: 0!important;
+	background: none;
+	width: 100%;
+}
+#dia-evo-lib .type_box_search .input_search_text input[type='text'] {
+	font-family: Roboto;
+	font-weight: 300;
+	color: rgb(110, 110, 110);
+	font-size: 14px;
+	border: none;
+	margin: 0px 0px 0px 15px;padding: 0px;
+	outline-style: none;
+	width: 230px;height: 30px;
+}
+#dia-evo-lib .type_box_search .input_search_text .fa {
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	margin-right: 18px;
+	color: #716E6E;
+	top: 20%;
+}
+#dia-evo-lib .qb-tab-panel .content-data-box{
+	height: 600px;
+	overflow-y: scroll;
+}
+#dia-evo-lib .qb-tab-panel .content-data-box .data-box {
+	height: 310px;
+	display: block;
+	padding: 32px 0;
+	background-attachment: scroll;
+    background-clip: border-box;
+    background-color: initial;
+    background-image: linear-gradient(rgb(237, 237, 237) 0%, rgb(255, 255, 255));
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+	filter: none;
+}
+#dia-evo-lib .qb-tab-panel .content-data-box .data-box .item, #dia-evo-lib .qb-tab-panel .content-data-box .data-box .item img {
+	height: 100%;
+}
+#dia-evo-lib .qb-tab-panel .content-data-box .data-box .item.data-iframe .img-item{
+	background-image: url("../../../images/lib-thumb.jpg");
+    background-position: center center;
+    background-size: cover;
+    border: 1px solid rgb(166, 166, 166);
+    height: 100%;
+    width: 100%;
+}
+#dia-evo-lib .qb-tab-panel .content-data-box .data-box .item.info {
+	display: table;
+}
+#dia-evo-lib .qb-tab-panel .content-data-box .data-box .info-data-page {
+	display: table-cell;position: relative;
+}
+#dia-evo-lib .qb-tab-panel .content-data-box .data-box .info-data-page .info-data h2{
+	font-family: Roboto; color: rgb(0, 153, 255); font-size: 16px; font-weight: 300;margin-top: 10px;
+}
+#dia-evo-lib .qb-tab-panel .content-data-box .data-box .info-data-page .info-data{margin-bottom: 30px;}
+#dia-evo-lib .qb-tab-panel .content-data-box .data-box .info-data-page .info-data p .fa.fa-star{
+	color: rgb(255, 153, 0);  line-height: 15px;
+}
+#dia-evo-lib .qb-tab-panel .content-data-box .data-box .info-data-page .info-data p{
+font-family: helvetica; line-height: 15px; color: rgb(51, 51, 51); font-size: 14px;
+}
+#dia-evo-lib .qb-tab-panel .content-data-box .data-box .info-data-page .info-data p .otag{
+	color: rgb(102, 102, 102);
+	margin-left: 10px;
+	cursor: pointer;
+}
+#dia-evo-lib .qb-tab-panel .content-data-box .data-box .info-data-page .info-data p .otag span{
+	font-size: 4px;
+    margin-right: 9px;
+}
+#dia-evo-lib .qb-tab-panel .content-data-box .data-box .info-data-page .info-data p .otag:hover{
+	border-bottom: 1px solid #0099FF;
+}
+#dia-evo-lib .qb-tab-panel .content-data-box .data-box .info-data-page .info-function{position: absolute;bottom: 0px;width: 100%;}
+#dia-evo-lib .qb-tab-panel .content-data-box .data-box .info-data-page .info-function .function {
+	list-style: none;padding: 0px;margin: 0px;
+}
+#dia-evo-lib .qb-tab-panel .content-data-box .data-box .info-data-page .info-function .function .item {
+	display: inline-block;
+	margin-right: 10px;
+}
+/*
+ * general class
+ *
+ */
+#dia-evo-lib .obutton-link {
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	margin: 5px 5px 5px 0;
+	overflow: hidden;
+	border-radius: 28px;
+	filter: none;
+	background: rgb(0, 153, 255);
+	display: table;
+}
+#dia-evo-lib .obutton-link i {
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+#dia-evo-lib .obutton-link:hover {
+	background: rgb(28, 166, 0);
+}

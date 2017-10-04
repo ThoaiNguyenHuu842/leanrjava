@@ -1,0 +1,157 @@
+<%@ page pageEncoding="UTF-8" %>
+<!-- LOCALIZE -->
+<%@ include file="/WEB-INF/pages/includes/localizeClient.html" %>
+<!-- END LOCALIZE -->
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400"
+	rel="stylesheet">
+
+<input type="hidden" regionCode="${ohhayViewer.regionCode}"
+	languageCode="${ohhayViewer.languageCode}"
+	languageName="${ohhayViewer.languageName}"
+	countryCode='${ohhayViewer.countryCallingCode}' id='selected-country'>
+<!-- DIALOG -->
+<div
+	class="dialogalert qb-dialog-new dialog hidden-dialog active-dialog dialog--open"></div>
+<!-- <div class="panel-bg-effect"></div> -->
+<div class="qb-ohhay-content-wrapper ohhay-login-wapper">
+	<!-- CONTENT BOX -->
+	<div class="content-account-login">
+		<div class="container data-main-ct">
+			<div class="text-intro">
+				<a href="${CONTEXT_URL}"><img class="img-responsive"
+					src="${CONTEXT_PATH}/html/images/newstyles/logo.png"></a>
+			</div>
+			<div class="main-login-content container">
+				<img class="close-form-login"
+					src="${CONTEXT_PATH}/html/images/menu-close-2.png" />
+				<div class="col-sm-6 col-xs-12">
+					<div class="data_component center-block">
+						<h2 class="login-title">
+							<spring:message code='login' />
+						</h2>
+						<c:choose>
+							<c:when test="${(not empty userNameRegis)}">
+								<input value="${userNameRegis}" id="inputPhoneNumber"
+									class="wapper" type="text"
+									placeholder="<spring:message code='email'/>" />
+							</c:when>
+							<c:otherwise>
+								<input id="inputPhoneNumber" class="wapper" type="text"
+									placeholder="<spring:message code='email'/>" />
+							</c:otherwise>
+						</c:choose>
+						<input type="password" id="inputPassword" class="wapper"
+							placeholder="<spring:message code='password'/>" type="text" />
+						<!-- <input class="checkbox" type="checkbox" /> -->
+						<div class="remember_me">
+							<div class="col-sm-12 content-forgetpass">
+								<div class="checkbox-animation-qb checkbox-remember-me checked">
+									<label> <input type="checkbox" value=""> <span
+										class="cr"><i class="cr-icon fa fa-check"></i></span> <span> <spring:message code='login.remmemberme' />
+									</label>
+								</div>
+								</span> <a class="forget-password"> <spring:message
+										code='login.forget_pass' />
+								</a>
+							</div>
+						</div>
+						<div class="ajax-content-login">
+							<p>
+								<img width="30" alt=""
+									src="${CONTEXT_PATH}/html/images/ajax-loader_4.gif">
+							</p>
+						</div>
+						<button id="btn-login" class="button-login login hvr-bounce-out">
+							<span> <spring:message code='login' /></span>
+							<!-- </span> &nbsp <span><i class="fa fa-play"></i></span> -->
+						</button>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div class="data_component center-block" style="margin-top: 79px;">
+						<div class="wapper-facebook btn-fb-login">
+							<button class="buttom-icon">
+								<span class="fa fa-facebook"></span>
+							</button>
+							<button class="buttom-text">
+								<spring:message code='home.login_with_facebook' />
+							</button>
+						</div>
+						<div class="wapper-gplus btn-gg-login">
+							<button class="buttom-icon">
+								<span class="fa fa-google-plus"></span>
+							</button>
+							<button class="buttom-text">
+								<spring:message code='home.login_with_google' />
+							</button>
+						</div>
+						<div class="wapper-or">
+							<div class="col-sm-5"></div>
+							<div class="col-sm-2 text-center">
+								<p>
+									<spring:message code='home.or' />
+								</p>
+							</div>
+							<div class="col-sm-5"></div>
+						</div>
+						<button class="button-login btn-register hvr-bounce-out">
+							<span> <spring:message code='home.register_now_for_free' /></span>
+							<!-- </span> &nbsp<span><i class="fa fa-play"></i></span> -->
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- DIALOG  FORGETPASS -->
+	<div class="dialog-forget-pass"
+		title="<spring:message code='login.forget_pass' />">
+		<div class="data-content">
+			<div class="content">
+				<label> <spring:message code="fgpdl.title1" />
+				</label> <input type="text" id="inputEmail" />
+				<div class="g-recaptcha data-captcha"
+					data-sitekey="6LfHvhoTAAAAALkKTpWGTuyO5SApwABRidJrzKSe"></div>
+			</div>
+			<div class="funct">
+				<div class="ajax-content-login">
+					<p>
+						<img width="30" style="width: 25px" alt=""
+							src="${CONTEXT_PATH}/html/images/ajax-loader_4.gif" />
+					</p>
+				</div>
+				<button class="btn-forget-pass">
+					<img class="icon-check-done"
+						src="${CONTEXT_PATH}/html/images/btn-save.png">
+					<spring:message code="fgpdl.title2" />
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- END DIALOG FORGETPASS -->
+	<!-- DIALOG EMAIL NOT CONFIRM -->
+	<div class="qb-dlg-tool dialog-email-not-confirm"
+		title="<spring:message code='message' />">
+		<div class="embed-option qb-dig-tools-edit">
+			<div class="form-group">
+				<div class="form-group-content ">
+					<spring:message code='login.mess_mail_not_confirm' />
+					<spring:message code='home.or' />
+					<span style="color: #0099FF; cursor: pointer;"
+						class="btn-resend-confirm-mail"> <spring:message
+							code='login.mess_resend_confirmmail' />
+					</span>
+				</div>
+			</div>
+			<div class="form-group-btn">
+				<button onclick="dialogNotConfirmMail.dialog('close');">
+					<img src="${CONTEXT_PATH}/html/images/btn-save.png" />
+					<spring:message code='ok' />
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- END DIALOG EMAIL NOT CONFIRM -->
+	<div class="clearfix"></div>

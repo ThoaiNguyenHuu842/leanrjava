@@ -1,0 +1,25 @@
+.subbox-1 {
+	width: 100%;
+	float: left;
+}
+
+.subbox-2 {
+	width: 50%;
+	float: left;
+}
+
+.subbox-3 {
+	width: 33.333333%;
+	float: left;
+}
+
+.subbox-4 {
+	width: 25%;
+	float: left;
+}
+
+@media screen and (max-width: 800px) {
+	.subbox-2, .subbox-3, .subbox-4 {
+		width: 100%;
+	}
+}

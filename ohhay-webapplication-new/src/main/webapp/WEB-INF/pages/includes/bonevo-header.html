@@ -1,0 +1,111 @@
+<%@ page pageEncoding="UTF-8" %>
+<link
+	href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400"
+	rel="stylesheet">
+
+
+<div class="header-full">
+	<div class="menu-top container"
+		lang-type="${pageContext.response.locale}">
+		<a checklogin="${(not empty userLogin)}" href="${CONTEXT_URL}"
+			class="logo_evo"> <img class="img-responsive"
+			src="${CONTEXT_PATH}/html/images/newstyles/logo.png" />
+		</a>
+		<button type="button"
+			class="btn-toggle-menumobile navbar-toggle collapsed"
+			data-toggle="collapse" data-target="#navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+			<span class="icon-bar"></span> <span class="icon-bar"></span>
+		</button>
+		<ul
+			class="mobile-toggleside-menu shown-menu-togglefix collapse navbar-collapse navbar-right menu-content nav nav-pills"
+			checklogin="${(not empty userLogin)}">
+			<li class="item item-first"><a class="item-menu-content"
+				href="${CONTEXT_URL}"> <spring:message code="setting.pagehome" />
+			</a></li>
+			<li class="item item-first"><a class="item-menu-content"
+				href="${CONTEXT_URL}/pricing"> <spring:message
+						code="menu.pricing" />
+			</a></li>
+			<li class="item item-first"><c:choose>
+					<c:when test="${(not empty userLogin)}">
+						<a class="item-menu-content" href="https://topic.bonevo.net">
+							TOPIC </a>
+					</c:when>
+					<c:otherwise>
+						<a class="item-menu-content"
+							href="https://topic.bonevo.net/bonevo@diemtin.it"> TOPIC </a>
+					</c:otherwise>
+				</c:choose></li>
+			<c:choose>
+				<c:when test="${(not empty userLogin)}">
+
+				</c:when>
+				<c:otherwise>
+					<li class="item item-three mbshown-toogle-dropdown">
+						<div class="dropdown menu-lang">
+							<button class="btn dropdown-toggle hidden-pc-shownmb"
+								type="button">
+								<c:choose>
+									<c:when test="${pageContext.response.locale== 'vi'}">
+										 Tiếng Việt
+									</c:when>
+									<c:when test="${pageContext.response.locale== 'de'}">
+										Deutsch
+									</c:when>
+									<c:otherwise>
+										English
+									</c:otherwise>
+								</c:choose>
+								<span class="choice-lang-caret fa fa-caret-right"
+									aria-hidden="true"></span>
+
+							</button>
+							<button class="btn dropdown-toggle" type="button">
+								<c:choose>
+									<c:when test="${pageContext.response.locale== 'vi'}">
+										 Tiếng Việt
+									</c:when>
+									<c:when test="${pageContext.response.locale== 'de'}">
+										Deutsch
+									</c:when>
+									<c:otherwise>
+										English
+									</c:otherwise>
+								</c:choose>
+								<!-- <span class="caret"></span> -->
+
+							</button>
+							<ul class="dropdown-menu choice-langmb-caret">
+								<li onclick="changeLanguageHandle('vi');"><a href="#">Tiếng
+										Việt </a></li>
+								<li onclick="changeLanguageHandle('en');"><a href="#">English
+								</a></li>
+								<li onclick="changeLanguageHandle('de');"><a href="#">Deutsch
+								</a></li>
+							</ul>
+						</div>
+					</li>
+				</c:otherwise>
+			</c:choose>
+			<c:choose>
+				<c:when test="${(not empty userLogin)}">
+
+				</c:when>
+				<c:otherwise>
+					<li class="item info-pc"><a class="login-rm-hv item-menu-content"
+						href="${CONTEXT_URL}/login">
+						<span class="radius-login">
+						 <spring:message code="login" />
+							/ <spring:message code="signup" /></span>
+					</a></li>
+				</c:otherwise>
+			</c:choose>
+
+
+
+		</ul>
+	</div>
+</div>

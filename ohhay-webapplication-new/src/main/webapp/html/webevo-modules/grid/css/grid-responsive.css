@@ -1,0 +1,16 @@
+@media screen and (max-width: 468px) {
+	body {
+		overflow-x: hidden;
+	}
+	#content-wrapper .content-box .grid-stack {
+		width: 100% !important;
+		margin: auto !important;
+	}
+}
+
+@media screen and (min-width: 469px) and (max-width: 1170px) {
+	#content-wrapper .content-box .grid-stack {
+		margin: auto !important;
+		width: 100% !important;
+	}
+}

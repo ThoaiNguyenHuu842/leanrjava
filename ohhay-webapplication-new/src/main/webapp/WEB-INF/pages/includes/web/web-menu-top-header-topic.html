@@ -1,0 +1,25 @@
+<%@page contentType="text/html; charset=UTF-8" %>
+<div id="menu-tools">
+	<!-- USER INFO -->
+	<div class="item item-left">
+		<p class="preview">${userLogin.m900mg.nv100} - ${userLogin.m900mg.mv907}</p>
+	</div>
+	<!-- END USER INFO --> 
+	<!-- EDITOR -->
+	<div class="pull-right-btn qb-edit-tool"  style="position: relative;">
+		<span id="web-editor">
+			<i class="fa  fa-pencil"></i>
+		</span>
+	</div>
+	<!-- END EDITOR -->
+	<!-- LOGOUT -->
+	<div class="item item-right">
+		<a href="/logout"><p class="lgout"><spring:message code='logout' /></p></a>
+	</div>
+	<!-- END LOGOUT -->
+	<!-- SAVE -->
+	<div class="item item-right qb-edit-tool" id="save">
+		<p class="preview"><spring:message code='save' /></p>
+	</div>
+	<!-- END SAVE -->
+</div>

@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>PiepMe 's topic</title>
+</head>
+<body style="float: left;margin: 30px auto;width: 666px;background: #fff;">
+	<div style="text-align: left;width: 656px;display: block;margin: 0px auto;">
+		<!-- MAIN -->
+		<div style="width: 656px;display: block;border: 1px solid #ccc;">
+			<!-- HEADER -->
+			<div style="display: block;background: #f2f2f2;padding: 10px 0px 10px 24px;">
+				<p style="float: left;width: 56px;height: 56px;border-radius: 50%;margin: 0px 15px 0px 0px;">
+					<img style='margin:6px 3px 3px;' src='https://bonevo.net/html/images/bonevo.png' />
+				</p>
+				<h4 style="font-size: 18px;color: #333333;font-family: 'Roboto', sans-serif;font-weight: normal;display: inline-block;line-height: 56px;margin: 0px;">
+					Piepme - your OTP code
+				</h4>
+			</div>
+			<!-- HEADER -->
+			
+			<!-- CONTENT -->
+			<div style="display: block;padding: 28px;">
+				<p style="color: #464646;font-family: 'Roboto', sans-serif;font-size: 12px;line-height: 22px;font-weight: normal;margin: 0px 0px 22px 0px;">
+					Thank you for using PiepMe register with email address <a style='color: #0099ff;text-decoration: none;' target='_blank' href='mailto:$mail'>$mail</a> that using some services in BONEVO.
+				</p>
+				<p style="color: #464646;font-family: 'Roboto', sans-serif;font-size: 12px;line-height: 22px;font-weight: normal;margin: 0px;">
+					To sure that the email address on that of you and you will get complete information and notices related to your account on the PiepMe, Your OTP code is:
+				</p>
+				
+				
+				<b>$mailLinkConfirm</b>
+				<p style="color: #464646;font-family: 'Roboto', sans-serif;font-size: 12px;line-height: 22px;font-weight: normal;margin: 2px 0px;">
+					Your PiepMe account needs to be verified, if not verified within 24 hours, we shall suspend your account.
+				</p>
+				<p style="color: #464646;font-family: 'Roboto', sans-serif;font-size: 12px;line-height: 22px;font-weight: normal;margin: 2px 0px;">
+					$mailContent1
+				</p>
+				<p style="color: #464646;font-family: 'Roboto', sans-serif;font-size: 12px;line-height: 22px;font-weight: normal;margin: 2px 0px;">
+					BONEVO Team.
+				</p>
+				<p style="color: #999999;font-family: 'Roboto', sans-serif;font-size: 12px;line-height: 22px;font-weight: normal;font-style: italic;margin: 28px 0px 0px 0px">
+					Why do you need to perform this action when using PiepMe?
+				</p>
+				<p style="color: #999999;font-family: 'Roboto', sans-serif;font-size: 12px;line-height: 22px;font-weight: normal;font-style: italic;margin: 0px 0px 28px 0px">
+					To ensure this email sent to the right people and all the information about your account is confidential. If you do not confirm, yout account will not be used on PiepMe.
+				</p>
+			</div>
+			<!-- END CONTENT -->
+		</div>
+		<!-- END MAIN -->
+	</div>
+</body>
+</html>

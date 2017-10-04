@@ -1,0 +1,51 @@
+<%@page contentType="text/html; charset=UTF-8" %>
+<div class="qb-dig-tools-edit component-effect">
+    <div class="form-group" id="comp-effect">
+        <ul id="lstEffect" class="form-group-content">
+            <li>
+                <span>blur</span>
+                 <input class="effect-attr" data-name="blur" type="range" max="10" min="0" step="1" value="0" />
+             </li>
+            <li>
+                <span>grayscale</span>
+                 <input class="effect-attr" data-name="grayscale" type="range" max="1" min="0" step="0.1" value="0" />
+             </li>
+            <li>
+                <span>sepia</span>
+                 <input class="effect-attr" data-name="sepia" type="range" max="1" min="0" step="0.1" value="0" />
+             </li>
+            <li>
+                <span>brightness</span>
+                 <input class="effect-attr" data-name="brightness" type="range" max="10" min="0" step="0.1" value="0" />
+             </li>
+            <li>
+                <span>contrast</span>
+                 <input class="effect-attr" data-name="contrast" type="range" max="10" min="0" step="0.1" value="0" />
+             </li>
+            <li>
+                <span>hue-rotate</span>
+                 <input class="effect-attr" data-name="hue-rotate" type="range" max="360" min="0" step="30" value="0" />
+             </li>
+            <li>
+                <span>invert</span>
+                 <input class="effect-attr" data-name="invert" type="range" max="1" min="0" step="0.1" value="0" />
+             </li>
+            <li>
+                <span>saturate</span>
+                 <input class="effect-attr" data-name="saturate" type="range" max="10" min="0" step="0.1" value="0" />
+             </li>
+            <li>
+                <span>opacity</span>
+                 <input class="effect-attr" data-name="opacity" type="range" max="-0.1" value="-1" min="-1" step="0.1" value="0" />
+             </li>
+            <li>
+            <div class="all-effect">
+            	<input type="checkbox" id="applyEfectToAll" />
+            	<label for="applyEfectToAll"><spring:message code='imgef.title1' /></label>
+            </div>
+                <button class="btn btnResetEffect"><spring:message code='imgef.reset' /></button>
+                <button class="btn btn-primary btnOkEffect">OK</button>
+            </li>
+        </ul>
+    </div>
+</div>

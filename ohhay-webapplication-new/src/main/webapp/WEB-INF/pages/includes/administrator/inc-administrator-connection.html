@@ -1,0 +1,150 @@
+<div class="qb-content-administrator-child qb-administrator-connection">
+<script>
+	$(document).ready(function() {
+		$(document).on('click', '.btn-reset-con', function() {
+			var type = $(this).attr('ctype');
+			$.ajax({
+				type : "POST",
+				url : encodeUrl("admin.resetConnection"),
+				data : {
+					type : type
+				},
+				success : function(response) {
+					window.location.reload();
+				},
+				error : function(e) {
+					showGrowlMessageAjaxError();
+				}
+			});
+		});
+	});
+</script>
+<div
+	class="dialogconfirm qb-dialog-new dialog hidden-dialog active-dialog dialog--open"></div>
+<h1 style="width: 100%; text-align: center; margin-top: 30px;">BONEVO
+	CONNECTION STATUS</h1>
+<div class="qb-ohhay-content-wrapper">
+	<div style="width: 100%; float: left;">
+		<div style="width: 100%; float: left;">
+			<h4 style="float: left;">MySQL Center:</h4>
+			<p style="float: left; line-height: 41px; margin-left: 7px;">
+				mysqlcent.oohhay.com
+			</p>
+		</div>
+		<div style="width: 100%; float: left;">
+			<h4 style="float: left;">Mongo Center:</h4>
+			<p style="float: left; line-height: 41px; margin-left: 7px;">
+				mongocent.oohhay.com
+			</p>
+		</div>
+		<div style="width: 100%; float: left;">
+			<h4 style="float: left;">Topic Center:</h4>
+			<p style="float: left; line-height: 41px; margin-left: 7px;">
+				Not set
+			</p>
+		</div>
+
+	</div>
+	<div style="width: 100%; float: left; border-top: 1px solid;">
+		<div style="width: 70%; float: left;">
+			<h4>FO100 - MONGODB OHHAY:</h4>
+			<table class="table table-bordered">
+				<tr>
+					<th>FO100</th>
+					<th>MONGO_URI</th>
+				</tr>
+				<c:forEach var="entry" items="${mapFO100OhhayDB}">
+					<tr>
+						<td><c:out value="${entry.key}" /></td>
+						<td><c:out value="${entry.value}" /></td>
+					</tr>
+				</c:forEach>
+			</table>
+			<input class="btn-reset-con" ctype="1" type="button" value="Reset" />
+		</div>
+		<div style="width: 70%; float: left;">
+			<h4>FO100 - MONGODB TOPIC:</h4>
+			<table class="table table-bordered">
+				<tr>
+					<th>FO100</th>
+					<th>MONGO_URI</th>
+				</tr>
+				<c:forEach var="entry" items="${mapFO100TopicDB}">
+					<tr>
+						<td><c:out value="${entry.key}" /></td>
+						<td><c:out value="${entry.value}" /></td>
+					</tr>
+				</c:forEach>
+			</table>
+			<input class="btn-reset-con" ctype="2" type="button" value="Reset" />
+		</div>
+		<div style="width: 70%; float: left;">
+			<h4>MongoDB opening connections:</h4>
+			<table class="table table-bordered">
+				<tr>
+					<th>MONGODB_NAME</th>
+					<th>CONNECTION</th>
+				</tr>
+				<c:forEach var="entry" items="${mapMongoInstance}">
+					<tr>
+						<td><c:out value="${entry.key}" /></td>
+						<td><c:out value="${entry.value}" /></td>
+					</tr>
+				</c:forEach>
+			</table>
+			<input class="btn-reset-con" ctype="3" type="button" value="Reset" />
+		</div>
+	</div>
+	<div style="width: 100%; float: left; margin-top: 5%; border-top: 1px solid;">
+		<div style="width: 70%; float: left;">
+			<h4>FO100 - MYSQL:</h4>
+			<table class="table table-bordered">
+				<tr>
+					<th>FO100</th>
+					<th>MYSQL_URI</th>
+				</tr>
+				<c:forEach var="entry" items="${mapFO100DB}">
+					<tr>
+						<td><c:out value="${entry.key}" /></td>
+						<td><c:out value="${entry.value}" /></td>
+					</tr>
+				</c:forEach>
+			</table>
+			<input class="btn-reset-con" ctype="4" type="button" value="Reset" />
+		</div>
+		<div style="width: 70%; float: left;">
+			<h4>PHONE - MYSQL:</h4>
+			<table class="table table-bordered">
+				<tr>
+					<th>PHONE</th>
+					<th>MYSQL_URI</th>
+				</tr>
+				<c:forEach var="entry" items="${mapMODB}">
+					<tr>
+						<td><c:out value="${entry.key}" /></td>
+						<td><c:out value="${entry.value}" /></td>
+					</tr>
+				</c:forEach>
+			</table>
+			<input class="btn-reset-con" ctype="5" type="button" value="Reset" />
+		</div>
+		<div style="width: 70%; float: left;">
+			<h4>MySQL opening connections:</h4>
+			<table class="table table-bordered">
+				<tr>
+					<th>MYSQL_NAME</th>
+					<th>CONNECTION</th>
+				</tr>
+				<c:forEach var="entry" items="${mapMySQLInstance}">
+					<tr>
+						<td><c:out value="${entry.key}" /></td>
+						<td><c:out value="${entry.value}" /></td>
+					</tr>
+				</c:forEach>
+			</table>
+			<input class="btn-reset-con" ctype="6" type="button" value="Reset" />
+		</div>
+	</div>
+</div>
+
+</div>

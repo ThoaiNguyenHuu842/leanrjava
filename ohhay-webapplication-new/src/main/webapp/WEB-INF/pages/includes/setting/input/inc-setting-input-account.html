@@ -1,0 +1,196 @@
+<%@ page pageEncoding="UTF-8" %>
+<div class="qb-setting-input-content qb-setting-input-account">
+	<div class="qb-setting-input-header">
+		<div class="qb-setting-input-header-opacity"></div>
+		<div class="qb-setting-input-header-content">
+			<c:if test="${socialFirstVisit == 0}">
+				<div class="qb-setting-input-header-back qb-button-setting">
+					<span>&#xf104;</span> <label><spring:message code='back' /></label>
+				</div>
+			</c:if>
+			<div class="qb-setting-input-header-title">
+				<label><spring:message code="setting.edit_personal_info" /></label>
+			</div>
+		</div>
+	</div>
+	<div class="qb-setting-input-body">
+		<div class="sett-tab-title">
+			<label><spring:message code='isiac.title2' /></label>
+		</div>
+		<div class="qb-setting-input-panel text-center">
+			<!-- INPUT FIRST NAME -->
+			<div
+				class="qb-setting-input-sub-panel qb-setting-input-panel-firstname text-center">
+				<input id="qb-input-firstname-name" style="width: 380px;"
+					type="text" /> <input id="qb-btn-save-firstname" type="button"
+					value="<spring:message code="save" />"/>
+			</div>
+			<!-- END INPUT FIRST NAME -->
+			<!-- INPUT LAST NAME -->
+			<div
+				class="qb-setting-input-sub-panel qb-setting-input-panel-lastname text-center">
+				<input id="qb-input-lastname-name" style="width: 380px;" type="text" />
+				<input id="qb-btn-save-lastname" type="button"
+					value="<spring:message code="save" />"/>
+			</div>
+			<!-- END INPUT LAST NAME -->
+			<!-- INPUT PASSWORD SOCIAL WHEN FIRST USE -->
+			<c:if test="${socialFirstVisit == 1}">
+				<div class="qb-setting-input-sub-panel qb-setting-input-panel-password">
+					<p><spring:message code='aci.title11'/></p>
+					<input id="qb-input-password-new-first" data-toggle="tooltip"
+						data-placement="bottom" title="<spring:message code='signup.title1'/>"
+						placeholder="<spring:message code='setting.pass_passnew'/>"
+						style="width: 380px; display: block; margin: 0px auto 8px auto;"
+						type="password" />
+					<input id="qb-input-password-new-again-first" data-toggle="tooltip"
+						data-placement="bottom" title="<spring:message code='signup.title1'/>"
+						placeholder="<spring:message code='setting.pass_passagain'/>"
+						style="width: 380px; display: block; margin: 0px auto 8px auto;"
+						type="password" />
+					<input id="qb-btn-save-password-frist" type="button"
+						style="margin: 30px auto; display: block; float: right;"
+						value="<spring:message code="save" />"/>
+				</div>
+			</c:if>
+			<!-- END INPUT PASSWORD SOCIAL WHEN FIRST USE -->
+			<!-- INPUT BIRTHDATE -->
+			<div
+				class="qb-setting-input-sub-panel qb-setting-input-panel-birthdate text-center">
+				<input id="qb-input-birthdate" style="width: 380px;" type="text" />
+				<input id="qb-btn-save-birthdate" type="button"
+					value="<spring:message code="save" />"/>
+			</div>
+			<!-- END INPUT BIRTHDATE -->
+			<!-- INPUT SEXINESS -->
+			<div
+				class="qb-setting-input-sub-panel qb-setting-input-panel-sexiness">
+				<div class="qb-radio-group-sexiness item-data-lang row">
+				<div class="item-sexi">
+					<p value="M" class="qb-radio qb-radio-M">
+						<span><i class="fa fa-check-circle"></i></span>
+					</p>
+					<label style="margin-right: 45px;" class="fix-no-margintop"> <spring:message
+							code="male" />
+					</label>
+					<p value="F" class="qb-radio qb-radio-F">
+						<span><i class="fa fa-check-circle"></i></span>
+					</p>
+					<label style="margin-right: 45px;" class="fix-no-margintop"> <spring:message
+							code="female" />
+					</label>
+					<p value="N" class="qb-radio qb-radio-N">
+						<span><i class="fa fa-check-circle"></i></span>
+					</p>
+					<label class="fix-no-margintop"> <spring:message code="undefined" />
+					</label>
+				</div>
+				</div>
+			</div>
+			<!-- END INPUT SEXINESS -->
+			<!-- INPUT EMAIL -->
+			<div class="qb-setting-input-sub-panel qb-setting-input-panel-email">
+				<div>
+					<input placeholder="<spring:message code='home.email' />"
+						id="qb-input-new-email"
+						style="width: 380px; margin: 0px auto 8px auto;" type="text" />
+				</div>
+				<div>
+					<input data-toggle="tooltip" data-placement="bottom"
+						title="Your O!hay account 's password"
+						placeholder="<spring:message code='password'/>"
+						id="qb-input-confirm-pass"
+						style="width: 380px; margin: 0px auto 8px auto;" type="password" />
+				</div>
+				<input style="float: right;" class="btn-form-save"
+					id="qb-btn-save-email" type="button" value="<spring:message code="save" />"/>
+			</div>
+			<!-- END INPUT EMAIL -->
+			<!-- INPUT SMTP EMAIL -->
+			<div
+				class="qb-setting-input-sub-panel qb-setting-input-panel-smtp text-center">
+				<div>
+					<input placeholder="<spring:message code='home.email' />"
+						id="qb-input-confirm-email-smtp"
+						style="width: 380px; margin: 0px auto 8px auto;" type="text" />
+				</div>
+				<div>
+					<input placeholder="<spring:message code='password'/>"
+						id="qb-input-confirm-pass-smtp"
+						style="width: 380px; margin: 0px auto 8px auto;" type="password" />
+				</div>
+				<div>
+					<input placeholder="SSL" id="qb-input-new-ssl"
+						style="width: 380px; margin: 0px auto 8px auto;" type="text" />
+				</div>
+				<div>
+					<input placeholder="SMTP Email Protocol" id="qb-input-new-smmtp"
+						style="width: 380px; margin: 0px auto 8px auto;" type="text" />
+				</div>
+				<div>
+					<input placeholder="Port" id="qb-input-new-port"
+						style="width: 380px; margin: 0px auto 8px auto;" type="text" />
+				</div>
+				<input style="float: right;" id="qb-btn-save-smtp" type="button"
+					value="<spring:message code="save" />"/> <label class="set-error"
+					id="set-error" style="width: 360px;"></label>
+
+			</div>
+			<!-- END INPUT SMTP EMAIL -->
+			<!-- PROFESSTIONNAL -->
+			<div class="qb-setting-input-sub-panel qb-setting-input-panel-pro">
+				<div class="col-xs-10 col-xs-offset-1">
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-default dropdown-toggle"
+							data-toggle="dropdown" aria-expanded="false">
+							<label id='qb-input-job'><spring:message
+									code='isiac.title2' /></label> <span class="caret"></span>
+						</button>
+						<!-- JOBS CONTAINER -->
+						<ul class="dropdown-menu qb-dropdown-all-jobs" role="menu">
+						</ul>
+						<!-- END JOBS CONTAINER -->
+					</div>
+				</div>
+			</div>
+			<!-- END PROFESSTIONNAL -->
+			<!-- LANGUAGE -->
+			<div
+				class="qb-setting-input-sub-panel qb-setting-input-panel-language qb-radio-group-rlang">
+				<div class="item-data-lang">
+					<div class="it-lang">
+						<div class="item">
+						<p value="vi" class="qb-radio qb-radio-vi">
+							<span><i class="fa fa-check-circle"></i></span>
+						</p>
+						<label style="margin-right: 45px;" class="fix-no-margintop"> <spring:message
+								code="language.vie" />
+						</label>
+						</div>
+					</div>
+					<div class="it-lang">
+					<div class="item">
+					<p value="de" class="qb-radio qb-radio-de">
+						<span><i class="fa fa-check-circle"></i></span>
+					</p>
+					<label style="margin-right: 45px;" class="fix-no-margintop"> <spring:message
+							code="language.german" />
+					</label>
+					</div>
+					</div>
+					<div class="it-lang">
+					<div class="item">
+					<p value="en" class="qb-radio qb-radio-en">
+						<span><i class="fa fa-check-circle"></i></span>
+					</p>
+					<label style="margin-right: 45px;" class="fix-no-margintop"> <spring:message
+							code="language.english" />
+					</label>
+					</div>
+					</div>
+				</div>
+			</div>
+			<!-- END LANGUAGE -->
+		</div>
+	</div>
+</div>

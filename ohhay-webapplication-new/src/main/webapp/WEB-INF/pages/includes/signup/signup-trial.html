@@ -1,0 +1,84 @@
+<%@page contentType="text/html; charset=UTF-8" %> 
+<div class="register-panel">
+	<!-- PANEL REGISTER 1 -->
+	<div class="container-fluid register-select" style="display: block;">
+		<div class="row">
+			<div class="content-background"></div>
+			<div class="signup-content">
+				<h2 class="title" style="font-size: 20px;">
+					<spring:message code='sut.title1'/>
+					<p style="font-size: 13px;font-weight: normal;margin-top: 11px;"><spring:message code='sut.title2'/></p>
+				</h2>
+				<div class="data_component center-block" style="width: 304px;">
+					<div class="head text-center">
+						<button class="obutton-lock hvr-bounce-out">
+							<i class="fa fa-user"></i>
+						</button>
+					</div>
+					<div class="wapper-facebook btn-fb-login">
+						<button class="buttom-icon"><span class="fa fa-facebook"></span></button>
+						<button class="buttom-text"><spring:message code='home.login_with_facebook'/></button>
+					</div>
+					<div class="wapper-gplus btn-gg-login" style="margin-bottom: 28px">
+						<button class="buttom-icon"><span class="fa fa-google"></span></button>
+						<button class="buttom-text"><spring:message code='home.login_with_google'/></button>
+					</div>
+					<div class="wapper-or"><div class="show-il"><label><spring:message code='home.or'/></label></div></div>
+					<button class="button-login btn-register" style="margin-top: 37px">
+					<span><spring:message code='home.register_now_for_free' /></span> &nbsp<span><i style="font-size: 8px;position: absolute;margin-top: 8px" class="fa fa-play"></i></span>
+					</button>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<!-- PANEL REGISTER 1 -->
+	<!-- PANEL REGISTER 2 -->
+	<div class="container-fluid account-infor">
+		<div class="row">
+			<div class="content-background"></div>
+			<div class="signup-content">
+				<h2 class="title">
+					<spring:message code="info.account" />
+				</h2>
+				<div class="field input-text">
+					<input class="full-field" placeholder="<spring:message code='home.last_name'/>" id="inputFName"/>
+				</div>
+				<div class="field input-text">
+					<input class="full-field" placeholder="<spring:message code='home.first_name'/>" id="inputLName"/>
+				</div>
+				<div class="field input-text">
+					<input class="full-field" placeholder="<spring:message code='home.email'/>" id="inputEmail" />
+				</div>
+				<div class="field input-text">
+					<input class="full-field" placeholder="<spring:message code="login.password" />" data-toggle="tooltip" data-placement="bottom"
+						title="<spring:message code='signup.title1'/>" type="password"
+						id="inputPassword" value="" />
+				</div>
+				<div class="field input-text">
+					<input class="full-field" placeholder="<spring:message code="retype.password" />" data-toggle="tooltip" data-placement="bottom"
+						title="<spring:message code='signup.title1'/>" type="password"
+						id="inputRePassword" value="" />
+				</div>
+				<div class="field input-text">
+					<div class="g-recaptcha data-captcha" style="float: right;"
+							data-sitekey="6LfHvhoTAAAAALkKTpWGTuyO5SApwABRidJrzKSe">
+					</div>
+				</div>
+				<span class="label-error-mess" id="label-error-mess-3"></span>
+				
+				
+				<p>
+					<a style="margin-left: 11%; margin-top: -14px; width: 79% !important;" class="btn-create-account"><spring:message code="create.account" /></a>
+				</p>
+			</div>	
+		</div>
+	</div>
+	<!-- END PANEL REGISTER 2 -->
+	<!-- THANKS PANEL -->
+	<div class="container-fluid thanks-panel">
+		<h2><spring:message code='sut.title3'/></h2>
+		<p><spring:message code='sut.title4'/></p>
+		<a href="${CONTEXT_URL}"><spring:message code='sut.back_home'/></a>
+	</div>
+	<!-- END THANKS PANEL -->
+	</div>

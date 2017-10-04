@@ -1,0 +1,131 @@
+<%@ page pageEncoding="UTF-8" %> <%@include
+file="../includes/hidden-info.html" %>
+<!-- LOCALIZE -->
+<%@ include file="/WEB-INF/pages/includes/localizeClient.html" %>
+<!-- END LOCALIZE -->
+<!-- CONFIRM DIALOG -->
+<div
+	class="dialogconfirm qb-dialog-new dialog hidden-dialog active-dialog dialog--open"></div>
+<!-- END CONFIRM DIALOG -->
+<!-- HEADER BOX -->
+<c:choose>
+	<c:when test="${(not empty userLogin)}">
+				<%@include file="../includes/evo-logined-header.html" %>
+	</c:when>
+	<c:otherwise>
+				<%@include file="../includes/evo-header.html" %>
+			</c:otherwise>
+</c:choose>
+<!-- END HEADER BOX -->
+<!-- BODY BOX -->
+<div class="body-evo-templates">
+	<input type="hidden" regionCode="${ohhayViewer.regionCode}"
+		languageCode="${ohhayViewer.languageCode}"
+		languageName="${ohhayViewer.languageName}"
+		countryCode='${ohhayViewer.countryCallingCode}' id='selected-country'>
+	<div class="qb-ohhay-content-wrapper">
+		<div class="data">
+			<div class="data_template">
+
+				<!--
+				<div class="function_template">
+									<div class="container">
+										<ul class="menu-list">
+											<li>
+												<div class="data">
+													<a>
+													<spring:message code='setting.topic.acomment.p1' />
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="data">
+													<a>
+													<spring:message code='free' />
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="data">
+													<a>
+													<spring:message code='evot.premium' />
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="data">
+													<a>
+													<spring:message code='evot.web_temp' />
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-down"></i></a>
+												</div>
+											</li>
+											<li>
+												<div class="data">
+													<a>
+													<spring:message code='evot.sort_by' />
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-down"></i> </a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>-->
+
+				<div class="fix_background">
+					<div class="container data_evotemplate">
+						<div class="row">
+							<c:if test="${(not empty userLogin)}">
+								<div templateid='blank_template'
+									class='col-sm-4 evo-template-item'>
+									<div class='blank-item obutton-label-data'
+										id='btn-create-new-fromevotemp'>
+										<span>+</span>
+									</div>
+									<h2 class="text_item">
+										<spring:message code='mys.title6' />
+									</h2>
+								</div>
+							</c:if>
+
+							<c:if
+								test="${userLogin.m900mg.mv922== 'ADMIN' || userLogin.m900mg.mv922== 'TESTER' || userLogin.m900mg.mv922== 'DESIGNER'}">
+								<div
+									class="item_new_blank_re-website col-sm-4 evo-template-item">
+									<div id="btn-create-new-re" class="btn-content-comp">
+										<div class='blank-item obutton-label-data'
+											>
+											<span>+</span>
+										</div>
+										<h2 class="text_item">New responsive site</h2>
+									</div>
+								</div>
+							</c:if>
+							<!--
+	
+						<div class="col-sm-4">
+						<div class="obutton-label-data hvr-shrink" ></div>
+						<h2 class="text_item"> Model Porfolio </h2>
+						</div>
+						<div class="col-sm-4">
+						<div class="obutton-label-data hvr-shrink">
+	
+						</div>
+						<h2 class="text_item"> Model Porfolio </h2>
+						</div>
+						<div class="col-sm-4">
+						<div class="obutton-label-data hvr-shrink">
+	
+						</div>
+						<h2 class="text_item"> Model Porfolio </h2>
+						</div>
+						-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END BODY BOX -->
+<!-- FOOTER BOX -->
+<%@include file="../includes/evo-footer.html" %>
+<!-- END FOOTER BOX -->

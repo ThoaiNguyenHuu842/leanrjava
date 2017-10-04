@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="124px" height="112px" viewBox="0 0 124 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-71.7%" y="-51.7%" width="243.3%" height="243.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.141176471   0 0 0 0 0.721568627   0 0 0 0 0.858823529  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M45.563,29.174 L23.563,14.174 C23.256,13.966 22.86,13.943 22.532,14.116 C22.205,14.289 22,14.629 22,15 L22,45 C22,45.371 22.205,45.711 22.533,45.884 C22.679,45.962 22.84,46 23,46 C23.197,46 23.394,45.941 23.563,45.826 L45.563,30.826 C45.836,30.64 46,30.331 46,30 C46,29.669 45.836,29.36 45.563,29.174 L45.563,29.174 Z M30,0 C46.542,0 60,13.458 60,30 C60,46.542 46.542,60 30,60 C13.458,60 0,46.542 0,30 C0,13.458 13.458,0 30,0 Z" id="path-2"></path>
+        <filter x="-45.0%" y="-35.0%" width="190.0%" height="190.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.183409797   0 0 0 0 0.664507199   0 0 0 0 0.858498087  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BONEVO-HOME1-Copy" transform="translate(-769.000000, -220.000000)">
+            <g id="Group-3" transform="translate(573.000000, 234.000000)">
+                <g id="Group" transform="translate(195.000000, 0.000000)">
+                    <path d="M15.0943977,83.9140094 C17.2011171,84.5651064 19.4456885,84.8252337 21.6154928,85.2068576 C22.646656,85.3883236 25.0617899,86.3610751 26.0150707,85.3649589 C26.8133655,84.5300594 26.057906,82.9825357 25.818807,82.099349 C25.1716041,79.7060222 24.5719094,77.2971189 23.8499394,74.9240416 C23.6918381,74.403787 22.8187762,74.6257519 22.9246962,75.1623618 C23.2440142,76.7862103 23.6186286,78.3975975 23.9698783,80.0144366 C24.0415302,80.3431004 24.6201965,82.440474 24.7892014,83.4872137 C18.4386688,76.0268567 11.8825266,66.3071306 13.4230409,55.889578 C15.0577929,44.8403989 30.0096601,38.3605815 39.4941813,43.3645271 C39.9583605,43.6090779 40.4186456,42.8357054 39.9638123,42.5576652 C30.8211949,36.9594768 17.1863195,42.2554814 12.8490475,51.8069815 C10.4681819,57.0492472 11.6644559,63.0430783 13.3895515,68.2923535 C15.2158942,73.8523795 18.2447416,80.0206672 22.8756303,83.8766258 C21.9231283,83.6414209 20.9176663,83.3298913 20.5773201,83.26447 C18.9012904,82.941258 17.2050113,82.5167988 15.5009439,82.4038693 C14.6683808,82.3485728 14.1878463,83.6336327 15.0943977,83.9140094" id="Fill-97" fill="#FFFFFF" transform="translate(25.832393, 63.039412) rotate(-106.000000) translate(-25.832393, -63.039412) "></path>
+                    <g id="play-button-(1)" filter="url(#filter-1)" transform="translate(39.000000, 0.000000)">
+                        <g id="Combined-Shape">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

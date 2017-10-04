@@ -1,0 +1,233 @@
+<%@page contentType="text/html; charset=UTF-8" %>
+<div id="menu-tools">
+	<!-- USER INFO -->
+	<!-- <div class="item item-left">
+	<p class="preview">${userLogin.m900mg.nv100} - ${userLogin.m900mg.mv907}</p>
+	</div> -->
+	<!-- END USER INFO -->
+	<!-- LOGO -->
+	<div class="menu-item item-left">
+		<p class="logo">
+			<img style="width: 40px;" alt=""
+				src="${CONTEXT_PATH}/html/images/bonevo.png">
+		</p>
+	</div>
+	<!-- END LOGO -->
+	<!-- ADD BOX -->
+	<c:if test="${MOBILE_EDITOR != 'on'}">
+		<div class="menu-item item-left bg-green qb-edit-tool">
+			<p class="btn-add-box">
+				<img style="width: 15px;" alt=""
+					src="${CONTEXT_PATH}/html/images/addbox.png"><span> <spring:message
+						code='mtop.title1' />
+				</span>
+			</p>
+		</div>
+	</c:if>
+	<!-- END ADD BOX -->
+	<!-- RULER -->
+	<!-- <div class="pull-right-btn pull-right-btn-ruler qb-edit-tool" style="position: relative;">
+	<span id="btn-ruler" title="Hide ruler"  class="disable">
+	<img style="width: 15px;" alt="" src="${CONTEXT_PATH}/html/images/94.png">
+	</span>
+	</div> -->
+	<!-- END RULER -->
+	<!-- UNDO -->
+	<!-- <div class="menu-item item-center btn-menu-undo qb-edit-tool">
+	<p title="<spring:message code='undo' />" >
+	<span><img style="width: 26px;" alt="" src="${CONTEXT_PATH}/html/images/menu-undo.png"></span>
+	</p>
+	</div> -->
+	<!-- END UNDO -->
+	<!-- BACKGROUND -->
+	<c:if test="${MOBILE_EDITOR != 'on'}">
+		<div class="menu-item item-center qb-edit-tool">
+			<p id="web-edit-changebg" data-toggle="tooltip"
+				data-placement="bottom"
+				title="<spring:message code='mtop.web_background' />">
+				<span><img style="width: 26px;" alt=""
+					src="${CONTEXT_PATH}/html/images/menu-image.png"></span>
+			</p>
+		</div>
+	</c:if>
+	<!-- END BACKGROUND -->
+	<!-- WEB CONFIG -->
+	<c:if test="${MOBILE_EDITOR != 'on'}">
+		<div class="menu-item item-center qb-edit-tool"
+			style="position: relative;">
+			<p id="web-config" data-toggle="tooltip" data-placement="bottom"
+				title="<spring:message code='mtop.web_config' />">
+				<span><img style="width: 26px;" alt=""
+					src="${CONTEXT_PATH}/html/images/menu-setting.png"></span>
+			</p>
+		</div>
+	</c:if>
+	<!-- END WEB CONFIG -->
+	<!-- UNDO DATA -->
+	<!-- <div class="menu-item item-center qb-edit-tool"
+		mobilegridd="${MOBILE_EDITOR}"
+		style="position: relative; display: none;">
+		<p id="redo-undo-manager" data-toggle="tooltip"
+			data-placement="bottom" title="<spring:message code='mtop.title2' />">
+			<span><i style="font-size: 16px;" class="fa fa-undo"
+				aria-hidden="true"></i></span>
+		</p>
+	</div> -->
+	<!-- UNDO DATA -->
+	<!-- UNDO DATA -->
+	<!-- <div class="menu-item item-center qb-edit-tool"
+		mobilegridd="${MOBILE_EDITOR}"
+		style="position: relative; display: none;">
+		<p id="redo-undo-manager-redo" data-toggle="tooltip"
+			data-placement="bottom" title="<spring:message code='mtop.title2' />">
+			<span><i style="font-size: 16px;" class="fa fa-repeat"
+				aria-hidden="true"></i></span>
+		</p>
+	</div> -->
+	<!-- UNDO DATA -->
+	<!-- SHOW GRID LINE -->
+	<div class="menu-item item-center qb-edit-tool"
+		mobilegridd="${MOBILE_EDITOR}" style="position: relative;">
+		<p id="show-grid-line" data-toggle="tooltip" data-placement="bottom"
+			title="<spring:message code='mtop.title2' />">
+			<span><img style="width: 24px;" alt=""
+				src="${CONTEXT_PATH}/html/images/menu-grid.png"></span>
+		</p>
+	</div>
+	<!-- HIDE GRID LINE -->
+	<!-- SHOW MOBILE HIDE ELEMENT -->
+	<c:if test="${MOBILE_EDITOR == 'on'}">
+		<div class="menu-item item-center qb-edit-tool"
+			mobilegride="${MOBILE_EDITOR}" style="position: relative;">
+			<p id="show-hiddent-element" data-toggle="tooltip"
+				data-placement="bottom"
+				title="<spring:message code='mtop.title5' />">
+				<span style="color: #fffff; font-size: 23px;"
+					class="fa fa-eye-slash"> <span hiddennumb="${hiddenComp}"
+					class="element-hidden">${hiddenComp}</span>
+				</span>
+			</p>
+
+		</div>
+	</c:if>
+	<!-- END MOBILE HIDE ELEMENT -->
+	<!-- SHOW EVO LIB -->
+	<c:if test="${MOBILE_EDITOR != 'on'}">
+		<div class="menu-item item-left qb-edit-tool padding-none"
+			style="border-left: 1px solid #555555;">
+			<p class="btn-show-evo-lib bg-green active" data-placement="bottom"
+				data-toggle="tooltip" title="<spring:message code='weh.title17' />">
+				<i class="fa fa-folder-o"></i>
+			</p>
+		</div>
+	</c:if>
+	<!-- END SHOW EVO LIB -->
+	<!-- CLOSE -->
+	<c:choose>
+		<c:when test="${not empty userLogin}">
+			<a href="${CONTEXT_URL}/mysites">
+		</c:when>
+		<c:otherwise>
+			<a href="${CONTEXT_URL}">
+		</c:otherwise>
+	</c:choose>
+	<div class="menu-item item-right item-close">
+		<p class="btn-menu-close">
+			<img style="width: 11px;" alt=""
+				src="${CONTEXT_PATH}/html/images/menu-close.png">
+		</p>
+	</div>
+	</a>
+	<!-- END CLOSE -->
+	<!-- SAVE -->
+	<div class="menu-item hover-item item-right qb-edit-tool" id="save">
+		<p class="btn-menu-save">
+			<img style="width: 14px;" alt=""
+				src="${CONTEXT_PATH}/html/images/menu-save.png"><spring:message code='save' />
+		</p>
+	</div>
+	<!-- END SAVE -->
+
+	<!-- PREVIEW -->
+	<div class="menu-item hover-item item-right" id="preview">
+		<p class="btn-menu-preview">
+			<img style="width: 19px;" alt=""
+				src="${CONTEXT_PATH}/html/images/menu-preview.png"><spring:message code='web.edit.preview' />
+		</p>
+	</div>
+	<!-- END PREVIEW -->
+	<!-- MOBILE -->
+	<c:if test="${MOBILE_EDITOR != 'on'}">
+		<div
+			class="menu-item item-right qb-edit-tool qb-tool-mobile padding-none">
+			<p class="btn-menu-mobile active" data-toggle="tooltip"
+				data-placement="bottom"
+				title="<spring:message code='mtop.title6' />">
+				<i class="fa  fa-mobile"></i>
+			</p>
+		</div>
+	</c:if>
+	<c:if test="${MOBILE_EDITOR == 'on' && (not empty  userLogin) && userLogin.m900mg.m930mg.newbieFirstAccessMobileEditor == 0}">
+		<div class="panel-mobile-option qb-edit-tool">
+			<!-- <label style="color: #000; float: left; font-size: 14px; font-weight: normal;margin: 0 0 0 22px;">Auto layout: </label>
+			<div class="btn-group btn-toggle-auto-layout" type="autoplay" style="float: left; font-size: 12px; margin-left: 5px; margin-top: 11px;">
+			<button class="btn btn-xs active btn-default" data="on">ON</button>
+			<button class="btn btn-xs btn-primary" data="off">OFF</button>
+			</div> -->
+			<p>
+				<spring:message code='mtop.mobile_edit' />
+			</p>
+			<p class="content-text">
+				<spring:message code='mtop.title3' />
+			</p>
+			<hr />
+			<!-- <span class="fa fa-close btn-close-tip"></span> -->
+			<button class="btn-close-tip">
+				<img src="${CONTEXT_PATH}/html/images/menu-save.png" /> <spring:message code='ok' />
+			</button>
+		</div>
+	</c:if>
+	<!-- END MOBILE -->
+	<!-- DESKTOP -->
+	<c:if test="${MOBILE_EDITOR == 'on'}">
+		<div class="menu-item item-right qb-edit-tool padding-none"
+			style="border-left: 1px solid #555555;">
+			<p class="btn-menu-desktop active" data-toggle="tooltip"
+				data-placement="bottom"
+				title="<spring:message code='mtop.title4' />">
+				<i class="fa fa-television"></i>
+			</p>
+		</div>
+	</c:if>
+	<!-- END DESKTOP -->
+	<!-- PREVIEW IPAD -->
+	<c:if test="${MOBILE_EDITOR != 'on'}">
+		<div
+			class="menu-item item-right qb-edit-tool padding-none hidden-edit-pc-from-preview-ipad"
+			id="preview-ipad"
+			style="border-left: 1px solid #555555; background: none;">
+			<!--
+			<p class="btn-menu-ipad btn-preview-ipad active" title="<spring:message code='mtop.title7' />" >
+							<i class="fa fa-tablet"></i>
+						</p>-->
+
+			<p class="btn-menu-ipad active ipad-portrait-preview"
+				data-placement="bottom" data-toggle="tooltip"
+				title="<spring:message code='mtop.title10' />">
+				<i class="fa fa-tablet"></i>
+			</p>
+			<p
+				class="btn-menu-ipad active ipad-landscape-preview preview_icon_ipad_rotate"
+				data-toggle="tooltip" data-placement="bottom"
+				title="<spring:message code='mtop.title9' />">
+				<i class="fa fa-tablet"></i>
+			</p>
+			<p class="btn-menu-ipad active ipad-close-preview"
+				data-placement="bottom" data-toggle="tooltip"
+				title="<spring:message code='mtop.title8' />">
+				<i class="fa fa-desktop"></i>
+			</p>
+		</div>
+	</c:if>
+	<!-- END IPAD -->
+</div>

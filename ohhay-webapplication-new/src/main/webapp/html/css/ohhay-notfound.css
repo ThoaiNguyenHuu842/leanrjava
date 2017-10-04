@@ -1,0 +1,146 @@
+html,body{
+	height: 100%;
+}
+body{
+   background: url("../images/background-404.jpg") no-repeat;
+   background-position: center top;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   
+}
+body .qb-ohhay-notfound-wrapper{
+	height: 100% !important;
+}
+.bg{
+    position: relative;
+}
+.item-404{
+    border: solid;
+    border-width: 5px;
+    border-color: #fff;
+    display: block;
+    position: absolute;
+    top: 95px;
+    background-color: #8265af;
+    border-radius: 50%;
+    width: 265px;
+    height: 265px;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+.item-404 p:first-child{
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 70px;
+    font-weight: 100;
+    margin-bottom: 0;
+    padding-top: 18px;
+    
+}
+.item-404 p:nth-child(2){
+    font-family: 'Roboto';
+    font-size: 17px;
+    font-weight: 400;
+    color:#fff;
+    border-bottom: solid;
+    border-width: 1px;
+    margin: -7px 11px 25px ;
+    padding-bottom: 27px;
+    text-transform: uppercase;
+    
+}
+.item-404 a{
+	font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    color:#fff;
+    text-transform: uppercase;
+    
+}
+.item-404 i{
+	font-size: 15px;
+	font-weight: 500;
+	color : #fff;
+	padding-left: 4px;
+	position: relative;
+	bottom: 2px;
+}
+.text-botton{
+   display: block;
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+.text-botton p{
+	color: #8265af;
+    display: inline-block;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.text-botton span{
+	font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 400;
+}
+.text-botton a{
+	background-color: #8265af;
+    border-radius: 36px;
+    bottom: 7px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 20px;
+    padding: 10px 25px;
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.text-botton i{
+	font-size: 13px;
+	font-weight: 500;
+	color : #fff;
+	padding-left: 4px;
+	position: relative;
+	bottom: 1px
+}
+.item-404 a:hover ,.text-botton a:hover{
+	color:#fff;
+	text-decoration: none;
+}
+@media (max-width: 767px) {
+}
+
+@media (max-width: 600px) {
+}
+
+@media (min-width: 768px) and (max-width: 970px) {
+}
+
+@media (min-width: 1024px){}
+@media only screen and (min-device-width: 320px) and (max-device-width:
+ 480px) 
+ {
+ .text-botton{
+     top: 350px;
+ }
+ body{
+   background-size: initial;
+   
+}
+.item-404{
+	width: 240px;
+    height: 240px;
+    top: 55px;
+}
+.text-botton a{
+	margin: 0;
+}
+.text-botton {    left: 0;
+    transform: none;
+}
+ }

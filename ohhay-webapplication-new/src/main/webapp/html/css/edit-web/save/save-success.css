@@ -1,0 +1,61 @@
+@CHARSET "ISO-8859-1";
+#qb-save-web-success {
+
+}
+
+#qb-save-web-success > div {
+	padding: 20px 15px 20px 20px !important;
+	width: 100%;
+}
+
+#qb-save-web-success div p {
+	color: rgb(48, 48, 48);
+	font-size: 20px;
+}
+
+#qb-save-web-success .lbl-root-domain {
+	font-size: 14px;
+	color: rgb(130, 130, 130);
+	line-height: 22px;
+	font-family: helvetica;
+	font-weight: normal;
+}
+
+#qb-save-web-success .input-own-path {
+	color: rgb(68, 68, 68);
+	font-size: 15px;
+	line-height: 22px;
+	border-radius:4px;
+}
+
+.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix {
+	margin-top: 2em;
+	height: 10px
+}
+
+.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix .ui-dialog-buttonset button {
+	background: #0099FF !important;
+	color: white !important;
+	text-transform: uppercase;
+	color: rgb(0, 153, 255); font-size: 14px;
+	border: none;
+	margin: 0;
+	width: 74px;
+	height: 52px;
+}
+
+.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix{
+	padding: 0;
+}
+
+.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix {
+	border-top: 1px solid #E1E1E1;
+	outline: #F3F3F3;
+}
+
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix.ui-draggable-handle {
+	font-family: helvetica;
+	color: rgb(44, 62, 80);
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+}

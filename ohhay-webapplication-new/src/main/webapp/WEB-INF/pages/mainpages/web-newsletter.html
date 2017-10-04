@@ -1,0 +1,115 @@
+<!-- LOCALIZE -->
+<%@ include file="/WEB-INF/pages/includes/localizeClient.html" %>
+<!-- END LOCALIZE -->
+<c:if test="${MOBILE_EDITOR != 'on'}">
+	<%@include file="../includes/web/web-menu-left.html" %>
+</c:if> 
+<%@include file="../includes/web/web-menu-top-newsletter.html" %>
+<%@include file="../includes/web/dia-add-box.html" %>
+<input id="qb-input-pe400" type="hidden" value="${pe400}" />
+<!-- <input type="file" class="upload_big_box" style="display: none;" /> -->
+<!-- <input type="file" class="upload_small_box" style="display: none;" /> -->
+<!-- <input type="file" class="upload_four_image" style="display: none;" /> -->
+<div id="baseBackground" class="base-desk-image-edit" style="position: absolute; top: 50px"></div>
+<div id="baseGallery" class="base-desk-image-edit" style="position: absolute; top: 50px">
+</div>
+<!-- START BUTTON -->
+<div class="content-start">
+	<div>
+		<button><img src="${CONTEXT_PATH}/html/images/start_add.png" alt="" style="width: 31px;"/>
+		</button>
+		<h5>
+		<spring:message code='mys.start' />
+		</h5>
+	</div>
+</div>
+<!-- END START BUTTON -->
+<!-- DIALOG -->
+<div class="dialogconfirm qb-dialog-new dialog hidden-dialog active-dialog dialog--open"></div>
+<div class="qb-dlg-tool" id="qb-dlg-img-efect" title="&#xf03e;&nbsp;&nbsp; <spring:message code='weh.image_effect' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/image-effect.html"%>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-album" title="&#xf03e;&nbsp;&nbsp; <spring:message code='weh.title1' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/my-collection/image-album.html"%>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-bg-repeat-col" title="&#xf03e;&nbsp;&nbsp; <spring:message code='weh.title2' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/my-collection/bgrepeat-collection.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-video-col" title="&#xf040;&nbsp;&nbsp; <spring:message code='weh.title3' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/video-collection.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-background-src" title="&#xf03e;&nbsp;&nbsp; <spring:message code='web.edit.changebg' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/background-src.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-color-picker" title="&#xf1fc;&nbsp;&nbsp;<spring:message code='weh.title4' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/color-picker.html"%>
+</div>
+<div class="qb-dlg-tool" id="qb-component-option" title="&#xf013;&nbsp;&nbsp; <spring:message code='weh.object_style' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/component-option.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-web-config" title="&#xf013;&nbsp;&nbsp;<spring:message code='weh.web_conf' />">
+	<%@ include file="/WEB-INF/pages/includes/web/web-config.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-option-gmap" title="&#xf041;&nbsp;&nbsp;<spring:message code='weh.edit_map' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/gmap.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-edit-iframe-src" title="&#xf040;&nbsp;&nbsp; <spring:message code='weh.title5' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/evo-iframe.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-action-option" title="&#xf0a4;&nbsp;&nbsp; <spring:message code='weh.action_option' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/action-option.html"%>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-hover-option" title="&#xf24d;&nbsp;&nbsp; <spring:message code='weh.hover_effect' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/hover-option.html"%>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-anchor-option" title="&#xf13d;&nbsp;&nbsp;  <spring:message code='weh.title6' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/anchor-option.html"%>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-contact-form" title="&#xf0e0;&nbsp;&nbsp; <spring:message code='weh.title8' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/contact-form/contact-form.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-contact-form-field" title="&#xf0e0;&nbsp;&nbsp; <spring:message code='weh.title9' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/contact-form/contact-form-edit-field.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-mobile-editor" title="&#xf031;&nbsp;&nbsp; <spring:message code='weh.font_scale' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/mobile_editor.html" %>
+</div>
+<%@ include file="/WEB-INF/pages/includes/web/tools/editor.html" %>
+<div class="qb-dlg-tool" id="qb-save-web-success" title="<spring:message code='weh.save_success' />">
+	<%@ include file="/WEB-INF/pages/includes/web/save-success.html"%>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-mb-hidden-element" title="&#xf070;&nbsp;&nbsp; <spring:message code='weh.hidden_element' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/mobile-editor/hidden-elements.html"%>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-animation-onload-option" title="&#xf24d;&nbsp;&nbsp; <spring:message code='weh.title10' />">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/animation-option.html"%>
+</div>
+<!-- END DIALOG -->
+<!-- PHONE VIEW TOP BG -->
+<div id="qb-phone-view-top"></div>
+<!-- END PHONE VIEW TOP BG -->
+<!-- WEB CONTENT -->
+<ul class="qb-oohhay-out-wrapper-main" id="content-wrapper"></ul>
+<!-- END WEB CONTENT -->
+<!-- PHONE VIEW BOTTOM BG -->
+<div id="qb-phone-view-bottom"></div>
+<!-- END PHONE VIEW BOTTOM BG -->
+<!-- WEB BACKGROUND -->
+<div class="wrapper-background"></div>
+<!-- END WEB BACKGROUND -->
+<!-- WEB VIDEO BACKGROUND -->
+<c:if test="${MOBILE_EDITOR != 'on'}">
+	<div id="wrapper-background-video" class="wrapper-background-video">
+		<video poster="" loop="" id="explainer_vid_bg" autoplay="">
+			<source type="video/mp4" src="" id="mp4_source"></source>
+		</video>
+	</div>
+</c:if>
+<!-- <c:if test="${MOBILE_EDITOR != 'on'}">
+	<iframe id="mobile-hiiden-editor" src="http://localhost:8080/ohhay-webapplication-new/e208/cavang?editmode=elementmb"></iframe>
+</c:if> -->
+<!-- END WEB VIDEO BACKGROUND -->
+<!-- SPACE BOTTOM DIV -->
+<div id='qb-spave-bottom-div'></div>
+<!-- END SPACE BOTTOM DIV -->
+<div data-editable data-name="main-content" style="display: none;"></div>

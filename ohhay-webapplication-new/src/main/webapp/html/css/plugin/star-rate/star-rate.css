@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+.cover-star-data{
+	display: inline-block;
+}
+.cover-star-data i,.action-rating i{
+	color: rgb(255, 153, 0);
+	font-size: 15px;
+	cursor: pointer;
+	transion-duration:0.7s
+}
+
+.action-rating i{
+	font-size: 20px;
+	color:rgb(110, 110, 110);
+	margin-right: 6px;
+}
+

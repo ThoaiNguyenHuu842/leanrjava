@@ -1,0 +1,30 @@
+<%@ page pageEncoding="UTF-8" %>
+<div class="qb-dig-tools-edit">
+	<div class="form-group form-group-card">
+<!-- 		<label class="form-group-title">Lời chúc của bạn</label> -->
+		<div class="form-group-content">
+			<textarea class="card-content" maxlength="220" placeholder="Viết lời chúc Tết của bạn vào đây..."></textarea>
+			<span class="card-content-tip">220 ký tự</span>
+		</div>
+	</div>
+	<div class="form-group">
+		<input type="file" class="input-upload-card-background"
+			style="display: none;" />
+		<button class="btn-upload-img-card">Upload ảnh thiệp <i class="fa fa-camera"></i></button>
+		<button class="btn-rotate-img-card">Xoay ảnh <i class="fa fa-rotate-left"></i></button>
+		<div class="img-align">
+			<span class="left"><img src="${CONTEXT_PATH}/html/images/align-left.png" /></span> <span
+				class="center"><img src="${CONTEXT_PATH}/html/images/align-center.png" /> </span> <span
+				class="right"><img src="${CONTEXT_PATH}/html/images/align-right.png" /></span>
+		</div>
+		<div class="panel-img-card-preview">
+			<img />
+		</div>
+	</div>
+	<div class="form-group-btn group-btn-card">
+		<button class="btn-done-create-card">
+			<spring:message code='done' />
+		</button>
+	</div>
+</div>
+

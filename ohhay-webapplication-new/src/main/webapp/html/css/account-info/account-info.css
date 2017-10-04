@@ -1,0 +1,2201 @@
+body {
+	overflow-x: hidden;
+}
+
+#body-evo {
+	background-attachment: fixed;
+	background: #E8E8E8;
+/* 	background-image: url("../../images/bonevo-background.jpg"); */
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: left;
+	width: 100%;
+}
+
+.footer-web-data {
+	float: left;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.tooltip {
+	display: block !important;
+}
+
+#info_data_account {
+	background-image: initial;
+	border-color: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 0;
+	filter: none;
+	padding: 27px 30px 30px 80px;
+}
+
+.qb-setting-content-child {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: rgba(4, 108, 194, 0.65);
+	background-image: initial;
+	background-origin: padding-box;
+	background-position: 0 0;
+	background-repeat: repeat;
+	background-size: auto auto;
+	filter: none;
+}
+
+.qb-setting-content-child #info_data_account {
+	background-color: #fff;
+	border-color: rgb(0, 0, 0);
+	border-style: solid;
+	border-width: 0;
+	filter: none;
+	border-radius: 0px 4px 4px 0px;
+}
+
+.qb-setting-content-child #image_account {
+	border: 3px solid rgb(255, 255, 255);
+	border-radius: 50%;
+	height: 112px;
+	margin: 30px 5px 5px;
+	overflow: hidden;
+	text-align: center;
+	width: 112px;
+}
+
+.qb-ohhay-setting-wrapper .qb-button-setting {
+	background: rgba(64, 102, 133, 0.5) none repeat scroll 0 0;
+	border-radius: 25px;
+	color: #fff;
+	cursor: pointer;
+	font-family: Roboto-Regular;
+	font-size: 12px;
+	height: 36px;
+	min-width: 80px;
+	padding: 3px 16px 0;
+	text-align: center;
+}
+
+.qb-ohhay-setting-wrapper .qb-button-setting:hover {
+	background: #6C7A8B;
+}
+
+.qb-setting-content-child  .sett-tab-account-info .sett-tab-account-info-img
+	{
+	width: 100% !important;
+}
+
+.qb-setting-content-child  .sett-tab-account-info .btn-upload-new-image
+	{
+	height: 60px;
+	width: 55%;
+	margin-bottom: 70%;
+}
+
+.qb-setting-content-child  .sett-tab-account-info .btn-upload-new-image .btn-button-upload button
+	{
+	width: calc(100% - 20px);
+	height: calc(100% - 25px);
+	margin: 5px 10px;
+	filter: none;
+	overflow: hidden;
+	border-radius: 40px;
+	background: rgb(255, 255, 255);
+	border: none;
+}
+
+.qb-setting-content-child  .sett-tab-account-info .btn-upload-new-image .btn-button-upload button span
+	{
+	min-height: 20px;
+	font-size: 12px;
+}
+
+.qb-setting-content-child {
+	box-shadow: 0 1px 2px 0 rgb(125, 125, 125);
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content {
+	background-attachment: fixed;
+	background-color: initial;
+	/* background-image: url("../../images/bonevo-background.jpg"); */
+	background:#E8E8E8;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: none;
+	height: 750px;
+	overflow: hidden;
+	position: absolute;
+	top: 60px;
+	width: 100%;
+	z-index: 30;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-header
+	{
+	margin: 62px auto auto;
+	width: 1170px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-header .qb-setting-input-header-title label
+	{
+	float: left;
+	font-family: Roboto-Regular;
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-header .qb-setting-input-header-back
+	{
+	border-radius: 17px;
+	color: #fff;
+	padding: 3px 24px;
+	position: absolute;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-header .qb-setting-input-header-back span
+	{
+	font-family: fontawesome, Fontawesome-Webfont;
+	font-size: 18px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-header .qb-setting-input-header-back label
+	{
+	font-family: Roboto-Regular;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body
+	{
+	width: 1170px;
+	margin: 112px auto auto;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: rgba(255, 255, 255, 0.75);
+	background-image: initial;
+	background-origin: padding-box;
+	background-position: 0 0;
+	background-repeat: repeat;
+	background-size: auto auto;
+	box-shadow: 0 0 2px 0 rgb(168, 168, 168);
+	height: auto;
+	padding: 5% 15%;
+	overflow: auto;
+	height: 80%;
+}
+
+.qb-setting-input-panel {
+	float: left;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.qb-setting-input-panel .qb-button-submit-onpage {
+	color: #fff;
+	margin-left: 21%;
+	padding-top: 8px;
+	text-transform: uppercase;
+	width: 123px;
+}
+
+#profile_account {
+	width: 80%;
+}
+
+#profile_account li .datatext h4 {
+	
+}
+
+#profile_account li {
+	border-bottom: none;
+}
+
+#profile_account li .titledata {
+	font-family: helvetica;
+}
+
+.qb-ohhay-setting-wrapper  #info_data_account .sett-tab-title {
+	border-bottom: medium none !important;
+	margin-bottom: 28px;
+}
+
+.roboto-medium {
+	font-family: Roboto-Medium !important;
+}
+
+.roboto-regular {
+	font-family: Roboto-Regular !important;
+}
+
+.color-active {
+	color: #0099ff !important;
+}
+
+.qb-ohhay-setting-wrapper {
+	display: block;
+	height: 100%;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .set-error {
+	color: #000;
+	float: left;
+	font-size: 14px;
+	font-weight: normal;
+	margin-top: 15px;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .no-data-found {
+	color: #6e6e6e;
+	float: left;
+	font-size: 12px;
+	margin-top: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-sett-list-right-choose span {
+	display: inline-block;
+	max-width: 140px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.qb-ohhay-setting-wrapper .qb-radio {
+	border: 1px solid #c9c9c9;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 24px;
+	line-height: 24px;
+	margin: 0;
+	width: 24px;
+}
+
+.qb-ohhay-setting-wrapper .qb-radio span {
+	color: #0099ff;
+	display: none;
+	font-family: Font-Check !important;
+	font-size: 24px;
+}
+
+.qb-ohhay-setting-wrapper .qb-radio.qb-radio-selected {
+	border: medium none;
+	border-radius: 0;
+	cursor: default;
+	height: auto;
+	width: auto;
+}
+
+.qb-ohhay-setting-wrapper .qb-radio.qb-radio-selected span {
+	display: inline;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-panel-pro .btn-group
+	{
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-panel-pro .btn-group button
+	{
+	border-color: #dfdfdf;
+	box-shadow: none;
+	color: #333;
+	font-family: Roboto-Regular;
+	font-size: 16px;
+	position: relative;
+	text-align: left;
+	width: 100%;
+	height: 33px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-panel-pro .btn-group.open button
+	{
+	background: #fff none repeat scroll 0 0;
+	color: #333;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-panel-pro .btn-group button:hover
+	{
+	background: #fff none repeat scroll 0 0;
+	color: #333;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-panel-pro .btn-group button span
+	{
+	color: #c3c3c3;
+	position: absolute;
+	right: 10px;
+	text-align: right;
+	top: 15px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-panel-pro .dropdown-menu
+	{
+	border-color: #a0a0a0;
+	box-shadow: none;
+	max-height: 250px;
+	overflow: auto;
+	top: 90%;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-panel-pro .dropdown-menu li
+	{
+	color: #333;
+	font-family: Roboto-Regular;
+	font-size: 14px;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel
+	{
+	float: left;
+	margin-top: 22px;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-unvisible-panel
+	{
+	display: none;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel input[type="button"]
+	{
+	background: #6C7A8B none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+	font-family: Roboto-Regular;
+	font-size: 14px;
+	height: 37px;
+	margin: 0 9px;
+	padding: 0 30px;
+	text-align: center;
+	width: auto;
+}
+
+.qb-setting-input-panel input[type="text"], .qb-setting-input-panel input[type="password"]
+	{
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	color: #727272;
+	/* float: left; */
+	font-size: 14px;
+	margin: 3px 0;
+	padding: 8px;
+	resize: none;
+	width: 70%;
+}
+
+.qb-setting-input-panel label {
+	color: #000;
+	/* float: left; */
+	font-family: Roboto-Regular;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	margin-left: 10px;
+	margin-top: 9px;
+	/* width: 20%; */
+}
+
+.fix-no-margintop{
+	margin-top: 0 !important;;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .upgrade-item
+	{
+	float: left;
+	padding-left: 20px;
+	width: 50%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .upgrade-action,
+	.qb-ohhay-setting-wrapper .qb-setting-input-content-detail .qb-setting-input-body .qb-setting-input-panel .upgrade-action
+	{
+	float: left;
+	padding-left: 20px;
+	width: 50%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .upgrade-action .item
+	{
+	float: left;
+	margin-bottom: 33px;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .upgrade-action .item p
+	{
+	float: left;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .upgrade-action .item .lbl-title
+	{
+	color: #333;
+	font-family: Roboto-Regular;
+	margin-left: 10px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .upgrade-item div
+	{
+	margin: 0 0 20px;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .upgrade-item div h3
+	{
+	color: #0099ff;
+	display: inline-block;
+	font-family: RobotoCondensed-Bold;
+	font-size: 26px;
+	margin: 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .upgrade-item div h5
+	{
+	color: #666;
+	display: inline-block;
+	font-family: RobotoCondensed-Bold;
+	font-size: 15px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .upgrade-item div a
+	{
+	background: #0099ff none repeat scroll 0 0;
+	border-radius: 20px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	font-family: Roboto-Medium;
+	font-size: 11px;
+	padding: 4px 10px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .upgrade-item div a:hover
+	{
+	text-decoration: none;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .upgrade-item ul
+	{
+	float: left;
+	margin: 15px 0 0;
+	padding: 0;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .upgrade-item ul li
+	{
+	list-style: outside none none;
+	margin-bottom: 5px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .upgrade-item ul li i
+	{
+	color: #0099ff;
+	font-size: 14px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .upgrade-item ul li label
+	{
+	color: #333;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-upgrade-info ul
+	{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-upgrade-info ul li
+	{
+	display: block;
+	list-style: outside none none;
+	margin: 6px 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-upgrade-info ul li label
+	{
+	color: #999;
+	font-family: Roboto-Regular;
+	font-size: 14px;
+	width: 25%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-upgrade-info ul li input
+	{
+	border: 1px solid #e8e8e8;
+	border-radius: 4px;
+	color: #333;
+	font-family: Roboto-Regular;
+	font-size: 16px;
+	height: 38px;
+	line-height: 36px;
+	padding: 0 12px;
+	width: 70%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-upgrade-info ul li input.upgrade-zipcode
+	{
+	width: 35%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-upgrade-info ul li .dropdown
+	{
+	display: inline-block;
+	width: 70%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-upgrade-info ul li .dropdown b
+	{
+	font-weight: inherit;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-upgrade-info ul li .dropdown.upgrade-gender
+	{
+	width: 35%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-upgrade-info ul li .dropdown button
+	{
+	position: relative;
+	text-align: left;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-upgrade-info ul li .dropdown.open button
+	{
+	background: #fff none repeat scroll 0 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-upgrade-info ul li .dropdown button:hover
+	{
+	background: #fff none repeat scroll 0 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-upgrade-info ul li .dropdown button .caret
+	{
+	position: absolute;
+	right: 14px;
+	top: 15px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-upgrade-info ul li .dropdown ul
+	{
+	max-height: 180px;
+	overflow: auto;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-upgrade-info ul li .dropdown ul li
+	{
+	cursor: pointer;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-upgrade-info ul li .btn-upgrade-nextstep
+	{
+	background: #0099ff none repeat scroll 0 0;
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Roboto-Regular;
+	font-size: 15px;
+	margin: 15px 0;
+	padding: 7px 19px;
+	text-transform: uppercase;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel .qb-setting-input-upgrade-info ul li .btn-upgrade-nextstep:hover
+	{
+	text-decoration: none;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .btn-upgrade
+	{
+	background: #0099ff none repeat scroll 0 0;
+	border-radius: 20px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	font-family: Roboto-Medium;
+	font-size: 11px;
+	padding: 7px 27px;
+	text-decoration: none;
+	margin-bottom: 15px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel-sexiness *
+	{
+	float: left;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel-language *
+	{
+	float: left;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .sett-tab-title label
+	{
+	color: #666;
+	font-family: Roboto-Medium !important;
+	font-size: 12px;
+	font-weight: inherit;
+	margin: 0;
+	padding-left: 5px;
+	text-transform: uppercase;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-language-input-container
+	{
+	border: medium none;
+	float: left;
+	list-style: outside none none;
+	padding: 0;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-language-input-container li
+	{
+	border-bottom: 1px solid rgba(229, 229, 229, 0.75);
+	float: left;
+	padding: 14px 9px;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-language-input-container li .qb-sett-list-img
+	{
+	float: left;
+	margin: 0 11px 0 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-language-input-container li .qb-sett-list-img .img-languages
+	{
+	max-width: 100%;
+	width: 20px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-language-input-container li .qb-sett-list-label
+	{
+	color: #666666;
+	float: left;
+	font-size: 12px;
+	line-height: 14px;
+	margin: 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-language-input-container li .qb-sett-list-right
+	{
+	float: right;
+	position: relative;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-language-input-container li .qb-sett-list-right-btn
+	{
+	color: #0099ff;
+	cursor: pointer;
+	float: left;
+	font-size: 15px;
+	margin: 0 8px 0 16px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-language-input-container li .qb-sett-list-right-btn.unable
+	{
+	color: #ccc;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-language-input-container li .qb-sett-list-right-choose
+	{
+	color: #0099ff;
+	cursor: pointer;
+	font-size: 12px;
+	margin: -2px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-language-input-container li .qb-sett-list-right-choose i
+	{
+	color: #000;
+	float: right;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+	width: 18px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-language-input-container li .qb-sett-list-choice
+	{
+	float: right;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-language-input-container li .qb-sett-list-choice .qb-sett-list-choice-view
+	{
+	border: medium none;
+	cursor: pointer;
+	display: inline-block;
+	height: 24px;
+	margin: 0 2px;
+	padding: 5px;
+	width: 30px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-language-input-container li .qb-sett-list-choice .qb-sett-list-choice-view img
+	{
+	max-width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-language-input-container li .qb-sett-list-choice .qb-sett-list-choice-view.active
+	{
+	border: 1px solid #0099ff;
+	border-radius: 4px;
+}
+
+.qb-ohhay-setting-wrapper #growl-message {
+	display: none;
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: 2147483647;
+}
+
+.qb-ohhay-setting-wrapper #growl-message #container {
+	background: #fff none repeat scroll 0 0;
+	border-radius: 0;
+	box-shadow: 1px 1px 4px #e8e8e8;
+	display: table;
+	margin: 0 auto;
+	min-height: 40px;
+	padding: 7px 30px;
+	position: relative;
+	top: 0;
+	width: auto;
+	z-index: 9999;
+}
+
+.qb-ohhay-setting-wrapper #growl-message #container label {
+	color: #333;
+	display: block;
+	float: left;
+	font-family: Roboto-Regular, roboto-regular;
+	font-size: 14px;
+	line-height: 35px;
+}
+
+.qb-ohhay-setting-wrapper #growl-message #container .growl-message-icon
+	{
+	background: #fe5151 none repeat scroll 0 0;
+	border-radius: 50%;
+	color: #fff;
+	float: left;
+	font-family: fontawesome, Fontawesome-Webfont;
+	font-size: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin: 2px 15px 2px 2px;
+	text-align: center;
+	width: 30px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .video-iframe-review iframe
+	{
+	height: 30%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-header-opacity
+	{
+	background: #000 none repeat scroll 0 0;
+	height: 100%;
+	left: 0;
+	opacity: 0.3;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-header {
+	background: #a5b865 none repeat scroll 0 0;
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-header .qb-setting-header-content
+	{
+	float: left;
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-header .qb-setting-logo
+	{
+	float: left;
+	height: 79px;
+	left: 0;
+	margin: 0;
+	padding-top: 19px;
+	position: absolute;
+	text-align: right;
+	top: 0;
+	width: 6%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-header .qb-setting-logo span
+	{
+	background-image: none;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	color: #fff;
+	cursor: pointer;
+	font-size: 26px;
+	height: 40px;
+	line-height: 38px;
+	text-align: center;
+	width: 40px;
+	font-size: 12px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-header .qb-setting-nav
+	{
+	float: left;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-header .qb-setting-nav li
+	{
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	height: 100%;
+	padding: 16px 0;
+	position: relative;
+	width: 104px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-header .qb-setting-nav li:hover
+	{
+	background: rgba(0, 0, 0, 0.18) none repeat scroll 0 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-header .qb-setting-nav li.active:hover
+	{
+	background: transparent none repeat scroll 0 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-header .qb-setting-nav li .sett-opacity
+	{
+	background: #000 none repeat scroll 0 0;
+	display: none;
+	height: 100%;
+	left: 0;
+	opacity: 0.18;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 9;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-header .qb-setting-nav li .nav-sett-item-content
+	{
+	height: 100%;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-header .qb-setting-nav li.active .sett-opacity
+	{
+	display: block;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-header .qb-setting-nav li span
+	{
+	font-size: 15px;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-header .qb-setting-nav li h6
+	{
+	font-family: Roboto-Regular;
+	text-transform: capitalize;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-header-title {
+	background: #a5b865 none repeat scroll 0 0;
+	height: 46px;
+	left: 0;
+	position: absolute;
+	top: 80px;
+	width: 100%;
+	z-index: 20;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-nav-title {
+	border-top: 1px solid #fff;
+	color: #fff;
+	float: left;
+	font-family: Roboto-Light;
+	font-size: 24px;
+	height: 46px;
+	line-height: 46px;
+	margin: 0;
+	position: relative;
+	text-align: center;
+	text-transform: capitalize;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-scroll {
+	float: left;
+	height: 100%;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-sett-hide-panel {
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content {
+	padding: 60px 0 0 8px;
+	height: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .btn-form-save
+	{
+	float: left;
+	margin-top: 80px;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .btn-form-save span
+	{
+	background: #0099ff none repeat scroll 0 0;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	float: right;
+	padding: 7px 30px;
+	text-transform: uppercase;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-setting-content-cms
+	{
+	display: none;
+	float: left;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-setting-content-property
+	{
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 4%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-setting-content-subpage
+	{
+	display: none;
+	float: left;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-setting-content-media
+	{
+	display: none;
+	float: left;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-setting-content-plugin
+	{
+	display: none;
+	float: left;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-setting-content-account
+	{
+	display: block;
+	float: left;
+	width: 100%;
+	border-radius: 4px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-title
+	{
+	border-bottom: 1px solid #000;
+	float: left;
+	height: 52px;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-title label
+	{
+	color: rgb(11, 83, 148);
+	font-family: Roboto-regular !important;
+	font-size: 14px;
+	font-weight: inherit;
+	line-height: 38px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-title .sett-tab-title-btn
+	{
+	float: right;
+	font-family: Roboto-Regular;
+	position: relative;
+	text-align: center;
+	background: rgba(64, 102, 133, 0.5) none repeat scroll 0 0;
+	border-radius: 17px;
+	padding: 8px 21px;
+	margin-top: -4px;
+	color: #fff;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-title .sett-tab-title-btn:hover
+	{
+	background: #6C7A8B;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-title .sett-tab-title-btn i
+	{
+	font-size: 15px;
+	line-height: 38px;
+	text-align: center;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-title .sett-tab-title-btn.active i
+	{
+	color: #0099ff;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-filter
+	{
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	display: none;
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 45px;
+	width: 160px;
+	z-index: 19;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-filter li
+	{
+	cursor: pointer;
+	float: left;
+	padding: 8px 15px;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-filter li span
+	{
+	color: #666666;
+	float: left;
+	font-size: 14px;
+	margin-right: 13px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-filter li.public span
+	{
+	color: #0099ff;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-filter li h6
+	{
+	float: left;
+	font-size: 12px;
+	margin: 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-filter li.selected
+	{
+	background: #e8e8e8 none repeat scroll 0 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-filter li:hover
+	{
+	background: #e8e8e8 none repeat scroll 0 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-filter.sett-topic-choose
+	{
+	top: 20px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-filter.sett-topic-choose li:hover
+	{
+	background: #e8e8e8 none repeat scroll 0 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-list
+	{
+	border: medium none;
+	float: left;
+	list-style: outside none none;
+	padding: 0;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-list li
+	{
+	border-bottom: 1px solid rgba(229, 229, 229, 0.75);
+	float: left;
+	padding: 14px 9px;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-list li .qb-sett-list-img
+	{
+	float: left;
+	margin: 0 11px 0 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-list li .qb-sett-list-img .img-languages
+	{
+	max-width: 100%;
+	width: 20px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-list li .qb-sett-list-label
+	{
+	color: #000;
+	float: left;
+	font-size: 14px;
+	line-height: 14px;
+	margin: 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-list li .qb-sett-list-right
+	{
+	float: right;
+	position: relative;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-list li .qb-sett-list-right-btn
+	{
+	color: #666666;
+	cursor: pointer;
+	float: left;
+	font-size: 15px;
+	margin: 0 8px 0 16px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-list li .qb-sett-list-right-btn.unable
+	{
+	color: #000;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-list li .qb-sett-list-right-choose
+	{
+	color: #0099ff;
+	cursor: pointer;
+	font-size: 12px;
+	margin: -2px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-list li .qb-sett-list-right-choose i
+	{
+	color: #000;
+	float: right;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+	width: 18px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-list li .qb-sett-list-choice
+	{
+	float: right;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-list li .qb-sett-list-choice .qb-sett-list-choice-view
+	{
+	border: medium none;
+	cursor: pointer;
+	display: inline-block;
+	height: 24px;
+	margin: 0 2px;
+	padding: 5px;
+	width: 30px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-list li .qb-sett-list-choice .qb-sett-list-choice-view img
+	{
+	max-width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-list li .qb-sett-list-choice .qb-sett-list-choice-view.active
+	{
+	border: 1px solid #0099ff;
+	border-radius: 4px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-list.qb-sett-list-domain li .qb-sett-list-label
+	{
+	line-height: 24px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-list.qb-sett-list-domain li .qb-sett-list-right
+	{
+	top: 5px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-keyword
+	{
+	background: #666 none repeat scroll 0 0;
+	border-radius: 15px;
+	color: #fff;
+	float: left;
+	font-family: Roboto-Medium !important;
+	font-size: 10px;
+	height: 30px;
+	line-height: 30px;
+	margin: 15px 6px 0 0;
+	padding: 0 10px 0 18px;
+	text-transform: uppercase;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-keyword span
+	{
+	color: #ccc;
+	cursor: pointer;
+	margin-left: 25px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list
+	{
+	float: left;
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li
+	{
+	border-bottom: 1px solid #ccc;
+	float: left;
+	padding: 37px 5px;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-img
+	{
+	float: left;
+	margin: 0;
+	padding: 7px 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-img img
+	{
+	height: 38px;
+	max-width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content
+	{
+	display: inline;
+	padding: 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content h6
+	{
+	color: #333;
+	display: block;
+	font-family: Roboto-Medium !important;
+	text-transform: uppercase;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content h5
+	{
+	color: #666;
+	display: block;
+	margin: 0 0 14px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content h5 a
+	{
+	color: #0099ff;
+	cursor: pointer;
+	margin-bottom: 0;
+	margin-left: 3px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content h4
+	{
+	color: #333;
+	display: block;
+	font-family: Roboto-Regular;
+	font-size: 16px;
+	margin: 0 0 14px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content span
+	{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content h4 a
+	{
+	color: #0099ff;
+	font-size: 16px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content h4 a:hover
+	{
+	color: #0099ff;
+	font-size: 16px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content h4 i
+	{
+	font-size: 8px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content h4.account-upgrade
+	{
+	display: block;
+	line-height: 60px;
+	margin: 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content label
+	{
+	color: #999;
+	display: block;
+	font-size: 10px;
+	font-weight: inherit;
+	margin: 14px 0 6px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content .create-shop
+	{
+	background: #3e85da none repeat scroll 0 0;
+	border-radius: 3px;
+	color: #fff;
+	padding: 0 13px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content .wait-mail
+	{
+	color: #3e85da;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content .resend-mail
+	{
+	background: #3e85da none repeat scroll 0 0;
+	border-radius: 3px;
+	color: #fff;
+	padding: 0 13px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content .view-shop
+	{
+	background: #3e85da none repeat scroll 0 0;
+	border-radius: 3px;
+	color: #fff;
+	padding: 0 13px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content .manager-sale
+	{
+	background: #3e85da none repeat scroll 0 0;
+	border-radius: 3px;
+	color: #fff;
+	padding: 0 13px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content a
+	{
+	cursor: pointer;
+	display: inline-block;
+	font-family: Roboto-Regular;
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 6px;
+	margin-right: 10px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content a.disable
+	{
+	display: none;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content a:hover
+	{
+	text-decoration: none;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-content a i
+	{
+	margin-right: 8px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-btn
+	{
+	float: right;
+	margin: -21px 0 0;
+	text-align: right;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-btn #title-not-confirm-email
+	{
+	background: #0099ff none repeat scroll 0 0;
+	border-radius: 14px;
+	color: #fff;
+	float: right;
+	font-size: 12px;
+	height: 31px;
+	line-height: 30px;
+	margin-top: 12px;
+	width: 344px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list li .sett-plugin-list-btn span
+	{
+	color: #666;
+	cursor: pointer;
+	font-size: 15px;
+	line-height: 58px;
+	text-align: center;
+	width: 32px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list.qb-sett-profile-list li
+	{
+	padding: 0 5px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list.qb-sett-profile-list li:nth-child(1)
+	{
+	border-top: medium none;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list.qb-sett-profile-list li .sett-plugin-list-btn
+	{
+	cursor: pointer;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list.qb-sett-profile-list li .sett-plugin-list-btn span
+	{
+	color: #333;
+	font-size: 12px;
+	line-height: 5;
+	text-align: right;
+	width: auto;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list.qb-sett-profile-list li .sett-plugin-list-btn label
+	{
+	color: #333;
+	cursor: pointer;
+	font-family: Roboto-Regular;
+	font-size: 12px;
+	font-weight: inherit;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list.qb-sett-profile-list li .sett-plugin-list-btn.color-active span
+	.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list.qb-sett-profile-list li .sett-plugin-list-btn.color-active label
+	{
+	color: #0099ff;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-account-info .sett-tab-account-info-img
+	{
+	float: left;
+	margin-top: 7px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-account-info .sett-tab-account-info-img p
+	{
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	width: 152px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-account-info .sett-tab-account-info-img span
+	{
+	border: 1px solid #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 32px;
+	position: absolute;
+	right: 4px;
+	top: 10px;
+	width: 32px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-account-info .sett-tab-account-info-img span i
+	{
+	background: #0099ff none repeat scroll 0 0;
+	border-radius: 50%;
+	color: #fff;
+	height: 30px;
+	padding: 8px;
+	width: 30px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-account-info .sett-tab-account-info-phone
+	{
+	float: left;
+	margin-top: 25px;
+	width: 136%;
+	text-align: center;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-account-info .sett-tab-account-info-phone p
+	{
+	margin: 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-account-info .sett-tab-account-info-phone span
+	{
+	color: #0099ff;
+	font-size: 15px;
+	margin-top: 9px;
+	transform: rotate(20deg);
+	width: 10px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-account-info .sett-tab-account-info-phone label
+	{
+	color: #333;
+	font-family: Roboto-Light !important;
+	font-size: 24px;
+	font-weight: inherit;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-account-list-item
+	{
+	float: left;
+	padding: 0;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-account-list-item-header
+	{
+	border-top: 1px solid #ccc;
+	display: block;
+	height: 40px;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-account-list-item-header .account-header-icon
+	{
+	color: #9a9a9a;
+	float: left;
+	line-height: 38px;
+	text-align: center;
+	width: 38px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-account-list-item-header label
+	{
+	color: #686868;
+	font-weight: inherit;
+	line-height: 38px;
+	padding-left: 12px;
+	text-transform: uppercase;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-account-list-item-header .account-header-btn
+	{
+	float: right;
+	text-align: center;
+	width: 34px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-account-list-item-header .account-header-btn i
+	{
+	color: #656565;
+	cursor: pointer;
+	line-height: 38px;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-account-list-item-header .account-header-value
+	{
+	color: #bfbfbf;
+	float: right;
+	font-size: 12px;
+	line-height: 38px;
+	margin: 0;
+	padding-right: 50px;
+	text-transform: capitalize;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-account-list-item-content
+	{
+	display: none;
+}
+
+.qb-setting-content-child .sett-tab-account-info .info-user .sett-tab-title
+	{
+	border-bottom: 1px solid white;
+}
+
+.qb-setting-content-child .sett-tab-account-info .info-user .sett-tab-title .lb_account
+	{
+	color: white;
+	font-family: Roboto-Regular;
+	color: rgb(255, 255, 255);
+}
+
+.qb-setting-content-child .sett-tab-account-info .info-user .qb-sett-profile-list li
+	{
+	border-bottom: none
+}
+
+.qb-setting-content-child .sett-tab-account-info .info-user .qb-sett-profile-list .sett-plugin-list-content
+	{
+	margin-top: 21px;
+}
+/*
+ * ThoaiVT
+ * CSS part input info account
+ */
+
+/*
+ * dialog datepick
+ *
+ */
+#ui-datepicker-div .ui-datepicker-header .ui-datepicker-title .ui-datepicker-month,
+	#ui-datepicker-div .ui-datepicker-header .ui-datepicker-title .ui-datepicker-year
+	{
+	color: black;
+}
+/*
+ * end css dialog datepick
+ */
+.qb-ohhay-setting-wrapper .qb-setting-include .qb-setting-input-account .qb-setting-input-body .qb-setting-input-sub-panel.qb-setting-input-panel-language.qb-radio-group-rlang,
+	.qb-ohhay-setting-wrapper .qb-setting-include .qb-setting-input-account .qb-setting-input-body .qb-setting-input-sub-panel.qb-setting-input-panel-sexiness
+	{
+	position: relative;
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-include .qb-setting-input-account .qb-setting-input-body .qb-setting-input-sub-panel.qb-setting-input-panel-language.qb-radio-group-rlang .item-data-lang
+	{
+	left: 70%;
+	position: absolute;
+	transform: translate(-50%, 0px);
+	width: 100%;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-include .qb-setting-input-account .qb-setting-input-body .qb-setting-input-sub-panel.qb-setting-input-panel-sexiness .item-data-lang
+	{
+	left: 70%;
+	position: absolute;
+	transform: translate(-62%, 0px);
+	width: 70%;
+}
+
+.qb-ohhay-setting-wrapper #body-evo .qb-setting-wrapper .qb-setting-include .qb-setting-input-content.qb-setting-input-upgrade
+	{
+	height: 100% !important;
+}
+
+/*
+ * fix button upgrade account
+ */
+.qb-setting-content-child .sett-tab-account-info .info-user .qb-sett-profile-list li .btn-edit-upgrade
+	{
+	background: rgb(255, 255, 255) none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 40px;
+}
+
+.qb-setting-content-child .sett-tab-account-info .info-user .qb-sett-profile-list li .btn-edit-upgrade label
+	{
+	color: black;
+}
+/*
+ * dialog account info
+ */
+#dialog-image-avarta .qb-form-content #btnCrop {
+	float: right;
+	margin-right: .3em
+}
+
+#dialog-image-avarta .qb-form-content .editweb-toolbar .input-field .qb-btn-upload
+	{
+	border: none;
+	outline-style: none;
+	background-color: transparent
+}
+
+/*
+ * dialog update avarta
+ */
+#dialog-image-avarta {
+	width: 542px;
+}
+
+#dialog-image-avarta .eg-wrapper .cropper-edit-img-avarta {
+	width: 270px !important;
+	height: 270px !important;
+}
+
+#dialog-image-avarta .title__dialog span {
+	color: #000;
+	font-family: Roboto-Bold;
+	font-size: 18px;
+	text-align: left;
+	width: 100%;
+}
+
+#dialog-image-avarta .title__dialog {
+	padding: 6px 0 20px;
+}
+
+#dialog-image-avarta .editweb-toolbar {
+	padding-top: 16px;
+	padding-bottom: 10px;
+}
+
+#dialog-image-avarta .editweb-toolbar .input-field button {
+	color: #666;
+	margin-left: 30px;
+}
+
+#dialog-image-avarta #container-crop-gallery-item-edit-image-avarta .func_data
+	{
+	border-top: 1px solid #d0d0d0;
+	height: 47px;
+	margin-top: 2%;
+	width: 100%;
+}
+
+#dialog-image-avarta #container-crop-gallery-item-edit-image-avarta .func_data button
+	{
+	background-color: #0099ff;
+	background-image: initial;
+	border: medium none;
+	border-radius: 0 0 5px;
+	box-shadow: none;
+	color: #fff;
+	cursor: pointer;
+	float: right;
+	font-family: Roboto-Regular;
+	font-size: 13px;
+	font-weight: normal;
+	height: 47px;
+	text-align: center;
+	transition-duration: 0.1s;
+	width: 164px !important;
+	margin: 0;
+}
+
+#dialog-image-avarta #container-crop-gallery-item-edit-image-avarta .func_data
+	{
+	float: right;
+}
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable
+	{
+	border-radius: 2px !important;
+	background: #f5f5f5 none repeat scroll 0 0;
+	width: 540px !important;
+	max-height: 560px;
+	padding-top: 0;
+}
+
+.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body
+	{
+	overflow: hidden;
+}
+/*
+ * general class
+ * fix tooltip been cover
+ */
+.tooltip {
+	position: fixed;
+}
+
+.qb-setting-wrapper .input-field {
+	height: 50px;
+}
+
+.qb-setting-wrapper .input-field .btn-save-pass-bonevo {
+	background: #5695d0 none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 4px;
+	color: #fff;
+	float: right;
+	margin-right: 15px;
+	margin-top: 10px;
+	padding: 4px 19px;
+}
+.qb-setting-wrapper .input-field label.lb-extend{
+	margin-top: 0;
+}
+.qb-setting-wrapper .input-field label.lb-extend span{
+	display: block;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; 
+	margin-top: -5px;
+}
+.qb-setting-wrapper .input-field label {
+	margin-left: 5%;
+	width: 25%;
+	float: left;
+/* 	overflow-x: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; */
+}
+.qb-setting-wrapper .input-field label.lb-footer{
+		padding-left: 5%;
+		margin-left: 0;
+}
+.qb-setting-wrapper .input-field input {
+	width: 55%;
+}
+
+.qb-setting-wrapper .account-panel {
+	background: #fff none repeat scroll 0 0;
+	border-radius: 4px;
+	width: 49.5%;
+	padding-bottom: 5%;
+	height: 280px;
+	box-shadow: 0 1px 2px 0 rgb(125, 125, 125);
+}
+
+.qb-setting-account-management {
+	margin-top: 10px;
+	float: left;
+	width: 100%;
+}
+
+#dialog-image-avarta #container-crop-gallery-item-edit-image-avarta .func_data button .icon-check-done
+	{
+	margin-right: 10px;
+}
+
+.qb-setting-wrapper .account-panel .panel-title {
+	border-bottom: 1px solid #f1e9de;
+	margin-bottom: 20px;
+	padding-left: 30px;
+}
+
+.qb-setting-wrapper .account-panel .panel-title h4 {
+	
+}
+
+.qb-setting-wrapper .account-panel .social-icon {
+	border: medium none;
+	border-radius: 4px;
+	box-shadow: none;
+	color: #fff;
+	float: left;
+	height: 40px;
+	margin-left: 25px;
+	width: 40px;
+}
+
+.qb-setting-wrapper .account-panel .btn-account {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: 1px solid #e8e8e8;
+	border-radius: 4px;
+	color: #5194d1;
+	float: left;
+	font-family: roboto-regular;
+	padding: 5px 4px;
+	width: 22%;
+}
+
+.ui-dialog.ui-widget-content[aria-describedby="dialog-image-avarta"] {
+	top: 60px !important;
+}
+
+@media ( min-width : 320px) and (max-width:480px) {
+	body {
+		overflow: scroll;
+	}
+	.full-width-on-mobile-account {
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content {
+		padding-top: 0;
+		padding-left:0;
+	}
+	.qb-setting-content-child .sett-tab-account-info .btn-upload-new-image .btn-button-upload button
+		{
+		margin-top: 20px;
+	}
+	.qb-setting-content-child .sett-tab-account-info .btn-upload-new-image {
+		margin-bottom: 45%;
+	}
+	.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list
+		{
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list.qb-sett-profile-list li .sett-plugin-list-btn
+		{
+		margin-top: -30px !important;
+	}
+	.qb-setting-content-child #info_data_account {
+		padding: 0;
+	}
+	.qb-ohhay-setting-wrapper #info_data_account .sett-tab-title .info-data
+		{
+		padding-top: 35px;
+		padding-left: 0;
+		text-align: center;
+		font-size: 25px !important;
+	}
+	#profile_account {
+		padding-top: 0;
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#profile_account li {
+		margin-bottom: 20px;
+	}
+	#profile_account li .datatext {
+		width: 60%;
+		padding: 0;
+		display: inline-block;
+		padding-bottom: 0;
+	}
+	#profile_account li .titledata {
+		display: inline-block;
+		width: 38%;
+		padding: 0;
+	}
+	#profile_account li .col-xs-1 {
+		width: 10%;
+	}
+	#body-evo {
+		overflow: scroll;
+	}
+	.footer-web-data {
+		display: none;
+	}
+	.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list.qb-sett-profile-list li .sett-plugin-list-btn span
+		{
+		line-height: 0;
+		margin-top: -1px;
+	}
+	.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body
+		{
+		width: 100%;
+		height: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.qb-setting-input-panel input[type="text"], .qb-setting-input-panel input[type="password"]
+		{
+		width: 90% !important;
+		margin-left: 5%;
+	}
+	.qb-ohhay-setting-wrapper .qb-setting-include .qb-setting-input-account .qb-setting-input-body .qb-setting-input-sub-panel.qb-setting-input-panel-language.qb-radio-group-rlang .item-data-lang
+		{
+		left: 0;
+		transform: none;
+	}
+	.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel input[type="button"]
+		{
+		margin: 0;
+		margin-top: 10px !important;
+	}
+	.qb-ohhay-setting-wrapper .qb-setting-include .qb-setting-input-account .qb-setting-input-body .qb-setting-input-sub-panel.qb-setting-input-panel-language.qb-radio-group-rlang .item-data-lang .it-lang
+		{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.it-lang .item {
+		left: 50%;
+		position: relative;
+		transform: translate(-50%);
+	}
+	.qb-setting-input-panel label {
+		margin-top: 0;
+	}
+	.qb-setting-input-panel .it-lang .item label {
+		margin-right: 0 !important;
+	}
+	.qb-ohhay-setting-wrapper .qb-setting-include .qb-setting-input-account .qb-setting-input-body .qb-setting-input-sub-panel.qb-setting-input-panel-sexiness .item-data-lang,
+		.qb-ohhay-setting-wrapper .qb-setting-include .qb-setting-input-account .qb-setting-input-body .qb-setting-input-sub-panel.qb-setting-input-panel-sexiness .item-data-lang .it-lang
+		{
+		width: 100%;
+	}
+	.qb-ohhay-setting-wrapper .qb-setting-include .qb-setting-input-account .qb-setting-input-body .qb-setting-input-sub-panel.qb-setting-input-panel-sexiness .item-data-lang
+		{
+		left: 0;
+		transform: none;
+	}
+	.qb-ohhay-setting-wrapper .qb-setting-include .qb-setting-input-account .qb-setting-input-body .qb-setting-input-sub-panel.qb-setting-input-panel-sexiness .item-data-lang label
+		{
+		margin-right: 15px !important;
+	}
+	.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-body .qb-setting-input-panel-sexiness .qb-radio-group-sexiness .item-sexi
+		{
+		left: 50%;
+		position: relative;
+		transform: translate(-44%);
+	}
+	.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable
+		{
+		width: 100% !important;
+	}
+	.qb-ohhay-setting-wrapper .qb-setting-input-content .qb-setting-input-header .qb-setting-input-header-back
+		{
+		margin-left: 15px;
+		padding: 3px 15px;
+		padding-top: 5px;
+	}
+	.qb-setting-wrapper .account-panel {
+		width: 100%;
+	}
+	.qb-setting-wrapper .input-field {
+		height: 70px;
+	}
+	.qb-setting-wrapper .input-field label {
+		width: 100%;	
+    	margin: 0;
+    	padding-left: 5%;
+/*     	white-space: inherit; */
+	}
+	.qb-setting-wrapper .input-field label.lb-extend {
+		width: 50% !important;
+	}
+	.qb-setting-wrapper .input-field label.lb-extend span {
+		width: 90% !important;
+		font-size: 13px
+	}
+	.qb-setting-wrapper .account-panel {
+		height: auto;
+		margin: 0 0 10px !important;
+	}
+	.qb-setting-wrapper .input-field .btn-save-pass-bonevo {
+		padding: 10px 40px;
+	}
+	.qb-setting-wrapper .account-panel .panel-title {
+		text-align: center;
+		padding: 0;
+	}
+	.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .sett-tab-title
+		{
+		margin-top: 25px;
+	}
+	.tooltip {
+		width: 100%;
+		font-size: 10px;
+	}
+	.ui-dialog.ui-widget-content {
+		width: 100% !important;
+	}
+	.qb-setting-wrapper .account-panel .social-icon {
+		margin-left: 5%;
+	}
+	.qb-setting-wrapper .account-panel .btn-account {
+		padding: 5px 4px;
+		width: 30%;
+		margin-top: 7px;
+	}
+}
+
+@media ( min-width : 480px) and (max-width:1024px) {
+	.qb-setting-content-child .sett-tab-account-info .info-user {
+		padding-top: 25px;
+	}
+	.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list.qb-sett-profile-list li .sett-plugin-list-btn
+		{
+		padding: 0;
+	}
+	.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content {
+		height: auto;
+		overflow: hidden;
+	}	
+	/* 	#profile_account li:nth-last-child(2) div.titledata{
+		padding:0;
+	} */
+
+	.qb-ohhay-setting-wrapper .qb-setting-wrapper .qb-setting-content .qb-sett-plugin-list.qb-sett-profile-list li .sett-plugin-list-btn.color-active label
+		{
+		font-size: 12px !important;
+	}
+	.qb-setting-wrapper .input-field label{
+		width: 35% ;
+		margin-left: 2%;
+	}
+ 	.qb-setting-wrapper .input-field label.lb-extend {
+		width: 57%!important;
+	} 
+	.qb-setting-wrapper .input-field {
+		margin-top: 1px;
+	}
+	#profile_account {
+		width: 100% !important;
+	}
+	.qb-setting-wrapper .account-panel .btn-account {
+		padding: 9px 4px;
+		width: 24%;
+	}
+	.qb-setting-content-child .sett-tab-account-info .btn-upload-new-image .btn-button-upload button
+		{
+		width: calc(100% - -23px);
+		height: calc(100% - 25px);
+		margin: 5px -12px;
+	}
+	.qb-setting-wrapper .account-panel .social-icon{
+	margin-left: 5%
+	}
+	.qb-setting-wrapper .account-panel {
+		height: 310px;
+	}
+	/*
+	* fix language de
+	*/
+	.qb-setting-wrapper .input-field.fix-margin-ipad[lang=de] {
+		margin-top: 8px;
+	}
+	.qb-setting-wrapper .input-field.fix-margin-ipad[lang=en] {
+		margin-top: 3px;
+	}
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>Ohhay 's topic</title>
+</head>
+<body style="float: left;margin: 30px auto;width: 660px;background: #fff;">
+	<p style="text-align: center;padding: 12px 0px;"><img style="width:210px;" src="https://bonevo.net/html/images/bonevo-logo.png"/></p>
+	<div style="text-align: left;width: 650px;display: block;margin: 0px auto;border: 1px solid #cecece;border-radius:4px;">
+		<div style="background: #1bb4c2;width: 100%;position: relative;display: block;padding-top: 20px;padding-bottom: 25px;margin: 0px;">
+			<h3 style="font-size: 24px;color: #fff;text-align: center;display: block;margin: 0px;font-family: 'Roboto', sans-serif">Chào mừng bạn đến với BONEVO</h3>
+			<h4 style="font-size: 16px;color: #fff;text-align: center;display: block;margin: 0px;font-family: 'Roboto', sans-serif">Bạn đã tạo thành công tài khoản BONEVO!</h4>
+		</div>
+		<p style="margin: 0px;width: 100%;text-align: center;"><img style="width: 100%;" src="https://bonevo.net/html/images/email/mail-register-baner.jpg"/></p>
+		<ul style="padding: 20px 0px 0px 0px;">
+			<li style="list-style: none;margin: 6px 0px 25px 0px;display: table;">
+				<p style="text-align: center;width: 116px;display: table-cell;vertical-align: middle;"><img src="https://bonevo.net/html/images/email/mail-register-item1.png"/></p>
+				<div style="width: 514px;padding: 8px;display: table-cell;vertical-align: middle;">
+					<h4 style="font-size: 18px;color: #000;display: block;margin: 0;line-height: 26px;font-family: 'Roboto', sans-serif">Để bắt đầu</h4>
+					<h6 style="font-size: 12px;color: #464646;display: block;margin: 0;line-height: 18px;font-family: 'Roboto', sans-serif">Đăng nhập tại: <a style="color: #1bb4c2;text-decoration: none;" href="https://bonevo.net/login">https://bonevo.net/login</a></h6>
+				</div>
+			</li>
+			
+			<li style="list-style: none;margin: 6px 0px 25px 0px;display: table;">
+				<p style="text-align: center;width: 116px;display: table-cell;vertical-align: middle;"><img src="https://bonevo.net/html/images/email/mail-register-item2.png"/></p>
+				<div style="width: 514px;padding: 8px;display: table-cell;vertical-align: middle;">
+					<h4 style="font-size: 18px;color: #000;display: block;margin: 0;line-height: 26px;font-family: 'Roboto', sans-serif">Sau khi bạn đăng nhập</h4>
+					<h6 style="font-size: 12px;color: #464646;display: block;margin: 0;line-height: 18px;font-family: 'Roboto', sans-serif">Bạn sẽ có thể sử dụng các dịch vụ tại BONEVO. Để xem các hướng dẫn sử dụng <a style="color: #1bb4c2;text-decoration: none;" href="https://bonevo.net/tips">click vào đây</a></h6>
+				</div>
+			</li>
+			
+			<li style="list-style: none;margin: 6px 0px 25px 0px;display: table;">
+				<p style="text-align: center;width: 116px;display: table-cell;vertical-align: middle;"><img src="https://bonevo.net/html/images/email/mail-register-item3.png"/></p>
+				<div style="width: 514px;padding: 8px;display: table-cell;vertical-align: middle;">
+					<h4 style="font-size: 18px;color: #000;display: block;margin: 0;line-height: 26px;font-family: 'Roboto', sans-serif">Nếu bạn có thắc mắc</h4>
+					<h6 style="font-size: 12px;color: #464646;display: block;margin: 0;line-height: 18px;font-family: 'Roboto', sans-serif">hãy gửi đến chúng tôi qua địa chỉ email <a style="color: #1bb4c2;text-decoration: none;" href="mailto:feedback@bonevo.net">feedback@bonevo.net</a>. Đội ngũ hỗ trợ của chúng tôi luôn luôn sẵn sàng và luôn hỗ trợ bạn nhanh chóng.</h6>
+				</div>
+			</li>
+			
+			<li style="list-style: none;margin: 6px 0px 25px 0px;display: table;">
+				<p style="text-align: center;width: 116px;display: table-cell;vertical-align: middle;"><img src="https://bonevo.net/html/images/email/mail-register-item4.png"/></p>
+				<div style="width: 514px;padding: 8px;display: table-cell;vertical-align: middle;">
+					<h4 style="font-size: 18px;color: #000;display: block;margin: 0;line-height: 26px;font-family: 'Roboto', sans-serif">Chúng tôi rất biết ơn bạn đã chọn BONEVO </h4>
+					<h6 style="font-size: 12px;color: #464646;display: block;margin: 0;line-height: 18px;font-family: 'Roboto', sans-serif">và mong đợi sẽ giúp bạn tạo được một trang web đẹp cùng nhiều tiện ích khác</h6>
+				</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div style="text-align: left;width: 650px;display: block;margin: 0px auto;padding-top: 5px;">
+		<h5 style="text-align: center;font-size: 14px;color: #000;margin: 23px 0px;font-family: 'Roboto', sans-serif">Website in minutes</h5>
+		<h6 style="text-align: center;font-size: 12px;color: #666;margin: 5px 0px;font-family: 'Roboto', sans-serif">Trân trọng</h6>
+		<h6 style="text-align: center;font-size: 12px;color: #666;margin: 5px 0px;font-family: 'Roboto', sans-serif">Đội ngũ BONEVO</h6>
+	</div>
+</body>
+</html>

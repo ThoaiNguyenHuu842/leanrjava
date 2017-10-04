@@ -1,0 +1,14 @@
+.qb-dlg-tool .btn-save-field button{    
+	background: #0099FF !important;
+    color: white !important;
+    text-transform: uppercase;
+    color: rgb(0, 153, 255);
+    font-size: 14px;
+    border: none;
+    margin: 0;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    width: 85px;
+    height: 52px;
+    border-radius: 0 0 4px;
+}

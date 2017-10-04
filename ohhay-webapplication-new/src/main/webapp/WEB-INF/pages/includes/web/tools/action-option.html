@@ -1,0 +1,200 @@
+<%@page contentType="text/html; charset=UTF-8" %>
+
+<div class="action-option-panel">
+	<div class="menu">
+		<div class="menu-left">
+			<ul class="menu-left-header">
+
+				<div class="menu-child-option-panel">
+					<li class="menu-left-label ao-none selected"><span
+						class="menu-left-label-text"><spring:message
+								code='aco.title12' /> </span></li>
+					<p class="menulh-goto-tl">
+						<spring:message code='aco.title20' />
+						:
+					</p>
+					<li class="menu-left-label ao-scroll-to-top"><span
+						class="menu-left-label-text"><spring:message
+								code='aco.title1' /></span></li>
+					<li class="menu-left-label ao-scroll-to-component"><span
+						class="menu-left-label-text"><spring:message
+								code='aco.title3' /></span></li>
+					<li class="menu-left-label ao-go-to-page"><span
+						class="menu-left-label-text"><spring:message
+								code='aco.page' /></span></li>
+					<li class="menu-left-label ao-web-address"><span
+						class="menu-left-label-text"><spring:message
+								code='aco.web_address' /></span></li>
+					<!-- <li class="menu-left-label ao-download-document"><spring:message code='aco.document' /></li> -->
+					<li class="menu-left-label ao-my-docs"><span
+						class="menu-left-label-text"><spring:message
+								code='aco.title6' /></span></li>
+
+					<li class="menu-left-label ao-scroll-to-box"><span
+						class="menu-left-label-text"><spring:message
+								code='aco.title4' /></span></li>
+					<li class="menu-left-label ao-scroll-to-bottom"><span
+						class="menu-left-label-text"><spring:message
+								code='aco.title2' /></span></li>
+				</div>
+			</ul>
+		</div>
+		<div class="menu-right">
+			<div class="action-content ao-none">
+				<!-- <p>
+					<spring:message code='aco.title12' />
+				</p> -->
+			</div>
+			<div class="action-content ao-web-address">
+				<input type="url" name="web-address" placeholder="http://bonevo.net"
+					id="ao-web-address-field">
+				<div class='ao-link-target' type-vl="_self">
+					<a class="ao-link-target-child selected" value='_self'> <span
+						class="menu-left-label-text"> <spring:message
+								code='actop.title1' />
+					</span>
+					</a> <a class="ao-link-target-child" value='_blank'> <span
+						class="menu-left-label-text"> <spring:message
+								code='actop.title2' />
+					</span>
+					</a>
+				</div>
+
+			</div>
+			<div class="action-content ao-go-to-page">
+				<!-- <p>
+					<spring:message code='aco.title5' />
+				</p> -->
+				<!-- <select id="ao-list-page">
+
+				</select> -->
+				<div class="dropdown" id="ao-list-page">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						<span class="content"><spring:message code='aco.title23' /></span><span
+							class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+
+					</ul>
+				</div>
+				<div class='ao-link-target' type-vl="_self">
+					<a class="ao-link-target-child" value='_self'> <span
+						class="menu-left-label-text"> <spring:message
+								code='actop.title1' />
+					</span>
+					</a> <a class="ao-link-target-child" value='_blank'> <span
+						class="menu-left-label-text"> <spring:message
+								code='actop.title2' />
+					</span>
+					</a>
+				</div>
+			</div>
+			<!-- 			<div class="action-content ao-download-document" >
+				<p><spring:message code='aco.title6' /></p>
+			</div> -->
+			<div class="action-content ao-scroll-to-top">
+				<p>
+					<spring:message code='aco.title7' />
+				</p>
+			</div>
+			<div class="action-content ao-scroll-to-bottom">
+				<p>
+					<spring:message code='aco.title8' />
+				</p>
+			</div>
+			<div class="action-content ao-scroll-to-component">
+				<!-- <p>
+					<spring:message code='aco.title9' />
+				</p> -->
+				<!-- <select id="ao-list-component">
+
+				</select> -->
+				<div class="dropdown" id="ao-list-component">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						<span class="content"><spring:message code='aco.title2' /></span>
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+
+					</ul>
+				</div>
+				<!-- 	<p style="margin-top: 20px; font-size: 13px;">
+					<spring:message code='aco.title16' />
+				</p> -->
+			</div>
+			<div class="action-content ao-scroll-to-box">
+				<!-- <p>
+					<spring:message code='aco.title10' />
+				</p> -->
+				<!-- <select id="ao-list-box">
+
+				</select> -->
+				<div class="dropdown" id="ao-list-box">
+					<button class="btn btn-default dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						<span class="content"><spring:message code='aco.title24' /></span><span
+							class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+
+					</ul>
+				</div>
+				<!-- <p style="margin-top: 20px; font-size: 13px;">
+					<spring:message code='aco.title11' />
+				</p> -->
+			</div>
+			<div class="action-content ao-my-docs">
+				<div class="my-files-top">
+					<!-- <p>
+						<span id="total-file"></span> files (<span id="total-storage"></span>KB)
+					</p> -->
+					<a><i class="fa fa-cloud-upload" aria-hidden="true"><span
+							style="font-family: roboto-regular; margin-left: 4px;"><spring:message
+									code='aco.title17' /></span></i></a>
+				</div>
+				<p class="filter-name-file">
+					<span class="sortfile-by-name" type="0"> <spring:message
+							code='aco.title21' /> <i type="0" class="fa fa-caret-down"
+						aria-hidden="true"></i> <i type="1" class="fa fa-caret-up"
+						aria-hidden="true"></i>
+					</span>
+				</p>
+				<div class="my-files-content clearfix">
+					<!-- 	<ul> -->
+					<!-- <li>
+							<span id="file-name">file name</span>
+							<img alt="" src="${CONTEXT_PATH}/html/images/file-icon.png">
+							<i id="file-download" class="fa fa-check" aria-hidden="true"></i>
+							<i id="file-delete" class="fa fa-times" aria-hidden="true"></i>
+						</li>  -->
+					<!-- </ul> -->
+
+					<table class="table list-download-file">
+
+						<tbody>
+
+						</tbody>
+					</table>
+					<div id="no-docs">
+						<img alt="" src="${CONTEXT_PATH}/html/images/file-icon.png"
+							width="150px">
+						<p>
+							<spring:message code='aco.title18' />
+							<span><spring:message code='aco.title19' /></span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<input type="file" id="mydocs" style="display: none;"
+			accept="application/pdf, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/msword, application/vnd.openxmlformats-officedocument.presentationml.presentation, application/vnd.ms-powerpoint, application/vnd.oasis.opendocument.presentation, application/vnd.oasis.opendocument.text" />
+	</div>
+	<div class="bottom-menu">
+		<button class="btn-save">
+			<img src="${CONTEXT_PATH}/html/images/btn-save.png" />
+			<spring:message code='save' />
+		</button>
+	</div>
+</div>

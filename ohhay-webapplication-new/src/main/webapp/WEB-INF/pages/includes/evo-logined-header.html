@@ -1,0 +1,209 @@
+<%@ page pageEncoding="UTF-8" %>
+<div class="wrapper-nav active bg-white">
+	<div class="nav-background container">
+		<div class="row">
+			<div class="pull-left">
+				<a class="nav-item nav-logo nav-logo-white hidden"
+					href="${CONTEXT_URL}"><img
+					src="${CONTEXT_PATH}/html/images/logo-white.svg" /></a> <a
+					class="nav-item nav-logo nav-logo-black" href="${CONTEXT_URL}"><img
+					src="${CONTEXT_PATH}/html/images/logo-black.png" /></a>
+				<!-- 					<div class="nav-item nav-search hidden-xs"> -->
+				<!-- 						<input type="text" /> -->
+				<!-- 						<p class="fa fa-search"></p> -->
+				<!-- 					</div> -->
+
+			</div>
+			<!-- end pull-left -->
+
+			<div class="pull-right">
+				<c:choose>
+					<c:when test="${not empty userLogin}">
+						<!-- 							<div class="nav-item nav-notify notify-topic notification_li" data-placement="bottom" data-toggle="tooltip" data-original-title="Thông bao"> -->
+						<!-- 								<a class="notificationLink circle"> -->
+						<!-- 									<i class="fa fa-bell-o"></i> -->
+						<!-- 									<span  class="number_leastest_notify" lang="0"></span> -->
+						<!-- 								</a> -->
+						<!-- 								<div  class="notificationContainer "> -->
+						<!-- 									<div  class="notifications notificationsBody"> -->
+						<!-- 										<p style="background: transparent none repeat scroll 0px 0px;border: medium none;text-align: center;position: absolute;top: 50%;left: 50%;margin-top: -8px;"> -->
+						<!-- 											<img width="15" src="${CONTEXT_PATH}/html/images/ajax-loader_4.gif" alt=""> -->
+						<!-- 										</p> -->
+						<!-- 									</div> -->
+						<!-- 								</div> -->
+						<!-- 							</div> -->
+						<div class="qb-notification nav-item nav-notification">
+							<i class="fa fa-globe" aria-hidden="true"></i>
+							<span class="notify-content">
+							</span>
+							<div class="form-notifi" style="display: none;">
+								<div class="triangle"></div>
+								<div class="notifi-content">
+									<div class="notifi-content-header clearfix">
+										<span class="pull-left"><spring:message code='ntf.title' /></span>
+										<!-- <i class="fa fa-cog pull-right"></i> -->
+									</div>
+									<div class="notifi-content-main">
+										<ul>
+											<!-- <li>
+												<div class="item-notifi-content">
+													<div class="item-left">
+														<img alt="" src="https://as-oohhay.s3.amazonaws.com/1200/avartaoohhay">
+													</div>
+													<div class="item-mid">
+														<span class="item-mid-name">Hữu Thành</span>
+														<span class="item-mid-notifi"><span class="site-name"></span> Gửi lời mời bạn thiết kế</span>
+														<span class="item-mid-time"><span class="time-past">2 hours</span> ago</span>
+													</div>
+													<div class="item-right">
+														<span class="icon-handshake"></span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="item-notifi-content">
+													<div class="item-left">
+														<img alt="" src="https://as-oohhay.s3.amazonaws.com/1200/avartaoohhay">
+													</div>
+													<div class="item-mid">
+														<span class="item-mid-name">Hữu Thành</span>
+														<span class="item-mid-notifi"><span class="site-name"></span> Gửi lời mời bạn thiết kế</span>
+														<span class="item-mid-time"><span class="time-past">2 hours</span> ago</span>
+													</div>
+													<div class="item-right">
+														<span class="icon-more-idea"></span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="item-notifi-content">
+													<div class="item-left">
+														<img alt="" src="https://as-oohhay.s3.amazonaws.com/1200/avartaoohhay">
+													</div>
+													<div class="item-mid">
+														<span class="item-mid-name">Hữu Thành</span>
+														<span class="item-mid-notifi"><span class="site-name"></span> Gửi lời mời bạn thiết kế</span>
+														<span class="item-mid-time"><span class="time-past">2 hours</span> ago</span>
+													</div>
+													<div class="item-right">
+														<span class="icon-apply-web"></span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="item-notifi-content">
+													<div class="item-left">
+														<img alt="" src="https://as-oohhay.s3.amazonaws.com/1200/avartaoohhay">
+													</div>
+													<div class="item-mid">
+														<span class="item-mid-name">Hữu Thành</span>
+														<span class="item-mid-notifi"><span class="site-name"></span> Gửi lời mời bạn thiết kế</span>
+														<span class="item-mid-time"><span class="time-past">2 hours</span> ago</span>
+													</div>
+													<div class="item-right">
+														<span class="icon-handshake"></span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="item-notifi-content">
+													<div class="item-left">
+														<img alt="" src="https://as-oohhay.s3.amazonaws.com/1200/avartaoohhay">
+													</div>
+													<div class="item-mid">
+														<span class="item-mid-name">Hữu Thành</span>
+														<span class="item-mid-notifi"><span class="site-name"></span> Gửi lời mời bạn thiết kế</span>
+														<span class="item-mid-time"><span class="time-past">2 hours</span> ago</span>
+													</div>
+													<div class="item-right">
+														<span class="icon-handshake"></span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="item-notifi-content">
+													<div class="item-left">
+														<img alt="" src="https://as-oohhay.s3.amazonaws.com/1200/avartaoohhay">
+													</div>
+													<div class="item-mid">
+														<span class="item-mid-name">Hữu Thành</span>
+														<span class="item-mid-notifi"><span class="site-name"></span> Gửi lời mời bạn thiết kế</span>
+														<span class="item-mid-time"><span class="time-past">2 hours</span> ago</span>
+													</div>
+													<div class="item-right">
+														<span class="icon-handshake"></span>
+													</div>
+												</div>
+											</li> -->
+										</ul>
+										<div class="notify-ajax-loader" style="display: none;">
+												<img src="${CONTEXT_PATH}/html/images/ajax-loader_4.gif">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<c:if test="${fn:contains(userLogin.m900mg.mv903Decrypt, 'queenb')}">
+							<a
+								class="nav-item nav-task text-uppercase btn-topic-write btn-oohhay-nav hidden-xs"
+								data-menu="8"
+								onclick="javascript:window.open('https://task.bonevo.net/', '_blank')">
+								<spring:message code='setting.task.management' />
+							</a>
+						</c:if>
+						<a class="nav-item nav-task text-uppercase hidden-xs btn-goto-topic"
+							onclick="javascript:window.location.href='https://topic.bonevo.net/${userLogin.m900mg.mv903Decrypt}'">
+							<spring:message code='menu.topic' />
+						</a>
+						<c:if test="${userLogin.m900mg.mv922== 'ADMIN' || userLogin.m900mg.mv922== 'TESTER'}">
+							<a class="nav-item nav-task text-uppercase hidden-xs"
+								href="${CONTEXT_URL}/administrator">
+								Administrator </a>
+						</c:if>
+						<div class="dropdown nav-item nav-avatar">
+							<button class="btn dropdown-toggle" type="button"
+								id="dropdownAvatar" data-toggle="dropdown" aria-haspopup="true"
+								aria-expanded="true">
+								<div class="fix-padding img-avatar-item">
+									<img alt=""
+										onerror="this.onerror=null;this.src='/html/images/44.png';"
+										src="${userLogin.m900mg.urlAvarta}">
+								</div>
+								<div class="fix-padding text-account-item">
+									<span class="item-name-account">${userLogin.m900mg.nv100}</span>
+								</div>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownAvatar">
+								<li><a href="${CONTEXT_URL}"><spring:message
+											code='mys.tab_title1' /></a></li>
+								<li><a href="${CONTEXT_URL}/account"><spring:message
+											code='account' /></a></li>
+								<!-- 	<li><a href="${OHHAY_WEB_MERIAN_LINK}"><spring:message code='setting.task.management' /></a></li> -->
+								<li><a href="${CONTEXT_URL}/logout"><spring:message
+											code='logout' /></a></li>
+							</ul>
+						</div>
+					</c:when>
+					<c:otherwise>
+						<a class="nav-item nav-task text-uppercase"
+							href="https://bonevo.net/login?re=${OHHAY_WEB_TOPIC_LINK}"> <spring:message
+								code='login' />
+						</a>
+					</c:otherwise>
+				</c:choose>
+				<!-- 					<div class="dropdown nav-item nav-lang hidden-xs" id="lang-wrap"> -->
+				<!-- 						<button class="btn btn-default dropdown-toggle" type="button" id="navLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> -->
+				<!-- 					    	<span class="title">English (US)</span> -->
+				<!-- 					    	<span class="caret"></span> -->
+				<!-- 					  	</button> -->
+				<!-- 					  	<ul class="dropdown-menu" aria-labelledby="navLanguage"> -->
+				<!-- 					    	<li><a>English (US1)</a></li> -->
+				<!-- 					    	<li><a>Tiếng Việt</a></li> -->
+				<!-- 					  	</ul> -->
+				<!-- 					</div> -->
+
+			</div>
+			<!-- end pull right -->
+		</div>
+	</div>
+</div>

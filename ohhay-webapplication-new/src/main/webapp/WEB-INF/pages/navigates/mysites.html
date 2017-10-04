@@ -1,0 +1,185 @@
+<%@page contentType="text/html; charset=UTF-8" %> <%@taglib
+uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <%@taglib
+uri="http://www.springframework.org/tags/form" prefix="form"%> <%@
+taglib uri="http://www.springframework.org/tags/form"
+prefix="springForm"%> <%@ taglib prefix="spring"
+uri="http://www.springframework.org/tags" %> <%@ taglib
+uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> <%@ page
+pageEncoding="UTF-8" %> <%@ taglib prefix="fn"
+uri="http://java.sun.com/jsp/jstl/functions" %> <%@include
+file="../includes/constant.html" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset='UTF-8'>
+	<title>BonEvo - <spring:message code='tnvp.title6' /></title>
+	<meta http-equiv="Cache-control" content="no-cache">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta charset="UTF-8">
+				<link href="${CONTEXT_PATH}/html/images/fav1.png" type="image/png"
+					rel="shortcut icon" />
+				<!-------- CSS MAIN -------->
+				<link rel="stylesheet" type="text/css"
+					href="${CONTEXT_PATH}/html/css/style.css" />
+				<!-------- END CSS MAIN -------->
+
+				<link
+					href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic'
+					rel='stylesheet' type='text/css'>
+
+					<!-------- CSS PLUGIN -------->
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/plugin/bootstrap/bootstrap.min.css" />
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/plugin/font-awesome.min.css" />
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/plugin/hover/hover-min.css" />
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/plugin/jquery-ui.css" />
+					<!-- ANIMATED -->
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/plugin/animate.css" />
+					<!-- END ANIMATED -->
+					<!-- DIALOG -->
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/plugin/dialog/dialog.css" />
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/plugin/dialog/dialog-cathy.css" />
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/webevo-modules/tools/utils/css/qb-dialog-tool.css" />
+					<!-- END DIALOG -->
+
+					<!-- CSS DIALOG -->
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/edit-web/alert/dialogalert.css" />
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/edit-web/confirm/dialogconfirm.css" />
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/edit-web/reload/reload.css" />
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/edit-web/alert/dialogalert.css" />
+					<!-- END DIALOG -->
+					<!-------- END CSS PLUGIN -------->
+					<!-- HEADER AND FOOTER EVO -->
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/include/evo-footer/evo-footer.css" />
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/include/evo-logined-header/evo-logined-header.css" />
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/include/evo-logined-header/evo-logined-notification.css" />
+					<!-- END HEADER AND FOOTER EVO -->
+					<!-------- JS UTILL -------->
+					<script src="${CONTEXT_PATH}/html/js/plugin/jquery-1.11.1.min.js"></script>
+					<script src="${CONTEXT_PATH}/html/js/main/ohhay.js"></script>
+					<script src="${CONTEXT_PATH}/html/js/constants.js"></script>
+					<!-------- END JS UTIL -------->
+					<!-------- JS PLUGIN -------->
+					<!--<script src="${CONTEXT_PATH}/html/js/plugin/bootstrap/bootstrap.min.js"></script>-->
+					<script src="${CONTEXT_PATH}/html/js/plugin/scroll.js"></script>
+					<script src="${CONTEXT_PATH}/html/js/plugin/jquery-ui.js"></script>
+					<script
+						src="${CONTEXT_PATH}/html/js/plugin/bootstrap/bootstrap.min.js"></script>
+					<script
+						src="${CONTEXT_PATH}/html/js/plugin/highcharts/highcharts.js"></script>
+					<!-- DIALOG -->
+					<script type="text/javascript"
+						src="${CONTEXT_PATH}/html/js/plugin/dialog/modernizr.custom.71258.js"></script>
+					<script type="text/javascript"
+						src="${CONTEXT_PATH}/html/js/plugin/dialog/ohhay-dialog.js"></script>
+					<!-- END DIALOG -->
+					<!-------- END JS PLUGIN -------->
+					<!-- MYSITES -->
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/mysites/mysites.css" />
+					<script type="text/javascript"
+						src="${CONTEXT_PATH}/html/js/mysites/mysites.js"></script>
+					<script type="text/javascript"
+						src="${CONTEXT_PATH}/html/js/mysites/chart-ajax-new.js"></script>
+					<script type="text/javascript"
+						src="${CONTEXT_PATH}/html/js/mysites/chart-ajax.js"></script>
+					<!-- END MYSITES -->
+					<!-- DESIGNER PACKET -->
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/designer-packet/customer-site.css" />
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/designer-packet/designer-site.css" />
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/designer-packet/backup-list.css" />
+					<script type="text/javascript"
+						src="${CONTEXT_PATH}/html/js/designer-packet/customer-site.js"></script>
+					<script type="text/javascript"
+						src="${CONTEXT_PATH}/html/js/designer-packet/designer-site.js"></script>
+					<script type="text/javascript"
+						src="${CONTEXT_PATH}/html/js/designer-packet/backup-list.js"></script>
+					<!-- END DESIGNER PACKET -->
+					<!-- TRACKING -->
+					<script type="text/javascript"
+						src="${CONTEXT_PATH}/html/js/tracking/tracking.js"></script>
+					<!-- NPROGRESS -->
+					<script type="text/javascript"
+						src="${CONTEXT_PATH}/html/js/plugin/nprogress/nprogress.js"></script>
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/js/plugin/nprogress/nprogress.css" />
+					<!-- NPROGRESS -->
+					<!-- TOUR GUIDE -->
+					<c:if test="${userLogin.m900mg.m930mg.newbieFirstAccessMysite == 0}">
+						<script
+							src="${CONTEXT_PATH_COMPRESS}/html/js/history/history-manager.js"></script>
+						<script
+							src="${CONTEXT_PATH_COMPRESS}/html/js/plugin/enjoyhint/enjoyhint.min.js"></script>
+						<script
+							src="${CONTEXT_PATH_COMPRESS}/html/js/mysites/mysites-tourguide.js"></script>
+						<link rel="stylesheet" type="text/css"
+							href="${CONTEXT_PATH_COMPRESS}/html/css/plugin/enjoyhint/enjoyhint.css">
+					</c:if>
+					<!-- END TOUR GUIDE -->
+					<!-- NOTIFICATION -->
+					<script type="text/javascript"
+						src="${CONTEXT_PATH}/html/js/mysites/notification.js"></script>
+					<!-- END NOTIFICATION -->
+					<!-- PAGINATION -->
+					<script type="text/javascript"
+						src="${CONTEXT_PATH}/html/js/plugin/pagination/pagination-object.js"></script>
+					<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/plugin/pagination/pagination-main.css" />
+					<!-- END PAGINATION -->
+					<script>
+						$(document).ready(function() {
+							mySites.init();
+							designerSite.init();
+							customerSite.init();
+							notification.init();
+							/*
+							 * tracking 
+							 */
+							var fo100 = $('#qb-input-fo100').val();
+							var currentLanguage = "${pageContext.response.locale}";
+							trackingAjax.init({
+								fo100 : fo100,
+								webId : 14,
+								currentLanguage : currentLanguage,
+							});
+							trackingAjax.trackingViewer();
+							$.fn.bootstrapBtn = $.fn.button.noConflict();
+							/*
+							 * ThoaiNH: demo hints for new user
+							 */
+							<c:if test="${userLogin.m900mg.m930mg.newbieFirstAccessMysite == 0}">
+								$('#flag-show-tour-guide').val(1);
+							</c:if>
+						});
+					</script>
+</head>
+<body>
+	<input type="hidden" id="flag-show-tour-guide" value="0" />
+	<div class="qb-ohhay-ajax-content">
+		<div class="content">
+			<label><spring:message code="loading" /></label> <img width="30"
+				alt="" src="${CONTEXT_PATH}/html/images/ajax-loader.gif">
+		</div>
+	</div>
+	<div class="qb-ohhay-notfound-wrapper"><%@include
+		file="../mainpages/mysites.html" %></div>
+
+</body>
+</html>

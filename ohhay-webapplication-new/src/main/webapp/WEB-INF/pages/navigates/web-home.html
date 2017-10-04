@@ -1,0 +1,104 @@
+<%@page contentType="text/html; charset=UTF-8" %> <%@taglib
+uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <%@taglib
+uri="http://www.springframework.org/tags/form" prefix="form"%> <%@
+taglib uri="http://www.springframework.org/tags/form"
+prefix="springForm"%> <%@ taglib prefix="spring"
+uri="http://www.springframework.org/tags" %> <%@ taglib
+uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> <%@ page
+pageEncoding="UTF-8" %> <%@ taglib prefix="fn"
+uri="http://java.sun.com/jsp/jstl/functions" %> <%@include
+file="../includes/constant.html" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>BonEvo - <spring:message code='tnvp.title16' /></title>
+<link href="${CONTEXT_PATH}/html/images/fav1.png" type="image/png"
+	rel="shortcut icon">
+	<meta charset='UTF-8'>
+		<meta http-equiv="Cache-control" content="no-cache">
+			<meta name="viewport"
+				content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+				<%@include file="web-base.html" %> <c:if
+					test="${userLogin.m900mg.m930mg.newbieFirstAccessPCEditor == 0}">
+					<script
+						src="${CONTEXT_PATH_COMPRESS}/html/js/history/history-manager.js"></script>
+					<script
+						src="${CONTEXT_PATH_COMPRESS}/html/js/plugin/enjoyhint/enjoyhint.min.js"></script>
+					<script
+						src="${CONTEXT_PATH_COMPRESS}/html/webevo-modules/tour-guide/editor-tourguide.js"></script>
+				</c:if>
+				<!-- INIT REQUIRE LOGIN  -->
+				<script type="text/javascript" src="${CONTEXT_PATH}/html/js/login/login.js"></script>
+				<script src='https://www.google.com/recaptcha/api.js'></script>
+				<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/ohhay-login.css" />
+				<!-- INIT REQUIRE LOGIN  -->
+				<link rel="stylesheet" type="text/css"
+					href="${CONTEXT_PATH_COMPRESS}/html/css/plugin/enjoyhint/enjoyhint.css">
+					<!-- TRACKING -->
+					<script type="text/javascript"
+						src="${CONTEXT_PATH}/html/js/tracking/tracking.js"></script>
+					<script>
+						var selectedBoxId = 0;
+						$(document).ready(function() {
+							web.init();
+							/*
+							 * tracking 
+							 */
+							var fo100 = $('#qb-input-fo100').val();
+							var currentLanguage = "${pageContext.response.locale}";
+							trackingAjax.init({
+								fo100 : fo100,
+								webId : 15,
+								currentLanguage : currentLanguage,
+							});
+							trackingAjax.trackingViewer();
+							/*
+							 * tour guide
+							 */
+							<c:if test="${userLogin.m900mg.m930mg.newbieFirstAccessPCEditor == 0}">
+							$('#flag-show-tour-guide').val(1);
+							</c:if>
+							<c:if test="${userLogin.m900mg.mv922== 'ADMIN'}">
+								web.MV922 = "ADMIN";
+							</c:if>
+						});
+					</script>
+					<style>
+</style>
+</head>
+<body>
+	<c:set var="MOBILE_EDITOR" value="off" />
+	<%@include file="../includes/hidden-info.html" %> <%@include
+	file="../includes/evo-context-menu.html" %>
+	<input type="hidden" id="flag-show-tour-guide" value="0" />
+	<div class="qb-ohhay-ajax-content">
+		<div class="content">
+			<label><spring:message code="loading" /></label> <img width="30"
+				alt="" src="${CONTEXT_PATH}/html/images/ajax-loader.gif">
+		</div>
+	</div>
+	<div class="jqte_tb"></div>
+	<div class="qb-ohhay-notfound-wrapper"><%@include
+		file="../mainpages/web-home.html" %></div>
+
+	<div class="dialogadmin-addcomponent-library qb-dig-tools-edit">
+		<div class="content">
+			<div class="input-group">
+				<span class="input-group-addon">Title</span> <input type="text"
+					class="text-amount-tracking form-control name-component-toadd">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon">Image</span>
+				<div class="img_data">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+		<input type="file" id="admindlg-addcoponent-tolibrary" />
+		<div class="form-group-btn">
+			<button class="upload addcoponent-to-library">Add To Library</button>
+<!-- 			<button class="btn-close">Close</button> -->
+		</div>
+	</div>
+</body>
+</html>

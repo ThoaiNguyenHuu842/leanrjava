@@ -1,0 +1,472 @@
+@CHARSET "ISO-8859-1";
+/*
+ * ThoaiVt review ipad
+ */
+#content-wrapper.fix_previewipad_height, #content-wrapper.fix_height_content_ipad_lanscape
+	{
+	overflow: hidden !important;
+}
+
+#preview-ipad {
+	line-height: 34px !important;
+	display: none;
+}
+
+#preview-ipad .btn-menu-ipad {
+	display: inline-block;
+}
+
+#preview-ipad .btn-menu-mobile-preview {
+	display: inline-block;
+}
+
+#preview-ipad .btn-preview-ipad i, #preview-ipad .ipad-close-preview i {
+	font-size: 17px !important;
+}
+
+#preview-ipad .ipad-portrait-preview i, #preview-ipad .ipad-landscape-preview i,
+	#preview-ipad .mobile-portrait-preview i {
+	font-size: 17px !important;
+}
+
+#qb-ipad-view-top, #qb-ipad-view-top-landscape {
+	position: relative;
+	float: left;
+	height: 50px;
+	margin-bottom: -3px;
+	margin-top: 80px;
+	width: 100%;
+	display: none;
+}
+
+#qb-ipad-view-top .preview-ipad {
+	width: 768px !important;
+	height: 1024px !important;
+	display: inline-block;
+	position: relative;
+	box-sizing: content-box !important;
+	padding: 90px 25px;
+	background: #242324;
+	-webkit-border-radius: 44px;
+	border-radius: 44px;
+	background: transparent;
+	transform: translate(-50%);
+	border: 3px solid #bcbcbc;
+	left: 50%;
+}
+
+#qb-ipad-view-top .preview-ipad:before {
+	width: calc(100% - 8px);
+	height: calc(100% - 8px);
+	position: absolute;
+	display: block;
+	top: 4px;
+	left: 4px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+}
+
+#qb-ipad-view-top .ipad-preview-camera, #qb-ipad-view-top-landscape .ipad-preview-camera
+	{
+	background: #3c3d3d;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+}
+
+#qb-ipad-view-top .ipad-preview-camera {
+	top: 44px;
+	left: 50%;
+	margin-left: -5px;
+	-webkit-border-radius: 100%;
+	border-radius: 100%
+}
+
+#qb-ipad-view-top .ipad-preview-home, #qb-ipad-view-top-landscape .ipad-preview-home
+	{
+	border: 1px solid #bcbcbc;
+	-webkit-border-radius: 36px;
+	border-radius: 36px;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+}
+
+#qb-ipad-view-top .ipad-preview-home {
+	left: 50%;
+	margin-left: -25px;
+	bottom: 22px
+}
+
+#qb-ipad-view-top .ipad-preview-home:after, #qb-ipad-view-top-landscape .ipad-preview-home:after
+	{
+	width: 15px;
+	height: 15px;
+	margin-top: -8px;
+	margin-left: -8px;
+	border: 1px solid #bcbcbc;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	position: absolute;
+	display: block;
+	content: '';
+	top: 50%;
+	left: 50%
+}
+
+/*
+ * css landcape for ipad
+ */
+#qb-ipad-view-top-landscape .ipad-preview-camera {
+	left: calc(100% - 44px);
+	top: 50%;
+	border-radius: 100%;
+	margin-left: 0;
+	margin-top: -5px;
+	overflow-y: hidden; 
+}
+
+#qb-ipad-view-top-landscape .ipad-preview-home {
+	top: 50%;
+	left: 22px;
+	margin-left: 0;
+	margin-top: -25px
+}
+
+#qb-ipad-view-top-landscape .ipad-preview-landscape {
+	width: 1024px !important;
+	height: 768px !important;
+	display: inline-block;
+	position: relative;
+	box-sizing: content-box !important;
+	padding: 25px 90px;
+	background: #242324;
+	-webkit-border-radius: 44px;
+	border-radius: 44px;
+	background: transparent;
+	border: 3px solid #bcbcbc;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+/* General class for preview ipad */
+.fix_previewipad_width {
+	width: 768px !important;
+}
+
+.fix_previewipad_height {
+	height: 1024px !important;
+	overflow: scroll;
+	overflow-x: hidden;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	-webkit-box-shadow: 0 0 0 1px #111;
+	box-shadow: 0 0 0 1px #111;
+	width: 768px !important;
+	transform: translate(-50%);
+	left: 50%;
+}
+
+.preview_icon_ipad_rotate {
+	transform: rotate(90deg);
+}
+
+.show-edit-pc-from-preview-ipad {
+	display: block !important;
+}
+
+.hidden-edit-pc-from-preview-ipad {
+	display: none !important;
+}
+
+.fix_width_ipad_landscape {
+	width: 1024px !important;
+}
+
+.fix_height_content_ipad_lanscape {
+	height: 768px !important;
+	left: 50%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	transform: translate(-50%);
+	width: 1024px !important;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	margin: -20px 0 0 !important;
+	-webkit-box-shadow: 0 0 0 1px #111;
+	box-shadow: 0 0 0 1px #111;
+}
+
+.fix_landscape_background_ipad {
+	position: absolute !important;
+	width: 1023px !important;
+	left: 50%;
+	transform: translate(-50%);
+	margin-top: 108px;
+	height: 767px !important;
+	background-attachment: unset !important;
+}
+
+.fix_portrait_background_ipad {
+	position: absolute !important;
+	width: 767px !important;
+	left: 50%;
+	transform: translate(-50%);
+	margin-top: 188px;
+	height: 1024px !important;
+	background-attachment: unset !important;
+}
+
+/*
+* css preview for mobile - on iphone 6
+*/
+.qb-preview-mobile-re {
+	display: inline-block;
+	position: relative;
+	box-sizing: content-box !important;
+	left: 50%;
+	top: 100px;
+	transform: translate(-50%);
+	position: relative;
+	display: none;
+}
+
+.qb-preview-mobile-re .screen {
+	width: 100%;
+	position: relative;
+	height: 100%;
+	color: white;
+	z-index: 2;
+	text-align: center;
+	display: block;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	-webkit-box-shadow: 0 0 0 3px #111;
+	box-shadow: 0 0 0 3px #111
+}
+
+.qb-preview-mobile-re .top-bar, .marvel-device .bottom-bar {
+	height: 3px;
+	background: black;
+	width: 100%;
+	display: block
+}
+
+.qb-preview-mobile-re .middle-bar {
+	width: 3px;
+	height: 4px;
+	top: 0px;
+	left: 90px;
+	background: black;
+	position: absolute
+}
+
+.qb-preview-mobile-re {
+	width: 375px;
+	height: 667px;
+	padding: 105px 24px;
+	background: #d9dbdc;
+	-webkit-border-radius: 56px;
+	border-radius: 56px;
+	-webkit-box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2)
+}
+
+.qb-preview-mobile-re:before {
+	width: calc(100% - 12px);
+	height: calc(100% - 12px);
+	position: absolute;
+	top: 6px;
+	content: '';
+	left: 6px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	background: #f8f8f8;
+	z-index: 1
+}
+
+.qb-preview-mobile-re:after {
+	width: calc(100% - 16px);
+	height: calc(100% - 16px);
+	position: absolute;
+	top: 8px;
+	content: '';
+	left: 8px;
+	-webkit-border-radius: 48px;
+	border-radius: 48px;
+	-webkit-box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 6px
+		3px #fff;
+	box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 6px 3px #fff;
+	z-index: 2
+}
+
+.qb-preview-mobile-re .home {
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+	width: 68px;
+	height: 68px;
+	position: absolute;
+	left: 50%;
+	margin-left: -34px;
+	bottom: 22px;
+	z-index: 3;
+	background: #303233;
+	background: -moz-linear-gradient(-45deg, #303233 0%, #b5b7b9 50%, #f0f2f2 69%,
+		#303233 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #303233),
+		color-stop(50%, #b5b7b9), color-stop(69%, #f0f2f2),
+		color-stop(100%, #303233));
+	background: -webkit-linear-gradient(-45deg, #303233 0%, #b5b7b9 50%, #f0f2f2 69%,
+		#303233 100%);
+	background: -o-linear-gradient(-45deg, #303233 0%, #b5b7b9 50%, #f0f2f2 69%, #303233
+		100%);
+	background: -ms-linear-gradient(-45deg, #303233 0%, #b5b7b9 50%, #f0f2f2 69%,
+		#303233 100%);
+	background: linear-gradient(135deg, #303233 0%, #b5b7b9 50%, #f0f2f2 69%, #303233
+		100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#303233',
+		endColorstr='#303233', GradientType=1)
+}
+
+.qb-preview-mobile-re .home:before {
+	background: #f8f8f8;
+	position: absolute;
+	content: '';
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+	width: calc(100% - 8px);
+	height: calc(100% - 8px);
+	top: 4px;
+	left: 4px
+}
+
+.qb-preview-mobile-re .top-bar {
+	height: 14px;
+	background: #bfbfc0;
+	position: absolute;
+	top: 68px;
+	left: 0
+}
+
+.qb-preview-mobile-re .bottom-bar {
+	height: 14px;
+	background: #bfbfc0;
+	position: absolute;
+	bottom: 68px;
+	left: 0
+}
+
+.qb-preview-mobile-re .sleep {
+	position: absolute;
+	top: 190px;
+	right: -4px;
+	width: 4px;
+	height: 66px;
+	-webkit-border-radius: 0px 2px 2px 0px;
+	border-radius: 0px 2px 2px 0px;
+	background: #d9dbdc
+}
+
+.qb-preview-mobile-re .volume {
+	position: absolute;
+	left: -4px;
+	top: 188px;
+	z-index: 0;
+	height: 66px;
+	width: 4px;
+	-webkit-border-radius: 2px 0px 0px 2px;
+	border-radius: 2px 0px 0px 2px;
+	background: #d9dbdc
+}
+
+.qb-preview-mobile-re .volume:before {
+	position: absolute;
+	left: 2px;
+	top: -78px;
+	height: 40px;
+	width: 2px;
+	-webkit-border-radius: 2px 0px 0px 2px;
+	border-radius: 2px 0px 0px 2px;
+	background: inherit;
+	content: '';
+	display: block
+}
+
+.qb-preview-mobile-re .volume:after {
+	position: absolute;
+	left: 0px;
+	top: 82px;
+	height: 66px;
+	width: 4px;
+	-webkit-border-radius: 2px 0px 0px 2px;
+	border-radius: 2px 0px 0px 2px;
+	background: inherit;
+	content: '';
+	display: block
+}
+
+.qb-preview-mobile-re .camera {
+	background: #3c3d3d;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 24px;
+	left: 50%;
+	margin-left: -6px;
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+	z-index: 3
+}
+
+.qb-preview-mobile-re .sensor {
+	background: #3c3d3d;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 49px;
+	left: 134px;
+	z-index: 3;
+	-webkit-border-radius: 100%;
+	border-radius: 100%
+}
+
+.qb-preview-mobile-re .speaker {
+	background: #292728;
+	width: 70px;
+	height: 6px;
+	position: absolute;
+	top: 54px;
+	left: 50%;
+	margin-left: -35px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	z-index: 3
+}
+/*
+* active preview on mobile
+*/
+.portrait-qb-preview-mobile-active {
+	left: 50%;
+	width: 375px !important;
+	transform: translate(-50%);
+	height: 667px !important;
+	position: absolute !important;
+	top: 145px;
+	overflow-y:hidden; 
+}
+
+.portrait-qb-preview-mobile-active .grid-stack-re {
+	width: 375px !important;
+}
+#content-wrapper.portrait-qb-preview-mobile-active .content-box .grid-stack-re .subbox-2, 
+#content-wrapper.portrait-qb-preview-mobile-active .content-box .grid-stack-re .subbox-3, 
+#content-wrapper.portrait-qb-preview-mobile-active .content-box .grid-stack-re .subbox-4 {
+	width: 100%;
+}
+#content-wrapper.fix_previewipad_height .content-box .grid-stack-re, #content-wrapper.fix_width_ipad_landscape .content-box .grid-stack-re, #content-wrapper.portrait-qb-preview-mobile-active .content-box .grid-stack-re{
+	margin: auto !important;
+	width: 100% !important;
+}
+#content-wrapper.fix_height_content_ipad_lanscape .content-box .grid-stack-re{
+	margin: auto !important;
+}

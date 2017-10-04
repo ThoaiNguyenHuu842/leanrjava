@@ -1,0 +1,9 @@
+.grid-stack .normal_layout_1{position: absolute;top: 10px;left: 10px;background: rgba(0,0,0,0.8);color: #fff}
+.grid-stack .normal_layout_1:HOVER .layout-function{display: block;} 
+.normal_layout_1 .layout-function{position: absolute;top: 0px;right: 0px;display: none;}
+.normal_layout_1 .layout-function p{display: inline-block;height: 26px;background: rgba(0,0,0,0.4);color: #fff;line-height: 26px;padding: 0px 10px;font-size: 15px;cursor: pointer;}
+.normal_layout_1 .layout-function p.btn-layout-move{cursor: move;}
+.grid-stack .layout-about{padding: 14px;text-align: left;}
+.grid-stack .layout-about p{font-family: Roboto-Regular;font-size: 12px;}
+.grid-stack .layout-about button{background: #58C4CA;color: #333;border: none;border-radius: 18px;height: 26px;line-height: 26px;font-size: 12px;padding: 0px 14px;margin-top: 10px;}
+.grid-stack .layout-about button i{margin-left: 3px;}

@@ -1,0 +1,76 @@
+.animation-option .animation-option-component {
+	height: 400px;
+	overflow: hidden;
+	padding: 10px 20px 0 10px;
+}
+
+.animation-option .animation-option-component:hover {
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.animation-option .animation-option-component .animation-option-item-title
+	{
+	color: #4b4e5b;
+	font-family: Roboto-Light;
+	font-size: 14px;
+	margin-left: 17px
+}
+
+.animation-option .animation-option-component .animation-option-header {
+	font-family: Roboto-Bold;
+	font-size: 13px;
+	font-weight: normal;
+	margin-left: 18px;
+	margin-top: 2px;
+}
+
+.animation-option .animation-option-component .animation-component .animation-effect-title
+	{
+	color: #4d94ff;
+	font-family: Roboto-Bold;
+	font-size: 14px;
+	font-weight: normal;
+	margin-left: 18px;
+	margin-top: 20px;
+}
+
+.animation-option .animation-option-component .animation-component .animation-option-item .animation-effect
+	{
+	background: #e1e1e1 none repeat scroll 0 0;
+	cursor: pointer;
+	margin: 6px 6px 6px 0;
+	text-decoration: none;
+	padding: 7px;
+	display: inline-block;
+}
+
+.animation-option .animation-option-component .animation-component .animation-option-item .animation-effect:hover
+	{
+	cursor: pointer;
+}
+
+.animation-option .animation-option-component .option-background {
+	padding: 0 20px;
+	display: inline;
+	position: relative;
+	top: 2px;
+	z-index: 10;
+}
+
+.animation-option .animation-option-component .ui-spinner {
+	width: 55px;
+	height: 23px;
+}
+
+/* class general */
+
+.selected-animation-effect {
+	text-decoration: none;
+	color: #fff !important;
+	background-color: #0099ff !important;
+}
+
+.animated {
+	animation-duration: 2.5s;
+}

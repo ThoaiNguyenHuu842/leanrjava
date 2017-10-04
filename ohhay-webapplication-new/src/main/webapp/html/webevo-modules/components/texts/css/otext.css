@@ -1,0 +1,95 @@
+
+.normal_text_1 *{
+	font-family: RobotoCondensed !important;	
+}
+
+.normal_text_1 p{
+	
+}
+
+.normal_text_2 * {
+	font-family: obotoCondensed-Light !important;	
+}
+
+.normal_text_2 h1{
+	font-size: 26px !important;
+}
+
+.normal_text_2 p{
+	font-style: italic;
+}
+
+.normal_text_3 *{
+	font-family: obotoCondensed-Medium !important;	
+}
+
+.normal_text_3 h1{
+	font-size: 26px !important;
+}
+
+.normal_text_3 p{
+	font-style: italic;
+	font-weight: bold;
+}
+
+
+.drappable-content{
+	position: absolute;
+	z-index: 99999;
+}
+
+.drappable-content.normal-text{
+	width: 30%;
+}
+
+.drappable-content.normal-image img{
+	width: 60%;
+}
+/* editor content-tools */
+.ct-app .ct-widget.ct-ignition{
+	display: none;
+}
+.line_behind {
+    display: table;
+    white-space: nowrap;
+    position: relative;width: 100%;text-align: center;
+}
+.line_behind:after {
+  	content: '';
+  	display: table-cell;
+  	position: relative;
+  	top: 0.8em;
+  	width: 45%;
+  	left: 1.5%;vertical-align: middle;
+}
+.line_behind:before {
+  	content: '';
+  	display: table-cell;
+  	position: relative;
+  	top: 0.8em;
+  	width: 45%;
+  	right: 1.5%;
+}
+.line_behind_white:before{border-top: 1px solid white;}
+.line_behind_white:after{border-top: 1px solid white;}
+.line_behind_red:before{border-top: 1px solid red;}
+.line_behind_red:after{border-top: 1px solid red;}
+.line_behind_yellow:before{border-top: 1px solid yellow;}
+.line_behind_yellow:after{border-top: 1px solid yellow;}
+.line_behind_green:before{border-top: 1px solid green;}
+.line_behind_green:after{border-top: 1px solid green;}
+.line_behind_blue:before{border-top: 1px solid blue;}
+.line_behind_blue:after{border-top: 1px solid blue;}
+.line_behind_purple:before{border-top: 1px solid purple;}
+.line_behind_purple:after{border-top: 1px solid purple;}
+.line_behind_gray:before{border-top: 1px solid gray;}
+.line_behind_gray:after{border-top: 1px solid gray;}
+.line_behind_pink:before{border-top: 1px solid pink;}
+.line_behind_pink:after{border-top: 1px solid pink;}
+.line_behind_brown:before{border-top: 1px solid brown;}
+.line_behind_brown:after{border-top: 1px solid brown;}
+.line_behind_orange:before{border-top: 1px solid orange;}
+.line_behind_orange:after{border-top: 1px solid orange;}
+.line_behind_black:before{border-top: 1px solid black;}
+.line_behind_black:after{border-top: 1px solid black;}
+.vertical-rl{writing-mode:vertical-rl;-webkit-writing-mode:vertical-rl;-ms-writing-mode:vertical-rl;}

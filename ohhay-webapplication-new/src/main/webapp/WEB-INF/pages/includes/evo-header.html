@@ -1,0 +1,98 @@
+<%@ page pageEncoding="UTF-8" %> <!-- MENU -->
+<div class="fix_top_menu_login_evo">
+	<div class="top_menu_login_evo container">
+		<div class="row content">
+			<div class="col-sm-6 item_menu_top">
+				<a href="${CONTEXT_URL}" class="logo_evo"> <img
+				src="${CONTEXT_PATH}/html/images/bonevo-logo.png" > </a>
+				<!--
+				<div class="dropdown header-language qb-out-div-selected-language">
+				<button class="btn btn-default dropdown-toggle qb-out-selected-language-title" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+				<c:choose>
+				<c:when test="${pageContext.response.locale== 'vi'}">
+				<spring:message code="language.vie" />
+				</c:when>
+				<c:when test="${pageContext.response.locale== 'de'}">
+				<spring:message code="language.german" />
+				</c:when>
+				<c:otherwise>
+				<spring:message code="language.english" /> (US)
+				</c:otherwise>
+				</c:choose>
+				<span class="fa  fa-caret-down"></span>
+				</button>
+				<ul id="lang_choice" class="dropdown-menu qb-out-language-container" qb-out-language-type="full-text" aria-labelledby="dropdownMenu1">
+				<li lang="vi" onclick="setParam('language','vi',document.URL)">
+				<label>Tiáº¿ng Viá»‡t</label>
+				</li>
+				<li class="divider"></li>
+				<li lang="de" onclick="setParam('language','de',document.URL)">
+				<label>Deutsch</label>
+				</li>
+				<li class="divider"></li>
+				<li lang="en" onclick="setParam('language','en',document.URL)">
+				<label>English (US)</label>
+				</li>
+				</ul>
+				</div>-->
+
+			</div>
+			<div class="col-sm-6 item_menu_top">
+				<div class="item-data">
+					<ul class="item_menu">
+						<li class="item">
+							<a class="menu" href="${CONTEXT_URL}">
+							<spring:message code='menu.home'/>
+							</a>
+						</li>
+						<li class="item">
+							<a class="menu" href="${CONTEXT_URL}/e329/Pricing">
+							<spring:message code='menu.pricing'/>
+							</a>
+						</li>
+						<!-- <li class="item">
+						<a class="menu" href="#">
+						<spring:message code='menu.tutorial'/>
+						</a>
+						</li> -->
+
+					</ul>
+					<div class="dropdown header-language qb-out-div-selected-language">
+						<button class="btn btn-default dropdown-toggle qb-out-selected-language-title" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<c:choose>
+								<c:when test="${pageContext.response.locale== 'vi'}">
+									Tiếng Việt
+								</c:when>
+								<c:when test="${pageContext.response.locale== 'de'}">
+									Deutsch
+								</c:when>
+								<c:otherwise>
+									English
+								</c:otherwise>
+							</c:choose>
+							<span class="fa  fa-caret-down"></span>
+						</button>
+						<ul id="lang_choice" class="dropdown-menu qb-out-language-container" qb-out-language-type="full-text" aria-labelledby="dropdownMenu1">
+							<li lang="vi" onclick="changeLanguageHandle('vi');">
+								<label>Tiếng Việt</label>
+							</li>
+							<li class="divider"></li>
+							<li lang="de" onclick="changeLanguageHandle('de');">
+								<label>Deutsch</label>
+							</li>
+							<li class="divider"></li>
+							<li lang="en" onclick="changeLanguageHandle('en');">
+								<label>English</label>
+							</li>
+						</ul>
+					</div>
+					<div class="funct-account">
+						<a style="color:white" href="${CONTEXT_URL}/login#content-account-login">
+							<spring:message code="login" /> / <spring:message code="signup" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

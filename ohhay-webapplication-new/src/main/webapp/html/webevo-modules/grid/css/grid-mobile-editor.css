@@ -1,0 +1,141 @@
+/*MOBILE EDITOR*/
+.content-wrapper-mobile {
+	float: none !important;
+	height: 667px !important;
+	margin: auto !important;
+	overflow: auto;
+	width: 375px !important;
+	border: 3px solid #fff;
+	display: block !important;
+	box-shadow: -1px 2px 16px #c2c2c2;
+	top: 0;
+}
+
+.content-wrapper-mobile.edit-mode {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px dashed;
+    box-shadow: none;
+    display: block !important;
+    float: none !important;
+    height: auto !important;
+    margin: auto !important;
+    min-height: 667px !important;
+    overflow: hidden;
+    width: 780px !important;
+}
+
+#qb-phone-view-top {
+	background-image: url("../../../images/iphone6-head.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	float: left;
+	height: 100px;
+	margin-top: 80px;
+	width: 100%;
+	margin-bottom: -3px;
+	display: none;
+}
+
+#qb-phone-view-bottom {
+	background-image: url("../../../images/iphone6-bottom.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	float: left;
+	height: 100px;
+	width: 100%;
+	display: none;
+}
+
+
+#qb-phone-view-body {
+	background-image: url("../../../images/iphone6-body.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	float: left;
+	height: 675px;
+	width: 100%;
+	position: absolute;
+	top: 175px;
+	left: 0;
+	display: none;
+}
+
+.qb-body-mobile {
+	background: #e8e8e8;
+}
+
+.content-wrapper-mobile.auto-layout .grid-stack-item {
+	position: relative !important;
+	width: auto !important;
+	left: 0 !important;
+	top: auto !important;
+	margin-bottom: 20px;
+}
+
+.content-wrapper-mobile .grid-stack-item .ui-resizable-handle {
+	display: none;
+}
+
+.content-wrapper-mobile .grid-stack {
+	width: 375px !important;
+	margin: auto !important;
+}
+.qb-mobile-view-bg{
+	float: none !important;
+    height: 520px !important;
+    margin-bottom: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: -520px;
+    position: initial !important;
+    width: 375px !important;
+    border: 3px solid #fff;
+    border-top: none;
+}
+.content-wrapper-mobile #panel-no-box label{
+	font-size: 21px !important;
+}
+#content-wrapper.content-wrapper-mobile .content-box .grid-stack .grid-stack-item-content .function-panel {
+	left: -26px !important;
+    top: -1px !important;
+    width: 30px;
+    border-radius: 8px 0px 0px 8px;
+}
+#content-wrapper.content-wrapper-mobile .content-box .grid-stack .grid-stack-item-content .function-panel .item{border-right: none;}
+#content-wrapper.content-wrapper-mobile .content-box .grid-stack .grid-stack-item-content .function-panel .item:FIRST-CHILD{border-radius: 8px 0px 0px 0px;}
+#content-wrapper.content-wrapper-mobile .content-box .grid-stack .grid-stack-item-content .function-panel .item:LAST-CHILD{border-radius: 0px 0px 0px 8px;}
+.content-wrapper-mobile .content-box .grid-stack .grid-stack-item-content .function-panel .item{
+    border-top: 1px solid #67bc56;
+    border-right: 0 none;
+}
+.content-wrapper-mobile .content-box .grid-stack .grid-stack-item-content .function-panel .item i{
+	border: 0 solid rgba(0,0,0,0);
+    font-size: 15px;
+    height: 100%;
+    line-height: 30px;
+    width: 100%;
+}
+.content-wrapper-mobile .content-box .grid-stack .grid-stack-item-content .function-panel .item:FIRST-CHILD i{ border-bottom: 1px solid #217610; }
+.content-wrapper-mobile .thumb-img-box{
+	position: unset !important;
+}
+.content-wrapper-mobile .content-box .menu-right .btn-sort, 
+.content-wrapper-mobile .qb-edit-tool,
+.content-wrapper-mobile .qb-img-tool,
+.content-wrapper-mobile .btn-dropdown-menu ul li:not(.btn-mobile-section-tools){
+	display: none !important;
+}
+.content-wrapper-mobile.edit-mode .function-panel .item,
+.content-wrapper-mobile.edit-mode .btn-dropdown-menu ul .btn-option,
+.content-wrapper-mobile.edit-mode .btn-dropdown-menu ul .btn-set-style,
+.content-wrapper-mobile.edit-mode .btn-dropdown-menu ul .btn-comp-hidemb,
+.content-wrapper-mobile.edit-mode .btn-dropdown-menu ul .btn-mb-font-style, 
+.content-wrapper-mobile.edit-mode .content-box .qb-gird-handle-custom,
+.content-wrapper-mobile.edit-mode .menu-grid-right .btn-dropdown-menu ul .btn-upload-bg-grid,
+.content-wrapper-mobile.edit-mode .content-box .menu-grid-right{
+	display: block !important;
+}
+
+/*
+* draw iphone 6 case
+*/

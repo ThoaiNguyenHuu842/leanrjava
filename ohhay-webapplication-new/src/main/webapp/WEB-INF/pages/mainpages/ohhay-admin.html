@@ -1,0 +1,192 @@
+<%@ page pageEncoding="UTF-8" %>
+<!-- SETTING CONTENT-->
+<%@include file="../includes/hidden-info.html" %>
+<!-- LOCALIZE -->
+<%@ include file="/WEB-INF/pages/includes/localizeClient.html" %>
+<!-- END LOCALIZE -->
+<div class="progressDF"></div>
+<div
+	class="dialogconfirm qb-dialog-new dialog hidden-dialog active-dialog dialog--open"></div>
+<div class="qb-administrator-wrapper">
+	<div class="qb-administrator-header">
+		<div class="qb-administrator-header-opacity"></div>
+		<div class="qb-administrator-header-content">
+			<p class="qb-administrator-logo"
+				onclick="redirectTo('${CONTEXT_PATH}');">
+				<span class="icon-Ohay-logo"> <img
+					src="${CONTEXT_PATH}//html/images/bonevo.png" />
+				</span>
+			</p>
+			<ul class="qb-administrator-nav">
+				<c:if test="${userLogin.m900mg.mv922== 'ADMIN'}">
+					<li lang="qb-administrator-content-cms" funct="CMS" size-lt="10"
+						type="<spring:message code='admp.title1' />">
+						<div class="nav-sett-item-content">
+							<span class="fa fa-sitemap"></span>
+							<h6>
+								<spring:message code='admp.title1' />
+							</h6>
+						</div>
+						<div class="sett-opacity"></div>
+					</li>
+				</c:if>
+				<c:if test="${userLogin.m900mg.mv922== 'ADMIN'}">
+					<li lang="qb-administrator-account-management" funct="Account"
+						size-lt="10" type="<spring:message code='admp.title2' />">
+						<div class="nav-sett-item-content">
+							<span class="fa fa-cogs"></span>
+							<h6>
+								<spring:message code='admp.title2' />
+							</h6>
+						</div>
+						<div class="sett-opacity"></div>
+					</li>
+				</c:if>
+				<li lang="qb-administrator-account-bonevo-image" size-lt="10"
+					funct="BonevoImage" type="<spring:message code='admp.title3' />">
+					<div class="nav-sett-item-content">
+						<span class="fa fa-newspaper-o"></span>
+						<h6>
+							<spring:message code='admp.title3' />
+						</h6>
+					</div>
+					<div class="sett-opacity"></div>
+				</li>
+				<li lang="qb-administrator-bonevo-background" size-lt="10"
+					funct="BonevoBackground"
+					type="<spring:message code='admp.title8' />">
+					<div class="nav-sett-item-content">
+						<span class="fa fa-picture-o"></span>
+						<h6>
+							<spring:message code='admp.title8' />
+						</h6>
+					</div>
+					<div class="sett-opacity"></div>
+				</li>
+				<!-- <li lang="qb-setting-content-media">
+				<div class="nav-sett-item-content">
+				<span class="fa fa-video-camera"></span>
+				<h6>
+				<spring:message code='setting.webmedia' />
+				</h6>
+				</div>
+				<div class="sett-opacity"></div>
+				</li> -->
+				<!-- <li lang="qb-administrator-account-bonevo-video" type="<spring:message code='admp.title4' />">
+					<div class="nav-sett-item-content">
+						<span class="fa fa-puzzle-piece"></span>
+						<h6>
+						<spring:message code='admp.title4' />
+						</h6>
+					</div>
+					<div class="sett-opacity"></div>
+				</li>
+				<li lang="qb-administrator-background-repeat" type="<spring:message code='admp.title5' />">
+					<div class="nav-sett-item-content">
+						<span class="fa fa-user"></span>
+						<h6>
+						<spring:message code='admp.title5' />
+						</h6>
+					</div>
+					<div class="sett-opacity"></div>
+				</li> -->
+				<li lang="qb-administrator-account-bonevo-video" funct="BonevoVideo" size-lt="10"
+					type="<spring:message code='admp.title4' />">
+					<div class="nav-sett-item-content">
+						<span class="fa fa-video-camera"></span>
+						<h6>
+							<spring:message code='admp.title4' />
+						</h6>
+					</div>
+					<div class="sett-opacity"></div>
+				</li>
+				<li lang="qb-administrator-analyst-repeat" funct="Analyst"
+					size-lt="10" type="<spring:message code='admp.title6' />">
+					<div class="nav-sett-item-content">
+						<span class="fa fa-line-chart"></span>
+						<h6>
+							<spring:message code='admp.title6' />
+						</h6>
+					</div>
+					<div class="sett-opacity"></div>
+				</li>
+				<li size-lt="8" lang="qb-administrator-management-domain"
+					funct="ListDomain" type="<spring:message code='admp.title6' />">
+					<div class="nav-sett-item-content">
+						<span class="fa fa-globe "></span>
+						<h6>Domain management</h6>
+					</div>
+					<div class="sett-opacity"></div>
+				</li>
+				<li lang="qb-administrator-connection" funct="Conections" type=""
+					size-lt="10">
+					<div class="nav-sett-item-content">
+						<span class="fa fa-exchange"></span>
+						<h6>Connections</h6>
+					</div>
+					<div class="sett-opacity"></div>
+				</li>
+				<li lang="qb-administrator-cronjob-log" funct="CronjobLog" type="<spring:message code='admp.title9' />">
+     				<div class="nav-sett-item-content">
+      					<span class="fa fa-file-text-o "></span>
+      					<h6>Cronjob Log</h6>
+     				</div>
+    				 <div class="sett-opacity"></div>
+  	 			 </li>
+  	 			 
+  	 			 
+  	 			 <li lang="qb-administrator-topic"
+					funct="AdminstratorTopic">
+					<div class="nav-sett-item-content">
+						<span class="fa fa-newspaper-o"></span>
+						<h6>
+							Topic
+						</h6>
+					</div>
+					<div class="sett-opacity"></div>
+				</li>
+  	 			 
+				<!-- <c:if test="${userLogin.m900mg.mv922 == 'ADMIN' || userLogin.m900mg.mv922 == 'MOD'}">
+					<li lang="qb-setting-content-template-cms">
+						<div class="nav-sett-item-content">
+							<span class="fa  fa-pencil-square-o"></span>
+							<h6> Template CMS </h6>
+						</div>
+						<div class="sett-opacity"></div>
+					</li>
+				</c:if> -->
+			</ul>
+		</div>
+	</div>
+	<!-- <div class="qb-administrator-header-title">
+		<div class="qb-administrator-header-opacity"></div>
+		<p class="qb-administrator-nav-title"></p>
+	</div> -->
+	<div class="qb-scrolls">
+		<div class="qb-administrator-content">
+			<%@ include
+			file="/WEB-INF/pages/includes/administrator/inc-administrator-account-manger.html"
+			%> <%@ include
+			file="/WEB-INF/pages/includes/administrator/inc-administrator-background.html"
+			%> <%@ include
+			file="/WEB-INF/pages/includes/administrator/inc-administrator-bonevo-image.html"
+			%> <%@ include
+			file="/WEB-INF/pages/includes/administrator/inc-administrator-bonevo-video.html"
+			%> <%@ include
+			file="/WEB-INF/pages/includes/administrator/inc-administrator-template-cms.html"
+			%> <%@ include
+			file="/WEB-INF/pages/includes/administrator/inc-administrator-webanalyst.html"
+			%> <%@ include
+			file="/WEB-INF/pages/includes/administrator/inc-administrator-management-domain.html"
+			%> <%@ include
+			file="/WEB-INF/pages/includes/administrator/inc-administrator-connection.html"
+			%>
+			<%@ include file="/WEB-INF/pages/includes/administrator/inc-administrator-cronjob-log.html" %>
+			<%@ include file="/WEB-INF/pages/includes/administrator/inc-administrator-topic.html" %>
+			
+			<div class="padingtion-page"></div>
+			<!-- <button id="getWIDTHSSS">GETWIDTH</button> -->
+		</div>
+	</div>
+</div>
+

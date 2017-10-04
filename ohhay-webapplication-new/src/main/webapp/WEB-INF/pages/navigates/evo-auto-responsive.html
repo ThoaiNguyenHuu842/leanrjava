@@ -1,0 +1,59 @@
+<%@page contentType="text/html; charset=UTF-8" %> 
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <%@taglib
+uri="http://www.springframework.org/tags/form" prefix="form"%> <%@
+taglib uri="http://www.springframework.org/tags/form"
+prefix="springForm"%> <%@ taglib prefix="spring"
+uri="http://www.springframework.org/tags" %> <%@ taglib
+uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> <%@ page
+pageEncoding="UTF-8" %> <%@ taglib prefix="fn"
+uri="http://java.sun.com/jsp/jstl/functions" %>
+ 
+<%@include file="../includes/constant.html" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>BonEvo - <spring:message code='tnvp.title3' /></title>
+<link href="${CONTEXT_PATH}/html/images/fav1.png" type="image/png" rel="shortcut icon">
+<meta charset='UTF-8'>
+<meta http-equiv="Cache-control" content="no-cache">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<%@include file="web-base-re.html" %>
+
+	<script>
+		$(document).ready(function(){
+			web.init();
+			var dimen = 2.083333333333334 * 4;
+			  for(i =1;i<=12;i++){
+			       var value = dimen*i;
+			    $('head').append(".grid-stack.subbox-4 > .grid-stack-item[data-gs-width='"+i+"'] {"+
+			         "width: "+value+"%;"+
+			        "}"+
+			        ".grid-stack.subbox-4 > .grid-stack-item[data-gs-x='"+i+"'] {"+
+			        "left: "+value+"%;"+
+			       "}"+
+			       ".grid-stack.subbox-4 > .grid-stack-item[data-gs-min-width='"+i+"'] {"+
+			         "min-width: "+value+"%;"+
+			       "}"+
+			       ".grid-stack.subbox-4 > .grid-stack-item[data-gs-max-width='"+i+"'] {"+
+			         "max-width: "+value+"%;"+
+			       "}");
+			  } 
+		});
+	</script>
+
+</head>
+<body>
+	<c:set var="MOBILE_EDITOR" value="off"/>
+	<%@include file="../includes/hidden-info.html" %>
+	<div class="qb-ohhay-ajax-content">
+		<div class="content">
+			<label><spring:message code="loading" /></label>
+			<img width="30" alt="" src="${CONTEXT_PATH}/html/images/ajax-loader.gif">
+		</div>
+	</div>
+	<div class="jqte_tb"></div>
+	<div class="qb-ohhay-notfound-wrapper">
+		<%@include file="../mainpages/evo-auto-responsive.html" %>
+	</div>
+</body>
+</html>

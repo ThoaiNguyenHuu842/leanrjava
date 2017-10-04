@@ -1,0 +1,39 @@
+<div class="colorpickerBody"
+	style="background: #f5f5f5 none repeat scroll 0 0; float: left;">
+	<div class="colorpickerHolder"></div>
+	<div class="gradient-wapper">
+		<p><spring:message code='clpick.opacity' /> : <label>100</label></p>
+		<div class="colorpickerOpacity"><div></div></div>
+		<input type="hidden" id="colorpickerValue_r">
+		<input type="hidden" id="colorpickerValue_g">
+		<input type="hidden" id="colorpickerValue_b">
+		<input type="hidden" id="colorpickerOpacity" value="1">
+		
+		<div class="checkbox flag-visible">
+			<label><input type="checkbox" id="gradientCheck">
+				<spring:message code='clpick.gradient' /> :
+			</label>
+		</div>
+		
+		<p class="val-slider flag-display">0</p>
+		<div class="dropup gradient-type flag-display" data-type="type">
+			<button class="btn btn-default dropdown-toggle" type="button"
+				id="gradientType" data-toggle="dropdown" aria-haspopup="true"
+				aria-expanded="true">
+				<span class="dd-title" data-type="x"></span> <span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu " aria-labelledby="gradientType">
+				<li data-val="x" data-type="type"><a class="gradient-x"></a></li>
+				<li data-val="y" data-type="type"><a class="gradient-y"></a></li>
+			</ul>
+		</div>
+		<div class="gradient-panel flag-display">
+			<span class="gradient-color-first color-show" data-type="color"
+				data-val="rgba(0,0,0,1)" style="background: #000;"></span>
+			<div class="gradient-slider" data-type="value"></div>
+			<span class="gradient-color-last color-show" data-type="color"
+				data-val="rgba(255,255,255,1)" style="background: #fff;"></span> 
+				<input type="hidden" value="0" id="gradient-val" />
+		</div>
+	</div>
+</div>

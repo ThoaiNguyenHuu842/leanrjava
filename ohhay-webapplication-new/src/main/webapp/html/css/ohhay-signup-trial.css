@@ -1,0 +1,504 @@
+.register-panel {
+	display: none;
+}
+
+.login-panel-nav {
+	margin: 5px auto auto;
+	width: 150px;
+}
+
+.login-panel-nav img {
+	width: 100%;
+}
+
+.qb-ohhay-ajax-content {
+	background: #000 none repeat scroll 0 0;
+	display: none;
+	height: 100%;
+	opacity: 0.76;
+	position: fixed;
+	width: 100%;
+	z-index: 2147483647;
+}
+
+.qb-ohhay-ajax-content p {
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #c9c9c9;
+	border-radius: 25px;
+	height: 45px;
+	left: 50%;
+	margin: -30px 0 0 -30px;
+	padding: 18px 15px 15px;
+	position: absolute;
+	top: 50%;
+	width: 45px;
+}
+
+.qb-ohhay-ajax-content img {
+	width: 18px;
+}
+
+.qb-ohhay-ajax-content i {
+	border-radius: 25px;
+	color: #fff;
+	height: 45px;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 54%;
+	width: 100%;
+}
+
+.field.input-text {
+	margin-bottom: 10px;
+}
+
+.label-error-mess {
+	color: #000;
+	float: left;
+	margin-bottom: 22px;
+	text-align: center;
+	width: 100%;
+}
+
+.register-panel .container-fluid {
+	display: none;
+}
+
+.register-panel .container-fluid .signup-content {
+	background: #eae8e5 none repeat scroll 0 0;
+	border-radius: 14px;
+	display: block;
+	height: auto;
+	left: 50%;
+	list-style: outside none none;
+	margin-left: -196px;
+	margin-top: -321px;
+	padding: 0;
+	position: fixed;
+	top: 50%;
+	width: 400px;
+	z-index: 1001;
+}
+
+.register-panel .container-fluid .signup-content .title {
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	font-family: Roboto-Regular;
+	font-size: 30px;
+	padding-bottom: 25px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 29px;
+	background: #888888 none repeat scroll 0 0;
+	border-radius: 9px 9px 0 0;
+	font-weight: bold;
+	height: 100px;
+	padding-top: 32px;
+	margin-top: 0;
+}
+
+.register-panel .container-fluid .input-text input {
+	height: 38px;
+	margin-bottom: 11px;
+	padding-left: 10px;
+	width: 60%;
+	background-color: rgba(255, 255, 255, 0.75);
+	background-image: initial;
+	border-color: rgba(255, 255, 255, 0.75);
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 2px 3px 0 rgba(105, 105, 105, 0.85) inset;
+	height: calc(100% - 22px);
+	overflow: hidden;
+	text-align: left;
+	transition-duration: 0.1s;
+	height: 40px;
+}
+
+.register-panel .container-fluid .input-text .full-field {
+	margin-left: 10%;
+	width: 80%;
+}
+
+.register-panel .container-fluid .input-text label {
+	color: #fff;
+	font-family: Roboto-Medium !important;
+	font-size: 14px;
+	font-weight: inherit;
+	width: 30%;
+	float: left;
+	text-align: right;
+	padding-right: 5%;
+	margin-top: 10px;
+}
+
+.register-panel .container-fluid .input-text label.select {
+	cursor: pointer;
+	line-height: 20px;
+	margin-bottom: 11px;
+	margin-right: 24px;
+	width: auto;
+}
+
+.register-panel .container-fluid .input-text label.select span {
+	background: #fff none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 50%;
+	float: left;
+	font-family: Font-Check;
+	font-size: 18px;
+	height: 16px;
+	line-height: 16px;
+	margin-right: 8px;
+	margin-top: 3px;
+	overflow: hidden;
+	width: 16px;
+}
+
+.register-panel .container-fluid .input-text label.select.selected span
+	{
+	color: #0099ff;
+}
+
+.register-panel .register-panel .container-fluid p {
+	display: block;
+	margin-bottom: 25px;
+	margin-top: 23px;
+	text-align: center;
+	width: 100%;
+}
+
+.register-panel .container-fluid p a {
+	background-color: rgba(45, 53, 69, 1);
+	background-image: initial;
+	border-radius: 5px;
+	box-shadow: none;
+	color: #fff;
+	float: left;
+	font-family: roboto-regular;
+	font-size: 14px;
+	font-weight: normal;
+	height: 47px;
+	margin: 8px 1px 8px 7px;
+	padding: 12px 22px;
+	text-align: center;
+	text-transform: uppercase;
+	transition-duration: 0.1s;
+	width: 190px !important;
+	margin-left: 30%;
+	cursor: pointer;
+}
+
+.register-panel .container-fluid p a:hover {
+	text-decoration: none;
+}
+
+.register-panel .container-fluid .input-text .dropdown {
+	margin-bottom: 8px;
+	width: 100%;
+}
+
+.register-panel .container-fluid .input-text .dropdown button {
+	background: #fff none repeat scroll 0 0;
+	border: medium none;
+	color: #333;
+	font-family: Roboto-Regular;
+	font-size: 12px;
+	height: 38px;
+	line-height: 28px;
+	text-align: left;
+	width: 100%;
+}
+
+.register-panel .container-fluid .input-text .dropdown button b {
+	font-weight: inherit;
+}
+
+.register-panel .container-fluid .input-text .dropdown button span {
+	position: absolute;
+	right: 10px;
+	top: 17px;
+}
+
+.register-panel .container-fluid .input-text .dropdown ul {
+	max-height: 250px;
+	overflow: auto;
+	width: 100%;
+}
+
+.register-panel .container-fluid .input-text .dropdown ul li {
+	font-family: Roboto-Regular;
+	font-size: 12px;
+}
+
+.register-panel .container-fluid .input-text .dropdown ul li a {
+	padding: 8px 20px;
+}
+
+.login-panel-nav {
+	margin: 10px auto auto;
+	width: 146px;
+}
+
+.login-panel-nav img {
+	width: 100%;
+}
+
+.thanks-panel {
+	background: #000 none repeat scroll 0 0;
+	height: 100%;
+	opacity: 0.8;
+	padding-top: 170px;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	z-index: 1000;
+}
+
+.thanks-panel p {
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 50px;
+}
+
+.thanks-panel h2 {
+	font-size: 30px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	color: #fff;
+	font-family: helvetica;
+}
+
+.thanks-panel a {
+	background-color: rgba(45, 53, 69, 1);
+	background-image: initial;
+	border-radius: 5px;
+	box-shadow: none;
+	color: #fff;
+	margin: auto;
+	font-family: roboto-regular;
+	font-size: 14px;
+	font-weight: normal;
+	height: 47px;
+	margin: 8px 1px 8px 7px;
+	padding: 12px 22px;
+	text-align: center;
+	text-decoration: none !important;
+	transition-duration: 0.1s;
+	width: 190px !important;
+	cursor: pointer;
+}
+
+.content-background {
+	background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+	display: block;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 17;
+}
+
+.register-select .data_component .head {
+	margin-bottom: 42px;
+}
+
+.register-select .data_component .obutton-lock {
+	background-color: rgb(45, 53, 69);
+	background-image: initial;
+	border: 0 solid rgba(255, 255, 255, 0.75);
+	border-radius: 60px;
+	height: 80px;
+	margin: 5px 5px 5px 7px;
+	outline-style: none;
+	overflow: hidden;
+	text-align: center;
+	transition-duration: 0.5s;
+	width: 80px;
+}
+
+.register-select .data_component .head i {
+	color: rgb(255, 255, 255);
+	font-size: 31px;
+}
+
+.register-select .data_component .wapper-facebook, .register-select .data_component input.wapper
+	{
+	margin-bottom: 18px;
+}
+
+.register-select .data_component .wapper-facebook {
+	background-color: rgb(71, 97, 150);
+	background-image: initial;
+	border: 0 solid rgb(186, 186, 186);
+	border-radius: 5px;
+	box-shadow: none;
+	color: white;
+	height: 40px;
+	margin: 12px 5px 6px 0;
+	overflow: hidden;
+	padding-left: 5px;
+	padding-right: 5px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.register-select .data_component .wapper-facebook .buttom-icon {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background: #2c4a85 none repeat scroll 0 0;
+	border-color: -moz-use-text-color white -moz-use-text-color
+		-moz-use-text-color;
+	border-image: none;
+	border-style: none solid none none;
+	border-width: thin;
+	color: white;
+	display: inline-block;
+	font-family: Roboto-Regular;
+	font-style: italic;
+	font-weight: bold;
+	height: 100%;
+	left: -1%;
+	outline-style: none;
+	position: absolute;
+	width: 18%;
+}
+
+.register-select .data_component .wapper-facebook .buttom-text {
+	background: transparent none repeat scroll 0 0;
+	border: medium none;
+	color: rgb(255, 255, 255);
+	display: inline-block;
+	font-family: HelveticaNeue-Light;
+	height: 100%;
+	outline-style: none;
+	position: absolute;
+	right: 0;
+	text-transform: uppercase;
+	width: 85%;
+}
+
+.register-select .data_component .wapper-gplus {
+	background-color: #d6482f;
+	background-image: initial;
+	border: 0 solid rgb(186, 186, 186);
+	border-radius: 5px;
+	box-shadow: none;
+	color: white;
+	height: 40px;
+	margin: 12px 5px 6px 0;
+	overflow: hidden;
+	padding-left: 5px;
+	padding-right: 5px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.register-select .data_component .wapper-gplus  .buttom-icon {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background: #ba321a none repeat scroll 0 0;
+	border-color: -moz-use-text-color white -moz-use-text-color
+		-moz-use-text-color;
+	border-image: none;
+	border-style: none solid none none;
+	border-width: thin;
+	color: white;
+	display: inline-block;
+	font-family: Roboto-Regular;
+	font-style: italic;
+	font-weight: bold;
+	height: 100%;
+	left: -1%;
+	outline-style: none;
+	position: absolute;
+	width: 18%;
+}
+
+.register-select .data_component .wapper-gplus .buttom-text {
+	background: transparent none repeat scroll 0 0;
+	border: medium none;
+	color: rgb(255, 255, 255);
+	display: inline-block;
+	font-family: HelveticaNeue-Light;
+	height: 100%;
+	outline-style: none;
+	position: absolute;
+	right: 0;
+	text-transform: uppercase;
+	width: 85%;
+}
+
+.register-select .data_component  .wapper-or {
+	color: rgb(153, 153, 153);
+	font-family: helvetica;
+	text-transform: uppercase;
+}
+
+.register-select .data_component button.button-login {
+	background-color: rgb(44, 53, 69);
+	background-image: initial;
+	border: 0 solid rgb(186, 186, 186);
+	border-radius: 5px;
+	box-shadow: none;
+	color: white;
+	font-size: 16px;
+	height: 45px;
+	margin-bottom: 35px;
+	margin-top: 28px;
+	overflow: hidden;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+/* .register-select .data_component  .wapper-or .item-wapper-il {
+	display: inline-block;
+	display: inline-block;
+	width: 33.3%;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+.register-select .data_component  .wapper-or .item-wapper-il label {
+	opacity: 0;	
+}
+.register-select .data_component  .wapper-or .item-wapper-il label.show-il {
+	opacity: 1;	
+} */
+.register-select .data_component  .wapper-or .show-il {
+	margin: auto;
+	text-align: center;
+	border-bottom: 1px solid;
+	
+}
+
+.register-select .data_component  .wapper-or .show-il label
+	{
+	border-bottom: 1px solid black;
+	margin: -1px;
+	border-color: #EAE8E5;
+	font-weight: 400;
+}
+
+/*
+* ThoaiVt css recaptcha
+*/
+.g-recaptcha.data-captcha {
+	width: 100%;
+}
+
+.g-recaptcha.data-captcha div {
+	margin: 0 auto;
+}

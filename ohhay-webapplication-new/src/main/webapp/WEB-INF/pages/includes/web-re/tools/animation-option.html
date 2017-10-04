@@ -1,0 +1,149 @@
+<%@page contentType="text/html; charset=UTF-8" %>
+<div class="animation-option">
+	<div class="animation-option-component">
+	<div class="hover-component">
+			<div class="animation-option-header">
+<!-- 				<label><spring:message code='anmo.title1' /></label>
+ -->				<a class="option-remove remove-animation-background-effect"><i class="fa fa-times-circle"></i><spring:message code='anmo.remove_effect' /></a>
+			</div>
+			<!-- <div class="animation-option-item" style="padding-bottom: 15px; padding-top: 15px;">
+				<span class="animation-option-item-title"><spring:message code='anmo.title2' /></span>
+				<input type="text" class="option-duration" maxlength="3" />
+				<span class="animation-option-item-title" style="margin-left: 20px">Color:</span>
+				<span class="option-background" data-type="color" style="border: 1px solid #000;"></span>
+			</div> -->
+		</div>
+		<div class="animation-component" id="animation-scroll">
+			<!-- 	<div class="animation-option-header">
+				<label>Select a Animation Compoment effect</label>
+				<a class="option-remove remove-hover-effect"><i class="fa fa-times-circle"></i>Remove effect</a>
+			</div> -->
+			<label class="animation-effect-title"><spring:message code='anmo.anima_title1' /></label>
+			<div class="animation-option-item " style="padding: 10px 20px 0;">
+				<a class="animation-effect animated" effect="bounce"><spring:message code='anmo.bounce' /></a> <a
+					class="animation-effect animated" effect="flash"><spring:message code='anmo.flash' /></a> <a
+					class="animation-effect animated" effect="pulse"><spring:message code='anmo.pulse' /></a> <a
+					class="animation-effect animated" effect="rubberBand"><spring:message code='anmo.rubberband' /></a>
+				<a class="animation-effect animated" effect="shake"><spring:message code='anmo.shake' /></a> <a
+					class="animation-effect animated" effect="swing"><spring:message code='anmo.swing' /></a> <a
+					class="animation-effect animated" effect="tada"><spring:message code='anmo.tada' /></a> <a
+					class="animation-effect animated" effect="wobble"><spring:message code='anmo.wobble' /></a> <a
+					class="animation-effect animated" effect="jello"><spring:message code='anmo.jello' /></a>
+			</div>
+			<label class="animation-effect-title"><spring:message code='anmo.anima_title2' /></label>
+			<div class="animation-option-item " style="padding: 10px 20px 0;">
+				<a class="animation-effect animated" effect="bounceIn"><spring:message code='anmo.bounce1' /></a>
+				<a class="animation-effect animated" effect="bounceInDown"><spring:message code='anmo.bounce2' /></a>
+				<a class="animation-effect animated" effect="bounceInLeft"><spring:message code='anmo.bounce3' /></a>
+				<a class="animation-effect animated" effect="bounceInRight"><spring:message code='anmo.bounce4' /></a>
+				<a class="animation-effect animated" effect="bounceInUp"><spring:message code='anmo.bounce5' /></a>
+			</div>
+			<label class="animation-effect-title"><spring:message code='anmo.anima_title3' /></label>
+			<div class="animation-option-item " style="padding: 10px 20px 0;">
+				<a class="animation-effect animated" effect="bounceOut"><spring:message code='anmo.bounce6' /></a>
+				<a class="animation-effect animated" effect="bounceOutDown"><spring:message code='anmo.bounce7' /></a>
+				<a class="animation-effect animated" effect="bounceOutLeft"><spring:message code='anmo.bounce8' /></a>
+				<a class="animation-effect animated" effect="bounceOutRight"><spring:message code='anmo.bounce9' /></a>
+				<a class="animation-effect animated" effect="bounceOutUp"><spring:message code='anmo.bounce10' /></a>
+			</div>
+			<label class="animation-effect-title"><spring:message code='anmo.anima_title4' /></label>
+			<div class="animation-option-item " style="padding: 10px 20px 0;">
+				<a class="animation-effect animated" effect="fadeIn"><spring:message code='anmo.fade1' /></a> <a
+					class="animation-effect animated" effect="fadeInDown"><spring:message code='anmo.fade2' /></a> <a
+					class="animation-effect animated" effect="fadeInDownBig"><spring:message code='anmo.fade3' /></a>
+				<a class="animation-effect animated" effect="fadeInLeft"><spring:message code='anmo.fade4' /></a>
+				<a class="animation-effect animated" effect="fadeInLeftBig"><spring:message code='anmo.fade5' /></a>
+				<a class="animation-effect animated" effect="fadeInRight"><spring:message code='anmo.fade6' /></a>
+				<a class="animation-effect animated" effect="fadeInRightBig"><spring:message code='anmo.fade7' /></a>
+				<a class="animation-effect animated" effect="fadeInUp"><spring:message code='anmo.fade8' /></a> <a
+					class="animation-effect animated" effect="fadeInUpBig"><spring:message code='anmo.fade9' /></a>
+			</div>
+			<label class="animation-effect-title"><spring:message code='anmo.anima_title5' /></label>
+			<div class="animation-option-item " style="padding: 10px 20px 0;">
+				<a class="animation-effect animated" effect="fadeOut"><spring:message code='anmo.fade10' /></a> <a
+					class="animation-effect animated" effect="fadeOutDown"><spring:message code='anmo.fade11' /></a> <a
+					class="animation-effect animated" effect="fadeOutDownBig"><spring:message code='anmo.fade12' /></a>
+				<a class="animation-effect animated" effect="fadeOutLeft"><spring:message code='anmo.fade13' /></a>
+				<a class="animation-effect animated" effect="fadeOutLeftBig"><spring:message code='anmo.fade14' /></a>
+				<a class="animation-effect animated" effect="fadeOutRight"><spring:message code='anmo.fade15' /></a>
+				<a class="animation-effect animated" effect="fadeOutRightBig"><spring:message code='anmo.fade16' /></a>
+				<a class="animation-effect animated" effect="fadeOutUp"><spring:message code='anmo.fade17' /></a> <a
+					class="animation-effect animated" effect="fadeOutUpBig"><spring:message code='anmo.fade18' /></a>
+			</div>
+			<label class="animation-effect-title"><spring:message code='anmo.anima_title6' /></label>
+			<div class="animation-option-item " style="padding: 10px 20px 0;">
+				<a class="animation-effect animated" effect="flip"><spring:message code='anmo.flip' /></a> <a
+					class="animation-effect animated" effect="flipInX"><spring:message code='anmo.flip1' /></a> <a
+					class="animation-effect animated" effect="flipInY"><spring:message code='anmo.flip2' /></a> <a
+					class="animation-effect animated" effect="flipOutX"><spring:message code='anmo.flip3' /></a>
+				<a class="animation-effect animated" effect="flipOutY"><spring:message code='anmo.flip4' /></a>
+			</div>
+			<label class="animation-effect-title"><spring:message code='anmo.anima_title7' /></label>
+			<div class="animation-option-item " style="padding: 10px 20px 0;">
+				<a class="animation-effect animated" effect="lightSpeedIn"><spring:message code='anmo.light1' /></a>
+				<a class="animation-effect animated" effect="lightSpeedOut"><spring:message code='anmo.light2' /></a>
+			</div>
+			<label class="animation-effect-title"><spring:message code='anmo.anima_title8' /><spring:message code='anmo.roll2' /></label>
+			<div class="animation-option-item " style="padding: 10px 20px 0;">
+				<a class="animation-effect animated" effect="rotateIn"><spring:message code='anmo.rotate1' /></a> <a
+					class="animation-effect animated" effect="rotateInDownLeft"><spring:message code='anmo.rotate2' /></a>
+				<a class="animation-effect animated" effect="rotateInDownRight"><spring:message code='anmo.rotate3' /></a>
+				<a class="animation-effect animated" effect="rotateInDownLeft"><spring:message code='anmo.rotate4' /></a>
+				<a class="animation-effect animated" effect="rotateInUpLeft"><spring:message code='anmo.rotate5' /></a>
+				<a class="animation-effect animated" effect="rotateInUpRight"><spring:message code='anmo.rotate6' /></a>
+			</div>
+
+			<label class="animation-effect-title"><spring:message code='anmo.anima_title9' /></label>
+			<div class="animation-option-item " style="padding: 10px 20px 0;">
+				<a class="animation-effect animated" effect="rotateOut"><spring:message code='anmo.rotate7' /></a> <a
+					class="animation-effect animated" effect="rotateOutDownLeft"><spring:message code='anmo.rotate8' /></a>
+				<a class="animation-effect animated" effect="rotateOutDownRight"><spring:message code='anmo.rotate9' /></a>
+				<a class="animation-effect animated" effect="rotateOutUpLeft"><spring:message code='anmo.rotate10' /></a>
+				<a class="animation-effect animated" effect="rotateOutUpRight"><spring:message code='anmo.rotate11' /></a>
+			</div>
+
+			<label class="animation-effect-title"><spring:message code='anmo.anima_title10' /></label>
+			<div class="animation-option-item " style="padding: 10px 20px 0;">
+				<a class="animation-effect animated" effect="slideInUp"><spring:message code='anmo.slide1' /></a> <a
+					class="animation-effect animated" effect="slideInDown"><spring:message code='anmo.slide2' /></a> <a
+					class="animation-effect animated" effect="slideInLeft"><spring:message code='anmo.slide3' /></a> <a
+					class="animation-effect animated" effect="rotateOutUpLeft"><spring:message code='anmo.slide4' /></a>
+				<a class="animation-effect animated" effect="slideInRight"><spring:message code='anmo.slide5' /></a>
+			</div>
+
+			<label class="animation-effect-title"><spring:message code='anmo.anima_title11' /></label>
+			<div class="animation-option-item " style="padding: 10px 20px 0;">
+				<a class="animation-effect animated" effect="slideOutUp"><spring:message code='anmo.slide5' /></a>
+				<a class="animation-effect animated" effect="slideOutDown"><spring:message code='anmo.slide6' /></a>
+				<a class="animation-effect animated" effect="slideOutLeft"><spring:message code='anmo.slide7' /></a>
+				<a class="animation-effect animated" effect="slideOutRight"><spring:message code='anmo.slide8' /></a>
+			</div>
+
+			<label class="animation-effect-title"><spring:message code='anmo.anima_title12' /></label>
+			<div class="animation-option-item " style="padding: 10px 20px 0;">
+				<a class="animation-effect animated" effect="zoomIn"><spring:message code='anmo.zoom1' /></a> <a
+					class="animation-effect animated" effect="zoomInDown"><spring:message code='anmo.zoom2' /></a> <a
+					class="animation-effect animated" effect="zoomInLeft"><spring:message code='anmo.zoom3' /></a> <a
+					class="animation-effect animated" effect="zoomInRight"><spring:message code='anmo.zoom4' /></a> <a
+					class="animation-effect animated" effect="zoomInUp"><spring:message code='anmo.zoom5' /></a>
+			</div>
+
+			<label class="animation-effect-title"><spring:message code='anmo.anima_title13' /></label>
+			<div class="animation-option-item " style="padding: 10px 20px 0;">
+				<a class="animation-effect animated" effect="zoomOut"><spring:message code='anmo.zoom6' /></a> <a
+					class="animation-effect animated" effect="zoomOutDown"><spring:message code='anmo.zoom7' /></a> <a
+					class="animation-effect animated" effect="zoomOutLeft"><spring:message code='anmo.zoom8' /></a> <a
+					class="animation-effect animated" effect="zoomOutRight"><spring:message code='anmo.zoom9' /></a> <a
+					class="animation-effect animated" effect="zoomOutUp"><spring:message code='anmo.zoom10' /></a>
+			</div>
+
+			<label class="animation-effect-title"><spring:message code='anmo.anima_title14' /></label>
+			<div class="animation-option-item " style="padding: 10px 20px 0;">
+				<a class="animation-effect animated" effect="hinge"><spring:message code='anmo.hinge' /></a> <a
+					class="animation-effect animated" effect="rollIn"><spring:message code='anmo.roll1' /></a> <a
+					class="animation-effect animated" effect="rollOut"><spring:message code='anmo.roll2' /></a>
+			</div>
+
+		</div>
+	</div>
+</div>

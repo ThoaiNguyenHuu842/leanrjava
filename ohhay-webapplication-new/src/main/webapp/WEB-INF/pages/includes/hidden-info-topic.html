@@ -1,0 +1,76 @@
+<%@ page pageEncoding="UTF-8" %>
+<!-- CONTEXT PATH -->
+<input id="contextPath" type="hidden" value="${CONTEXT_URL}">
+<input id="topic_id" type="hidden" value="0">
+<input id="context_path_resource" type="hidden" value="${OHHAY_WEB_RESOURCE}">
+<input type="hidden" id="qb-input-contextPath" style="display: none;" value="${CONTEXT_PATH}" />
+<!-- END CONTEXT PATH -->
+<!-- CURRENT WEB LANGUAGE -->
+<input type="hidden" id="qb-input-currentLanguage"
+	style="display: none;" value="${currentLanguage}" />
+<input type="hidden" id="qb-input-currentWebLanguage"
+	style="display: none;" value="${currentWebLanguage}" />
+<!-- END CURRENT WEB LANGUAGE -->
+<!-- CURRENT WEB INFOR -->
+<input type="hidden" id="qb-input-currentPhone" style="display: none;"
+	value="${m900mg.urlOhhay}" />
+<input type="hidden" id="qb-input-phoneShare" style="display: none;"
+	value="${m900mg.hv101}" />
+<input type="hidden" id="qb-input-fo100" style="display: none;"
+	value="${m900mg.fo100ToShow}" />
+<input type="hidden" id="qb-input-fc800" style="display: none;"
+	value="${fc800}" />
+<input type="hidden" id="qb-input-nv100" style="display: none;"
+	value="${m900mg.userNameToShow}" />
+<!-- END CURRENT WEB INFOR -->
+<!-- OWNER INFOR -->
+<input type="hidden" id="qb-userlogin-fo100" style="display: none;"
+	value="${userLogin.m900mg.fo100ToShow}" />
+<input type="hidden" id="qb-userlogin-qv101" style="display: none;"
+	value="${userLogin.m900mg.urlOhhay}" />
+<input type="hidden" id="qb-userlogin-hv101" style="display: none;"
+	value="${userLogin.m900mg.hv101}" />
+<input type="hidden" id="qb-userlogin-nv100" style="display: none;"
+	value="${userLogin.m900mg.userNameToShow}" />
+<input type="hidden" id="qb-userlogin-mv901" style="display: none;"
+	value="${userLogin.m900mg.mv901Decrypt}" />
+<input type="hidden" id="qb-userlogin-mv902" style="display: none;"
+	value="${userLogin.m900mg.mv902Decrypt}" />
+<input type="hidden" id="qb-userlogin-mv903" style="display: none;"
+	value="${userLogin.m900mg.mv903Decrypt}" />
+<input type="hidden" id="qb-userlogin-region" style="display: none;"
+	value="${userLogin.m900mg.region}" />
+<input type="hidden" id="qb-userlogin-bucket" style="display: none;"
+	value="${userLogin.m900mg.awsBucket}" />
+<!-- END OWNER INFOR -->
+<c:choose>
+	<c:when test="${not empty userLogin}">
+		<input type="hidden" id="qb-userlogin-avarta" value="${userLogin.m900mg.urlAvarta}" />
+	</c:when>
+	<c:otherwise>
+		<input type="hidden" id="qb-userlogin-avarta" value="${OHHAY_WEB_LINK}/html/images/47.jpg" />
+	</c:otherwise>
+</c:choose>
+<c:choose>
+	<c:when test="${role == ROLE_OWNER}">
+		<input type="hidden" id="qb-input-extend" style="display: none;" value="${extend}" />
+		<input type="hidden" id="qb-input-webchild" style="display: none;" value="${webchild}" />
+		<input type="hidden" id="qb-userlogin-qv101" style="display: none;" value="${userLogin.qv101}" />
+		<input type="hidden" id="qb-userlogin-avarta" style="display: none;" value="${CONTEXT_PATH}/html/images/1.png" title="Comments" />
+	</c:when>
+</c:choose>
+<!-- GROWL MESSAGE -->
+<div id="growl-message">
+	<div id="container">
+		<span class="growl-message-icon">&#xf129;</span> <label
+			id="growl-mess-label">MESSAGE TEXT</label>
+	</div>
+</div>
+<!-- END GROWL MESSAGE -->
+<input type="hidden" id="qb-friend-status" style="display: none;"
+	value="${friendStatus}" />
+<input type="hidden" id="qb-follow-status" style="display: none;"
+	value="${followStatus}" />
+<input type="hidden" id="qb-color" style="display: none;"
+	value="${color}" />
+	

@@ -1,0 +1,108 @@
+<%@page contentType="text/html; charset=UTF-8" %> <%@taglib
+uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <%@taglib
+uri="http://www.springframework.org/tags/form" prefix="form"%> <%@
+taglib prefix="spring" uri="http://www.springframework.org/tags" %> <%@
+taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@include file="../includes/constant.html" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<c:set var="PAGE_NAME" value="home" />
+<html  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<%@include file="../includes/social.html" %>
+<title>BonEvo - <spring:message code='tnvp.title9' /></title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Cache-control" content="public" max-age="2592000">
+<meta http-equiv="Pragma" content="public" max-age="2592000" >
+<meta property="og:title" content="BonEvo - website in minutes">
+<meta name="twitter:title" content="BonEvo - website in minutes">
+<meta property="og:image" content="${CONTEXT_PATH}/html/images/EVO-dummy-pic03.jpg">
+<meta name="twitter:image" content="${CONTEXT_PATH}/html/images/EVO-dummy-pic03.jpg">
+<meta property="og:description" content="BONEVO is a new simple tool for creating websites for everyone. Via drag and drop, websites can be created very easily, quickly and professionally.Let your creativity flow freely with BONEVO! It could be a story of your last trip, your CV for the next job or a landing page for your brand new product — it's all up to you and just in a few minutes.">
+<meta name="twitter:description" content="BONEVO is a new simple tool for creating websites for everyone. Via drag and drop, websites can be created very easily, quickly and professionally.Let your creativity flow freely with BONEVO! It could be a story of your last trip, your CV for the next job or a landing page for your brand new product — it's all up to you and just in a few minutes.">
+<meta name="description" content="BONEVO is a new simple tool for creating websites for everyone. Via drag and drop, websites can be created very easily, quickly and professionally.Let your creativity flow freely with BONEVO! It could be a story of your last trip, your CV for the next job or a landing page for your brand new product — it's all up to you and just in a few minutes.">
+<link href="${CONTEXT_PATH}/html/images/fav1.png" type="image/png" rel="shortcut icon">
+
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/style.css" />
+
+<!-- DIALOG -->
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/dialog/dialog.css" />
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/dialog/dialog-cathy.css" />
+<!-- END DIALOG -->
+<!-- CSS DIALOG ALERT -->
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/edit-web/alert/dialogalert.css"  />
+<!-- END DIALOG ALERT -->
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/ohhay-home.css" />
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/bootstrap/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/bootstrap/bootstrap-theme.min.css" />
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/hover/hover-min.css" />
+<!-- GOOGLE LOGIN -->
+<script type="text/javascript" src="https://apis.google.com/js/api:client.js"></script>
+</head>
+<body>
+	<input id="contextPath" type="hidden" value="${CONTEXT_URL}">
+	<div class="qb-ohhay-ajax-content">
+		<div class="content">
+			<label><spring:message code="loading" /></label>
+			<img width="30" alt="" src="${CONTEXT_PATH}/html/images/ajax-loader.gif">
+		</div>
+	</div>
+	<div class="qb-ohhay-setting-wrapper">
+		<%@include file="../mainpages/ohhay-home.html" %>
+	</div>
+</body>
+<!-- HEADER AND FOOTER EVO -->
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/include/evo-footer/evo-footer.css" />
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/include/evo-header/evo-header.css" />
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/include/evo-logined-header/evo-logined-header.css" />
+<!-- END HEADER AND FOOTER EVO -->
+<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="${CONTEXT_PATH}/html/js/constants.js"></script>
+<script type="text/javascript" src="${CONTEXT_PATH}/html/js/main/ohhay.js"></script>
+<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="${CONTEXT_PATH}/html/js/login/login.js"></script>
+<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/scroll.js"></script>
+<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/jquery-ui.js"></script>
+<!-- DIALOG -->
+<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/dialog/modernizr.custom.71258.js"></script>
+<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/dialog/ohhay-dialog.js"></script>
+<!-- END DIALOG -->	
+<script type="text/javascript" src="${CONTEXT_PATH}/html/js/ohhay-home/ohhay-home.js"></script>
+<!-- <script type="text/javascript" src="${CONTEXT_PATH}/html/webevo-modules/components/image-tool/plugins/jquery.lazy.min.js"></script>
+ --><script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/superscrollorama/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/superscrollorama/jquery.lettering-0.6.1.min.js"></script>
+<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/superscrollorama/ScrollMagic.min.js"></script>
+<!-- <script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/superscrollorama/debug.addIndicators.min.js"></script>
+-->
+<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/superscrollorama/jquery.superscrollorama.js"></script>
+<script>
+ 	$(document).ready(function() {
+/* 		login.init();
+ */		ohhayHome.init();
+		/*
+		* tracking 
+		*/
+		var currentLanguage = "${pageContext.response.locale}";
+        trackingAjax.init({
+        	fo100:0,
+        	webId:1,
+        	currentLanguage:currentLanguage,
+        });
+        trackingAjax.trackingViewer();
+        
+        util.headerMobile();
+        
+        $('body').niceScroll({	
+        	cursorcolor: "#2fa8de",
+	        background: "",
+	        cursorborder: "",
+	        cursorwidth: "7px",
+	        cursorborderradius :"4px",
+	        autohidemode: false
+	    });
+	});		
+</script>
+</html>

@@ -1,0 +1,87 @@
+<div class="qb-panel-iframe-src qb-dig-tools-edit">
+	<div class="form-group">
+		<label class="form-group-title"><spring:message
+				code='evoi.enter_url' /></label>
+		<div class="form-group-content ">
+			<textarea id="input-iframe-src" style="height: 104px; width: 365px;"></textarea>
+			<button id="btn-save-iframe">
+				<img src="${CONTEXT_PATH}/html/images/btn-save.png" />
+				<spring:message code='save' />
+			</button>
+		</div>
+	</div>
+
+	<!-- <div class="form-group input-fied-search-topic">
+		<label class="form-group-title">Or search topic</label>
+		<div class="form-group-content ">
+			<div class="input-search" style="margin-top: 7px">
+				<input placeholder="Enter video name" id="search_otag_topic" style="width: 242px; height: 32px; text-align: left; padding-left: 4px;"/>
+				<button id="search-topic-api">Search</button>
+			</div>
+			<div class="input-data-topic" id="input-data-youtube">
+				<ul class="list-data-result" id="list-data-result"
+					style="list-style: none;">
+				</ul>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="form-group input-fied-search">
+		<label class="form-group-title"><spring:message
+				code='evoi.title1' /></label>
+		<div class="clear-fix">
+		</div>
+		<div class="form-group-content">
+		
+			<div class="input-search search-box-iframe" style="margin-top: 7px">
+				<div class="box-searchif">
+					<input placeholder="<spring:message code='evoi.title4' />"
+						class="" id="youtube" /> <span
+						id="search-youtube-api" class="fa fa-search"> </span>
+				</div>
+			</div>
+			<div class="input-data-youtube" id="input-data-youtube">
+				<ul class="list-data-result" id="list-data-result"
+					style="list-style: none;">
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="form-group input-fied-option">
+		<label class="form-group-title"><spring:message
+				code='evoi.title2' /></label>
+		<div class="form-group-content ">
+			<div class="row">
+				<div class="col-sm-6">
+					<label><spring:message code='evoi.auto_play' /> : </label>
+					<div class="btn-group btn-toggle fix-toggle" typePaste="0"
+						urlPaster="" type="autoplay" style="font-size: 12px;">
+						<button class="btn btn-xs btn-primary" data="on">
+							<spring:message code='evoi.on' />
+						</button>
+						<button class="btn btn-xs active btn-default" data="off">
+							<spring:message code='evoi.off' />
+						</button>
+					</div>
+				</div>
+				<div class="col-sm-6" style="padding-left: 0">
+					<label style=""><spring:message code='evoi.loop_video' />
+						: </label>
+					<div class="btn-group btn-toggle fix-toggle" typePaste="0"
+						urlPaster="" type="loop" style="font-size: 12px;">
+						<button class="btn btn-xs btn-primary" data="on">
+							<spring:message code='evoi.on' />
+						</button>
+						<button class="btn btn-xs active btn-default" data="off">
+							<spring:message code='evoi.off' />
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 	<div class="form-group-btn">
+		
+	</div> -->
+</div>
+

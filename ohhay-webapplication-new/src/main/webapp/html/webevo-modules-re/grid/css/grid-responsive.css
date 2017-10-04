@@ -1,0 +1,6 @@
+@media screen and (max-width: 1170px) {
+	#content-wrapper .content-box .grid-stack-re{
+		margin: auto !important;
+		width: 100% !important;
+	}
+}

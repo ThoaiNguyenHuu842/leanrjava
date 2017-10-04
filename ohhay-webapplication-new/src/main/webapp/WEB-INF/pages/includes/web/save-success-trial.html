@@ -1,0 +1,52 @@
+<%@page contentType="text/html; charset=UTF-8" %> 
+<style>
+#qb-save-web-success span{
+	cursor: pointer;
+	color: #3899EC;
+}
+#qb-save-web-success a{
+}
+#qb-save-web-success .input-own-path{
+	background: #e8e8e8 none repeat scroll 0 0;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 8px;
+    text-align: left;
+    width: 200px;
+}
+#qb-save-web-success p{
+	font-weight: bold;
+}
+#qb-save-web-success .input-own-path[disabled='disabled']{
+	border: none;
+	background: none;
+}
+#qb-save-web-success .btn-edit-mobile-version{
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;color: #0099ff;text-transform: uppercase;width: auto;
+}
+#qb-save-web-success .btn-close{
+	text-transform: uppercase;
+}
+</style>
+<div class="qb-dig-tools-edit" style="float: left;margin: 0;padding: 0 !important;width: 100%;">
+	<div style="padding: 25px;">
+		<p><spring:message code='saves.title1' />:</p>
+		<a target="_blank" class="link-preview"></a>
+		<span class="btn-show-edit-own-path fa fa-pencil"></span>
+		<div class="panel-edit-sitename" style="display: none;">
+			<label class="lbl-root-domain">https://bonevo.net/</label>
+			<input class="input-own-path">
+			<span class="btn-close-edit-own-path fa  fa-close"></span>
+			<span class="btn-save-dit-own-path fa fa-check"></span>
+		</div>
+	</div>
+	<div class="form-group-btn">
+		<button class="btn-continue-edit-web" style="color: #0099ff; background: #fff;">
+			<spring:message code='jslgt.title2' />
+		</button>
+		<button class="btn-share-web-to-fb">
+			<spring:message code='jslgt.title3' />
+		</button>
+	</div>
+</div>

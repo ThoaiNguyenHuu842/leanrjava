@@ -1,0 +1,131 @@
+<%@page contentType="text/html; charset=UTF-8" %> 
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <%@taglib
+uri="http://www.springframework.org/tags/form" prefix="form"%> <%@
+taglib uri="http://www.springframework.org/tags/form"
+prefix="springForm"%> <%@ taglib prefix="spring"
+uri="http://www.springframework.org/tags" %> <%@ taglib
+uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> <%@ page
+pageEncoding="UTF-8" %> <%@ taglib prefix="fn"
+uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@include file="../includes/constant.html" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>BonEvo - <spring:message code='tnvp.title16' /></title>
+<meta charset='UTF-8'>
+<link href="${CONTEXT_PATH}/html/images/fav1.png" type="image/png" rel="shortcut icon">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- CSS DIALOG -->
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/edit-web/save/save-success.css"  />
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/edit-web/confirm/dialogconfirm.css"  />
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/edit-web/alert/dialogalert.css"  />
+<!-- END CSS DIALOG -->
+
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/ohhay-signup-trial.css">
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/signup/signup.js"></script>
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/login/login-trial.js"></script>
+	<!-- TRACKING -->
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/tracking/tracking.js"></script>
+
+<%@include file="web-base.html" %>
+<%@include file="../includes/social.html" %>
+<!-- GOOGLE LOGIN -->
+<script src="https://apis.google.com/js/api:client.js"></script>
+<script src="${CONTEXT_PATH_COMPRESS}/html/js/history/history-manager.js"></script>
+<script src="${CONTEXT_PATH_COMPRESS}/html/js/plugin/enjoyhint/enjoyhint.min.js"></script>
+<script src="${CONTEXT_PATH_COMPRESS}/html/webevo-modules/tour-guide/editor-tourguide.js"></script>
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH_COMPRESS}/html/css/plugin/enjoyhint/enjoyhint.css">
+<script>
+ 	$(document).ready(function(){
+ 		
+		web.TRIAL = 'on';
+		<c:if test="${trialType == 'fast-with-fb'}">
+			web.FAST = 'fast-with-fb';
+		</c:if>
+		web.init();
+		signup.init();
+		loginTrial.init();
+		$(document).on('click','.content-background',function(){
+			$('.register-panel').fadeOut();
+			$('.register-select').fadeIn();
+			$('.account-infor').fadeOut();
+		});
+		
+		/*
+		* tracking 
+		*/
+		var currentLanguage = "${pageContext.response.locale}";
+        trackingAjax.init({
+        	fo100:0,
+        	webId:2,
+        	currentLanguage:currentLanguage,
+        });
+        trackingAjax.trackingViewer();
+        /*
+       	* tour guide
+   		
+   		if(!sessionStorage.hasClosedTourguide || sessionStorage.hasClosedTourguide == 0)
+   			$('#flag-show-tour-guide').val(1); */
+	});
+</script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<style>
+.fb-ajax-content{
+	background: #fff none repeat scroll 0 0;
+    height: 100%;
+    padding-top: 100px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 50001;
+}
+.fb-ajax-content .logo{
+}
+.fb-ajax-content .stt{
+ 	margin-top: 20px;
+}
+.fb-ajax-content h2, .fb-ajax-content h3{
+ 	color: #8782BE;
+}
+</style>
+</head>
+<body>
+	<c:if test="${trialType == 'fast-with-fb'}">
+		<div class="fb-ajax-content">
+			<img class="logo" src="${CONTEXT_PATH}/html/images/logo.png"> 
+			<h3>Your website is being created</h3>
+			<h2>WITH YOUR FACEBOOK INFO</h2>
+			<img class="stt" src="${CONTEXT_PATH}/html/images/ajax-loader-5.gif">
+		</div>
+	</c:if>
+	<c:set var="MOBILE_EDITOR" value="off"/>
+	<c:set var="TRIAL" value="on"/>
+	<%@include file="../includes/hidden-info.html" %>
+	<%@include file="../includes/evo-context-menu.html" %>
+	<input type="hidden" id="flag-show-tour-guide" value="0" />
+	<!-- HIDDEN INFO TO SIGNUP -->
+	<input id="webid-trial" type="hidden" value="${webId}"></input>
+	<input type="hidden" regionCode="${ohhayViewer.regionCode}" idtest="${idTest}"
+		languageCode="${ohhayViewer.languageCode}"
+		languageName="${ohhayViewer.languageName}"
+		countryCode='${ohhayViewer.countryCallingCode}' id='selected-country'>
+	<!-- END HIDDEN INFO TO SIGNUP -->
+	<div class="qb-ohhay-ajax-content">
+		<div class="content">
+			<label><spring:message code="loading" /></label>
+			<img width="30" alt="" src="${CONTEXT_PATH}/html/images/ajax-loader.gif">
+		</div>
+	</div>
+	<div class="jqte_tb"></div>
+	<div class="qb-ohhay-notfound-wrapper">
+		<%@include file="../mainpages/web-home.html" %>
+	</div>
+	<%@include file="../includes/signup/signup-trial.html" %>
+	<!-- SAVE SUCCESS DIALOG -->
+	<div class="qb-dlg-tool" id="qb-save-web-success" title="&#xf00c;&nbsp;&nbsp; <spring:message code='weh.save_success' />">
+		<%@ include file="../includes/web/save-success-trial.html"%>
+	</div>
+</body>
+</html>

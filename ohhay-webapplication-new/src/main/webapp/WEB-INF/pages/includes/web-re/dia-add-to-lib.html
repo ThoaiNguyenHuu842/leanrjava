@@ -1,0 +1,45 @@
+<div class="qb-dig-tools-edit">
+	<div class="form-group">
+		<label style="margin-top: 30px;width: auto;"  class="form-group-title"><spring:message code='datl.privacy' /></label>
+		<div class="form-group-content form-group-content-privacy" style="margin-left: 53px; float: left;margin-top: 30px;">
+			<input checked type="radio" name="evo-lib-role" value="1">
+			<label>
+				<span class="fa fa-lock"></span><spring:message code='datl.private' />
+			</label>
+    		<input type="radio" name="evo-lib-role" value="2">
+    		<label>
+    			<span class="fa fa-globe "></span><spring:message code='setting.topic.viewable.p1' />
+    		</label>
+    		<input class="checkbox-editable" checked type="checkbox" style="margin-right: 10px;">
+    		<label><spring:message code='datl.customizable' /></label>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="form-group-content ">
+			<p class="evo-tooltip"><spring:message code='datl.title1' /></p>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="form-group-title"><spring:message code='datl.title' /></label>
+		<div class="form-group-content ">
+			<input type="text" class="input-lib-title" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="form-group-title"><spring:message code='mys.tags' /></label>
+		<div class="form-group-content ">
+			<input type="text" class="input-lib-tags" placeholder="Ex: evo, queenb, web" />
+		</div>
+	</div>
+	<div class="form-group">
+		<button class="btn-upload-thumb-add-to-lib" title="<spring:message code='galop.thumbnail' />"><span class="fa  fa-image"></button>
+		<input type="file" class="upload_thumb-add-to-lib" style="display: none;" />
+		<div class="thumb-lib-preview"></div>
+	</div>
+	<div class="form-group-btn">
+		<button class="btn-done-add-to-lib">
+			<img src="${CONTEXT_PATH}/html/images/btn-save.png" /><spring:message code='save' />
+		</button>
+	</div>
+</div>
+

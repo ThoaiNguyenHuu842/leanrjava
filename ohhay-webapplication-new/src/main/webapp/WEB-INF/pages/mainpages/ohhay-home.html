@@ -1,0 +1,241 @@
+<%@ page pageEncoding="UTF-8" %>
+<!-- LOCALIZE -->
+<%@ include file="/WEB-INF/pages/includes/localizeClient.html" %>
+<!-- END LOCALIZE -->
+<input type="hidden" regionCode="${ohhayViewer.regionCode}"
+	languageCode="${ohhayViewer.languageCode}"
+	languageName="${ohhayViewer.languageName}"
+	countryCode='${ohhayViewer.countryCallingCode}' id='selected-country'>
+<!-- DIALOG -->
+<div
+	class="dialogalert qb-dialog-new dialog hidden-dialog active-dialog dialog--open"></div>
+
+<!-- MAIN DATA -->
+<div class="main-data-home" style="visibility: visible;">
+	<div class="data-home-first">
+		<div class="item-fix-data">
+			<%@include file="../includes/bonevo-header.html" %>
+			<div class="content-data" lang-type="${pageContext.response.locale}">
+				<div class="title-data">
+					<p class="title-first text-am-1 time-line">
+						<spring:message code="ohhom.title20" />
+					</p>
+					<p class="title-first text-intro-2 text-am-2 time-line">
+						<spring:message code="home.custom_design_and_responsive" />
+					</p>
+					<p class="custom-design text-am-3 time-line">
+						<spring:message code="ohhom.title21" />
+						<span class="img-play-home"><img class="hvr-rotate"
+							type="image/svg+xml"
+							src="${CONTEXT_PATH}/html/images/newstyles/play-button.svg"></span>
+					</p>
+
+
+					<div class="catalog-home">
+						<div class="item-intro-home">
+							<div class="img-ctl hidden-pc">
+								<img class="" alt=""
+									src="${CONTEXT_PATH}/html/images/newstyles/PhotoGallery.svg"
+									type="image/svg+xml"> <label>Photo Gallery</label>
+							</div>
+
+							<div class="img-ctl hidden-pc-shownmb">
+								<img class="" alt=""
+									src="${CONTEXT_PATH}/html/images/newstyles/LandingPage.svg"
+									type="image/svg+xml"> <label>Landing Page</label>
+							</div>
+						</div>
+						<div class="item-intro-home">
+							<div class="img-ctl hidden-pc">
+								<img class="" alt=""
+									src="${CONTEXT_PATH}/html/images/newstyles/LandingPage.svg"
+									type="image/svg+xml"> <label>Landing Page</label>
+							</div>
+
+							<div class="img-ctl hidden-pc-shownmb">
+								<img class="" alt=""
+									src="${CONTEXT_PATH}/html/images/newstyles/PhotoGallery.svg"
+									type="image/svg+xml"> <label>Photo Gallery</label>
+							</div>
+						</div>
+						<div class="item-intro-home">
+							<div class="img-ctl">
+								<img class="" alt=""
+									src="${CONTEXT_PATH}/html/images/newstyles/Porfolio.svg"
+									type="image/svg+xml"> <label>Portfolio</label>
+							</div>
+						</div>
+					</div>
+					<div class="cover-action-trial">
+						<a href="${CONTEXT_URl}/trial" class="cover-link">
+							<button class="create-page-now start-a-blank hvr-grow">
+								<spring:message code="ohhom.title22" />
+							</button>
+						</a>
+						<p class="custom-design mobile-hidden">
+							<spring:message code="ohhom.title21" />
+							<span class="img-play-home"><img class=""
+								type="image/svg+xml"
+								src="${CONTEXT_PATH}/html/images/newstyles/play-button.svg"></span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- 	<div class="clearfix"></div>
+	<div class="data-home-video">
+		<div class="container item-fix-data">
+			<div class="video-intro center-block">
+				<script>
+					document.write('<script id="kubPlayer-1Djfv2iorHMYRwj9" src="//smooveo.com/filejs/21/1Djfv2iorHMYRwj9.js?v=' + Math.floor(Math.random() * 10000000) + '"><\/script>');
+				</script>
+			</div>
+		</div>
+	</div> -->
+	<div class="clearfix"></div>
+	<div class="content-data-info container item-fix-data">
+		<div class="content-data ">
+			<div id="available-design" class="text-content item-fix-data">
+				<div class="text-content-child">
+					<p class="text-1">
+						<span> <spring:message code="ohhom.title23" />
+						</span>
+					</p>
+					<p class="text-2">
+						<spring:message code="ohhom.title24" />
+					</p>
+				</div>
+				<div class="info-text">
+					<p class="text-3">
+						<spring:message code="ohhom.title25" />
+					</p>
+				</div>
+				<div class="list-choice-evotemplate">
+					<c:forEach items="${listE400}" begin="0" varStatus="loop"
+						end="${fn:length(listE400)}" step="1">
+						<c:if test="${(loop.getCount()-1)%4==0}">
+							<div class="cover-lineup${(loop.getCount())}">
+						</c:if>
+						<div class="col-sm-3 col-xs-6 item">
+							<div class="item-list-evotemplate">
+								<img src="${listE400[loop.end-loop.count].ev403}"
+									checkrep="ohhayHome.checkHeightImg(${listE400[loop.end-loop.count].ev403});">
+							</div>
+							<label class="name-template">${listE400[loop.end-loop.count].ev401}</label>
+							<a href="${listE400[loop.end-loop.count].ev405}"
+								class="pc-hidden-data">
+								<div class="item-list-evotemplate">
+									<img src="${listE400[loop.end-loop.count].ev403}"
+										checkrep="ohhayHome.checkHeightImg(${listE400[loop.end-loop.count].ev403});">
+								</div> <label class="name-template">${listE400[loop.end-loop.count].ev401}</label>
+							</a>
+
+							<div class="tg-hover">
+								<div class="tg-hover-content">
+									<a class="tg-button -blue"
+										href="${listE400[loop.end-loop.count].ev405}" target="_blank"
+										type="view"> <i class="fa fa-search-plus"></i> <span><spring:message
+												code="evot.view" /></span>
+									</a> <a class="tg-button -blue"
+										href="${CONTEXT_URL}/trial?webId=${listE400[loop.end-loop.count].id}"
+										target="_blank" type="edit"> <i class="fa fa-pencil"></i>
+										<span><spring:message code="evot.edit" /></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<c:if test="${(loop.getCount()+4)%4==0}">
+				</div>
+				</c:if>
+				</c:forEach>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="your-create-website">
+			<p class="title-you-createwebsite">
+				<spring:message code="ohhom.title8" />
+			</p>
+			<a href="${CONTEXT_URL}/trial">
+				<button class="btn-your-createwebsite hvr-grow">
+					<span class="text"><spring:message code="ohhom.title26" /></span>
+					<img
+						src="${CONTEXT_PATH}/html/images/newstyles/circular-down-arrow-button.svg" />
+				</button>
+			</a>
+		</div>
+
+
+	</div>
+</div>
+<div class="clearfix"></div>
+<div class="web-info">
+	<div class="title-web-info">
+		<p class="title">
+			<spring:message code="ohhom.title28" />
+			<spring:message code="ohhom.title29" />
+		</p>
+	</div>
+	<div class="item-infos">
+		<div class="item-info am1">
+			<a href="http://babejamex.com/" target="_blank"><img
+				src="${CONTEXT_PATH}/html/images/newstyles/customer/1.png" /></a>
+		</div>
+		<div class="item-info am2">
+			<a href="https://bonevo.net/saigonhouse" target="_blank"><img
+				src="${CONTEXT_PATH}/html/images/newstyles/customer/2.png" /></a>
+		</div>
+		<div class="item-info am3">
+			<a href="https://bonevo.net/thutruc" target="_blank"><img
+				src="${CONTEXT_PATH}/html/images/newstyles/customer/3.png" /></a>
+		</div>
+		<div class="clearfix"></div>
+		<div class="item-info am1">
+			<a href="http://noirnguyen.com/" target="_blank"><img
+				src="${CONTEXT_PATH}/html/images/newstyles/customer/4.png" /></a>
+		</div>
+		<div class="item-info am2">
+			<a href="https://bonevo.net/xodaobinhhung" target="_blank"><img
+				src="${CONTEXT_PATH}/html/images/newstyles/customer/5.png" /></a>
+		</div>
+		<div class="item-info am3">
+			<a href="https://bonevo.net/nguahoangcoffeeshop" target="_blank"><img
+				src="${CONTEXT_PATH}/html/images/newstyles/customer/6.png" /></a>
+		</div>
+		<div class="clearfix"></div>
+		<div class="item-info am1">
+			<a href="http://anlongfood.com.vn/" target="_blank"><img
+				src="${CONTEXT_PATH}/html/images/newstyles/customer/7.png" /></a>
+		</div>
+		<div class="item-info am2">
+			<a href="https://bonevo.net/maituongtan" target="_blank"><img
+				src="${CONTEXT_PATH}/html/images/newstyles/customer/8.png" /></a>
+		</div>
+		<div class="item-info am3">
+			<a href="http://rosekingdom.com.vn/" target="_blank"><img
+				src="${CONTEXT_PATH}/html/images/newstyles/customer/9.png" /></a>
+		</div>
+	</div>
+</div>
+</div>
+<div id="dialoghidden-video-home" class="dialoghidden-video-home">
+	<a href="javascript:void(0)" class="closebtn">&times;</a>
+	<div class="data-home-video">
+		<div class="container item-fix-data">
+			<div class="video-intro center-block">
+				<script>
+					document
+							.write('<script id="kubPlayer-1Djfv2iorHMYRwj9" src="//smooveo.com/filejs/21/1Djfv2iorHMYRwj9.js?v='
+									+ Math.floor(Math.random() * 10000000)
+									+ '"><\/script>');
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="clearfix"></div>
+<!-- FOOTER BOX -->
+<%@include file="../includes/evo-footer.html" %>
+<!-- END FOOTER BOX -->

@@ -1,0 +1,84 @@
+<%@ page pageEncoding="UTF-8" %>
+<div id="qb-dlg-chart" class="qb-dlg-tool" title="&#xf201;&nbsp;&nbsp;&nbsp; <spring:message code="chart.title"/> ">
+	<div class="chart-main">
+		<span class="info-designer-close"></span>
+		<div class="head">
+			<!-- <div class="head-bg"> -->
+			<!-- <label class="lb-statis"><spring:message code="chart.title"/></label> -->
+			<!-- *** SET VALUE TYPE LON NHAT TYPE CAN LAY  - 1 -->
+			<!-- <select class="statistics-select" name="statistics">
+			    	NEW
+			    <option value="0"><spring:message code="chart.type_1"/></option>
+			    <option value="1"><spring:message code="chart.type_13"/></option>
+			    <option value="2"><spring:message code="chart.type_7"/></option>
+			    <option value="3"><spring:message code="chart.type_14"/></option>
+			    <option value="4"><spring:message code="chart.type_2"/></option>
+			    <option value="5" type="">Tổng số lượt truy cập Web theo links</option>
+				<option value="6"><spring:message code="chart.type_3"/></option> 
+				</select> -->
+
+
+
+			<!--			    	<!-- WEB -->
+			<!-- 					<option value="1"><spring:message code="chart.type_1"/></option>
+					<option value="6"><spring:message code="chart.type_6"/></option>
+					<option value="7"><spring:message code="chart.type_7"/></option>
+					<option value="13"><spring:message code="chart.type_13"/></option>
+					<option value="14"><spring:message code="chart.type_14"/></option> -->
+			<!-- WEB OBJECT -->
+			<!-- 					<option value="2"><spring:message code="chart.type_2"/></option>
+					<option value="3"><spring:message code="chart.type_3"/></option>
+					<option value="4"><spring:message code="chart.type_4"/></option>
+					<option value="15"><spring:message code="chart.type_15"/></option>
+					<option value="16"><spring:message code="chart.type_16"/></option> -->
+			<!-- TOPICS -->
+			<!-- 					<option value="8"><spring:message code="chart.type_8"/></option>
+					<option value="9"><spring:message code="chart.type_9"/></option>
+					<option value="10"><spring:message code="chart.type_10"/></option>
+					<option value="11"><spring:message code="chart.type_11"/></option>
+					<option value="12"><spring:message code="chart.type_12"/></option> -->
+			<!-- </select> -->
+			<!-- <div class="label-time">
+					<label class="labl" id="labl0" data-chart-time="0" ><spring:message code="chart.time_1"/></label>
+					<label class="labl" id="labl1" data-chart-time="1" ><spring:message code="chart.time_2"/></label>
+					<label class="labl" id="labl3" data-chart-time="3" ><spring:message code="chart.time_3"/></label>
+					<label class="labl" id="labl6" data-chart-time="6" ><spring:message code="chart.time_4"/></label>
+					<label class="labl" id="labl12" data-chart-time="12" ><spring:message code="chart.time_5"/></label>
+					<label class="labl" id="labl13" data-chart-time="13" ><spring:message code="chart.time_6"/></label>
+				</div>
+				<div class="chart-date hidden">
+					<input type="text" class="date-select date-from" placeholder="From..." readonly="true">
+					<input type="text" class="date-select date-to" placeholder="To..." readonly="true">
+				</div>
+			</div>  -->
+			<ul class="chart-type">
+				<li id="li0" class="chart-item selected-chart" value="0"><spring:message code="chartnew.type_1"/></li>
+				<li id="li1" class="chart-item" value="1"><spring:message code="chartnew.type_2"/></li>
+				<li id="li2" class="chart-item" value="2"><spring:message code="chartnew.type_3"/></li>
+				<li id="li3" class="chart-item" value="3"><spring:message code="chartnew.type_4"/></li>
+				<li id="li4" class="chart-item" value="4"><spring:message code="chartnew.type_5"/></li>
+				<li id="li5" class="chart-item" value="5"><spring:message code="chartnew.type_6"/></li>
+			</ul>
+			<div class="chart-type-total">
+				<span id="total-views-name"></span><span id="total-views-chart"></span> 
+				<select class="chart-select form-control"> 
+					<option value="7"><spring:message code="chart.time_1"/></option>
+					<option value="30"><spring:message code="chart.time_2"/></option>
+					<option value="90"><spring:message code="chart.time_3"/></option>
+					<option value="180"><spring:message code="chart.time_4"/></option>
+					<option value="365"><spring:message code="chart.time_5"/></option>
+					<option value="0" ><spring:message code="chart.time_6"/></option>
+				</select>
+				<div class="chart-date hidden">
+					<input type="text" class="date-select date-from" placeholder="From..." readonly="true">
+					<input type="text" class="date-select date-to" placeholder="To..." readonly="true">
+				</div>
+			</div>
+		</div>
+		<div class="no-data hidden">
+			<p><spring:message code="no_data"/></p>
+		</div>
+		<div class="container" style="min-width: 310px; max-width: 100%; height: 400px; margin: 0 auto; padding-top:0 "></div>
+
+	</div>
+</div>

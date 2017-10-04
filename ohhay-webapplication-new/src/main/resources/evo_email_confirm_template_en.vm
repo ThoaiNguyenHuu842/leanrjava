@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>Bonevo 's topic</title>
+</head>
+<body style="float: left;margin: 30px auto;width: 666px;background: #fff;">
+	<div style="text-align: left;width: 656px;display: block;margin: 0px auto;">
+		<!-- MAIN -->
+		<div style="width: 656px;display: block;border: 1px solid #ccc;">
+			<!-- HEADER -->
+			<div style="display: block;background: #f2f2f2;padding: 10px 0px 10px 24px;">
+				<p style="float: left;width: 56px;height: 56px;border-radius: 50%;margin: 0px 15px 0px 0px;">
+					<img style='margin:6px 3px 3px;' src='https://bonevo.net/html/images/bonevo.png' />
+				</p>
+				<h4 style="font-size: 18px;color: #333333;font-family: 'Roboto', sans-serif;font-weight: normal;display: inline-block;line-height: 56px;margin: 0px;">
+					You have signup BONEVO account successfully!
+				</h4>
+			</div>
+			<!-- HEADER -->
+			
+			<!-- CONTENT -->
+			<div style="display: block;padding: 28px;">
+				<p style="color: #464646;font-family: 'Roboto', sans-serif;font-size: 12px;line-height: 22px;font-weight: normal;margin: 0px 0px 22px 0px;">
+					Thank you for visit bonevo.net and register with email address <a style='color: #0099ff;text-decoration: none;' target='_blank' href='mailto:$mail'>$mail</a> for services here.
+				</p>
+				<p style="color: #464646;font-family: 'Roboto', sans-serif;font-size: 12px;line-height: 22px;font-weight: normal;margin: 0px;">
+					To sure that the email address on that of you and you will get complete information and notices related to your account on the EVO, Would you please help us complete your signup process by clicking the link below:
+				</p>
+				
+				<a href='$mailLinkConfirm' style='color: #0099ff;font-family: Roboto, sans-serif;font-size: 12px;line-height: 22px;font-weight: normal;margin: 14px 0px 16px 0px;cursor: pointer;text-decoration: none;display: block;'>Click here to complete signup.</a>
+				<p style="color: #464646;font-family: 'Roboto', sans-serif;font-size: 12px;line-height: 22px;font-weight: normal;margin: 2px 0px;">
+					Your Bonevo account needs to be verified, if not verified within 24 hours, we shall suspend your account.
+				</p>
+				<p style="color: #464646;font-family: 'Roboto', sans-serif;font-size: 12px;line-height: 22px;font-weight: normal;margin: 2px 0px;">
+					$mailContent1
+				</p>
+				<p style="color: #464646;font-family: 'Roboto', sans-serif;font-size: 12px;line-height: 22px;font-weight: normal;margin: 2px 0px;">
+					BONEVO Team.
+				</p>
+				<p style="color: #999999;font-family: 'Roboto', sans-serif;font-size: 12px;line-height: 22px;font-weight: normal;font-style: italic;margin: 28px 0px 0px 0px">
+					Why do you need to perform this action when using BONEVO?
+				</p>
+				<p style="color: #999999;font-family: 'Roboto', sans-serif;font-size: 12px;line-height: 22px;font-weight: normal;font-style: italic;margin: 0px 0px 28px 0px">
+					To ensure this email sent to the right people and all the information about your account is confidential. If you do not confirm, yout account will not be used on BONEVO.
+				</p>
+			</div>
+			<!-- END CONTENT -->
+		</div>
+		<!-- END MAIN -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<%@ page pageEncoding="UTF-8" %> 
+<%@include file="../includes/hidden-info.html" %>
+<!-- LOCALIZE -->
+<%@ include file="/WEB-INF/pages/includes/localizeClient.html" %>
+<!-- END LOCALIZE -->
+<!-- CONFIRM DIALOG -->
+<div class="dialogconfirm qb-dialog-new dialog hidden-dialog active-dialog dialog--open"></div>
+<!-- END CONFIRM DIALOG -->
+<!-- AELRT DIALOG -->
+<div class="dialogalert qb-dialog-new dialog hidden-dialog active-dialog dialog--open"></div>
+<!-- HEADER BOX -->
+<%@include file="../includes/evo-logined-header.html" %>
+<!-- END HEADER BOX -->
+<!-- BODY BOX -->
+<div id="body-evo">
+	<div class="qb-setting-wrapper">
+		<div class="qb-scrolls">
+			<div class="qb-setting-content container">
+				<%@ include file="/WEB-INF/pages/includes/setting/inc-setting-account.html" %>
+			</div>
+		</div>
+		<div class="qb-setting-include">
+			<!-- SETTING ACCOUNT -->
+			<%@ include file="/WEB-INF/pages/includes/setting/input/inc-setting-input-account.html" %>
+			<!-- END SETTING ACCOUNT -->
+		</div>
+	</div>
+</div>
+<!-- END BODY BOX -->
+
+
+<!-- DIALOG AVARTA -->
+<div class="dialog-image-avarta" id="dialog-image-avarta" title="&#xf24d;&nbsp;&nbsp; Upload avarta">
+	<%@include file="../dialogs/setting/di-edit-img-avarta.html" %>
+</div>
+<!-- END DIALOG AVARTA -->
+
+<!-- FOOTER BOX -->
+<%@include file="../includes/evo-footer.html" %>
+<!-- END FOOTER BOX -->

@@ -1,0 +1,56 @@
+@CHARSET "ISO-8859-1";
+
+.dialogalert .dialog__content {
+	padding: 2em 0 0 2em;
+}
+
+.dialogalert .dialog__content .wrapper .qb-form-action .item-data .data-dialog-close {
+	float: right;
+	font-size: 14px;
+	border: none;
+	background: transparent;
+	text-transform: uppercase;
+	background: #0099FF !important;
+	color: white !important;
+	text-transform: uppercase;
+	color: rgb(0, 153, 255);
+	font-size: 14px;
+	border: none;
+	margin: 0;
+	width: 74px;
+	height: 52px;
+	 border-radius: 0 0 4px;
+}
+
+.dialogalert .dialog__content .wrapper .qb-form-action hr {
+	margin-left: -40px;
+	width: 150%;
+	margin-bottom: 0;
+	 /*box-shadow: 0 12px 12px -12px rgba(0, 0, 0, 0.5) inset;
+    height: 1px;*/
+}
+
+.dialogalert .dialog__content .wrapper .qb-form-content {
+	margin-bottom: 1.7em;
+}
+.dialogalert .dialog__content .wrapper .qb-form-content .input-field {
+	text-align: left;
+}
+
+.dialogalert .dialog__content .wrapper .qb-form-action {
+	border-top: #E1E1E1;
+}
+
+.dialogalert .dialog__content .wrapper .item-data {
+	float: right;
+	width: 50%;
+}
+
+.dialogalert .dialog__content {
+	height: auto;
+}
+.dialogalert .dialog__content .wrapper hr {
+	margin-left: -40px;
+	width: 150%;
+	margin-bottom: 8px;
+}

@@ -1,0 +1,239 @@
+<%@page contentType="text/html; charset=UTF-8" %>
+<div class="qb-dig-tools-edit component-option">
+	<div class="form-group" id="cp-ot-margin">
+		<label class="form-group-title"><spring:message
+				code='cpo.margin' /></label>
+		<ul class="form-group-content cp-option-bd">
+			<li><img
+				src="${CONTEXT_PATH}/html/images/option/margin-left.jpg" /> <input
+				type="text" class="option-margin" maxlength="3" data-type="left" />
+			</li>
+			<li><img src="${CONTEXT_PATH}/html/images/option/margin-top.jpg" />
+				<input type="text" class="option-margin" maxlength="3"
+				data-type="top" /></li>
+			<li><img
+				src="${CONTEXT_PATH}/html/images/option/margin-bottom.jpg" /> <input
+				type="text" class="option-margin" maxlength="3" data-type="bottom" />
+			</li>
+			<li><img
+				src="${CONTEXT_PATH}/html/images/option/margin-right.jpg" /> <input
+				type="text" class="option-margin" maxlength="3" data-type="right" />
+			</li>
+		</ul>
+	</div>
+	<div class="form-group" id="cp-ot-border">
+		<label class="form-group-title"><spring:message
+				code='cpo.border' /></label>
+		<div class="form-group-content cp-option-bd">
+			<input type="text" class="option-border border-size" data-type="size"
+				min="0" />
+			<div class="dropdown option-border">
+				<button class="btn btn-default dropdown-toggle" type="button"
+					id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="true">
+					<span class="dd-title" data-type="solid"></span> <span
+						class="caret"></span>
+				</button>
+				<ul class="dropdown-menu " aria-labelledby="dropdownMenu1">
+					<li data-val="solid" data-type="type"><a class="border-solid"></a></li>
+					<li data-val="dotted" data-type="type"><a
+						class="border-dotted"></a></li>
+					<li data-val="dashed" data-type="type"><a
+						class="border-dashed"></a></li>
+					<li data-val="double" data-type="type"><a
+						class="border-double"></a></li>
+					<li data-val="ridge" data-type="type"><a class="border-ridge"></a></li>
+					<li data-val="groove" data-type="type"><a
+						class="border-groove"></a></li>
+					<li data-val="inset" data-type="type"><a class="border-inset"></a></li>
+					<li data-val="outset" data-type="type"><a
+						class="border-outset"></a></li>
+					<li data-val="none" data-type="type"><a><spring:message
+								code='bgs.none' /></a></li>
+				</ul>
+			</div>
+			<span class="option-border color-show" data-type="color"
+				style="border: 1px solid #000;"></span>
+		</div>
+	</div>
+
+	<div class="form-group" id="cp-ot-border-inner">
+		<label class="form-group-title"><spring:message
+				code='cpo.innerborder' /></label>
+		<div class="form-group-content cp-option-bd">
+			<input type="text" class="option-inner-border inner-size"
+				data-type="size" min="0" />
+			<div class="dropdown option-inner-border">
+				<button class="btn btn-default dropdown-toggle" type="button"
+					id="dropdownMenu12" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="true">
+					<span class="dd-title" data-type="solid"></span> <span
+						class="caret"></span>
+				</button>
+				<ul class="dropdown-menu " aria-labelledby="dropdownMenu12">
+					<li data-val="solid" data-type="type"><a class="border-solid"></a></li>
+					<li data-val="dotted" data-type="type"><a
+						class="border-dotted"></a></li>
+					<li data-val="dashed" data-type="type"><a
+						class="border-dashed"></a></li>
+					<li data-val="double" data-type="type"><a
+						class="border-double"></a></li>
+					<li data-val="ridge" data-type="type"><a class="border-ridge"></a></li>
+					<li data-val="groove" data-type="type"><a
+						class="border-groove"></a></li>
+					<li data-val="inset" data-type="type"><a class="border-inset"></a></li>
+					<li data-val="outset" data-type="type"><a
+						class="border-outset"></a></li>
+					<li data-val="none" data-type="type"><a><spring:message
+								code='bgs.none' /></a></li>
+				</ul>
+			</div>
+			<span class="option-inner-border color-show" data-type="color"
+				style="border: 1px solid #000;"></span>
+		</div>
+	</div>
+
+	<div class="form-group" id="cp-ot-padding">
+		<label class="form-group-title"><spring:message
+				code='cpo.padding' /></label>
+		<ul class="form-group-content cp-option-bd">
+			<li><img
+				src="${CONTEXT_PATH}/html/images/option/margin-left.jpg" /> <input
+				type="text" class="option-padding" maxlength="3" data-type="left"
+				min="0" /></li>
+			<li><img src="${CONTEXT_PATH}/html/images/option/margin-top.jpg" />
+				<input type="text" class="option-padding" maxlength="3"
+				data-type="top" min="0" /></li>
+			<li><img
+				src="${CONTEXT_PATH}/html/images/option/margin-bottom.jpg" /> <input
+				type="text" class="option-padding" maxlength="3" data-type="bottom"
+				min="0" /></li>
+			<li><img
+				src="${CONTEXT_PATH}/html/images/option/margin-right.jpg" /> <input
+				type="text" class="option-padding" maxlength="3" data-type="right"
+				min="0" /></li>
+		</ul>
+	</div>
+	<div class="form-group" id="cp-ot-radius">
+		<label class="form-group-title"><spring:message
+				code='cpo.radius' /></label>
+		<ul class="form-group-content cp-option-bd">
+			<li data-flag="true" data-type="top"><img
+				src="${CONTEXT_PATH}/html/images/option/radius-top.jpg" /> <input
+				type="text" class="option-border-radius" data-type="top" min="0" />
+			</li>
+			<li data-flag="true" data-type="right"><img
+				src="${CONTEXT_PATH}/html/images/option/radius-right.jpg" /> <input
+				type="text" class="option-border-radius" data-type="right" min="0" />
+			</li>
+			<li data-flag="true" data-type="bottom"><img
+				src="${CONTEXT_PATH}/html/images/option/radius-bottom.jpg" /> <input
+				type="text" class="option-border-radius" data-type="bottom" min="0" />
+			</li>
+			<li data-flag="true" data-type="left"><img
+				src="${CONTEXT_PATH}/html/images/option/radius-left.jpg" /> <input
+				type="text" class="option-border-radius" data-type="left" min="0" />
+			</li>
+		</ul>
+	</div>
+	<div class="form-group" id="cp-ot-shadow">
+		<label class="form-group-title"><spring:message
+				code='cpo.shadow' /></label>
+		<div class="form-group-content cp-option-bd">
+			<input type="text" class="option-shadow" data-type="width" /> <input
+				type="text" class="option-shadow" data-type="height" /> <input
+				type="text" class="option-shadow" data-type="spread" min="0" /> <input
+				type="text" class="option-shadow" data-type="blur" min="0" />
+
+			<!--		<select class="option-shadow" data-type="type">
+				<option selected="selected" value=""><spring:message code='cpo.outline' /></option>
+				<option value="inset"><spring:message code='cpo.inset' /></option>
+			</select> 
+-->
+			<div class="option-shadow dropdown" value-type="" data-type="type">
+				<button class="btn btn-default dropdown-toggle" type="button"
+					id="ncg-option-shadow" data-toggle="dropdown"><span class="content">
+					<spring:message code='cpo.outline' /> </span><span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="ncg-option-shadow">
+					<li role="presentation" value=""><a role="menuitem" tabindex="-1"
+						href="#"><spring:message code='cpo.outline' /></a></li>
+					<li role="presentation" value="inset"><a role="menuitem" tabindex="-1"
+						href="#"><spring:message code='cpo.inset' /></a></li>
+				</ul>
+			</div>
+			<span class="option-shadow color-show" data-type="color"
+				style="border: 1px solid #000;"></span>
+		</div>
+	</div>
+	<div class="form-group" id="cp-ot-width">
+		<label class="form-group-title"><spring:message
+				code='cpo.width' /></label>
+		<div class="form-group-content cp-option-bd">
+			<input type="text" class="option-width" maxlength="3" min="0" /> <label>
+				<input type="radio" name="optionWidth" id="optionWidth1"
+				value="option1" checked><span class="unit"
+				style="line-height: 21px;">px</span>
+			</label> <label> <input type="radio" name="optionWidth"
+				id="optionWidth2" value="option2"><span class="unit">%</span>
+			</label>
+		</div>
+	</div>
+	<div class="form-group" id="cp-ot-height">
+		<label class="form-group-title"><spring:message
+				code='cpo.height' /></label>
+		<div class="form-group-content cp-option-bd">
+			<input type="text" class="option-height" maxlength="3" min="0" /> <label>
+				<input type="radio" name="optionHeight" id="optionHeight1"
+				value="option1" checked><span class="unit"
+				style="line-height: 21px;">px</span>
+			</label> <label> <input type="radio" name="optionHeight"
+				id="optionHeight2" value="option2"><span class="unit">%</span>
+			</label>
+		</div>
+	</div>
+
+	<div class="form-group" id="cp-ot-rotate">
+		<label class="form-group-title"><spring:message
+				code='cpo.rotation' /></label>
+		<div class="form-group-content cp-option-bd fixcss">
+			<input type="text" class="option-rotate" maxlength="3" /> <label
+				style="display: inline-block !important;"> <span
+				class="unit"><spring:message code='cpo.title1' /></span> <input
+				type="checkbox" name="optionRotate" id="optionRotate" checked />
+			</label>
+			<div class="rotate-angel">|</div>
+		</div>
+	</div>
+	<!-- <div class="form-group" id="cp-ot-opacity">
+			<label>Opacity: <span>100</span></label>
+			<div class="cp-option-bd">
+				<div class="option-opacity" ></div>
+			</div> 
+		</div> -->
+	<!-- <div class="form-group" id="cp-ot-blur">
+			<label>Blur: <span>0</span></label>
+			<div class="cp-option-bd">
+				<div class="option-blur"></div>
+			</div> 
+		</div> -->
+	<!-- <div class="form-group" id="cp-ot-gradient">
+			<label>gradient: <span>0</span></label>
+			<div class="cp-option-bd">
+				<span class="gradient-color-first color-show" data-type="color" data-val="rgba(0,0,0,1)" style="border: 1px solid #000;background: #000;"></span>
+				<div class="dropup option-gradient" data-type="type">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    	<span class="dd-title" data-type="x"></span>
+				    	<span class="caret"></span>
+				  	</button>
+				  	<ul class="dropdown-menu " aria-labelledby="dropdownMenu2">
+				    	<li data-val="x" data-type="type"><a class="gradient-x"></a></li>
+				    	<li data-val="y" data-type="type"><a class="gradient-y"></a></li>
+				  	</ul>
+				</div>
+				<span class="gradient-color-last color-show" data-type="color" data-val="rgba(255,255,255,1)" style="border: 1px solid #000;background: #fff;"></span>
+				<div class="option-gradient" data-type="value"></div>
+				<input type="hidden" value="0" id="gradient-val"/>
+			</div> 
+		</div> -->
+</div>

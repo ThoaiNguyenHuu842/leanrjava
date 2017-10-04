@@ -1,0 +1,110 @@
+<%@page contentType="text/html; charset=UTF-8" %>
+<div class="login-require-sesion main-login-content">
+	<div class="covert-background"></div>
+
+	<div class="content-require qb-ohhay-content-wrapper">
+		<div class="content-account-login">
+			<div class="col-sm-12 col-xs-12">
+				<h2 class="value-title">
+					<spring:message code='login' />
+				</h2>
+				<div class="data_component center-block first-fix">
+					<c:choose>
+						<c:when test="${(not empty userNameRegis)}">
+							<input value="${userNameRegis}" id="inputPhoneNumber"
+								class="wapper" type="text"
+								placeholder="<spring:message code='email'/>" />
+						</c:when>
+						<c:otherwise>
+							<input id="inputPhoneNumber" class="wapper" type="text"
+								placeholder="<spring:message code='email'/>" />
+						</c:otherwise>
+					</c:choose>
+					<input type="password" id="inputPassword" class="wapper"
+						placeholder="<spring:message code='password'/>" type="text" />
+					<!-- <input class="checkbox" type="checkbox" /> -->
+					<div class="remember_me">
+						<div class="col-sm-12 content-forgetpass">
+							<div class="checkbox-animation-qb checkbox-remember-me checked">
+								<label> <input type="checkbox" value=""> <span
+									class="cr"><i class="cr-icon fa fa-check"></i></span> <span>
+										<spring:message code='login.remmemberme' /></label>
+							</div>
+							</span><a class="forget-password"> <spring:message
+									code='login.forget_pass' />
+							</a>
+						</div>
+					</div>
+					<div class="ajax-content-login">
+						<p>
+							<img width="30" alt=""
+								src="${CONTEXT_PATH}/html/images/ajax-loader_4.gif">
+						</p>
+					</div>
+					<button id="btn-login-saverequire"
+						class="button-login login hvr-bounce-out">
+						<span> <spring:message code='login' /></span>
+						<!-- </span> &nbsp <span><i class="fa fa-play"></i></span> -->
+					</button>
+					<div class="clearfix"></div>
+				</div>
+				<div class="data_component center-block">
+					<div class="wapper-or">
+						<div class="col-sm-5"></div>
+						<div class="col-sm-2 text-center">
+							<p>
+								<spring:message code='home.or' />
+							</p>
+						</div>
+						<div class="col-sm-5"></div>
+					</div>
+					<div class="wapper-facebook btn-fb-login">
+						<button class="buttom-icon">
+							<span class="fa fa-facebook"></span>
+						</button>
+						<button class="buttom-text">
+							<spring:message code='home.login_with_facebook' />
+						</button>
+					</div>
+					<div class="wapper-gplus btn-gg-login">
+						<button class="buttom-icon">
+							<span class="fa fa-google-plus"></span>
+						</button>
+						<button class="buttom-text">
+							<spring:message code='home.login_with_google' />
+						</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- DIALOG  FORGETPASS -->
+		<div class="dialog-forget-pass"
+			title="<spring:message code='login.forget_pass' />">
+			<div class="data-content">
+				<div class="content">
+					<label> <spring:message code="fgpdl.title1" />
+					</label> <input type="text" id="inputEmail" />
+					<div class="g-recaptcha data-captcha"
+						data-sitekey="6LfHvhoTAAAAALkKTpWGTuyO5SApwABRidJrzKSe"></div>
+				</div>
+				<div class="funct">
+					<div class="ajax-content-login">
+						<p>
+							<img width="30" style="width: 25px" alt=""
+								src="${CONTEXT_PATH}/html/images/ajax-loader_4.gif" />
+						</p>
+					</div>
+					<button class="btn-forget-pass">
+						<img class="icon-check-done"
+							src="${CONTEXT_PATH}/html/images/btn-save.png">
+						<spring:message code="fgpdl.title2" />
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- END DIALOG FORGETPASS -->
+	</div>
+</div>
+

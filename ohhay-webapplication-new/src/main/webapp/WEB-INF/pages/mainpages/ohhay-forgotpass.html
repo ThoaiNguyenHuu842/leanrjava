@@ -1,0 +1,33 @@
+<%@ page pageEncoding="UTF-8" %>
+<!-- LOCALIZE -->
+<%@ include file="/WEB-INF/pages/includes/localizeClient.html" %>
+<!-- END LOCALIZE -->
+<div class="qb-ohhay-content-wrapper">
+	<div class="cover-back">
+	<%@ include file="/WEB-INF/pages/includes/hidden-info.html" %>
+	<div class="change-pass-forgetpass">
+		<div class="logo">
+			<img class="center-block" src="${CONTEXT_PATH}/html/images/bonevo-logo-dl.png" />	
+		</div>
+		<div class="content-data">
+			<div class="title-funct">
+				<h2><spring:message code='login.forget_pass' /></h2>
+			</div>
+			<div class="item">
+				<label><spring:message code='setting.pass_passnew' /> :</label>
+				<input id="inputResetPassword" data-toggle="tooltip" title="<spring:message code='signup.title1'/>" type="password" value=""/>
+			</div>
+			<div class="item">
+				<label><spring:message code='setting.pass_passagain' /> :</label>
+				<input id="inputResetPasswordAgain" data-toggle="tooltip" title="<spring:message code='signup.title1'/>" type="password" value=""/>
+			</div>
+			<div class="item">
+				<button class="btn-save-forgotpass">
+					<spring:message code='save' />
+				</button>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+

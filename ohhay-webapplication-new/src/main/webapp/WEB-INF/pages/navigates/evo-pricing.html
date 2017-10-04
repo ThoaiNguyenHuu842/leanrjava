@@ -1,0 +1,91 @@
+<%@page contentType="text/html; charset=UTF-8" %> <%@taglib
+uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <%@taglib
+uri="http://www.springframework.org/tags/form" prefix="form"%> <%@
+taglib prefix="spring" uri="http://www.springframework.org/tags" %> <%@
+taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"
+%><%@include file="../includes/constant.html" %> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<%@include
+file="../includes/social.html" %>
+<title>BonEvo - <spring:message code='tnvp.title4' /></title>
+<meta http-equiv="Cache-control" content="public" max-age="2592000">
+	<meta http-equiv="Pragma" content="public" max-age="2592000">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+			<meta charset="UTF-8">
+				<link href="${CONTEXT_PATH}/html/images/fav1.png" type="image/png"
+					rel="shortcut icon">
+				<link rel="stylesheet" type="text/css"
+					href="${CONTEXT_PATH}/html/css/style.css" />
+				<!-- HEADER AND FOOTER -->
+				<link rel="stylesheet" type="text/css"
+					href="${CONTEXT_PATH}/html/css/include/evo-header/evo-header.css" />
+				<link rel="stylesheet" type="text/css"
+					href="${CONTEXT_PATH}/html/css/include/evo-footer/evo-footer.css" />
+				<!-- HEADER AND FOOTER -->
+				<!-------- CSS PLUGIN -------->
+				<link rel="stylesheet" type="text/css"
+					href="${CONTEXT_PATH}/html/css/plugin/bootstrap/bootstrap.min.css" />
+				<link rel="stylesheet" type="text/css"
+					href="${CONTEXT_PATH}/html/css/plugin/font-awesome.min.css" />
+				<link rel="stylesheet" type="text/css"
+					href="${CONTEXT_PATH}/html/css/plugin/hover/hover-min.css" />
+				<link rel="stylesheet" type="text/css"
+					href="${CONTEXT_PATH}/html/css/plugin/jquery-ui.css" />
+				<!-- ANIMATED -->
+				<!-- EVO PRICING -->
+				<link rel="stylesheet" type="text/css"
+					href="${CONTEXT_PATH}/html/css/plugin/bootstrap/bootstrap.min.css" />
+				<link rel="stylesheet" type="text/css"
+					href="${CONTEXT_PATH}/html/css/evo-pricing.css" />
+				<script src="${CONTEXT_PATH}/html/js/plugin/jquery-1.11.1.min.js"></script>
+				<script src="${CONTEXT_PATH}/html/js/main/ohhay.js"></script>
+				<script
+					src="${CONTEXT_PATH}/html/js/plugin/bootstrap/bootstrap.min.js"></script>
+					<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/scroll.js"></script>
+				<!-- TRACKING -->
+				<script type="text/javascript"
+					src="${CONTEXT_PATH}/html/js/tracking/tracking.js"></script>
+
+
+				<link
+					href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'
+					rel='stylesheet' type='text/css'></link>
+</head>
+<script>
+	$(document).ready(function() {
+		/*
+		 * tracking 
+		 */
+		var currentLanguage = "${pageContext.response.locale}";
+		trackingAjax.init({
+			fo100 : 0,
+			webId : 11,
+			currentLanguage : currentLanguage,
+		});
+		trackingAjax.trackingViewer();
+        util.headerMobile();
+        $('body').niceScroll({	
+        	cursorcolor: "#2fa8de",
+	        background: "",
+	        cursorborder: "",
+	        cursorwidth: "7px",
+	        cursorborderradius :"4px",
+	        autohidemode: false
+	    });
+	});
+</script>
+<body>
+	<input id="contextPath" type="hidden" value="${CONTEXT_URL}">
+		<div class="qb-ohhay-ajax-content">
+			<div class="content">
+				<label><spring:message code="loading" /></label> <img width="30"
+					alt="" src="${CONTEXT_PATH}/html/images/ajax-loader.gif">
+			</div>
+		</div>
+		<div class="qb-ohhay-setting-wrapper"><%@include
+			file="../mainpages/evo-pricing.html" %></div>
+</body>
+</html>

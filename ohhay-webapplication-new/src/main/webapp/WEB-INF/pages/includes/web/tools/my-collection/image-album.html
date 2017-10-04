@@ -1,0 +1,100 @@
+<%@ page pageEncoding="UTF-8" %>
+<input multiple type="file" class="upload_background"
+	style="display: none;" accept="image/png, image/jpeg" />
+<div class="qb-form-content qb-dig-tools-edit">
+	<div class="qb-tab-panel qb-tab-img-album">
+		<div class="header">
+			<div class="tab-menu tab-menu-2 default-tab">
+				<p>
+					<spring:message code='ima.free_images' />
+				</p>
+			</div>
+			<div class="tab-menu tab-menu-1">
+				<p>
+					<spring:message code='ima.my_images' />
+				</p>
+			</div>
+			<div class="tab-menu tab-menu-3">
+				<p>
+					<spring:message code='ima.social_images' />
+				</p>
+			</div>
+
+			<div class="btn-close-dialog">
+				<img src="${CONTEXT_PATH}/html/images/menu-close-2.png" />
+			</div>
+		</div>
+		<div class="clear-fix"></div>
+		<div class="body">
+			<div class="tab-panel tab-panel-2 qb-ohhay-image-panel">
+				<div class="content-data-append"></div>
+			</div>
+			<div class="tab-panel tab-panel-1 qb-my-image-panel">
+				<div class="btn-add-img">
+					<span class="add-plus"><img
+						src="${CONTEXT_PATH}/html/images/menu-close-2.png" /></span>
+				</div>
+				<div class="content-data-append"></div>
+			</div>
+			<div class="tab-panel tab-panel-3 qb-social-image-panel">
+				<div class="left-menu">
+					<ul>
+						<li class="facebook-api"><i class="fa fa-facebook-square"></i><label>Facebook</label></li>
+						<li class="instagram-api"><i class="fa fa-instagram"></i><label>Instagram</label></li>
+						<li class="flickr-api"><i class="fa fa-flickr"></i><label>Flickr</label></li>
+						<li class="dropbox-api"><i class="fa fa-dropbox"></i><label>Dropbox</label></li>
+					</ul>
+					<div class="logout-service">
+						<label><spring:message code='logout' /></label><i
+							class="fa fa-arrow-right"></i>
+					</div>
+				</div>
+				<div class="right-content">
+					<div class="facebook-api album-content active">
+						<div class="facebook-api album-navigate active">
+							<div class="facebook-api album-link active">
+								<a class="facebook-api album-link"><i
+									class="fa fa-arrow-left"></i><label>Back</label></a>
+							</div>
+						</div>
+						<div class="facebook-api facebook-album social-album active">
+							<!-- <div class="facebook-api facebook-one-album active"><p class="album-name">Album Name</p></div> -->
+						</div>
+					</div>
+					<div class="instagram-api album-content">
+						<div class="instagram-api album-navigate active">
+							<div class="instagram-api album-link active">
+								<a class="instagram-api album-link"><i
+									class="fa fa-arrow-left"></i><label>Back</label></a>
+							</div>
+						</div>
+						<div class="instagram-api instagram-album social-album active">
+							<!-- <div class="facebook-api facebook-one-album active"><p class="album-name">Album Name</p></div> -->
+						</div>
+					</div>
+					<div class="flickr-api album-content">
+						<div class="flickr-api album-navigate active">
+							<div class="flickr-api album-link active">
+								<a class="flickr-api album-link"><i class="fa fa-arrow-left"></i><label>Back</label></a>
+							</div>
+						</div>
+						<div class="flickr-api flickr-album social-album active">
+							<!-- <div class="facebook-api facebook-one-album active"><p class="album-name">Album Name</p></div> -->
+						</div>
+					</div>
+					<div class="dropbox-api album-content"></div>
+				</div>
+			</div>
+		</div>
+		<div class="pagination-content pagination-testvtt container"></div>
+		<div class="form-group-btn">
+			<button class="btn-finish-select">
+				<img src="${CONTEXT_PATH}/html/images/btn-save.png" />
+				<spring:message code='done' />
+			</button>
+			<p>
+				<span class="total-selected">0</span> selected
+			</p>
+		</div>
+	</div>
+</div>

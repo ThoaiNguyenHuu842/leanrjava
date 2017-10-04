@@ -1,0 +1,136 @@
+#qb-spave-bottom-div {
+	float: left;
+	width: 100%;
+	display: none;
+	height: 200px;
+	background-image: url(../../../images/transp_bg.png);
+	height: 200px;
+}
+
+#qb-spave-bottom-div p {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 300;
+	color: #7a7a7a
+}
+
+#wrapper-background-video {
+	height: 100%;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: -2;
+}
+
+.wrapper-background-video-box {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -2;
+}
+
+#wrapper-background-video .explainer_vid_bg {
+	width: 100%;
+}
+
+#content-wrapper {
+	float: left;
+	height: 100%;
+	margin: 61px 0 0;
+	padding: 0;
+	width: 100%;
+	padding-top: 0px;
+	position: relative;
+}
+
+#content-wrapper img {
+	height: auto;
+	width: 100%;
+	float: left;
+}
+
+#content-wrapper #panel-no-box {
+	margin-top: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+#content-wrapper #panel-no-box label {
+	color: #e8e8e8;
+	font-size: 40px;
+}
+
+#content-wrapper .content-box .grid-stack-item-content .function-panel .btn-save-croped-img
+	{
+	display: none;
+}
+
+.grid-style-onedit {
+	border-bottom: 1px dashed;
+}
+
+.grid-style-onedit .grid-stack {
+	border-left: 1px dashed;
+	border-right: 1px dashed;
+}
+
+.grid-style-onedit .grid-stack-item-content {
+	border: 0.5px dashed #e8e8e8;
+}
+/* CROSS HAIR */
+.grid-stack .evo-hair-vertical-right, .grid-stack .evo-hair-vertical-left
+	{
+	background: #fff none repeat scroll 0 0;
+	border-left: 1px dashed #000;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+	display: none;
+	width: 1px;
+}
+
+.grid-stack .evo-hair-horizontal-top, .grid-stack .evo-hair-horizontal-bottom
+	{
+	background: #fff none repeat scroll 0 0;
+	border-bottom: 1px dashed #000;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+	display: none;
+	height: 1px;
+}
+
+.grid-stack .evo-grid-line-x {
+	background: #fff none repeat scroll 0 0;
+	border-left: 1px dashed #000;
+	height: 100%;
+	opacity: 0.7;
+	position: absolute;
+	top: 0;
+	width: 1px;
+	z-index: 1;
+}
+
+.grid-stack .evo-grid-line-x-24 {
+	border-right: 1px solid #c3c3c3;
+	border-left: 1px solid #c3c3c3;
+}
+
+.grid-stack .evo-grid-line-y {
+	background: #fff none repeat scroll 0 0;
+	border-bottom: 1px dashed #000;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	height: 1px;
+	opacity: 0.7;
+}

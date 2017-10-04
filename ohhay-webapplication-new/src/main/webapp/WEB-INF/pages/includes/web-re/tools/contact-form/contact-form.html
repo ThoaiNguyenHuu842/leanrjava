@@ -1,0 +1,103 @@
+<div class="form-menu-tool">
+	<div class="item item-save">
+		<span class="fa fa-save"></span> <label><spring:message code='save' /></label>
+	</div>
+	<!-- DESIGN -->
+	<div class="item item-design">
+		<span class="fa fa-paint-brush"></span> <label><spring:message code='ctf.design' /></label>
+	</div>
+	<div class="sub-items sub-items-design item-hover">
+		<div class="item item-fontstyle-field-title item-hover">
+			<span class="fa  fa-font"></span> <label>Field title style</label>
+		</div>
+		<div class="item item-fontstyle-panel-title item-hover">
+			<span class="fa  fa-font"></span> <label>Panel title style</label>
+		</div>
+		<div title="Change form input style " data-toggle="tooltip" data-placement="bottom" class="item item-input-style item-hover">
+			<span class="fa fa-magic"></span> <label><spring:message code='ctf.title1' /></label>
+		</div>
+		<!-- SUB ITEMS INPUT STYLE -->
+		<div class="sub-items-right sub-items-right-input-design">
+			<div class="item btn-set-input-style-effect">
+				<span class="fa fa-gear"></span> <label><spring:message code='ctf.effect' /></label>
+			</div>
+			<div class="item btn-set-input-style-bg">
+				<span class="fa fa-picture-o"></span> <label><spring:message code='web.edit.changebg' /></label>
+			</div>
+			<div class="item btn-set-input-style-color">
+				<span class="fa fa-adjust"></span> <label><spring:message code='bgs.color' /></label>
+			</div>
+		</div>
+		<!-- END SUB ITEMS INPUT STYLE -->
+		<div class="item item-add-panel item-hover">
+			<span class="fa fa-plus-square-o"></span> <label><spring:message code='ctf.title2' /></label>
+		</div>
+		<div data-toggle="tooltip" data-placement="bottom" title="Drag it to a panel" class="item item-field item-field-textbox">
+			<span class="fa fa-text-width"></span> <label><spring:message code='ctf.title3' /></label>
+		</div>
+		<div data-toggle="tooltip" data-placement="bottom" title="Drag it to a panel" class="item item-field item-field-textarea">
+			<span class="fa fa-table"></span> <label><spring:message code='ctf.title4' /></label>
+		</div>
+		<div data-toggle="tooltip" data-placement="bottom" title="Drag it to a panel" class="item item-field item-field-checkbox">
+			<span class="fa fa-check-square-o"></span> <label><spring:message code='ctf.title5' /></label>
+		</div>
+		<div data-toggle="tooltip" data-placement="bottom" title="Drag it to a panel" class="item item-field item-field-radio">
+			<span class="fa fa-circle-o"></span> <label><spring:message code='ctf.radio' /></label>
+		</div>
+		<div data-toggle="tooltip" data-placement="bottom" title="Drag it to a panel" class="item item-field item-field-combobox">
+			<span class="fa fa-toggle-down"></span> <label><spring:message code='ctf.title6' /></label>
+		</div>
+		<!-- <div title="Drag it to a panel" class="item item-field item-field-date-picker">
+			<span class="fa fa-calendar"></span> <label>Date picker</label>
+		</div> -->
+	</div>
+	<!-- END DESIGN -->
+	<div class="item item-edit-mail-revice">
+		<span class="fa fa-globe"></span> <label><spring:message code='ctf.title7' /></label>
+	</div>
+	<div class="item item-edit-submit-mess">
+		<span class="fa  fa-h-square"></span> <label><spring:message code='ctf.title8' /></label>
+	</div>
+</div>
+<!-- FORM EDITOR -->
+<div class="body-tools form-body-tool qb-component" style="display: block;">
+	<div class="qb-form-send-mail">
+		<ul class="qb-form-send-mail-wrapper-panel">
+			<li class="qb-input-panel">
+				<div class="form-group-ex" qb-input-type="text">
+					<label><spring:message code='setting.name' /></label> <input type="text">
+				</div>
+				<div class="form-group-ex" qb-input-type="text">
+					<label><spring:message code='phone' /></label> <input type="text">
+				</div>
+			</li>
+		</ul>
+		<div class="qb-contact-form-submit-content">
+			<button class="qb-btn-submit-email"><spring:message code='ctf.send' /></button>
+		</div>
+	</div>
+</div>
+<!-- FORM EDITOR -->
+<!-- SUBMIT MESSAGE -->
+<div class="body-tools edit-subtmit-mess-tool">
+	<div class="content-wrraper">
+		<label class="header-title"><spring:message code='ctf.title10' /></label>
+		<textarea class="input-submit-mess"></textarea>
+	</div>
+</div>
+<!-- END SUBMIT MESSAGE -->
+<!-- EMAIL RECIVE -->
+<div class="body-tools edit-email-revice-tool">
+	<div class="content-wrraper">
+		<label class="header-title"><spring:message code='ctf.title11' /></label>
+		<input class="input-email-recive"></input>
+	</div>
+</div>
+<!-- END EMAIL RECIVE -->
+<!-- EMAIL TEMPLATE -->
+<!-- <div class="body-tools edit-email-content-tool">
+	<div class="content-wrraper">
+		<label class="header-title">Setup your email template</label>
+	</div>
+</div> -->
+<!-- END EMAIL TEMPLATE -->

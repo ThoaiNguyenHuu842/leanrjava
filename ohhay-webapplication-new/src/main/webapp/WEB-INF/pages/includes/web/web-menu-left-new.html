@@ -1,0 +1,339 @@
+<%@page contentType="text/html; charset=UTF-8" %>
+<div id="web-tools" class="qb-edit-tool new-style-draggable">
+	<!-- EXTEND -->
+	<div class="item menu-extend" data-toggle="tooltip"
+		data-placement="right" title="">
+		<div class="item-icon-panel">
+			<img style="width: 15px;" alt=""
+				src="${CONTEXT_PATH}/html/images/addbox.png">
+		</div>
+	</div>
+	<!-- END EXTEND -->
+
+	<div class="web-tools-content">
+		<!-- TEXT -->
+		<div class="item" id="normal-text">
+			<div class="item-icon-panel">
+				<i class="fa fa-text-width item-icon" data-toggle="tooltip"
+					data-placement="right"
+					title="<spring:message code='mnl.add_text' />"></i>
+			</div>
+			<div class="loadmore-components">
+				<!-- COMPONENT LOAD STYLE NEW -->
+				<div class="admin-library-load" id="normal-text">
+					<!-- COMPONENT DEFAULT -->
+					<div class="component-default">
+						<div class="title-library"><spring:message code='mnl.add_text' /></div>
+						<c:if test="${userLogin.m900mg.mv922=='ADMIN'}">
+							<div class="conver single-comp-item">
+								<div class="sub-item item-component text-full"
+									data-toggle="tooltip" data-placement="right" title="Text">
+									<div>
+										<i class="fa fa-text-width"></i>
+									</div>
+								</div>
+								<div class="sub-item item-component text-header"
+									data-toggle="tooltip" data-placement="right" title="Header">
+									<div>
+										<i class="fa fa-header"></i>
+									</div>
+								</div>
+							</div>
+						</c:if>
+					</div>
+					<!-- COMPONENT DEFAULT -->
+					<div class="data-content">
+						<!-- LOAD MORE -->
+						<div class="load-more-component"></div>
+						<!-- LOAD MORE -->
+					</div>
+				</div>
+				<!-- COMPONENT LOAD STYLE NEW -->
+			</div>
+		</div>
+		<!-- END TEXT -->
+		<!-- IMG -->
+		<div class="item" id="normal-image">
+			<div class="item-icon-panel">
+				<i class="fa fa-picture-o item-icon"
+					title="<spring:message code='mnl.add_image' />"
+					data-toggle="tooltip" data-placement="right"></i>
+			</div>
+			<div class="loadmore-components">
+				<div class="admin-library-load" id="normal-image">
+					<!-- COMPONENT DEFAULT -->
+					<div class="component-default">
+						<div class="title-library"><spring:message code='mnl.add_image' /></div>
+						<c:if test="${userLogin.m900mg.mv922=='ADMIN'}">
+							<div class="conver single-comp-item">
+								<div class="sub-item item-component">
+									<div class="normal_image_1" data-mode="ONE">
+										<img style="width: 16px;" alt=""
+											src="${CONTEXT_PATH}/html/images/image-1.png">
+									</div>
+								</div>
+
+								<div class="sub-item item-component">
+									<div class="normal_image_2" data-mode="TWO">
+										<img style="width: 12px;" alt=""
+											src="${CONTEXT_PATH}/html/images/image-2.png">
+									</div>
+								</div>
+
+								<div class="sub-item item-component">
+									<div class="normal_image_3" data-mode="THREE">
+										<img style="width: 16px;" alt=""
+											src="${CONTEXT_PATH}/html/images/image-3.png">
+									</div>
+								</div>
+
+								<div class="sub-item item-component">
+									<div class="normal_image_4" data-mode="FOUR">
+										<img style="width: 18px;" alt=""
+											src="${CONTEXT_PATH}/html/images/image-4.png">
+									</div>
+								</div>
+
+								<div class="sub-item item-component">
+									<div class="normal_image_5" data-mode="GALLERY">
+										<img style="width: 25px;" alt=""
+											src="${CONTEXT_PATH}/html/images/gallery-icon.png">
+									</div>
+								</div>
+							</div>
+						</c:if>
+					</div>
+					<!-- COMPONENT DEFAULT -->
+					<!-- LOAD MORE -->
+					<div class="data-content">
+						<div class="load-more-component"></div>
+					</div>
+					<!-- LOAD MORE -->
+				</div>
+			</div>
+		</div>
+		<!-- END IMG -->
+		<!-- IFRAME -->
+		<div class="item" id="normal-iframe">
+			<div class="item-icon-panel">
+				<i class="fa fa-video-camera item-icon" data-toggle="tooltip"
+					data-placement="right" title="<spring:message code='mnl.title1' />"></i>
+			</div>
+			<div class="loadmore-components">
+				<div class="admin-library-load" id="normal-iframe">
+					<!-- COMPONENT DEFAULT -->
+					<div class="component-default">
+						<div class="title-library"><spring:message code='mnl.title1' /></div>
+						<c:if test="${userLogin.m900mg.mv922=='ADMIN'}">
+							<div class="conver single-comp-item">
+								<div class="sub-item item-component" id="normal_iframe_youtube"
+									data-toggle="tooltip" data-placement="right" title="Youtube">
+									<div>
+										<i class="fa fa-youtube"></i>
+									</div>
+								</div>
+								<div class="sub-item item-component"
+									id="normal_youtube_playlist" data-toggle="tooltip"
+									data-placement="right" title="Youtube playlist">
+									<div>
+										<i class="fa fa-film"></i>
+									</div>
+								</div>
+								<div class="sub-item item-component" id="normal_iframe_vimeo"
+									data-toggle="tooltip" data-placement="right" title="Vimeo">
+									<div>
+										<i class="fa fa-vimeo"></i>
+									</div>
+								</div>
+								<div class="sub-item item-component"
+									id="normal_iframe_webinaris" data-toggle="tooltip"
+									data-placement="right" title="Webinaris">
+									<div>
+										<i class="fa  fa-youtube-play"></i>
+									</div>
+								</div>
+							</div>
+						</c:if>
+					</div>
+					<!-- COMPONENT DEFAULT -->
+					<!-- LOAD MORE -->
+					<div class="data-content">
+						<div class="load-more-component"></div>
+					</div>
+					<!-- LOAD MORE -->
+				</div>
+			</div>
+		</div>
+		<!-- END IFRAME -->
+		<!-- BUTTON -->
+		<div class="item" id="normal-button">
+			<div class="item-icon-panel">
+				<i class="fa fa-square item-icon" data-toggle="tooltip"
+					data-placement="right"
+					title="<spring:message code='mnl.add_button' />"></i>
+			</div>
+			<div class="loadmore-components">
+				<div class="admin-library-load" id="normal-button">
+					<!-- COMPONENT DEFAULT -->
+					<div class="component-default">
+						<div class="title-library"><spring:message code='mnl.add_button' /></div>
+						<c:if test="${userLogin.m900mg.mv922=='ADMIN'}">
+							<div class="conver single-comp-item">
+								<div class="sub-item item-component">
+									<div type="normal-button-1">
+										<span style="width: 60%; height: 14px;"
+											class="obutton-demo-button"></span>
+									</div>
+								</div>
+								<div class="sub-item item-component">
+									<div type="normal-button-2">
+										<span style="width: 60%; height: 14px; border-radius: 14px;"
+											class="obutton-demo-button"></span>
+									</div>
+								</div>
+								<div class="sub-item item-component">
+									<div type="normal-button-3">
+										<span style="width: 20px; height: 20px; border-radius: 10px;"
+											class="obutton-demo-button"></span>
+									</div>
+								</div>
+							</div>
+						</c:if>
+					</div>
+					<!-- COMPONENT DEFAULT -->
+					<!-- LOAD MORE -->
+					<div class="data-content">
+						<div class="load-more-component"></div>
+					</div>
+					<!-- LOAD MORE -->
+				</div>
+			</div>
+		</div>
+		<!-- END BUTTON -->
+		<!-- GMAP -->
+		<div class="item" id="normal-gmap">
+			<div class="item-icon-panel">
+				<i class="fa fa-map-marker item-icon" data-toggle="tooltip"
+					data-placement="right" title="<spring:message code='mnl.title2' />"></i>
+			</div>
+			<div class="loadmore-components">
+				<div class="admin-library-load" id="normal-gmap">
+					<!-- COMPONENT DEFAULT -->
+					<div class="component-default">
+						<div class="title-library"><spring:message code='mnl.title2' /></div>
+						<c:if test="${userLogin.m900mg.mv922=='ADMIN'}">
+							<div class="conver single-comp-item">
+								<div class="sub-item item-component" id="normal-gmap"
+									data-toggle="tooltip" data-placement="right" title="Gmap">
+									<div>
+										<i class="fa fa-map-marker item-icon" data-toggle="tooltip"
+											data-placement="right"
+											title="<spring:message code='mnl.title2' />"></i>
+									</div>
+								</div>
+							</div>
+						</c:if>
+					</div>
+					<!-- COMPONENT DEFAULT -->
+					<!-- LOAD MORE -->
+					<div class="data-content">
+						<div class="load-more-component"></div>
+					</div>
+					<!-- LOAD MORE -->
+				</div>
+			</div>
+		</div>
+		<!-- END GMAP -->
+		<!-- GALLERY -->
+		<!-- <div class="item" data-toggle="tooltip"
+		data-placement="right" title="<spring:message code='mnl.add_gallery' />">
+		<div class="item-icon-panel">
+		<i class="fa   fa-map item-icon"></i>
+		</div>
+		</div> -->
+		<!-- END GALLERY -->
+		<!-- MENU -->
+		<div class="item" id="normal-menu">
+			<div class="item-icon-panel">
+				<i class="fa  fa-navicon item-icon" data-toggle="tooltip"
+					data-placement="right"
+					title="<spring:message code='mnl.add_menu' />"></i>
+			</div>
+			<div class="loadmore-components">
+				<div class="admin-library-load" id="normal-menu">
+					<!-- COMPONENT DEFAULT -->
+					<div class="component-default">
+						<div class="title-library"><spring:message code='mnl.add_menu' /></div>
+						<c:if test="${userLogin.m900mg.mv922=='ADMIN'}">
+							<div class="conver single-comp-item">
+								<div class="sub-item item-component cp-menu">
+									<div>
+										<i class="fa fa-navicon"></i>
+									</div>
+								</div>
+							</div>
+						</c:if>
+					</div>
+					<!-- COMPONENT DEFAULT -->
+					<!-- LOAD MORE -->
+					<div class="data-content">
+						<div class="load-more-component"></div>
+					</div>
+					<!-- LOAD MORE -->
+				</div>
+			</div>
+		</div>
+		<!-- END MENU -->
+		<!-- CONTACT FORM -->
+		<div class="item" id="normal_contact_form">
+			<div class="item-icon-panel">
+				<i class="fa fa-envelope item-icon" data-toggle="tooltip"
+					data-placement="right" title="<spring:message code='mnl.title3' />"></i>
+			</div>
+			<div class="loadmore-components">
+				<div class="admin-library-load" id="normal_contact_form">
+					<!-- COMPONENT DEFAULT -->
+					<div class="component-default">
+						<div class="title-library"><spring:message code='mnl.title3' /></div>
+						<c:if test="${userLogin.m900mg.mv922=='ADMIN'}">
+							<div class="conver single-comp-item">
+								<div class="sub-item item-component">
+									<div>
+										<i class="fa fa-th-list"></i>
+									</div>
+								</div>
+							</div>
+						</c:if>
+					</div>
+					<!-- COMPONENT DEFAULT -->
+					<!-- LOAD MORE -->
+					<div class="data-content">
+						<div class="load-more-component"></div>
+					</div>
+					<!-- LOAD MORE -->
+				</div>
+			</div>
+		</div>
+		<!-- END CONTACT FORM -->
+		<!-- EMBED CODE -->
+		<div class="item single-comp-item" id="normal_embed_code">
+			<div class="item-icon-panel">
+				<i class="fa fa-code" style="color: white" data-toggle="tooltip"
+					data-placement="right" title="<spring:message code='mnl.title4' />"></i>
+			</div>
+		</div>
+		<!-- END EMBED CODE -->
+
+	</div>
+	<!-- END web-tools-content -->
+
+	<!-- COLLAPSE  -->
+	<div class="item menu-collapse" data-toggle="tooltip"
+		data-placement="right" title="">
+		<div class="item-icon-panel">
+			<img style="width: 11px;" alt=""
+				src="${CONTEXT_PATH}/html/images/menu-close.png">
+		</div>
+	</div>
+	<!-- END COLLAPSE -->
+</div>

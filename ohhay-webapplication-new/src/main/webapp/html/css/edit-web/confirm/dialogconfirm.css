@@ -1,0 +1,88 @@
+@CHARSET "ISO-8859-1";
+
+.dialogconfirm.qb-dialog-new.dialog.hidden-dialog.active-dialog .dialog__content .wrapper .qb-form-content {
+	margin-bottom: 1.7em;
+	float: left;
+	width: 100%;
+}
+.dialogconfirm.qb-dialog-new.dialog.hidden-dialog.active-dialog .dialog__content .wrapper .qb-form-content .input-field {
+	text-align: left;
+}
+
+.dialogconfirm.qb-dialog-new.dialog.hidden-dialog.active-dialog .dialog__content .wrapper .qb-form-action input[type="button"]{
+	background: white;
+}
+
+.dialogconfirm.qb-dialog-new.dialog.hidden-dialog.active-dialog .dialog__content .wrapper .qb-form-action button:first-child {
+}
+
+.dialogconfirm.qb-dialog-new.dialog.hidden-dialog.active-dialog .dialog__content .wrapper .qb-form-action button:last-child {
+	float: right;
+}
+
+.dialogconfirm.qb-dialog-new.dialog.hidden-dialog.active-dialog .dialog__content .wrapper .qb-form-action button {
+	background: white;
+	color: #3499FF;
+	border: none;
+	text-transform: uppercase;
+	color: rgb(0, 153, 255);
+	font-size: 14px;
+	outline-style: none;
+}
+
+.dialogconfirm.qb-dialog-new.dialog.hidden-dialog.active-dialog .dialog__content .wrapper .qb-form-action button {
+	height: 52px;
+}
+
+.dialogconfirm.qb-dialog-new.dialog.hidden-dialog.active-dialog .dialog__content .wrapper .qb-form-action hr {
+	margin-bottom: 0;
+}
+
+.dialogconfirm.qb-dialog-new.dialog.hidden-dialog.active-dialog .dialog__content .wrapper .qb-form-action button.dialog-save {
+	background: #0099FF !important;
+	color: white !important;
+	text-transform: uppercase;
+	color: rgb(0, 153, 255);
+	font-size: 14px;
+	border: none;
+	margin: 0;
+	margin-right:-1px;
+	margin-bottom:-1px;
+	width: 74px;
+	height: 52px;
+	border-radius: 0 0 4px;
+}
+.dialogconfirm.qb-dialog-new.dialog.hidden-dialog.active-dialog .dialog__content .wrapper .qb-form-action {
+	border-top: #E1E1E1;
+	float: left;
+	width: 100%;
+}
+
+.dialogconfirm.qb-dialog-new.dialog.hidden-dialog.active-dialog .dialog__content .wrapper .item-data {
+	float: right;
+	width: 50%;
+	margin-right: -13.8px;
+	margin-left: -38px;
+}
+
+.dialogconfirm.qb-dialog-new.dialog.hidden-dialog.active-dialog .dialog__content {
+	padding-bottom: 0;
+	
+}
+.dialogconfirm.qb-dialog-new.dialog.hidden-dialog.active-dialog .dialog__content .wrapper hr {
+	margin-left: -40px;
+	width: 150%;
+	margin-bottom: 8px;
+}
+
+
+
+/* Fix for mobile */
+@media (min-width: 320px) and (max-width:
+	480px) {
+	.dialogconfirm.qb-dialog-new.dialog.hidden-dialog.active-dialog .dialog__content .wrapper .qb-form-action button.data-dialog-close{
+		margin-right: 40px;
+		padding: 0;
+		}
+	}
+}

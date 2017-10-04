@@ -1,0 +1,203 @@
+@CHARSET "ISO-8859-1";
+
+#qb-google-map .qb-component {
+	padding: 0 !important;
+}
+
+.google-map-canvas {
+	width: 100%;
+	height: 100%;
+}
+
+.gmnoprint {
+	display: none;
+}
+
+.gmap-option #qb-type-map {
+	list-style: none;
+}
+
+#qb-type-map .qb-type-map {
+	width: 115px;
+	height: 45px;
+}
+
+#qb-type-map .qb-type-map:hover {
+	cursor: pointer;
+}
+
+.gmap-option .qb-gmap-option-body #color-data-map {
+	margin-top: 19px;
+}
+
+#markerGmap .input-fied .add-marker .row .upate-marker-add {
+	display: table-cell;
+	vertical-align: middle;
+	float: none;
+}
+
+#list-marker-gmap nav .list-markers thead tr th {
+	text-align: center;
+}
+
+#list-marker-gmap nav .list-markers tbody .row-markers td {
+	vertical-align: middle;
+}
+
+#list-marker-gmap nav .list-markers tbody {
+	height: 150px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.gmap-option .qb-gmap-option-body .option-gmap .title-gmap {
+	width: 100%;
+	display: table;
+	background: #eeeeee;
+	height: 28px;
+	font-weight: bold;
+	font-family: Roboto-Bold;
+	font-size: 14px;
+}
+
+.gmap-option .qb-gmap-option-body .option-gmap .title-gmap .content-info
+	{
+	display: table-cell;
+	vertical-align: middle;
+	font-family: Roboto-Bold;
+	padding-left: 20px;
+	font-size: 14px;
+	color: #5b5d68;
+	font-weight: normal;
+}
+
+.gmap-option .qb-gmap-option-body .option-gmap .data-option .col-xs-* {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 20px;
+}
+
+.gmap-option .qb-gmap-option-body .option-gmap .data-option {
+	margin-left: 5px;
+	margin-top: 18px;
+	margin-bottom: 18px;
+}
+
+#list-marker-gmap li {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#list-marker-gmap::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #F5F5F5;
+}
+
+#list-marker-gmap::-webkit-scrollbar {
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#list-marker-gmap::-webkit-scrollbar-thumb {
+	background-color: #000000;
+}
+
+#list-marker-gmap li:nth-child(1n) {
+	border-top: 1px solid #eeeeee;
+	padding-top: 15px;
+}
+
+#list-marker-gmap li:first-child {
+	border: none;
+	padding-top: 0;
+}
+
+#list-marker-gmap li .data-item-img-marker .item {
+	border: 1px solid #999999;
+}
+
+#list-marker-gmap li #btn-delete-markers-gmap {
+	margin-left: 17px;
+}
+
+.gmap-option .qb-gmap-option-body .option-gmap .data-option .type-map-data
+	{
+	width: 19%;
+}
+
+#list-marker-gmap {
+	max-height: 200px;
+	height:auto;
+	overflow: hidden;
+	margin: 0;
+}
+
+#list-marker-gmap:hover {
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+#list-marker-gmap li #btn-delete-markers-gmap:hover, #list-marker-gmap li #btn-edit-markers-gmap:hover
+	{
+	cursor: pointer;
+}
+
+.gmap-option .qb-gmap-option-body #qb-panel-gmap-zoom {
+	font-size: 14px;
+	font-family: Roboto-Regular;
+}
+
+#list-marker-gmap .row .data .title, #list-marker-gmap .row .data .data
+	{
+	font-family: Roboto-Regular;
+}
+
+.gmap-option .qb-gmap-option-body .option-gmap #iputlabelMap,
+	.gmap-option .qb-gmap-option-body .option-gmap #inputFieldAutocompleteAddress
+	{
+	padding-left: 13px;
+	height: 35px;
+	width: 400px;
+}
+
+.gmap-option .qb-gmap-option-body .option-gmap .add-marker .upate-marker-add .btn-save-marker
+	{
+	border-radius: 5px;
+	background: #0099FF;
+	height: 35px;
+	border: none;
+	outline-style: none;
+	color: white;
+	width: 75px;
+}
+
+.gmap-option .qb-gmap-option-body .option-gmap .add-marker .upate-marker-add .add-marker-data
+	{
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+	display: table;
+	border: 1px solid #999999;
+	border-radius: 4px;
+}
+
+.gmap-option .qb-gmap-option-body .option-gmap .add-marker .upate-marker-add #iputlabelMap,
+	.gmap-option .qb-gmap-option-body .option-gmap .add-marker .upate-marker-add #inputFieldAutocompleteAddress
+	{
+	border: 1px solid #999999;
+	outline-style: none;
+	border-radius: 4px;
+}
+
+.gmap-selected-type-map {
+	border: 3px solid #0099ff;
+	border-radius: 4px;
+}
+
+#list-marker-gmap .gmap-marker-nodata {
+	color: #e8e8e8;
+	text-align: center;
+	font-size: 1.1em;
+	padding: 5px 5px;
+	margin-bottom: 0;
+}

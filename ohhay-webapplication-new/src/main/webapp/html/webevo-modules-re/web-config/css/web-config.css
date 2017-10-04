@@ -1,0 +1,24 @@
+/*
+ * author ThoaiNH
+ * date create 20/10/2015
+ */
+ #qb-web-config .input-panel{
+ 	float: left;
+    height: auto;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    width: 100%;
+ }
+ #qb-web-config .input-panel .input-fied{
+ 	float: left;
+    margin-top: 12px;
+    width: 100%;
+ }
+ #qb-web-config .input-panel .input-fied.disable label{
+ 	color: #e8e8e8;
+ }
+ #qb-web-config .input-panel .input-fied .ui-slider{
+ 	float: left;
+ 	width: 100%;
+ 	margin-top: 11px;
+ }

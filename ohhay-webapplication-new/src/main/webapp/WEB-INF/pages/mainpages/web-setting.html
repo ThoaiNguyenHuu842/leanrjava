@@ -1,0 +1,63 @@
+<%@ page pageEncoding="UTF-8" %> <%@include
+file="../includes/hidden-info.html" %>
+<input type="hidden" id="current-web-id" value="${e400mg.id}">
+<!-- LOCALIZE -->
+<%@ include file="/WEB-INF/pages/includes/localizeClient.html" %>
+<!-- END LOCALIZE -->
+<!-- CONFIRM DIALOG -->
+<div
+	class="dialogconfirm qb-dialog-new dialog hidden-dialog active-dialog dialog--open"></div>
+<!-- END CONFIRM DIALOG -->
+<!-- HEADER BOX -->
+<%@include file="../includes/evo-logined-header.html" %>
+<!-- END HEADER BOX -->
+<!-- BODY BOX -->
+<div id="body-evo">
+	<div class="qb-setting-wrapper">
+		<div class="qb-setting-content qb-web-setting-content  container">
+			<div class="qb-setting-title">
+				<div class="qb-setting-icon">
+					<span class="fa  fa-cogs"></span>
+				</div>
+				<div class="qb-setting-label">
+					<h2>${e400mg.ev405}</h2>
+				</div>
+				<!-- <a href="${CONTEXT_URL}" class="hidden-onmobile">
+					<div class="qb-setting-backtomysite qb-button-setting">
+						<p>Back to mysite</p>
+						<span class="fa fa-arrow-right"></span>
+					</div>
+				</a> -->
+			</div>
+			<!-- TAB PANEL -->
+			<div class="qb-setting-tab">
+				<div tab="panel-domain" class="qb-setting-tab-item active"
+					name="domain">
+					<p><spring:message code='setting.domain.title' /></p>
+				</div>
+				<div tab="panel-seo" class="qb-setting-tab-item"
+					style="margin-left: 1px;" name="seo">
+					<p>SEO</p>
+				</div>
+			</div>
+			<div class="qb-web-setting-content-body">
+				<div class="qb-web-setting-content-body-panel panel-domain active">
+					<%@ include
+					file="/WEB-INF/pages/includes/setting/inc-setting-domain.html" %></div>
+				<div class="qb-web-setting-content-body-panel panel-seo"><%@
+					include
+					file="/WEB-INF/pages/includes/setting/inc-setting-seo.html"%></div>
+			</div>
+			<!-- END TAB PANEL -->
+		</div>
+	</div>
+</div>
+<!-- END BODY BOX -->
+<!-- FOOTER BOX -->
+<div class="hidden-onmobile"><%@include
+	file="../includes/evo-footer.html" %></div>
+<!-- END FOOTER BOX -->
+<!-- SETTING DOMAIN -->
+<%@ include
+file="/WEB-INF/pages/includes/setting/input/inc-setting-input-domain.html"%>
+<!-- END SETTING DOMAIN -->

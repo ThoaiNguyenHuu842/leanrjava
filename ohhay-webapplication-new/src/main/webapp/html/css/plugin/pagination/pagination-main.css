@@ -1,0 +1,82 @@
+@CHARSET "UTF-8";
+
+.pagination-main-page {
+	opacity: 0;
+}
+
+.pagination-main-page.showpagination {
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	opacity: 1;
+}
+
+.pagination-main-page .page-padingtion-first{
+	display: table;
+}
+
+.pagination-main-page .page-padingtion-first[center="true"]{
+	margin: 0 auto;
+}
+
+.pagination-main-page .page-padingtion-first .item-page-pg {
+	padding-left: 0;
+	width: 76px;
+	padding-right: 0;
+}
+
+.pagination-main-page .page-padingtion-first .cover-number-page {
+	overflow: hidden;
+	width: auto;
+	/* 	max-width: 65% !important; */
+	left: 0;
+	/* 	margin-right: -7px; */
+	/* width: 400px; */
+}
+
+.pagination-full-page .page-padingtion:last-child a {
+	border-radius: 0;
+}
+
+.pagination-main-page .page-padingtion-first .item-page-pg.first-funct .pagination
+	{
+	float: right;
+}
+
+.pagination-main-page .page-padingtion-first .item-page-pg.last-funct .pagination
+	{
+	float: left;
+}
+
+.pagination-main-page .cover-number-page .pagination-full-page {
+	display: inline-flex;
+	position: relative;
+}
+
+.pagination-main-page .pagination * {
+	cursor: pointer;
+}
+.pagination-main-page ul.pagination a{
+	border: medium none;
+	color : #666 !important;
+	border-radius: 5px !important;
+	padding: 6px 15px !important;
+	outline: medium none;
+}
+.pagination-main-page li.active a{
+	background: rgba(0, 0, 0, 0) -moz-linear-gradient(right center , #6862a8 0%, #b57faa 100%) repeat scroll 0 0;
+	background: rgba(0, 0, 0, 0) -webkit-linear-gradient(right , #6862a8 0%, #b57faa 100%) repeat scroll 0 0;
+	background: rgba(0, 0, 0, 0) linear-gradient(to right center , #6862a8 0%, #b57faa 100%) repeat scroll 0 0;
+    border-color: rgba(0, 0, 0, 0) -moz-linear-gradient(right center , #6862a8 0%, #b57faa 100%) repeat scroll 0 0;
+	border-color: rgba(0, 0, 0, 0) -webkit-linear-gradient(right , #6862a8 0%, #b57faa 100%) repeat scroll 0 0;
+	border-color: rgba(0, 0, 0, 0) linear-gradient(to right center , #6862a8 0%, #b57faa 100%) repeat scroll 0 0;    
+	color: #fff !important;
+} 
+.pagination-main-page .item-page-pg{
+	font-size: 17px;
+}
+.pagination-main-page .pagination>li>a:hover{
+	background-color: #e7e3fa;
+}

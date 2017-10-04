@@ -1,0 +1,66 @@
+<%@page contentType="text/html; charset=UTF-8" %>
+
+<div class="action-option-panel">
+	<div class="menu" >
+		<div class="menu-left">
+			<ul class="menu-left-header">
+				<li class="menu-left-label ao-none selected"><spring:message code='bgs.none' /></li>
+				<li class="menu-left-label ao-web-address"><spring:message code='aco.web_address' /></li>
+				<li class="menu-left-label ao-go-to-page"><spring:message code='aco.page' /></li>
+				<!-- <li class="menu-left-label ao-download-document"><spring:message code='aco.document' /></li> -->
+				<li class="menu-left-label ao-scroll-to-top"><spring:message code='aco.title1' /></li>
+				<li class="menu-left-label ao-scroll-to-bottom"><spring:message code='aco.title2' /></li>
+				<li class="menu-left-label ao-scroll-to-component"><spring:message code='aco.title3' /></li>
+				<li class="menu-left-label ao-scroll-to-box"><spring:message code='aco.title4' /></li>
+			</ul>
+		</div>
+		<div class="menu-right">
+			<div class="action-content ao-none">
+				<p><spring:message code='bgs.none' /></p>
+			</div>
+			<div class="action-content ao-web-address" >
+				<input type="url" name="web-address" id="ao-web-address-field">
+				<select class='ao-link-target'>
+					<option value='_self'><spring:message code='actop.title1' /></option>
+					<option value='_blank'><spring:message code='actop.title2' /></option>
+				</select>
+			</div>
+			<div class="action-content ao-go-to-page" >
+				<p><spring:message code='aco.title5' /></p>
+				<select id="ao-list-page">
+				
+				</select>
+				<select class='ao-link-target'>
+					<option value='_self'><spring:message code='actop.title1' /></option>
+					<option value='_blank'><spring:message code='actop.title2' /></option>
+				</select>
+			</div>
+<!-- 			<div class="action-content ao-download-document" >
+				<p><spring:message code='aco.title6' /></p>
+			</div> -->
+			<div class="action-content ao-scroll-to-top" >
+				<p><spring:message code='aco.title7' /></p>
+			</div>
+			<div class="action-content ao-scroll-to-bottom" >
+				<p><spring:message code='aco.title8' /></p>
+			</div>
+			<div class="action-content ao-scroll-to-component" >
+				<p><spring:message code='aco.title9' /></p>
+				<select id="ao-list-component">
+				
+				</select>
+				<p style="margin-top: 20px;font-size: 13px;"> Set anchor name to the object you want to scroll to</p>
+			</div>
+			<div class="action-content ao-scroll-to-box" >
+				<p><spring:message code='aco.title10' /></p>
+				<select id="ao-list-box">
+				
+				</select>
+				<p style="margin-top: 20px;font-size: 13px;"><spring:message code='aco.title11' /></p>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-menu">
+		<button class="btn-save"><img src="${CONTEXT_PATH}/html/images/btn-save.png" /><spring:message code='save' /></button>
+	</div>
+</div>

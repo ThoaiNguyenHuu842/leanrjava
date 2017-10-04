@@ -1,0 +1,100 @@
+<%@include file="../includes/web/web-menu-left.html" %>
+<%@include file="../includes/web/web-menu-top-topic.html" %>
+<!-- <%@include file="../includes/web/web-menu-bottom.html" %> -->
+<%@include file="../includes/web/dia-add-box.html" %>
+
+<input type="hidden" id="topic_id" value="0"/>
+<input type="hidden" id="qb-input-topic-id" value="${topicId}"/>
+<input type="file" class="upload_big_box" style="display: none;" accept="image/png, image/jpeg"/>
+<input type="file" class="upload_small_box" style="display: none;" accept="image/png, image/jpeg"/>
+<input type="file" class="upload_four_image" style="display: none;" accept="image/png, image/jpeg"/>
+<input type="file" class="upload_background" style="display: none;" accept="image/png, image/jpeg" />
+<div class="cropbox_bigbox" style="position:absolute; top: 50px">
+</div>
+
+
+<div class="cropbox_smallbox" style="position:absolute; top: 50px">
+</div>
+<!-- END UPLOAD IMAGE -->
+
+<!-- DIALOG -->
+<div class="dialogconfirm qb-dialog-new dialog hidden-dialog active-dialog dialog--open"></div>
+<div class="qb-dlg-tool" id="qb-dlg-album" title="&#xf03e;&nbsp;&nbsp; Choose an image">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/my-collection/image-album.html"%>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-bg-repeat-col" title="&#xf03e;&nbsp;&nbsp; Background repeat collection">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/my-collection/bgrepeat-collection.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-video-col" title="&#xf040;&nbsp;&nbsp; Video collection">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/video-collection.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-background-src" title="&#xf03e;&nbsp;&nbsp; Background">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/background-src.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-color-picker" title="&#xf1fc;&nbsp;&nbsp; Color / Gradient">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/color-picker.html"%>
+</div>
+<div class="qb-dlg-tool" id="qb-component-option" title="&#xf013;&nbsp;&nbsp; Object Style">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/component-option.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-web-config" title="&#xf013;&nbsp;&nbsp; Web configuration">
+	<%@ include file="/WEB-INF/pages/includes/web/web-config.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-option-gmap" title="&#xf041;&nbsp;&nbsp; Edit Map">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/gmap.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-edit-iframe-src" title="&#xf040;&nbsp;&nbsp; Edit iframe Source">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/evo-iframe.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-action-option" title="&#xf0ad;&nbsp;&nbsp; Action option">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/action-option.html"%>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-hover-option" title="&#xf24d;&nbsp;&nbsp; Hover effect">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/hover-option.html"%>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-anchor-option" title="&#xf13d;&nbsp;&nbsp; Set anchor name">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/anchor-option.html"%>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-menu-option" title="&#xf0c9;&nbsp;&nbsp; Menu option">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/menu-option.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-contact-form" title="&#xf0e0;&nbsp;&nbsp; Contact form editor">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/contact-form/contact-form.html" %>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-contact-form-field" title="&#xf0e0;&nbsp;&nbsp; Contact form field editor">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/contact-form/contact-form-edit-field.html" %>
+</div>
+<%@ include file="/WEB-INF/pages/includes/web/tools/editor.html" %>
+<div class="qb-dlg-tool" id="qb-save-web-success" title="Save success">
+	<%@ include file="/WEB-INF/pages/includes/web/save-success.html"%>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-mb-hidden-element" title="Hidden elements">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/mobile-editor/hidden-elements.html"%>
+</div>
+<div class="qb-dlg-tool" id="qb-dlg-animation-onload-option" title="&#xf24d;&nbsp;&nbsp; Animation Onload">
+	<%@ include file="/WEB-INF/pages/includes/web/tools/animation-option.html"%>
+</div>
+<!-- END DIALOG -->
+<!-- PHONE VIEW TOP BG -->
+<div id="qb-phone-view-top"></div>
+<!-- END PHONE VIEW TOP BG -->
+<!-- WEB CONTENT -->
+<ul class="qb-oohhay-out-wrapper-main" id="content-wrapper"></ul>
+<!-- END WEB CONTENT -->
+<!-- PHONE VIEW BOTTOM BG -->
+<div id="qb-phone-view-bottom"></div>
+<!-- END PHONE VIEW BOTTOM BG -->
+<!-- WEB BACKGROUND -->
+<div class="wrapper-background"></div>
+<!-- END WEB BACKGROUND -->
+<!-- WEB VIDEO BACKGROUND -->
+<div id="wrapper-background-video" class="wrapper-background-video">
+	<video poster="" loop="" id="explainer_vid_bg" autoplay="">
+		<source type="video/mp4" src="" id="mp4_source"></source>
+	</video>
+</div>
+<!-- END WEB VIDEO BACKGROUND -->
+<!-- SPACE BOTTOM DIV -->
+<div id='qb-spave-bottom-div'></div>
+<!-- END SPACE BOTTOM DIV -->
+<div data-editable data-name="main-content" style="display: none;"></div>

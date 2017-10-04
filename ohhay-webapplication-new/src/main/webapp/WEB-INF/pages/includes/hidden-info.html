@@ -1,0 +1,52 @@
+<input type="hidden" value="${pageContext.response.locale}" id="evo-current-lang">
+<input id="qb-input-mv907" type="hidden" value="${userLogin.m900mg.mv907}">
+<input id="qb-input-qv101" type="hidden" value="${userLogin.qv101}">
+<input id="contextPath" type="hidden" value="${CONTEXT_URL}">
+<!-- CURRENT WEB INFOR -->
+<input type="hidden" id="qb-input-currentPhone"
+	value="${m900mg.urlOhhay}" />
+<c:choose>
+	<c:when test="${(not empty userLogin)}">
+		<input type="hidden" id="qb-input-fo100" value="${userLogin.m900mg.fo100ToShow}" />
+	</c:when>
+	<c:otherwise>
+		<input type="hidden" id="qb-input-fo100" value="${OHHAY_SUPER_ADMIN_FO100}" />
+	</c:otherwise>
+</c:choose>
+<c:choose>
+	<c:when test="${(not empty userLogin)}">
+		<input type="hidden" id="qb-input-region" value="${userLogin.m900mg.regionToShow}" />
+	</c:when>
+	<c:otherwise>
+		<input type="hidden" id="qb-input-region" value="${OHHAY_TRIAL_REGION}" />
+	</c:otherwise>
+</c:choose>
+<input type="hidden" id="qb-input-fc800" 
+	value="${fc800}" />
+<input type="hidden" id="qb-input-nv100" 
+	value="${m900mg.userNameToShow}" />
+<input type="hidden" id="qb-input-extend" 
+	value="${extend}" />
+<!-- END CURRENT WEB INFOR -->
+<!-- OWNER INFOR -->
+<input type="hidden" id="qb-userlogin-fo100" 
+	value="${userLogin.m900mg.fo100ToShow}" />
+<input type="hidden" id="qb-userlogin-qv101" 
+	value="${userLogin.m900mg.urlOhhay}" />
+<input type="hidden" id="qb-userlogin-hv101" 
+	value="${userLogin.m900mg.hv101}" />
+<input type="hidden" id="qb-userlogin-nv100" 
+	value="${userLogin.m900mg.userNameToShow}" />
+<input type="hidden" id="qb-userlogin-bucket" 
+	value="${userLogin.m900mg.awsBucket}" />
+<input type="hidden" id="qb-userlogin-mv903decrypt" 
+	value="${userLogin.m900mg.mv903Decrypt}" />
+<!-- END OWNER INFOR -->
+<!-- GROWL MESSAGE -->
+<div id="growl-message">
+	<div id="container">
+		<span class="growl-message-icon">&#xf129;</span> <label
+			id="growl-mess-label">MESSAGE TEXT</label>
+	</div>
+</div>
+<!-- END GROWL MESSAGE -->

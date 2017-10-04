@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+.anchor-option-panel {}
+.anchor-option-panel .anchor-component {float: left; margin: 5px; padding: 5px; width: 98%; }
+ .anchor-option-panel .anchor-text {padding: 5px; width: 85%; float: left; }
+.anchor-option-panel .anchor-name-check {float: left; margin: 3px 0 0 12px; padding: 5px; width: 10%; }
+.anchor-option-panel .anchor-name-check i {font-size: 25px; display: none; }
+.anchor-option-panel .anchor-name-check .anchor-name-wrong {color: red; }
+.anchor-option-panel .anchor-name-check .anchor-name-right {color: green; }
+.anchor-option-panel .anchor-component button {background: #0099ff none repeat scroll 0 0; border: medium none; color: #fff; display: table-cell; font-family: Roboto-Regular; font-size: 14px; height: 40px; padding: 0 20px; vertical-align: middle; float: right; }
+.anchor-option-panel .anchor-component button img {display: inline-block; margin-right: 8px; width: 16px; }
+.anchor-option-panel .bottom-menu {border-top: 1px solid #d9e1e8; padding: 0; margin: 0; width: 100%; }
+.anchor-name-error {color: red; }

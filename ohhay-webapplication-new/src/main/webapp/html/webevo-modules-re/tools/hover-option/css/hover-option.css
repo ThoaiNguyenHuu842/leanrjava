@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+.hover-option-component {border: 1px solid #000; height: auto; background: #fff; top: 100px; left: 100px; }
+.hover-component {}
+.hover-option-component .option-background,.hover-option-component .option-title {padding: 0 20px; display: inline; position: relative; top: 2px; z-index: 10; }
+.hover-option-component .option-background {border: 1px solid #000;}
+.hover-option-menu {background-color: #0099ff; float: left; width: 48%; margin: 0 2px; text-align: center; padding-top: 10px; cursor: pointer; }
+.hover-option-menu p,.hover-option-menu i{font-size: 12px; color: white; font-weight: bold; }
+.hover-effect-demo {height: 300px; width: 100%; margin: 5px 0; border: 1px solid black; padding: 5px; }
+.hover-option .hover-option-component .btn-save {cursor: pointer; display: block; width: 130px; height: 40px; margin: 10px 150px 0; padding-top: 9px; background-color: #3899ec; text-align: center; border-radius: 5px; color: #ffffff; }
+.hover-option-header {background: #eee none repeat scroll 0 0; color: #4b4e5b; line-height: 24px; }
+.hover-option-header label {font-family: Roboto-Bold; font-size: 13px; font-weight: normal; margin-left: 18px; margin-top: 2px; }
+.hover-option-item {padding: 10px 20px 0 20px; }
+.hover-option-item .hover-option-item-title {color: #4b4e5b; font-family: Roboto-Light; font-size: 14px; margin-right: 8px; }
+
+.hover-option-component input {display: inline-block; font-family: Roboto-Light; font-size: 14px; height: 20px; line-height: 20px; margin-bottom: 0; margin-top: 0; padding: 0; text-align: right; width: 26px; }
+.hover-component a:hover,.hover-component a:focus{text-decoration: none; color: #666; }
+.hover-component .option-remove {color: #333; cursor: pointer; float: right; font-family: Roboto-Light; font-size: 14px; margin-right: 20px; margin-top: 5px; transition-duration: 0.5s; }
+.hover-component .option-remove i {color: #999; font-size: 16px; margin-right: 5px; }
+.hover-component .hover-effect-title {color: #4d94ff; font-family: Roboto-Bold; font-size: 14px; font-weight: normal; margin-left: 18px; margin-top: 20px; }
+[class^="hvr-"] {margin: 6px 6px 6px 0; padding: 5px; cursor: pointer; background: #e1e1e1; text-decoration: none; color: #666; /* Prevent highlight colour when element is tapped */ -webkit-tap-highlight-color: rgba(0,0,0,0); }
+.hvr-no-effect {-moz-osx-font-smoothing: grayscale; backface-visibility: hidden; box-shadow: 0 0 1px rgba(0, 0, 0, 0); display: inline-block; vertical-align: middle; }
+.selected-effect {text-decoration: none; color: #fff !important; background-color: #0099ff; }
+
+

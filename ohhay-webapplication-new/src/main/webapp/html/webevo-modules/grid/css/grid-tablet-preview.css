@@ -1,0 +1,207 @@
+@CHARSET "ISO-8859-1";
+/*
+ * ThoaiVt review ipad
+ */
+
+#content-wrapper.fix_previewipad_height,#content-wrapper.fix_height_content_ipad_lanscape{
+	overflow: hidden !important;
+}
+
+#preview-ipad {
+	line-height: 34px !important;
+	display: none;
+}
+#preview-ipad .btn-menu-ipad {
+	display: inline-block;
+}
+
+#preview-ipad .btn-preview-ipad i, #preview-ipad .ipad-close-preview i {
+	font-size: 17px !important;
+}
+
+#preview-ipad .ipad-portrait-preview i, #preview-ipad .ipad-landscape-preview i {
+	font-size: 17px !important;
+}
+
+#qb-ipad-view-top, #qb-ipad-view-top-landscape {
+	position: relative;
+	float: left;
+	height: 50px;
+	margin-bottom: -3px;
+	margin-top: 80px;
+	width: 100%;
+	display: none;
+}
+
+#qb-ipad-view-top .preview-ipad {
+	width: 768px !important;
+	height: 1024px !important;
+	display: inline-block;
+	position: relative;
+	box-sizing: content-box !important;
+	padding: 90px 25px;
+	background: #242324;
+	-webkit-border-radius: 44px;
+	border-radius: 44px;
+	background: transparent;
+	transform: translate(-50%);
+	border: 3px solid #bcbcbc;
+	left: 50%;
+}
+
+#qb-ipad-view-top .preview-ipad:before {
+	width: calc(100% - 8px);
+	height: calc(100% - 8px);
+	position: absolute;
+	display: block;
+	top: 4px;
+	left: 4px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+}
+
+#qb-ipad-view-top .ipad-preview-camera, #qb-ipad-view-top-landscape .ipad-preview-camera {
+	background: #3c3d3d;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+}
+#qb-ipad-view-top .ipad-preview-camera {
+	top: 44px;
+	left: 50%;
+	margin-left: -5px;
+	-webkit-border-radius: 100%;
+	border-radius: 100%
+}
+
+#qb-ipad-view-top .ipad-preview-home, #qb-ipad-view-top-landscape .ipad-preview-home {
+	border: 1px solid #bcbcbc;
+	-webkit-border-radius: 36px;
+	border-radius: 36px;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+}
+#qb-ipad-view-top .ipad-preview-home {
+	left: 50%;
+	margin-left: -25px;
+	bottom: 22px
+}
+
+#qb-ipad-view-top .ipad-preview-home:after, #qb-ipad-view-top-landscape .ipad-preview-home:after {
+	width: 15px;
+	height: 15px;
+	margin-top: -8px;
+	margin-left: -8px;
+	border: 1px solid #bcbcbc;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	position: absolute;
+	display: block;
+	content: '';
+	top: 50%;
+	left: 50%
+}
+
+/*
+ * css landcape for ipad
+ */
+
+#qb-ipad-view-top-landscape .ipad-preview-camera {
+	left: calc(100% - 44px);
+	top: 50%;
+	border-radius: 100%;
+	margin-left: 0;
+	margin-top: -5px
+}
+
+#qb-ipad-view-top-landscape .ipad-preview-home {
+	top: 50%;
+	left: 22px;
+	margin-left: 0;
+	margin-top: -25px
+}
+
+#qb-ipad-view-top-landscape .ipad-preview-landscape {
+	width: 1024px !important;
+	height: 768px !important;
+	display: inline-block;
+	position: relative;
+	box-sizing: content-box !important;
+	padding: 25px 90px;
+	background: #242324;
+	-webkit-border-radius: 44px;
+	border-radius: 44px;
+	background: transparent;
+	border: 3px solid #bcbcbc;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+/* General class for preview ipad */
+.fix_previewipad_width {
+	width: 768px !important;
+}
+
+.fix_previewipad_height {
+	height: 1024px !important;
+	overflow: scroll;
+	overflow-x: hidden;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	-webkit-box-shadow: 0 0 0 1px #111;
+	box-shadow: 0 0 0 1px #111;
+	width: 768px !important;
+	transform: translate(-50%);
+	left: 50%;
+}
+
+.preview_icon_ipad_rotate {
+	transform: rotate(90deg);
+}
+
+.show-edit-pc-from-preview-ipad {
+	display: block !important;
+}
+.hidden-edit-pc-from-preview-ipad {
+	display: none !important;
+}
+
+.fix_width_ipad_landscape {
+	width: 1024px !important;
+}
+
+.fix_height_content_ipad_lanscape {
+	height: 768px !important;
+	left: 50%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	transform: translate(-50%);
+	width: 1024px !important;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	margin: -20px 0 0 !important;
+	-webkit-box-shadow: 0 0 0 1px #111;
+	box-shadow: 0 0 0 1px #111;
+}
+
+.fix_landscape_background_ipad {
+	position:absolute !important;
+	width: 1023px !important;
+	left: 50%;
+	transform: translate(-50%);
+	margin-top: 108px;
+	height: 767px !important;
+	background-attachment: unset !important;
+}
+
+.fix_portrait_background_ipad {
+	position:absolute !important;
+	width: 767px !important;
+	left: 50%;
+	transform: translate(-50%);
+	margin-top: 188px;
+	height: 1024px !important;
+	background-attachment: unset !important;
+}
+

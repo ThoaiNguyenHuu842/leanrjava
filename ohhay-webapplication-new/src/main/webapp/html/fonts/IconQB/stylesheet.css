@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'icomoon-queenb';
+    src:    url('icomoon-queenb.eot?olz93y');
+    src:    url('icomoon-queenb.eot?olz93y#iefix') format('embedded-opentype'),
+        url('icomoon-queenb.ttf?olz93y') format('truetype'),
+        url('icomoon-queenb.woff?olz93y') format('woff'),
+        url('icomoon-queenb.svg?olz93y#icomoon-queenb') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="iconqb-"], [class*=" iconqb-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon-queenb' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.iconqb-mic-circle:before {
+    content: "\e93b";
+}
+.iconqb-private-chat:before {
+    content: "\e93c";
+}
+.iconqb-api:before {
+    content: "\e901";
+}
+.iconqb-back:before {
+    content: "\e902";
+}
+.iconqb-bookmark:before {
+    content: "\e903";
+}
+.iconqb-c2action:before {
+    content: "\e904";
+}
+.iconqb-calltoaction:before {
+    content: "\e905";
+}
+.iconqb-chat:before {
+    content: "\e906";
+}
+.iconqb-check:before {
+    content: "\e907";
+}
+.iconqb-close:before {
+    content: "\e908";
+}
+.iconqb-col-one:before {
+    content: "\e909";
+}
+.iconqb-col-three:before {
+    content: "\e90a";
+}
+.iconqb-col-two:before {
+    content: "\e90b";
+}
+.iconqb-comment:before {
+    content: "\e90c";
+}
+.iconqb-comment-two:before {
+    content: "\e90d";
+}
+.iconqb-cross:before {
+    content: "\e90e";
+}
+.iconqb-dashboard:before {
+    content: "\e90f";
+}
+.iconqb-delete:before {
+    content: "\e910";
+}
+.iconqb-document:before {
+    content: "\e911";
+}
+.iconqb-double-left-arrow:before {
+    content: "\e912";
+}
+.iconqb-double-right-arrow:before {
+    content: "\e913";
+}
+.iconqb-edit:before {
+    content: "\e914";
+}
+.iconqb-edit2:before {
+    content: "\e93f";
+}
+.iconqb-email:before {
+    content: "\e916";
+}
+.iconqb-eye:before {
+    content: "\e917";
+}
+.iconqb-facebook:before {
+    content: "\e918";
+}
+.iconqb-favorite:before {
+    content: "\e919";
+}
+.iconqb-gmail:before {
+    content: "\e91f";
+}
+.iconqb-googleplus:before {
+    content: "\e920";
+}
+.iconqb-grid:before {
+    content: "\e921";
+}
+.iconqb-heart:before {
+    content: "\e922";
+}
+.iconqb-landing:before {
+    content: "\e923";
+}
+.iconqb-left-arrow:before {
+    content: "\e924";
+}
+.iconqb-linkin:before {
+    content: "\e925";
+}
+.iconqb-list:before {
+    content: "\e926";
+}
+.iconqb-mic:before {
+    content: "\e927";
+}
+.iconqb-new:before {
+    content: "\e928";
+}
+.iconqb-person:before {
+    content: "\e929";
+}
+.iconqb-player:before {
+    content: "\e92a";
+}
+.iconqb-poll:before {
+    content: "\e92b";
+}
+.iconqb-project:before {
+    content: "\e92c";
+}
+.iconqb-public:before {
+    content: "\e92d";
+}
+.iconqb-report:before {
+    content: "\e92e";
+}
+.iconqb-right-arrow:before {
+    content: "\e92f";
+}
+.iconqb-save:before {
+    content: "\e930";
+}
+.iconqb-screen:before {
+    content: "\e931";
+}
+.iconqb-search:before {
+    content: "\e932";
+}
+.iconqb-setting:before {
+    content: "\e933";
+}
+.iconqb-shield:before {
+    content: "\e934";
+}
+.iconqb-small:before {
+    content: "\e935";
+}
+.iconqb-small-up:before {
+    content: "\e936";
+}
+.iconqb-trash:before {
+    content: "\e937";
+}
+.iconqb-twitter:before {
+    content: "\e938";
+}
+.iconqb-user:before {
+    content: "\e939";
+}
+.iconqb-video:before {
+    content: "\e93a";
+}
+.iconqb-webcam:before {
+    content: "\e93d";
+}
+.iconqb-kub-global-action:before {
+    content: "\e93e";
+}
+.iconqb-spinner:before {
+    content: "\e915";
+}
+.iconqb-spinner3:before {
+    content: "\e91a";
+}
+.iconqb-spinner6:before {
+    content: "\e91b";
+}
+.iconqb-spinner7:before {
+    content: "\e91c";
+}
+.iconqb-spinner8:before {
+    content: "\e900";
+}
+.iconqb-spinner9:before {
+    content: "\e91d";
+}
+.iconqb-spinner10:before {
+    content: "\e91e";
+}
+

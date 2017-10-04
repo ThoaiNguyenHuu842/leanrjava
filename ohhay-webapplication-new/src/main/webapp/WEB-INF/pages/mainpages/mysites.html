@@ -1,0 +1,247 @@
+<%@ page pageEncoding="UTF-8" %> <%@include
+file="../includes/hidden-info.html" %>
+<!-- LOCALIZE -->
+<%@ include file="/WEB-INF/pages/includes/localizeClient.html" %>
+<!-- END LOCALIZE -->
+<!-- CONFIRM DIALOG -->
+<div
+	class="dialogconfirm qb-dialog-new dialog hidden-dialog active-dialog dialog--open"></div>
+<!-- END CONFIRM DIALOG -->
+<!-- HEADER BOX -->
+<%@include file="../includes/evo-logined-header.html" %>
+<!-- END HEADER BOX -->
+<!-- BODY BOX -->
+<div class="body-mysite">
+	<!-- DIV CONTENT STATUS MYSITES -->
+	<div class="content-status">
+		<div class="container content">
+			<div class="row">
+				<div class="col-sm-6 mysite-full-height">
+					<div class="fix-table-inmysite">
+						<div class="info-numberpage">
+							<div class="obutton-link hvr-shrink">
+								<span class="icon-item-funct-2"> </span>
+								<!-- 3 the span nay phai thang hang -->
+								<span class="icon-customer-icon"><span class="path1"></span><span
+									class="path2"></span><span class="path3"></span></span>
+							</div>
+						</div>
+						<div class="info-detail">
+							<p class="status-value">0</p>
+							<p class="status-name">
+								<spring:message code='mys.site' />
+							</p>
+						</div>
+					</div>
+				</div>
+				<div
+					class="col-sm-6 btn-funct-data full-width-mysite-on-mobile mysite-full-height">
+					<div class="info_usr pc-editor-on-mysite">
+						<!-- <div class="item_new_blank_website">
+							<button id="btn-create-new"
+								class="btn-content-comp">
+								<i class="fa fa-plus"></i>&nbsp;&nbsp;
+								<spring:message code='mys.title6' />
+								</label>
+							</button>
+						</div> -->
+						<!-- <c:if test="${userLogin.m900mg.mv922== 'ADMIN' || userLogin.m900mg.mv922== 'TESTER' || userLogin.m900mg.mv922== 'DESIGNER'}">
+					  	<div style="float: left;" class="item_new_blank_re-website">
+							<button style="background: #6E64A8 none repeat scroll 0 0;
+										    border: medium none;
+										    border-radius: 25px;
+										    line-height : 28px;
+										    padding: 2px 14px;" id="btn-create-new-re"
+								class="btn-content-comp">
+								<i class="fa fa-plus"></i>&nbsp;&nbsp;
+								New responsive site
+								</label>
+							</button>
+						</div>
+						</c:if> -->
+						<a class="hvr-shrink static-all"><i class="fa fa-pie-chart"></i>
+							<spring:message code='chart.title' /></a>
+						<!-- <div class="item_edit_from_template">
+							<a href="${CONTEXT_URL}/evo-templates">
+								<button class="btn-content-comp">
+									<spring:message code='mys.title7' />
+									&nbsp;&nbsp;
+								</button>
+							</a>
+						</div> -->
+					</div>
+				</div>
+				<!--		<i class="fa fa-globe item"></i>
+				</div>
+	
+				<div class="col-sm-2">
+				<p class="status-value">
+				7
+				</p>
+				<p class="status-name">
+				<spring:message code='mys.publish' />
+				</p>
+				</div>
+				<div class="obutton-user col-sm-1 hvr-shrink">
+				<i class="fa fa-user item"></i>
+				</div>
+				<div class="col-sm-2">
+				<p class="status-value">
+				1,250
+				</p>
+				<p class="status-name">
+				<spring:message code='mys.visits' />
+				</p>
+				</div>
+				<div class="obutton-cart col-sm-1 hvr-shrink">
+				<i class="fa fa-shopping-cart item"></i>
+				</div>
+				<div class="col-sm-2">
+				<p class="status-value">
+				0
+				</p>
+				<p class="status-name">
+				<spring:message code='mys.sales' />
+				</p>
+				</div>-->
+
+			</div>
+		</div>
+	</div>
+	<!-- COMP BOX -->
+	<!--
+	<div id="content-comp">
+	<div class="container">
+	<div class="row">
+	<div class="col-sm-3">
+	<div id="box_search" class="box_item_mysites">
+	<div class="box_80">
+	<input class="input_data" type="text" />
+	</div>
+	<div class="box_20">
+	<button class="btn-search">
+	<i class="fa fa-search"></i>
+	</button>
+	</div>
+	</div>
+	</div>
+	<div class="col-sm-2">
+	<div id="box_calendar" class="box_item_mysites">
+	<div class="box_80">
+	<input class="input_data" type="text" />
+	</div>
+	<div class="box_20">
+	<button class="btn-calendar">
+	<i class="fa fa-calendar"></i>
+	</button>
+	</div>
+	
+	</div>
+	</div>
+	<div class="col-sm-3" style="margin-left:17px">
+	<div id="box_exchange" class="box_item_mysites">
+	<div class="box_80">
+	<input class="input_data" type="text" value="<spring:message code='mys.title1' />" />
+	</div>
+	<div class="box_20">
+	<button class="btn-exchange">
+	<i class="fa fa-exchange"></i>
+	</button>
+	</div>
+	
+	</div>
+	</div>
+	
+	<div class="col-sm-4 btn-comp" style="margin-left:-17px">
+	<div class="col-sm-6" style="margin-left:-40px;width:60%">
+	<button id="btn-create-new"
+	class="btn-content-comp hvr-wobble-vertical" style="background: #2C8AE8;color:white;border-radius:5px 0 0 5px;">
+	<i class="fa fa-plus"></i>&nbsp;&nbsp;
+	<spring:message code='mys.title6' />
+	</label>
+	</button>
+	</div>
+	<div class="col-sm-6" style="width:60%;margin-left:-94px; width: 70%;">
+	<a href="${CONTEXT_URL}/evo-templates">
+	<button class="btn-content-comp hvr-wobble-vertical" style="margin-left:29px;height:35px">
+	<spring:message code='mys.title7' />
+	&nbsp;&nbsp;
+	</button> </a>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>-->
+	<!-- END DIV CONTENT STATUS MYSITES -->
+	<!-- DSIGNER TAB -->
+	<div class="panel-des-function">
+		<div class="container content modify-padding">
+			<c:if test="${userLogin.packet == 5}">
+				<span class="wapper-button hidden-xs hidden-sm">
+					<button class="tab-item selected mysite">
+						<spring:message code='mys.tab_title1' />
+					</button>
+				</span>
+				<span class="wapper-button hidden-xs hidden-sm">
+					<button class="tab-item cussite">
+						<spring:message code='mys.tab_title2' />
+					</button>
+				</span>
+			</c:if>
+			<a class="enjh-step1 hvr-shrink new-my-stites hidden-xs hidden-sm"
+				href="${CONTEXT_URL}/evo-templates"> + <spring:message
+					code='mys.title13' />
+			</a> <input type="text" class="ip-search-site"
+				placeholder="<spring:message code='search' />"> <i
+				class="fa fa-search btn-search-site"></i>
+		</div>
+	</div>
+	<!-- END DSIGNER TAB -->
+	<!-- DATA BOX -->
+	<div class="data-compoment">
+		<div class="mysite-ajax-status">
+			<img width="30" alt=""
+				src="${CONTEXT_PATH}/html/images/ajax-loader_4.gif"> <i
+				class="qb-ohhay-ajax-title"> <spring:message code="loading" />
+			</i>
+		</div>
+		<div class="content">
+			<div class="data-content"></div>
+			<div class="pagination-content pagination-testvtt container"></div>
+		</div>
+	</div>
+	<!-- END DATA BOX -->
+	<!-- CHART -->
+	<%@include file="../includes/mysites/chart.html" %>
+	<!-- END CHART -->
+	<!-- SHARE 4 DESIGNER -->
+	<div class="qb-dlg-tool" id="qb-dlg-share-for-designer"
+		title="&#xf1e0;&nbsp;&nbsp; <spring:message code='mys.title10' />"><%@
+		include
+		file="/WEB-INF/pages/includes/mysites/dia-share-for-des.html"%></div>
+	<!-- END SHARE 4 DESIGNER -->
+	<!-- DESIGNER OF WEB -->
+	<div class="qb-dlg-tool" id="qb-dlg-designer-of-web"
+		title="&#xf1e0;&nbsp;&nbsp; <spring:message code='mys.title9' />">
+		<%@ include
+		file="/WEB-INF/pages/includes/mysites/dia-designer-of-web.html"%></div>
+	<!-- END DESIGNER OF WEB -->
+	<!-- LIST BACKUP OF DESIGNER -->
+	<div class="qb-dlg-tool" id="qb-dlg-list-backup"
+		title="&#xf0c7;&nbsp;&nbsp; <spring:message code='mys.title8' />">
+		<%@ include
+		file="/WEB-INF/pages/includes/mysites/dia-list-backup.html"%></div>
+	<!-- END LIST BACKUP OF DESIGNER -->
+	<!-- INFOMATION DESIGNER -->
+	<div class="qb-dlg-tool" id="qb-dlg-designer-info"><%@ include
+		file="/WEB-INF/pages/includes/mysites/dia-designer-info.html"%></div>
+	<div class="qb-dlg-tool" id="qb-dlg-content-text-send"><%@
+		include
+		file="/WEB-INF/pages/includes/mysites/dia-content-cmt-of-des.html"%></div>
+	<div class="qb-dlg-tool" id="qb-dlg-cmt-of-cus"><%@ include
+		file="/WEB-INF/pages/includes/mysites/dia-cotent-cmt-of-cus.html"%></div>
+</div>
+<!-- END BODY BOX -->
+<!-- FOOTER BOX -->
+<%@include file="../includes/evo-footer.html" %>
+<!-- END FOOTER BOX -->

@@ -1,0 +1,710 @@
+html {
+	min-height: 100%;
+	height: 100%;
+}
+
+body {
+	background-attachment: fixed;
+	background-color: initial;
+	/* background-image: url("../images/bonevo-background.jpg"); */
+	background: #E8E8E8;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	position: relative;
+	top: 0;
+	width: 100%;
+	z-index: -10;
+}
+
+.cover-image {
+	/* background-color: #4627c3;
+	background-image: url("../images/newstyles/backgroundintro.png"); */
+	background: -webkit-linear-gradient(left, #6078EA , #0DD3D5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #6078EA , #0DD3D5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #6078EA , #0DD3D5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #6078EA , #0DD3D5); /* Standard syntax (must be last) */
+	min-height: 100%;
+}
+
+.login-panel-nav {
+	margin: auto;
+	padding-top: 25px;
+	width: 270px;
+}
+
+.login-panel-nav img {
+	width: 100%;
+	margin: 15px 0 10px 0;
+}
+
+.qb-ohhay-ajax-content {
+	background: #000 none repeat scroll 0 0;
+	display: none;
+	height: 100%;
+	opacity: 0.76;
+	position: fixed;
+	width: 100%;
+	z-index: 2147483647;
+}
+
+.qb-ohhay-ajax-content p {
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #c9c9c9;
+	border-radius: 25px;
+	height: 45px;
+	left: 50%;
+	margin: -30px 0 0 -30px;
+	padding: 18px 15px 15px;
+	position: absolute;
+	top: 50%;
+	width: 45px;
+}
+
+.qb-ohhay-ajax-content img {
+	width: 18px;
+}
+
+.qb-ohhay-ajax-content i {
+	border-radius: 25px;
+	color: #fff;
+	height: 45px;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 54%;
+	width: 100%;
+}
+
+.account-infor {
+	display: none;
+}
+
+.field.input-text {
+	margin-bottom: 10px;
+}
+
+.info-account-body-content {
+	padding-top: 30px;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.label-error-mess {
+	color: #F43C61;
+	float: left;
+	margin-bottom: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+.signup-content {
+	box-sizing: border-box;
+	color: #333333;
+	display: block;
+	height: 550px;
+	margin: 10px auto 0;
+/* 	opacity: 0.9;
+ */	position: relative;
+	width: 900px;
+	margin-bottom: 55px;
+}
+
+.term-content {
+	background-image: initial;
+	background-repeat: initial;
+	background-size: initial;
+	border-radius: 0 0 5px 5px;
+	float: left;
+	margin-bottom: 0;
+	width: 100%;
+	-webkit-box-shadow:0px 13px 25px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 13px 25px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 13px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+.confirm-term .term-content .term-header {
+	/* background-color: rgba(49, 27, 146, 0.85); */
+	background: white;
+	border-radius: 5px 5px 0 0;
+	color: #333333;
+	padding: 1px 30px 10px 24px;
+}
+
+.confirm-term .term-content .term-header h2 {
+	font-size: 24px;
+	margin-top: 30px;
+}
+
+.confirm-term .term-content .term-header {
+	font-size: 13px;
+}
+
+.confirm-term .term-content .fix-scroll {
+	height: 10px;
+/* 	background-color: rgba(49, 27, 146, 0.65); */
+	background: white;
+}
+.confirm-term .term-content .fix-scroll::after{
+	content: "";
+    width: 1px;
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    right: 5px;
+}
+.confirm-term .term-content .fix-scroll-down{
+	height: 20px;
+	/* background-color: rgba(49, 27, 146, 0.65); */
+	border-radius: 0 0 5px 5px;
+	background: white;
+}
+.confirm-term .term-content .term-header * {
+	font-family: "Nunito", sans-serif;
+}
+
+.confirm-term .term-content .term-body {
+	/* background-color: rgba(49, 27, 146, 0.65); */
+	background:white;
+	height: 350px;
+	padding: 0 25px 10px;
+}
+.confirm-term .term-content .term-body::before{
+	content: "";
+    width: 1px;
+    height: 350px;
+    background: #fff;
+    position: absolute;
+    right: 5px;
+}
+.confirm-term .term-content .term-body p {
+	font-family: "Nunito", sans-serif;
+	line-height: 25px;
+	font-size: 16px;
+	font-weight: 200;
+}
+.confirm-term .term-content .term-body p strong{
+	font-weight: 400;
+}
+.confirm-term .term-content .term-body p strong.main-up {
+	font-size: 20px;
+}
+
+.confirm-term .term-action {
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.confirm-term .term-action .checkbox {
+	margin-top: 0;
+}
+
+.confirm-term .term-action .input-check-term {
+	float: left;
+}
+
+.confirm-term .term-action p {
+	color: #fff;
+	float: left;
+	font-family: "Nunito", sans-serif;
+	font-size: 13px;
+	margin-top: 2px;
+}
+
+.confirm-term .term-action i {
+	color: #fff;
+}
+
+.confirm-term .term-action .btn-confirm-term {
+	background-color: #fff;
+	border-radius: 25px;
+	box-shadow: 0px 13px 25px 0px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 13px 25px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 13px 25px 0px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	float: right;
+	font-size: 16px;
+	line-height: 45px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 138px;
+	font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    color: #2eafde;
+}
+
+/* .account-infor .signup-content {
+	border-radius: 3px;
+	box-sizing: border-box;
+	display: block;
+	height: auto;
+	margin: 28px auto 30px;
+	width: 470px;
+	margin-bottom: 42px;
+} */
+
+/* .account-infor .signup-content h2, .confirm-pass-tologin .signup-content h2
+{
+	border-bottom: 1px solid #fff;
+	color: rgb(68, 68, 68);
+	font-family: Roboto-Regular;
+	font-size: 30px;
+	padding-bottom: 25px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 29px;
+} */
+.info-account-header {
+	background-color: #f5f5f5;/* rgba(49, 27, 146, 0.85); */
+	border-radius: 5px 5px 0 0;
+	color: #333333;
+	padding-left: 40px;
+}
+
+.info-account-header h3 {
+	font-family: "Nunito", sans-serif;
+	font-weight: 600;
+	line-height: 70px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+.account-infor .input-text input, .confirm-pass-tologin .input-text input
+	{
+	margin-bottom: 11px;
+	background-image: initial;
+	border-radius: 30px;
+	overflow: hidden;
+	text-align: left;
+	transition-duration: 0.1s;
+	height: 42px;
+	width: 270px;
+	border: none;
+	background-color: #f5f5f5;
+	color: #4A4A4A;
+	padding: 0px 20px;
+	font-family: "Nunito", sans-serif;
+	font-size: 15px;
+}
+.account-infor .input-text input:hover, .confirm-pass-tologin .input-text input:hover{
+/* 	background-color: rgba(255, 255, 255, 0.74902) !important; */
+}
+
+
+.info-account-body {
+	background-color: #fff;//rgba(49, 27, 146, 0.65);
+	border-radius: 0 0 5px 5px;
+	padding: 0;
+	position: relative;
+	padding-bottom: 40px;
+}
+
+.custom-capcha {
+	padding: 0;
+	position: absolute;
+	bottom: 48px;
+	right: 0;
+}
+
+.account-infor .input-text .full-field, .confirm-pass-tologin .input-text .full-field
+	{
+	margin-left: 10%;
+	width: 80%;
+}
+
+.account-infor .input-text label, .confirm-pass-tologin .input-text label
+	{
+	color: #333333;
+	font-family: "Nunito", sans-serif !important;
+	font-weight: 100;
+	width: 35%;
+	float: left;
+	text-align: right;
+	padding-right: 3%;
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.g-recaptcha.data-captcha {
+	width: 100%;
+}
+
+.g-recaptcha.data-captcha div {
+	margin: 0 auto;
+}
+
+.account-infor .input-text label.select {
+	cursor: pointer;
+	line-height: 20px;
+	margin-bottom: 11px;
+	margin-right: 24px;
+	width: auto;
+}
+
+.account-infor .input-text label.select span {
+	background: #fff none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 50%;
+	float: left;
+	font-family: Font-Check;
+	font-size: 18px;
+	height: 16px;
+	line-height: 16px;
+	margin-right: 8px;
+	margin-top: 3px;
+	overflow: hidden;
+	width: 16px;
+}
+
+.account-infor .input-text label.select.selected span {
+	color: #0099ff;
+}
+
+.singin-action {
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.account-infor p {
+	background-color: #fff;
+	border-radius: 25px;
+	cursor: pointer;
+	float: right;
+	line-height: 45px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 190px;
+	padding: 0;
+	-webkit-box-shadow: 0px 13px 25px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 13px 25px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 13px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+.confirm-pass-tologin {
+	display: none;
+}
+
+.account-infor p a {
+	color: #2eafde;
+	font-family: "Nunito", sans-serif;
+	font-size: 16px;
+}
+
+.account-infor p a:hover {
+	text-decoration: none;
+}
+
+.account-infor .input-text .dropdown {
+	margin-bottom: 8px;
+	width: 100%;
+}
+
+.account-infor .input-text .dropdown button {
+	background: #fff none repeat scroll 0 0;
+	border: medium none;
+	color: #333;
+	font-family: Roboto-Regular;
+	font-size: 12px;
+	height: 38px;
+	line-height: 28px;
+	text-align: left;
+	width: 100%;
+}
+
+.account-infor .input-text .dropdown button b {
+	font-weight: inherit;
+}
+
+.account-infor .input-text .dropdown button span {
+	position: absolute;
+	right: 10px;
+	top: 17px;
+}
+
+.account-infor .input-text .dropdown ul {
+	max-height: 250px;
+	overflow: auto;
+	width: 100%;
+}
+
+.account-infor .input-text .dropdown ul li {
+	font-family: Roboto-Regular;
+	font-size: 12px;
+}
+
+.account-infor .input-text .dropdown ul li a {
+	padding: 8px 20px;
+}
+
+.login-panel-nav img {
+	width: 100%;
+}
+
+.thanks-panel {
+	color: rgb(68, 68, 68);
+	display: none;
+	margin-top: 170px;
+	text-align: center;
+}
+
+.thanks-panel p {
+	color: rgb(68, 68, 68);
+	font-size: 16px;
+	margin-bottom: 50px;
+}
+
+.thanks-panel h2 {
+	font-size: 30px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	color: rgb(68, 68, 68);
+	font-family: helvetica;
+}
+
+.thanks-panel a {
+	background-color: rgba(45, 53, 69, 1);
+	background-image: initial;
+	border-radius: 5px;
+	box-shadow: none;
+	color: #fff;
+	margin: auto;
+	font-family: roboto-regular;
+	font-size: 14px;
+	font-weight: normal;
+	height: 47px;
+	margin: 8px 1px 8px 7px;
+	padding: 12px 22px;
+	text-align: center;
+	text-decoration: none !important;
+	transition-duration: 0.1s;
+	width: 190px !important;
+	cursor: pointer;
+}
+
+/*
+ * general class
+ */
+.confirm-term .term-action .checkbox label:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.confirm-term .term-action .checkbox label {
+	padding: 0;
+}
+
+.confirm-term .term-action .checkbox .cr {
+	background: #fff none repeat scroll 0 0;
+	border-radius: 0.25em;
+	display: inline-block;
+	float: left;
+	height: 1.5em;
+	margin-right: 0.5em;
+	position: relative;
+	width: 1.5em;
+}
+
+.confirm-term .term-action .checkbox .cr .cr-icon {
+	position: absolute;
+	font-size: .8em;
+	line-height: 0;
+	top: 50%;
+	left: 12%;
+	color: #36AD00;
+	font-size: 15px;
+}
+
+.confirm-term .term-action .checkbox label input[type="checkbox"] {
+	display: none;
+}
+
+.confirm-term .term-action .checkbox label input[type="checkbox"]+.cr>.cr-icon
+	{
+	transform: scale(3) rotateZ(-20deg);
+	opacity: 0;
+	transition: all .3s ease-in;
+}
+
+.confirm-term .term-action .checkbox label input[type="checkbox"]:checked+.cr>.cr-icon
+	{
+	transform: scale(1) rotateZ(0deg);
+	opacity: 1;
+}
+
+.confirm-term .term-action .checkbox label input[type="checkbox"]:disabled+.cr
+	{
+	opacity: .5;
+}
+
+.mobile-fix-signup {
+	display: none;
+}
+
+.data-captcha div div {
+	margin: 0 auto;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width:
+	480px) {
+	.cover-image .qb-ohhay-content-wrapper, .container-fluid.confirm-term,
+		.signup-content {
+		height: 100% !important;
+	}
+	.account-infor .input-text input{
+		width: 100%;
+	}
+	.term-body, .term-content {
+		height: 100% !important;
+	}
+	.confirm-term .term-content .term-header h2 {
+		font-size: 20px;
+		/* line-height: 110px */
+	}
+	.confirm-term .term-content .term-header p {
+		font-size: 15px;
+	}
+	.confirm-term .term-content .term-body p strong.main-up {
+		font-size: 30px;
+	}
+	.confirm-term .signup-content, .container {
+		width: 100% !important;
+	}
+	.term-action p, .confirm-term .term-action .checkbox label input[type="checkbox"]+.cr>.cr-icon,
+		.confirm-term .term-action .btn-confirm-term {
+		font-size: 16px;
+	}
+	.confirm-term .term-action .checkbox .cr {
+		width: 1.5em;
+		height: 1.5em;
+		border-radius: .35em
+	}
+	.btn-confirm-term {
+		display: block;
+		width: 80% !important;
+	}
+	.account-infor .input-text label, .confirm-pass-tologin .input-text label
+		{
+		width: 100%;
+		text-align: left;
+	}
+	.confirm-term .term-content .term-body {
+		box-shadow: none;
+		overflow: visible !important;
+	}
+	
+	.confirm-term .term-content .term-body::before, .confirm-term .term-content .fix-scroll::after
+	{
+		display: none;
+	}
+	
+	
+	.confirm-term .term-content .term-body p {
+		font-family: helvetica;
+		line-height: 42px;
+/* 		margin-top: 45px; */
+		font-size: 18px;
+    	text-align: center;
+	}
+	.info-account-header{
+		padding-left: 0;
+		text-align: center;
+	}
+	.login-panel-nav {
+		width: 60%;
+	}
+	.confirm-term .term-content .fix-scroll {
+		height: 50px;
+		display: none;
+	}
+	.confirm-term .term-action .btn-confirm-term {
+		/* 	line-height: 135px; */
+		margin-right: 10%;
+		font-size: 20px;
+	}
+	.confirm-term .term-action {
+		margin-top: 40px;
+	}
+ 	.signup-content {
+		display: flex;
+		flex-flow: column;
+		width: 100%
+	} 
+	.signup-content .term-action {
+		order: 2;
+		margin: auto;
+		margin-bottom: 15px;
+		width: 100%;
+	}
+	.signup-content .term-action .term-center {
+		height: 100%;
+		margin: 0 auto;
+		margin-top: 100px;
+	}
+	.custom-capcha {
+		position: relative;
+		margin-top: 35px;
+	}
+	.singin-action {
+		text-align: center;
+	}
+	.account-infor p {
+		float: none;
+		line-height: 55px;
+		width: 300px;
+		font-size: 45px;
+	}
+	.confirm-term .signup-content .term-content {
+		order: 3;
+	}
+	.mobile-fix-signup {
+		display: block;
+	}
+	.confirm-term .term-action .agree-text {
+		border-radius: 20px;
+		margin: 0 auto;
+		float: none;
+		display: table;
+		/* margin-top: 55px; */
+	}
+	.cover-image {
+		overflow: scroll;
+	}
+	.info-account-body-content .col-md-7{
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+	.custom-capcha{
+		bottom: 0;
+	}
+	.signup-content{
+		margin-bottom: 0;
+	}
+	.info-account-body{
+		padding-bottom: 32px;
+	}
+	.login-panel-nav{
+		width: 100%;;
+	}
+}
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 1440px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  .signup-content{
+  	width: 100%;
+  }
+  
+  .custom-capcha{
+  	position: static;
+  	bottom: 0;
+  }
+  }

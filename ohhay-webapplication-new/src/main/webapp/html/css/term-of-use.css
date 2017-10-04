@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+
+.content-termofuse {
+	/* background-color: #4627C3;
+	background: linear-gradient(rgba(70, 39, 195, 1), rgba(70, 39, 195, .9)),
+		url(../images/bonevo-home/bonevo-background-home.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom; */
+	width: 100% !important;
+	background: -webkit-linear-gradient(left, #6078EA , #0DD3D5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #6078EA , #0DD3D5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #6078EA , #0DD3D5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #6078EA , #0DD3D5); /* Standard syntax (must be last) */
+}
+
+.content-termofuse *{
+	font-family: "Nunito", sans-serif;
+	font-size: 15px;	
+}
+.data-content-terms p{
+	word-spacing: 3px;
+    color: #4A4A4A;
+    line-height: 22px;
+}
+.data-content-terms p:not(.merg){
+	margin-top: 30px;
+}
+
+.data-content-terms p.no-marg{
+	margin-top: 0;
+}
+
+.data-content-terms p.merg{
+	margin-bottom: 0;
+}
+
+.content-termofuse .content-title {
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	margin-top: 40px;
+	padding-bottom: 35px;
+}
+
+.content-termofuse .content-title .title1 {
+	font-size: 30px;
+	margin-bottom: 0;
+	letter-spacing: 3px;
+	font-weight: 700;
+}
+
+.content-termofuse .content-title .title2 {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.data-content-terms .text-title	 {
+	color: #323232;	
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 50px;
+}
+
+.data-content-terms{
+	margin-top: 40px;
+	margin-bottom: 70px;
+}
+
+.data-content-terms *:not(.fa){
+	font-family: "Nunito", sans-serif;
+}

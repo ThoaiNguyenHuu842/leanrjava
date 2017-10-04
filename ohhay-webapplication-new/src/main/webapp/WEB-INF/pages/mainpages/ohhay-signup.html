@@ -1,0 +1,127 @@
+<%@ page pageEncoding="UTF-8" %>
+<div
+	class="dialogconfirm qb-dialog-new dialog hidden-dialog active-dialog dialog--open"></div>
+<input type="hidden" regionCode="${ohhayViewer.regionCode}"
+	languageCode="${ohhayViewer.languageCode}"
+	languageName="${ohhayViewer.languageName}"
+	countryCode='${ohhayViewer.countryCallingCode}' id='selected-country'>
+</
+<!-- LOCALIZE -->
+<%@ include file="/WEB-INF/pages/includes/localizeClient.html" %>
+<!-- END LOCALIZE -->
+<!-- DIALOG -->
+<div
+	class="dialogalert qb-dialog-new dialog hidden-dialog active-dialog dialog--open"></div>
+<div class="qb-ohhay-content-wrapper">
+	<%@ include file="/WEB-INF/pages/includes/hidden-info.html" %>
+	<!-- <div class="login-panel-nav"> 
+		<a onclick="redirectTo('${CONTEXT_PATH}');"> 
+			<span class="icon-Ohay-logo"></span>
+		</a>
+	</div> -->
+	<div class="login-panel-nav container">
+		<a href="${CONTEXT_URL}"><img
+			src="${CONTEXT_PATH}/html/images/newstyles/logo.png" /></a>
+	</div>
+	<!-- PANEL TERM USING -->
+	<!-- END PANEL TERM USING -->
+	<div class="container-fluid confirm-term"><%@ include
+		file="/WEB-INF/pages/includes/signup/term.html" %></div>
+	<!-- PANEL SUBMIT PHONE NUMBER -->
+	<input id="crCountry" type="hidden" value="${crCountry}">
+	<!-- PANEL REGISTER -->
+	<div class="container-fluid account-infor">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="signup-content">
+						<div class="term-content">
+							<div class="info-account-header">
+								<h3>
+									<spring:message code="info.account" />
+								</h3>
+							</div>
+							<div class="info-account-body">
+								<div class="container-fluid info-account-body-content">
+									<div class="col-md-8" style="padding: 0;">
+										<div class="field input-text">
+											<label><spring:message code='home.last_name' /></label> <input
+												id="inputFName" />
+										</div>
+										<div class="field input-text">
+											<label><spring:message code='home.first_name' /></label> <input
+												id="inputLName" />
+										</div>
+										<div class="field input-text">
+											<label><spring:message code='home.email' /></label> <input
+												id="inputEmail" />
+										</div>
+										<div class="field input-text">
+											<label><spring:message code="login.password" /></label> <input
+												title="<spring:message code='signup.title1'/>"
+												type="password" id="inputPassword" value="" />
+										</div>
+										<div class="field input-text">
+											<label><spring:message code="retype.password" /></label> <input
+												title="<spring:message code='signup.title1'/>"
+												type="password" id="inputRePassword" value="" />
+										</div>
+									</div>
+									<div class="custom-capcha col-md-5">
+										<div class="g-recaptcha data-captcha"
+											data-sitekey="6LfHvhoTAAAAALkKTpWGTuyO5SApwABRidJrzKSe"></div>
+										<span class="label-error-mess" id="label-error-mess-3"></span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="singin-action">
+							<p class="hvr-bounce-out">
+								<a class="btn-create-account"><spring:message
+										code="create.account" /></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END PANEL REGISTER -->
+	<!-- PANEL REGISTER -->
+	<div class="container-fluid confirm-pass-tologin">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="signup-content">
+						<h2>
+							<spring:message code='retype.password' />
+						</h2>
+						<div class="field input-text" style="margin: auto; width: 480px;">
+							<label style="text-align: center; width: 100%;"><spring:message
+									code='save.title1' /> </label> <input type="password"
+								style="margin-left: 20%; width: 60%;"
+								id="input-confirm-pass-tologin" />
+							<button class="btn-login">
+								<spring:message code='login' />
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END PANEL REGISTER -->
+	<!-- THANKS PANEL -->
+	<div class="container-fluid thanks-panel">
+		<h2>
+			<spring:message code="ohsig.title1" />
+		</h2>
+		<p>
+			<spring:message code="ohsig.title2" />
+		</p>
+		<a href="${CONTEXT_URL}"><spring:message code="sut.back_home" /></a>
+	</div>
+	<!-- END THANKS PANEL -->
+</div>
+

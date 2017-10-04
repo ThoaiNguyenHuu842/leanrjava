@@ -1,0 +1,50 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+	xsi:schemaLocation="http://www.springframework.org/schema/context
+          http://www.springframework.org/schema/context/spring-context-3.0.xsd
+          http://www.springframework.org/schema/data/mongo
+          http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd
+          http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!-- BONEVO -->
+	<mongo:mongo id="mongoOhhayDBCenter" host="${mongo.center.ohhay.host}" port="${mongo.center.ohhay.port}" />
+	<mongo:db-factory id="mongoDbFactoryOhhayDBCenter" dbname="${mongo.center.ohhay.dbname}" username="${mongo.center.ohhay.username}"
+		password="${mongo.center.ohhay.password}" mongo-ref="mongoOhhayDBCenter" />
+	<bean id="mappingMongoConverterOhhayDBCenter"
+		class="org.springframework.data.mongodb.core.convert.MappingMongoConverter">
+		<constructor-arg name="mongoDbFactory" ref="mongoDbFactoryOhhayDBCenter" />
+		<constructor-arg name="mappingContext" ref="mappingContext" />
+		<property name="typeMapper" ref="defaultMongoTypeMapper" />
+	</bean>
+	<bean id="mongoOhhayTemplateDBCenter" class="org.springframework.data.mongodb.core.MongoTemplate">
+		<constructor-arg name="mongoDbFactory" ref="mongoDbFactoryOhhayDBCenter" />
+		<constructor-arg name="mongoConverter" ref="mappingMongoConverterOhhayDBCenter" />
+	</bean>
+	<!-- END BONEVO -->
+	<!-- PIEPME -->
+	<mongo:mongo id="mongoPiepmeDBCenter" host="${mongo.piepcenter.ohhay.host}" port="${mongo.piepcenter.ohhay.port}" />
+	<mongo:db-factory id="mongoDbFactoryPiepmeDBCenter" dbname="${mongo.piepcenter.ohhay.dbname}" username="${mongo.piepcenter.ohhay.username}"
+		password="${mongo.piepcenter.ohhay.password}" mongo-ref="mongoPiepmeDBCenter" />
+	<bean id="mappingMongoConverterPiepmeDBCenter"
+		class="org.springframework.data.mongodb.core.convert.MappingMongoConverter">
+		<constructor-arg name="mongoDbFactory" ref="mongoDbFactoryPiepmeDBCenter" />
+		<constructor-arg name="mappingContext" ref="mappingContext" />
+		<property name="typeMapper" ref="defaultMongoTypeMapper" />
+	</bean>
+	<bean id="mongoPiepmeTemplateDBCenter" class="org.springframework.data.mongodb.core.MongoTemplate">
+		<constructor-arg name="mongoDbFactory" ref="mongoDbFactoryPiepmeDBCenter" />
+		<constructor-arg name="mongoConverter" ref="mappingMongoConverterPiepmeDBCenter" />
+	</bean>
+	<!-- END PIEPME -->
+	<!-- MYSQL -->
+	<bean id="mysqlDataSourceDBCenter"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${mysql.center.jdbc.driverClassName}" />
+		<property name="url" value="${mysql.center.jdbc.url}" />
+		<property name="username" value="${mysql.center.jdbc.username}" />
+		<property name="password" value="${mysql.center.jdbc.password}" />
+	</bean>
+	<!-- END MYSQL -->
+</beans>

@@ -1,0 +1,110 @@
+@CHARSET "ISO-8859-1";
+
+html,body{
+	/* background: rgba(0, 0, 0, 0) url("../images/bonevo-background.jpg") repeat scroll 0 0 /100% 100%; */
+	background:#E8E8E8;
+	background-attachment: fixed;
+	background-position: center top;
+	background-size: cover;
+}
+
+.qb-ohhay-content-wrapper {
+	background-attachment: fixed;
+    background-color: initial;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -10;
+}
+
+.qb-ohhay-content-wrapper .change-pass-forgetpass .logo{
+	margin-bottom: 55px;
+}
+
+.qb-ohhay-content-wrapper .change-pass-forgetpass .logo img{
+	height: 105px;
+    width: 192px;
+}
+
+.qb-ohhay-content-wrapper .change-pass-forgetpass {
+	width: 470px;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 1%;
+}
+
+.qb-ohhay-content-wrapper .change-pass-forgetpass .content-data .title-funct h2{
+	border-bottom: 1px solid black;
+    color: rgb(68, 68, 68);
+    font-family: Roboto-Regular;
+    font-size: 30px;
+    margin-bottom: 29px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.qb-ohhay-content-wrapper .change-pass-forgetpass .content-data .item {
+	margin-bottom: 22px;
+}
+.qb-ohhay-content-wrapper .change-pass-forgetpass .content-data .item input[type="password"]{
+	 border-color: rgb(145, 164, 173);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+    height: calc(100% - 22px);
+    margin: 0 0 4px;
+    overflow: hidden;
+/*     vertical-align:middle; */
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: left;
+    transition-duration: 0.1s;
+    width: calc(100% - 10px);
+    height: 38px;
+	width: 62%;
+}
+
+.qb-ohhay-content-wrapper .change-pass-forgetpass .content-data .item label{
+    color: rgb(68, 68, 68);
+	text-align: right;
+    font-size: 14px;
+    font-weight: inherit;
+ /*    margin-top: 10px; */
+    font-family: HelveticaNeue;
+    padding-right: 5%;
+    width: 30%;
+    vertical-align: middle;
+}
+.qb-ohhay-content-wrapper .change-pass-forgetpass .content-data .item .btn-save-forgotpass{
+	background-color: rgba(45, 53, 69, 1);
+	background-image: initial;
+	border: medium none;
+	border-radius: 5px;
+	box-shadow: none;
+	color: #fff;
+	cursor: pointer;
+	float: left;
+	font-family: roboto-regular;
+	font-size: 14px;
+	font-weight: normal;
+	height: 44px;
+	margin: 8px 1px 8px 31%;
+	padding: 12px 22px;
+	text-align: center;
+	text-transform: uppercase;
+	transition-duration: 0.1s;
+	width: 190px !important;
+}
+
+.qb-ohhay-content-wrapper .cover-back {
+	width: 100%;
+	height: 100%;
+	filter: none;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-image: initial;
+}

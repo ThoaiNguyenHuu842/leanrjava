@@ -1,0 +1,463 @@
+
+.qb-component-youtube-playlist  .content-player iframe {
+	border: medium none;
+	height: 100%;
+	width: 100%;
+}
+
+.qb-component-youtube-playlist  .content-label .video-item {
+	float: left;
+	margin-bottom: 1%;
+	padding: 2%;
+	cursor: pointer;
+}
+
+.qb-component-youtube-playlist  .content-label .video-item:hover,
+	.qb-component-youtube-playlist  .content-label .video-item.playing {
+	box-shadow: 0 0 10px #e8e8e8;
+}
+
+.qb-component-youtube-playlist  .content-label .video-item img {
+	height: 30% !important;
+	width: 30% !important;
+	float: left;
+}
+
+.qb-component-youtube-playlist  .content-label .video-item .info-panel {
+	float: left;
+	margin-left: 2%;
+	width: 68%;
+}
+
+.qb-component-youtube-playlist  .content-label .video-item .info-panel .channel-title
+	{
+	color: #fff;
+	float: left;
+	font-family: roboto-regular;
+	font-size: 12px;
+	font-weight: normal;
+	width: 100%;
+}
+
+.qb-component-youtube-playlist  .content-label .video-item .info-panel .video-title
+	{
+	color: #fff;
+	float: left;
+	font-family: roboto-regular;
+	font-size: 14px;
+	font-weight: normal;
+	width: 100%;
+}
+
+.qb-component-youtube-playlist  .content-label .video-item .info-panel .channel-title
+	{
+	color: #fff;
+	float: left;
+	font-family: roboto-regular;
+	font-size: 12px;
+	font-weight: normal;
+	width: 100%;
+}
+/*STYLE1*/
+.qb-component-youtube-playlist .style1 .content-player {
+	height: 100%;
+	width: 70%;
+	float: left;
+}
+
+.qb-component-youtube-playlist .style1 .content-label {
+	float: left;
+	width: 30%;
+	height: 100%;
+	padding: 1%;
+	overflow-y: auto;
+}
+/*END STYLE1*/
+/*STYLE2*/
+.qb-component-youtube-playlist .style2 .content-player {
+	height: 50%;
+	width: 100%;
+	float: left;
+}
+
+.qb-component-youtube-playlist .style2 .content-label {
+	float: left;
+	height: 50%;
+	overflow-y: auto;
+	padding: 1%;
+	width: 100%;
+}
+/*END STYLE2*/
+/*STYLE3*/
+.qb-component-youtube-playlist  .qb-component {
+	position: relative;
+}
+
+.qb-component-youtube-playlist .style3 .content-player {
+	height: 50%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.qb-component-youtube-playlist .style3 .content-label {
+	position: absolute;
+	height: 50%;
+	overflow-y: auto;
+	padding: 1%;
+	width: 100%;
+	top: 0;
+}
+/*END STYLE3*/
+/*STYLE4*/
+.qb-component-youtube-playlist .style4 .content-player {
+	height: 100%;
+	width: 70%;
+	float: right;
+}
+
+.qb-component-youtube-playlist .style4 .content-label {
+	float: right;
+	width: 30%;
+	height: 100%;
+	padding: 1%;
+	overflow-y: auto;
+}
+/*END STYLE4*/
+/*STYLE5*/
+.qb-component-youtube-playlist .style5 .content-player {
+	height: 50%;
+	width: 100%;
+	float: left;
+}
+
+.qb-component-youtube-playlist .style5 .content-label {
+	float: left;
+	height: 50%;
+	overflow-y: auto;
+	padding: 1%;
+	width: 100%;
+}
+
+.qb-component-youtube-playlist .style5 .content-label .video-item {
+	width: 30%;
+}
+
+.qb-component-youtube-playlist .style5 .content-label .video-item .info-panel
+	{
+	width: 100%
+}
+
+.qb-component-youtube-playlist .style5 .content-label .video-item .info-panel .video-title
+	{
+	background: #483e23 none repeat scroll 0 0;
+	border-radius: 8px;
+	color: #fff;
+	font-size: 12px;
+	padding: 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.qb-component-youtube-playlist .style5 .content-label .video-item img,
+	.qb-component-youtube-playlist .style5 .content-label .video-item .info-panel .channel-title
+	{
+	display: none;
+}
+/*END STYLE5*/
+/*EDIT TOOL*/
+#qb-dlg-change-video-playlist .current-playlist {
+	border: 1px solid #e8e8e8;
+	border-radius: 4px;
+	float: left;
+	height: 140px;
+	margin-top: 5px;
+	overflow: auto;
+	padding: 5px;
+	width: 100%;
+}
+
+#qb-dlg-change-video-playlist .current-playlist .video-item {
+	background: #1caa00 none repeat scroll 0 0;
+	border-radius: 22px;
+	color: #fff;
+	display: inline-block;
+	float: left;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	padding: 3px 9px;
+}
+
+#qb-dlg-change-video-playlist .current-playlist .video-item span {
+	color: #fff;
+	cursor: pointer;
+	float: right;
+	font-size: 12px;
+	margin-left: 17px;
+	margin-top: 3px;
+}
+
+#qb-dlg-change-video-playlist .current-playlist .video-item label {
+	color: #fff;
+	float: right;
+	font-size: 12px;
+	max-width: 115px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+/*END EDIT TOOL*/
+
+/*
+ * LIST YOUTUBE SEARCH
+ */
+#qb-dlg-change-video-playlist .qb-panel-iframe-src #input-video-playlist-src
+	{
+	border: 1px solid #999999;
+	height: 30px;
+	text-align: left;
+	width: 78%;
+	padding-left: 10px;
+}
+
+#qb-dlg-change-video-playlist .qb-panel-iframe-src #search-youtube-api {
+	background: #0099ff none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 7px 8px;
+	width: 20%;
+}
+
+#qb-dlg-change-video-playlist .qb-panel-iframe-src .form-group .form-group-content .data-search-video .list-data-result
+	{
+	max-height: 150px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	list-style: none;
+	padding: 0;
+}
+
+#qb-dlg-change-video-playlist .qb-panel-iframe-src .form-group .form-group-content .data-search-video .list-data-result li:first-child
+	{
+	margin-top: 9px;
+}
+
+#qb-dlg-change-video-playlist .qb-panel-iframe-src .form-group .form-group-content .data-search-video .list-data-result li
+	{
+	width: 100%;
+	height: 69px;
+	border-bottom: 1px solid #e8e8e8;
+	margin-bottom: 9px;
+}
+
+#qb-dlg-change-video-playlist .qb-panel-iframe-src .form-group .form-group-content .data-search-video .list-data-result li img
+	{
+	width: 80px;
+	float: left;
+	display: block;
+}
+
+#qb-dlg-change-video-playlist .qb-panel-iframe-src .form-group .form-group-content .data-search-video .list-data-result li .panel-video-info
+	{
+	float: left;
+	width: 240px;
+	margin-left: 11px;
+	height: 100%;
+}
+
+#qb-dlg-change-video-playlist .qb-panel-iframe-src .form-group .form-group-content .data-search-video .list-data-result li .panel-video-info .title,
+	.qb-panel-iframe-src .form-group .form-group-content .data-search-video .list-data-result li .panel-video-info .author
+	{
+	float: left;
+	font-size: 13px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
+}
+
+#qb-dlg-change-video-playlist .qb-panel-iframe-src .form-group .form-group-content .data-search-video .list-data-result li .panel-video-info .author
+	{
+	font-size: 12px;
+}
+
+/*
+ * ThoaiVt 30/01/2016
+ * Test css fix layout
+ */
+
+/*
+ * Fix Layout 1
+ */
+.qb-component-youtube-playlist .qb-component.style1[player='off'][playlist="on"] .content-label
+	{
+	width: 100%;
+}
+
+.qb-component-youtube-playlist .qb-component.style1[player="on"][playlist="off"] .content-player
+	{
+	width: 100%;
+}
+
+.qb-component-youtube-playlist .qb-component.style1[player="on"][playlist="on"]
+	{ .content-player { height:100%;
+	width: 70%;
+	float: left;
+}
+
+.content-label {
+	float: left;
+	width: 30%;
+	height: 100%;
+	padding: 1%;
+	overflow-y: auto;
+}
+
+}
+/*
+ * Fix Layout 2
+ */
+.qb-component-youtube-playlist .qb-component.style2[player='off'][playlist="on"] .content-label
+	{
+	height: 100%;
+}
+
+.qb-component-youtube-playlist .qb-component.style2[player="on"][playlist="off"] .content-player
+	{
+	height: 100%;
+}
+
+.qb-component-youtube-playlist .qb-component.style2[player="on"][playlist="on"]
+	{ .content-player { height:50%;
+	width: 100%;
+	float: left;
+}
+
+.content-label {
+	float: left;
+	height: 50%;
+	overflow-y: auto;
+	padding: 1%;
+	width: 100%;
+}
+
+}
+/*
+ * Fix Layout 3
+ */
+.qb-component-youtube-playlist .qb-component.style3[player='off'][playlist="on"] .content-label
+	{
+	height: 100%;
+}
+
+.qb-component-youtube-playlist .qb-component.style3[player="on"][playlist="off"] .content-player
+	{
+	height: 100%;
+}
+
+.qb-component-youtube-playlist .qb-component.style3[player="on"][playlist="on"]
+	{ .content-player { height:50%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.content-label {
+	position: absolute;
+	height: 50%;
+	overflow-y: auto;
+	padding: 1%;
+	width: 100%;
+	top: 0;
+}
+
+}
+/*
+ * Fix Layout 4
+ */
+.qb-component-youtube-playlist .qb-component.style4[player='off'][playlist="on"] .content-label
+	{
+	width: 100%;
+}
+
+.qb-component-youtube-playlist .qb-component.style4[player="on"][playlist="off"] .content-player
+	{
+	width: 100%;
+}
+
+.qb-component-youtube-playlist .qb-component.style4[player="on"][playlist="on"]
+	{ .content-player { height:100%;
+	width: 70%;
+	float: right;
+}
+
+.content-label {
+	float: right;
+	width: 30%;
+	height: 100%;
+	padding: 1%;
+	overflow-y: auto;
+}
+
+}
+/*
+ * Fix Layout 5
+ */
+.qb-component-youtube-playlist .qb-component.style5[player='off'][playlist="on"] .content-label
+	{
+	height: 100%;
+}
+
+.qb-component-youtube-playlist .qb-component.style5[player="on"][playlist="off"] .content-player
+	{
+	height: 100%;
+}
+
+.qb-component-youtube-playlist .qb-component.style5[player="on"][playlist="on"]
+	{ .content-player { height:50%;
+	width: 100%;
+	float: left;
+}
+
+.content-label {
+	float: left;
+	height: 50%;
+	overflow-y: auto;
+	padding: 1%;
+	width: 100%;
+}
+
+}
+
+/*
+ * Fix info-panel and img
+ */
+.qb-component-youtube-playlist .qb-component .content-label[img="on"][content="off"] .video-item img
+	{
+	width: 100% !important;
+}
+
+.qb-component-youtube-playlist .qb-component .content-label[img="off"][content="on"] .video-item .info-panel
+	{
+	width: 100%;
+}
+
+.qb-component-youtube-playlist .qb-component .content-label[img="on"][content="on"] .video-item
+	{img { height:30%!important;
+	width: 30% !important;
+	float: left;
+}
+
+.info-panel {
+	float: left;
+	margin-left: 2%;
+	width: 68%;
+}
+}
+/*
+ * END YOUTUBE SEARCH
+ */

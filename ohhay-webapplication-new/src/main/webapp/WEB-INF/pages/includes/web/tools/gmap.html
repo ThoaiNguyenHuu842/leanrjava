@@ -1,0 +1,86 @@
+<%@ page pageEncoding="UTF-8" %>
+<div class="gmap-option">
+	<div class="qb-gmap-option-body">
+		<div class="option-gmap">
+			<div class="title-gmap">
+				<div class="content-info"><spring:message code='gmap.color_zoom' /></div>
+			</div>
+			<div class="row data-option" style="margin-top: 10px!important;">
+				<div class="col-sm-2">
+					<button class="qb-color-gmap" id="color-data-map" data-toggle="tooltip" data-placement="bottom" title="<spring:message code='gmap.title2' />"
+						style="width: 44px; height: 22px; outline-style: none; background: black; border: none;">
+					</button>
+				</div>
+				<div class="col-sm-7">
+					<label class="center-block" style="text-align:center"><span
+						id="qb-panel-gmap-zoom">1x</span></label>
+					<div id="qb-slider-gmap" style="margin-left: -10px"
+						class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+						<div
+							class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"
+							style="width: 0%;"></div>
+						<span tabindex="0"
+							class="ui-slider-handle ui-state-default ui-corner-all"
+							style="left: 0%;"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="option-gmap">
+			<div class="title-gmap">
+				<div class="content-info"><spring:message code='gmap.map_type' /></div>
+			</div>
+			<div class="row data-option" id="qb-type-map">
+				<div class="col-sm-3 type-map-data">
+					<img class="qb-type-map" type-map="roadmap" data-toggle="tooltip" data-placement="bottom" title="<spring:message code='gmap.normal' />" />
+				</div>
+				<div class="col-sm-3 type-map-data">
+					<img class="qb-type-map" type-map="terrain" data-toggle="tooltip" data-placement="bottom" title="<spring:message code='gmap.terrain' />" />
+				</div>
+				<div class="col-sm-3 type-map-data">
+					<img class="qb-type-map" type-map="satellite" data-toggle="tooltip" data-placement="bottom" title="<spring:message code='gmap.satellite' />" />
+				</div>
+				<div class="col-sm-3 type-map-data">
+					<img class="qb-type-map" src="" type-map="hybrid" data-toggle="tooltip" data-placement="bottom" title="<spring:message code='gmap.hybrid' />" />
+				</div>
+			</div>
+		</div>
+
+		<div class="option-gmap">
+			<div class="title-gmap">
+				<div class="content-info"><spring:message code='gmap.add_marker' /></div>
+			</div>
+			<div class="add-marker data-option row">
+				<div class="col-sm-2 upate-marker-add" data-toggle="tooltip" data-placement="bottom"
+					title="<spring:message code='gmap.title1' /> ">
+					<input style="display: none" type="file" id="filePicker" />
+					<button id="image-marker" style="display: none">
+						<i class="fa fa-picture-o"></i>
+					</button>
+					<div class="add-marker-data" id="img_Data" style="background-size:100% 100%;">
+						<i class="fa fa-plus fa-2x add-marker" 
+							style="display:table-cell;z-index:1;vertical-align:middle;text-align:center; color: #999999"></i>
+					</div>
+		
+				</div>
+				<div class="col-sm-8 upate-marker-add" style="padding-left: 0;margin-left: -4px;">
+					<input type="text" id="iputlabelMap" placeholder="<spring:message code='setting.name' />" /> <input
+						type="text" id="inputFieldAutocompleteAddress"
+						style="margin-top: 10px;" placeholder="<spring:message code='address' />" />
+				</div>
+				<div class="col-sm-2 upate-marker-add">
+					<button class="btn-save-marker"
+						style="float: left; margin-bottom: 20px; margin-left: -36px;"><img style="width:14px;margin-right:4px;" src="${CONTEXT_PATH}/html/images/btn-save.png" /><spring:message code='save' /></button>
+				</div>
+			</div>
+		</div>
+		<div class="option-gmap">
+			<div class="title-gmap">
+				<div class="content-info"><spring:message code='gmap.list_marker' /></div>
+			</div>
+			<div class="row" style="margin-left: 0; margin-right: 0">
+				<ul id="list-marker-gmap" style="list-style: none; padding: 0;"></ul>
+			</div>
+		</div>
+	</div>
+</div>

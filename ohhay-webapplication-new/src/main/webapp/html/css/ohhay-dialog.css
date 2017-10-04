@@ -1,0 +1,492 @@
+
+[contenteditable] p, [contenteditable] ul, [contenteditable] h1, [contenteditable] h2, [contenteditable] h3 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+[contenteditable] ul {
+    list-style: unset;
+    margin-left: 29px;
+}
+[class^="icon-"] {
+    background-image: url("../images/glyphicons-halflings.png");
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    vertical-align: text-top;
+    width: 14px;
+}
+.eg-wrapper .cropper-edit-img {
+    background-size: 100% auto !important;
+}
+.icon-align-left {
+    background-position: -264px -48px;
+}
+.icon-align-center {
+    background-position: -288px -48px;
+}
+.icon-align-right {
+    background-position: -312px -48px;
+}
+.icon-align-justify {
+    background-position: -336px -48px;
+}
+.icon-list-alt {
+    background-position: -264px -24px;
+}
+.icon-list {
+    background-position: -360px -48px;
+}
+.btn-toolbar .btn {
+    padding: 6px 12px !important;
+}
+.toolbar-cmd.toolbar_image, .btn-group.index7 {
+    display: none;
+}
+.toolbar_fontsize {
+    display: none;
+}
+.hidden-dialog {
+    display: none !important;
+}
+.dialog--open {
+    display: block !important;
+}
+.dialog, .dialog__overlay {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.dialogcustom {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    position: absolute;
+    z-index: 2147483641;
+}
+.dialogcustom .dialog__overlay {
+    background: rgba(55, 58, 71, 0.9) none repeat scroll 0 0;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.3s ease 0s;
+    z-index: 1;
+}
+.dialogcustom .dialog__content {
+    background: #f5f5f5 none repeat scroll 0 0;
+    display: table;
+    margin: 0 auto;
+    max-height: 560px;
+    padding: 24px;
+    position: relative;
+    width: 540px;
+    z-index: 5;
+}
+.dialogcustom .dialog__content .title__dialog {
+    float: left;
+    padding: 6px 0 16px;
+    width: 100%;
+}
+.dialogcustom .dialog__content .title__dialog .mb-left-bt-close, .dialogcustom .dialog__content .title__dialog .dialog .title__dialog span {
+    float: left;
+}
+.dialogcustom .dialog__content .title__dialog span {
+    color: #000;
+    font-family: Roboto-Bold;
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+}
+.dialogcustom .dialog__content .title__dialog .dek-right-bt-close {
+    float: right;
+}
+.dialogcustom .dialog__content .title__dialog .dek-right-bt-close .data-dialog-close-btn {
+    box-shadow: none;
+    color: #aaa;
+    display: block !important;
+    font-family: Roboto-Light;
+    height: 20px;
+    padding: 0;
+    width: 20px;
+}
+.dialogcustom .dialog__content .title__dialog .mb-left-bt-close .data-dialog-close-link {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    box-shadow: none;
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    text-shadow: none;
+}
+.dialogcustom .dialog__content .title__dialog .mb-right-btn-save button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    box-shadow: none;
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    text-shadow: none;
+}
+.dialogcustom .dialog__content .wrapper {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-radius: 0 0 3px 3px;
+    float: left;
+    width: 100%;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-action input {
+    background: #33ccff none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 3px;
+    color: #fff !important;
+    cursor: pointer;
+    float: right;
+    font-family: Roboto-Regular !important;
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 4px;
+    padding: 4px 15px;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-action input.data-dialog-close-btn {
+    background: #999999 none repeat scroll 0 0;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content {
+    float: left;
+    width: 100%;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .footer-margin {
+    background: #f0e9d8 none repeat scroll 0 0;
+    float: left;
+    height: 5px;
+    width: 100%;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .editweb-toolbar {
+    float: left;
+    height: 36px;
+    width: 100%;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .editweb-toolbar button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #666;
+    font-size: 14px;
+    padding: 11px 9px;
+}
+.dialogcustom .dialog__content .wrapper .cropper-edit-group-img {
+    position: relative;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .container-crop-image {
+    text-align: center;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .tracking-input-field {
+    border-top: 1px solid #fff;
+    padding-top: 19px;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .input-field {
+    float: left;
+    font-size: 13px;
+    margin-top: 20px;
+    width: 100%;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .input-field textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #727272;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 3px 0;
+    padding: 8px;
+    resize: none;
+    width: 100%;
+}
+.dialogcustom .dialog__content .wrapper input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #727272;
+    font-size: 14px;
+    margin: 3px 0;
+    padding: 8px;
+    resize: none;
+    width: 100%;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .input-field input[type="checkbox"] {
+    margin: 14px 0 0;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .input-field label {
+    color: #727272;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    font-weight: inherit;
+    margin-left: 5px;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .input-field .btn-toolbar {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 4px 4px 0 0;
+    height: 36px;
+    margin-left: 0;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .input-field .btn-toolbar .btn-group {
+    height: 36px;
+    margin-left: 0;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .input-field .btn-toolbar .btn-group a.active {
+    background: #fff none repeat scroll 0 0 !important;
+    box-shadow: none;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .input-field .btn-toolbar .btn-group a.dropdown-toggle {
+    background: #fff none repeat scroll 0 0 !important;
+    box-shadow: none;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .input-field .btn-toolbar .btn-group a.toolbar_bgcolor div {
+    margin: 11px 0 0 !important;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .input-field .btn-toolbar .btn-group a .caret {
+    display: none;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .input-field .btn-toolbar .btn-group a i {
+    margin-top: 10px !important;
+}
+.dialogcustom .dialog__content .wrapper #qb-group-edit-text .fresheditor-toolbar, .dialogcustom .dialog__content .wrapper .qb-form-content .fresheditor-toolbar {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 4px 4px 0 0;
+    float: left;
+    width: 100%;
+}
+.dialogcustom .dialog__content .wrapper #qb-group-edit-text #inputcv905TextHome, .dialogcustom .dialog__content .wrapper #qb-group-edit-text #inputFieldTitle, .dialogcustom .dialog__content .wrapper .qb-form-content #inputFieldTitle {
+    background: #f5f5f5 none repeat scroll 0 0;
+    border-color: -moz-use-text-color #ccc #ccc;
+    border-radius: 0 0 4px 4px;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+    float: left;
+    width: 100%;
+}
+.dialogcustom .dialog__content .wrapper #qb-group-edit-text #inputcv905TextHome:focus, .dialogcustom .dialog__content .wrapper #qb-group-edit-text #inputFieldTitle:focus, .dialogcustom .dialog__content .wrapper .qb-form-content #inputFieldTitle:focus {
+    outline: medium none;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-action {
+    float: left;
+    margin-top: 25px;
+    width: 100%;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .input-group span {
+    font-size: 14px;
+    padding: 8px 0 8px 8px;
+}
+.dialogcustom .dialog__content .wrapper .qb-form-content .input-group input {
+    border-left: medium none;
+    border-radius: 0 4px 4px 0;
+    margin: 0;
+    padding: 8px 8px 8px 0;
+}
+.dialogconfirm {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    position: fixed !important;
+    z-index: 2147483642;
+}
+.dialogconfirm .dialog__overlay {
+    background: rgba(55, 58, 71, 0.9) none repeat scroll 0 0;
+    opacity: 0.8;
+    position: absolute;
+    transition: opacity 0.3s ease 0s;
+    z-index: 1;
+}
+.dialogconfirm .dialog__content {
+    background: #fff none repeat scroll 0 0;
+    display: table;
+    margin: -74px auto 0;
+    min-height: 158px;
+    padding: 0 20px;
+    position: relative;
+    top: 50% !important;
+    width: 420px;
+    z-index: 5;
+}
+.dialogconfirm .dialog__content .qb-form-content {
+    display: block;
+    padding: 46px 0 36px;
+    text-align: center;
+    width: 100%;
+}
+.dialogconfirm .dialog__content .qb-form-content div {
+    color: #727272;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+}
+.dialogconfirm .dialog__content .qb-form-action {
+    display: block;
+    margin-bottom: 26px;
+    text-align: center;
+    width: 100%;
+}
+.dialogconfirm .dialog__content .qb-form-action input[type="button"] {
+    background: #a5b865 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    height: 35px;
+    margin: 0 9px;
+    padding: 0 10px;
+    text-align: center;
+}
+.qb-form-content .dialog-edittext-header .qb-fn-edit-img {
+    padding: 0;
+}
+.qb-form-content .dialog-edittext-header .edittext-action {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+}
+.qb-form-content .dialog-edittext-header .edittext-tab-btn {
+    background: #e5e5e5 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #333;
+    cursor: pointer;
+    float: left;
+    font-family: Tahoma;
+    font-size: 12px;
+    line-height: 28px;
+    margin-bottom: 11px;
+    padding: 0 18px;
+}
+.qb-form-content .dialog-edittext-header .edittext-tab-btn.active {
+    background: #999 none repeat scroll 0 0;
+    color: #fff;
+}
+.qb-form-content .dialog-edittext-header .edittext-tab-btn span {
+    font-family: fontawesome,Fontawesome-Webfont;
+    padding-left: 2px;
+}
+.qb-form-content .container-crop-image .cropper-edit-group-img.imageBox .cropit-image-zoom-input {
+    bottom: -30px;
+    opacity: 1;
+    position: absolute;
+    z-index: 100;
+}
+.dialog--open .dialog__overlay {
+    display: block !important;
+    opacity: 1;
+    pointer-events: auto;
+}
+.dialog--open .dialog__content {
+    pointer-events: auto;
+}
+.dialog h2 {
+    font-size: 2em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 0 2em;
+}
+.dialog.dialog--open .dialog__content, .dialog.dialog--close .dialog__content {
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+.dialog.dialog--open .dialog__content {
+    animation-name: anim-open;
+    border-radius: 3px;
+}
+.dialog.dialog--close .dialog__content {
+    animation-name: anim-close;
+    border-radius: 3px;
+}
+.dialog .mb-right-btn-save, .dialog .title__dialog .mb-left-bt-close {
+    display: none;
+}
+.qb-cutimage {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    float: left;
+    padding: 0 !important;
+    width: 100%;
+}
+.qb-oohhay-out-wrapper-main .showcontainer span.btncropbg, .qb-oohhay-out-wrapper-main .showcontainer span.btncancelbg, .qb-oohhay-out-wrapper-main .showcontainer span.btnzoomoutbg, .qb-oohhay-out-wrapper-main .showcontainer span.btnzoominbg {
+    background: #a5b865 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #888;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    margin: 11px 4px 4px 10px;
+    padding: 0 8px;
+    text-align: center;
+    width: 84px;
+    z-index: 2147483646;
+}
+.qb-oohhay-out-wrapper-main .showcontainer .cropper-container {
+    z-index: 2147483644;
+}
+#dialog-bg-color .dialog__overlay {
+    opacity: 0 !important;
+}
+@media (max-width: 500px) {
+.dialog .dialog__content {
+    border-radius: 0 !important;
+    height: 100%;
+    max-height: 100% !important;
+    max-width: 100%;
+    top: 0 !important;
+    width: 100% !important;
+}
+}
+@media (max-width: 767px) {
+.dialog .dialog__content {
+    border-radius: 0 !important;
+    height: 100%;
+    max-height: 100% !important;
+    max-width: 100%;
+    top: 0 !important;
+    width: 100% !important;
+}
+.dialog .dialog__content .wrapper {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.dialog .dialog__content .wrapper .qb-form-action {
+    float: left;
+}
+.dialog .dialog__content .wrapper .qb-form-action input {
+    font-size: 21px;
+    margin-left: 8px;
+    padding: 6px 23px;
+}
+.dialog .dialog__content .wrapper .qb-form-content {
+    float: left;
+    max-width: none;
+}
+.dialog .dialog__content .wrapper .qb-form-content .input-field {
+    float: left;
+}
+.dialog .title__dialog .dek-right-bt-close {
+    display: none;
+}
+.dialog .mb-right-btn-save {
+    color: #000;
+    float: right;
+}
+.qb-form-content .container-crop-image .cropper-edit-group-img.imageBox {
+    background-size: 100% auto !important;
+    width: auto !important;
+}
+.cropit-image-preview-container {
+    width: 100% !important;
+}
+.cropit-image-background-container {
+    width: 100% !important;
+}
+.cropit-image-preview.cropit-image-loaded {
+    width: 100% !important;
+}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+@media (min-width: 1024px) {
+}

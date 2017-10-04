@@ -1,0 +1,70 @@
+#content-wrapper .content-box-from-lib .function-panel,
+#content-wrapper .content-box-from-lib .qb-edit-tool,
+#content-wrapper .content-box-from-lib .qb-img-tool,
+#content-wrapper .content-box-from-lib .btn-add-to-lib,
+#content-wrapper .content-box-from-lib .btn-box-duplicate,
+#content-wrapper .content-box-from-lib .grid-stack-item-content .ui-resizable-handle{
+	display: none !important;
+}
+#qb-dlg-add-to-lib .thumb-lib-preview{
+    background-image: url("../../../images/lib-thumb.jpg");
+    background-position: center center;
+    background-size: cover;
+    float: left;
+    height: 200px;
+    margin-left: 120px;
+    margin-top: 10px;
+    width: 360px;
+}
+#qb-dlg-add-to-lib .btn-upload-thumb-add-to-lib{
+	background: #0099ff none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 6px;
+    color: #fff;
+    float: left;
+    margin-left: 18px;
+    margin-right: 200px;
+    padding: 7px 8px;
+}
+#qb-dlg-add-to-lib input[type="text"]{
+	background-color: rgb(255, 255, 255);
+    border-color: rgb(171, 171, 171);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    height: auto;
+    padding: 5px;
+    resize: none;
+    text-align: left;
+    width: 553px;
+}
+#qb-dlg-add-to-lib .form-group-title{
+	background: none;
+}
+#qb-dlg-add-to-lib .qb-dig-tools-edit{
+	background: #fff;
+}
+#qb-dlg-add-to-lib .evo-tooltip{
+    font-size: 15px;
+    margin-top: 7px;
+    color: rgb(130, 130, 130);
+}
+#qb-dlg-add-to-lib .form-group-title{
+	color: rgb(48, 48, 48);
+    font-size: 16px;
+    font-weight: normal;
+}
+#qb-dlg-add-to-lib .form-group-content-privacy input{
+	float: left;
+}
+#qb-dlg-add-to-lib .form-group-content-privacy label{
+	color: rgb(130, 130, 130);
+    font-size: 15px;
+    margin-right: 40px;
+}
+#qb-dlg-add-to-lib .form-group-content-privacy span{
+	color: rgb(79, 79, 79);
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

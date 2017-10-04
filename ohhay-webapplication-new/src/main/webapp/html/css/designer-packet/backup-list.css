@@ -1,0 +1,48 @@
+#qb-dlg-list-backup .form-group{
+	padding: 0 20px;
+}
+#qb-dlg-list-backup .title{
+	float: left;
+    font-family: roboto-regular;
+    font-size: 20px;
+    width: 100%;
+}
+#qb-dlg-list-backup .btn-create-backup{
+	background: #2c8ae8 none repeat scroll 0 0;
+    border: 1px solid #2c8ae8;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    height: 26px;
+    margin-bottom: -1px;
+    width: 132px;
+}
+#qb-dlg-list-backup .btn-create-backup i{
+	font-size: 14px;
+    margin-right: 4px;
+}
+#qb-dlg-list-backup .list-backup{
+	float: left;
+	width: 100%;
+	margin: 15px 0;
+}
+#qb-dlg-list-backup table, #qb-dlg-list-backup th, #qb-dlg-list-backup td {
+    border-bottom: 1px solid #e8e8e8;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+#qb-dlg-list-backup th, #qb-dlg-list-backup td {
+    padding: 5px;
+}
+#qb-dlg-list-backup table .item{
+	background: #2c8ae8 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 10px;
+    height: 20px;
+    padding: 6px;
+    width: 20px;
+    cursor: pointer;
+}

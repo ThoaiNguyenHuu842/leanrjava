@@ -1,0 +1,103 @@
+<%@page contentType="text/html; charset=UTF-8" %>
+<div class="qb-dig-tools-edit" id="qb-menu-option">
+	
+	<div class="form-group">
+		<div class="menu-option-content media">
+			<div class="media-body"></div>
+	  		<div class="media-right">
+	    		<button class="menu-add-item" data-toggle="tooltip" data-placement="bottom" title="<spring:message code='mnopt.title1' />"><i class="fa fa-plus"></i></button>
+	  		</div>
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<label class="form-group-title"><spring:message code='mnopt.format' /></label>
+		<div class="form-group-content ">
+			<div class="menu-edit-item">
+				<label class="item-title"><spring:message code='mnopt.font' /></label>
+				<div class="item-content">
+					<div class="dropdown font-item menu-edit-font">
+						<button class="btn btn-default dropdown-toggle" type="button" id="menufont" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    	<span class="dd-tt">Roboto-Regular</span>
+					    	<span class="caret"></span>
+					  	</button>
+					  	<ul class="dropdown-menu" aria-labelledby="menufont"></ul>
+					</div>
+					<div class="dropdown font-item menu-edit-weight">
+						<button class="btn btn-default dropdown-toggle" type="button" id="menuweight" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    	<span class="dd-tt"></span>
+					    	<span class="caret"></span>
+					  	</button>
+					  	<ul class="dropdown-menu" aria-labelledby="menuweight"></ul>
+					</div>
+					<div class="font-item">
+						<input class="menu-edit-fontsize" type="number" min="0" />
+					</div>
+					<div class="font-item">
+						<div class="menu-edit-color" data-val="#333" contenteditable="true"></div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-edit-item">
+				<label class="item-title"><spring:message code='mnopt.distance' /></label>
+				<div class="item-content">
+					<input type="number" class="menu-edit-distance" min="0">
+				</div>
+			</div>
+			<div class="menu-edit-item">
+				<label class="item-title"><spring:message code='mnopt.fill' /></label>
+				<div class="item-content">
+					<input type="checkbox" class="menu-edit-fill">
+				</div>
+			</div>
+			<div class="menu-edit-item">
+				<label class="item-title"><spring:message code='mnopt.align' /></label>
+				<div class="item-content">
+					<div class="menu-edit-align" data-type="left"><i class="fa fa-align-left"></i></div>
+					<div class="menu-edit-align" data-type="center"><i class="fa fa-align-center"></i></div>
+					<div class="menu-edit-align" data-type="right"><i class="fa fa-align-right"></i></div>
+				</div>
+			</div>
+			<div class="menu-edit-item">
+				<label class="item-title"><spring:message code='mnopt.hover' /></label>
+				<div class="item-content">
+					<button class="menu-item-edithover" data-toggle="tooltip" data-placement="bottom" title="Choose hover" ><i class="fa fa-clone"></i></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<label class="form-group-title"><spring:message code='mnopt.title2' /></label>
+		<div class="form-group-content ">
+			<div class="menu-edit-item">
+				<label class="item-title"><spring:message code='mnopt.content' /></label>
+				<div class="item-content">
+					<input class="menu-edit-content" disabled="disabled"/>
+					<!-- <select class="menu-edit-content"> -->
+						<!-- <option value="audi">Audi</option> -->
+					<!-- </select>  -->
+				</div>
+			</div>
+			<div class="menu-edit-item">
+				<label class="item-title"><spring:message code='mnopt.link' /></label>
+				<div class="item-content">
+					<div class="input-group menu-edit-link">
+				    	<span id="basic-addon3" class="input-group-addon"></span>
+				      	<input type="text" aria-describedby="basic-addon3" id="basic-url" class="form-control" disabled="disabled">
+				    </div>
+					<button class="menu-item-editlink" data-toggle="tooltip" data-placement="bottom" title="Edit Link" ><i class="fa fa-link"></i></button>
+				</div>
+			</div>
+			<div class="menu-edit-item">
+				<label class="item-title"><spring:message code='mnopt.active' /></label>
+				<div class="item-content">
+					<input class="menu-edit-active" type="checkbox" disabled="disabled"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="form-group-btn menu-option-tool">
+		<button class="menu-allow" data-toggle="tooltip" data-placement="top" title="Apply"><img src="${CONTEXT_PATH}/html/images/btn-save.png" /><spring:message code='save' /></button>
+	</div>
+</div>

@@ -1,0 +1,60 @@
+<div class="qb-panel-web-config qb-dig-tools-edit">
+	<div class="form-group">
+		<label class="form-group-title"><spring:message
+				code='wcf.page_width' />: <span
+			id="qb-panel-web-config-lbl-value-width">1170px</span></label>
+		<div class="form-group-content ">
+			<div class="input-panel">
+				<select name="minbeds" id="select-web-width" style="display: none;">
+					<option label='1170' val='5'>1170</option>
+					<option label='1000' val='4'>1000</option>
+					<option label='990' val='3'>990</option>
+					<option label='960' val='2'>960</option>
+					<option label='950' val='1'>950</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="form-group-title"><spring:message
+				code='wcf.title1' /></label>
+		<div class="form-group-content ">
+			<div class="input-panel">
+				<div class="input-fied">
+					<div style="width: 100%; float: left;">
+						<label style="min-width: auto; width: 20% !important;"
+							for="qb-check-web-center"><spring:message
+								code='wcf.center' /></label> <input id="qb-check-web-center"
+							type="checkbox" />
+					</div>
+				</div>
+				<div class="input-fied input-fied-margin-left">
+					<label><spring:message code='wcf.margin_left' />: <span
+						id="qb-panel-web-config-lbl-value-margin-left">0px</span></label>
+					<div id="qb-slider-margin-left"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="form-group-title"><spring:message
+				code='wcf.title2' /></label>
+		<div class="form-group-content ">
+			<div class="input-panel">
+				<div class="input-fied">
+					<label><spring:message code='wcf.margin_top' />: <span
+						id="qb-panel-web-config-lbl-value-margin-top">0px</span></label>
+					<div id="qb-slider-margin-top"></div>
+				</div>
+				<div class="input-fied">
+					<label><spring:message code='wcf.margin_bottom' />: <span
+						id="qb-panel-web-config-lbl-value-margin-bottom">0px</span></label>
+					<div id="qb-slider-margin-bottom"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="form-group-title title-lazy-config" ><spring:message code='wcf.title3' /><input id="checkbox-lazyload" type="checkbox" /></div>
+	</div>
+</div>

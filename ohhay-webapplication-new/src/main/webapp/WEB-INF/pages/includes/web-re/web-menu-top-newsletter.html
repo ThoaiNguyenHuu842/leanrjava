@@ -1,0 +1,65 @@
+<%@page contentType="text/html; charset=UTF-8" %>
+<%@include file="../web/web-menu-top.html" %>
+
+<div id="menu-tools-function">
+
+	<div class="wrapper-menu">
+		<div
+			class="toolbar-item topic-create-setup-comment topic-create-func-setup btn-group dropdown">
+			<button aria-expanded="false" data-toggle="dropdown"
+				class="btn btn-default dropdown-toggle" type="button">
+				<b><span class="color-1"> <i class="fa fa-globe"></i></span></b> <span
+					class="caret"></span>
+			</button>
+			<ul role="menu" class="dropdown-menu">
+				<li class="active" data-menu="1"><a><b> <span
+							class="color-1"><i class="fa fa-globe"></i></span></b><spring:message code='setting.topic.acomment.p1' /></a></li>
+				<li data-menu="2"><a><b><span class="color-2"><i
+								class="fa fa-smile-o"></i></span></b><spring:message code='setting.topic.acomment.p2' /></a></li>
+				<li data-menu="3"><a><b><span class="color-3"><i
+								class="fa fa-lock"></i></span></b><spring:message code='setting.topic.viewable.p3' /></a></li>
+			</ul>
+			<div>
+				<input type="hidden" class="roleview input_roletopic"
+					name="roleview" value="1">
+			</div>
+		</div>
+
+		<div
+			class="toolbar-item topic-create-setup-private topic-create-func-setup btn-group dropdown">
+			<button aria-expanded="true" data-toggle="dropdown"
+				class="btn btn-default dropdown-toggle" type="button">
+				<b><span class="color-1"><i class="fa fa-comment"></i></span></b> <span
+					class="caret"></span>
+			</button>
+			<ul role="menu" class="dropdown-menu">
+				<li class="active" data-menu="1"><a><b><span
+							class="color-1"><i class="fa fa-comments-o"></i></span></b><spring:message code='setting.topic.acomment.p1' /></a></li>
+				<li data-menu="2"><a><b><span class="color-2"><i
+								class="fa fa-comment"></i></span></b><spring:message code='setting.topic.acomment.p2' /></a></li>
+				<li data-menu="3"><a><b><span class="color-3"><i
+								class="fa fa-comment-o"></i><i class="fa fa-lock"></i></span></b><spring:message code='setting.topic.viewable.p3' /></a></li>
+			</ul>
+			<div>
+				<input type="hidden" class="rolecomment input_roletopic"
+					name="rolecomment" value="1">
+			</div>
+		</div>
+
+
+		<p class="toolbar-item-label"><spring:message code='tracking' /></p>
+		<input type="checkbox" value="undefined" class="input-object-name-ckb" />
+		<div contenteditable="true" data-text="Tên sử dụng cho thống kê"
+			class="toolbar-item input-object-name"
+			style="background-color: rgb(246, 246, 246);"></div>
+
+		<div class="topic-create-tag topic-panel-item-content-otask">
+			<input type="text" value="" id="tags-add-otext" data-role="tagsinput" />
+		</div>
+		
+		<input id="topic_title" type="text" value="" placeholder="topic's title">
+	
+	</div>
+
+
+</div>

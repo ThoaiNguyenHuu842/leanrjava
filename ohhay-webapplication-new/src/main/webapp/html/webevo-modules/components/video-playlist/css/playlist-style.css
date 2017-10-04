@@ -1,0 +1,83 @@
+#qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .player-change, #qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .playlist-change {
+	margin-left: 18px;
+	color: rgb(68, 68, 68);
+	font-family: Roboto-Regular;
+	font-size: 15px;
+}
+
+#qb-dlg-change-video-playlist-style .qb-panel-iframe-src .data-player button {
+	margin: 18px;
+	background: #0099FF;
+	color: white;
+}
+#qb-dlg-change-video-playlist-style .qb-panel-iframe-src .data-player button i {
+	margin-right: 5px;
+}
+
+#qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .playlist-change .item-style {
+	margin-left: 20px;
+	margin-top: -10px;
+}
+
+#qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .data-form .checkbox .item-funct, #qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .data-form .checkbox .item-style, #qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .playlist-change .item-style .change-thumbail, #qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .playlist-change .item-style .item-funct {
+	display: inline-block;
+	cursor: pointer;
+}
+
+#qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .playlist-change > i {
+	color: #4b4e5b;
+	float: left;
+	font-size: 15px;
+	line-height: 27px;
+}
+
+/*
+ * general class checkbox
+ */
+
+#qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .data-form .checkbox label:after, #qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .playlist-change .item-style .checkbox label:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+#qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .data-form .checkbox .cr, #qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .playlist-change .item-style .checkbox .cr {
+	position: relative;
+	display: inline-block;
+	border: 1px solid #a9a9a9;
+	border-radius: .25em;
+	width: 1.3em;
+	height: 1.3em;
+	float: left;
+	margin-right: .5em;
+}
+
+#qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .playlist-change .item-style .checkbox .cr .cr-icon, #qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .data-form .checkbox .cr .cr-icon {
+	position: absolute;
+	font-size: .8em;
+	line-height: 0;
+	top: 50%;
+	left: 20%;
+}
+
+#qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .playlist-change .item-style .checkbox label input[type="checkbox"], #qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .data-form .checkbox label input[type="checkbox"] {
+	display: none;
+}
+
+#qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .playlist-change .item-style .checkbox label input[type="checkbox"] + .cr > .cr-icon, #qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .data-form .checkbox label input[type="checkbox"] + .cr > .cr-icon {
+	transform: scale(3) rotateZ(-20deg);
+	opacity: 0;
+	transition: all .3s ease-in;
+}
+
+#qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .playlist-change .item-style .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,#qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .data-form .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon{
+	transform: scale(1) rotateZ(0deg);
+	opacity: 1;
+}
+
+#qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .playlist-change .item-style .checkbox label input[type="checkbox"]:disabled + .cr ,#qb-dlg-change-video-playlist-style .qb-panel-iframe-src .form-group .data-form .checkbox label input[type="checkbox"]:disabled + .cr{
+	opacity: .5;
+}
+.tooltip {
+    position: fixed !important;
+}

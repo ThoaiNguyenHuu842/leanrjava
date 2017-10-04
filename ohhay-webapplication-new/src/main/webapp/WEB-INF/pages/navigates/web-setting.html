@@ -1,0 +1,113 @@
+<%@page contentType="text/html; charset=UTF-8" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://www.springframework.org/tags/form"
+prefix="springForm"%> <%@ taglib prefix="spring"
+uri="http://www.springframework.org/tags" %> <%@ taglib
+uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> <%@ page
+pageEncoding="UTF-8" %> <%@ taglib prefix="fn"
+uri="http://java.sun.com/jsp/jstl/functions" %>
+  
+<!-- OHHAY CONSTANT INFOR -->
+<%@include file="../includes/constant.html" %>
+<!-- END OHHAY CONSTANT INFOR -->	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head>
+<title>BonEvo - <spring:message code='tnvp.title20' /></title>
+<meta charset='UTF-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="${CONTEXT_PATH}/html/images/fav1.png" type="image/png" rel="shortcut icon">
+<meta http-equiv="Cache-control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/style.css" />
+
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/web-setting/web-setting.css">
+	<!-------- CSS PLUGIN -------->
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/bootstrap/bootstrap.min.css"  />
+		<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/font-awesome.min.css" />
+		<!-- ANIMATED -->
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/animate.css" />
+		<!-- END ANIMATED -->
+		<!-- STATUS_LOADING -->
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/status_loading.css" />
+		<!-- END STATUS_LOADING -->
+		<!-- DIALOG -->
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/dialog/dialog.css" />
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/dialog/dialog-cathy.css" />
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/edit-web/confirm/dialogconfirm.css"  />
+		<!-- END DIALOG -->
+		<!-- HOVER -->
+			<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/plugin/hover/hover-min.css" />
+		<!-- END HOVER -->
+	<!-------- END CSS PLUGIN -------->
+	<!-- HEADER AND FOOTER EVO -->
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/include/evo-footer/evo-footer.css" />
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/css/include/evo-logined-header/evo-logined-header.css" />
+	<!-- END HEADER AND FOOTER EVO -->
+	
+	<!-------- JS UTILL -------->
+		<script src="${CONTEXT_PATH}/html/js/plugin/jquery-1.11.1.min.js"></script>
+		<script src="${CONTEXT_PATH}/html/js/main/ohhay.js"></script>
+		<script src="${CONTEXT_PATH}/html/js/constants.js"></script>
+	<!-------- END JS UTIL -------->
+	<script src="${CONTEXT_PATH}/html/js/plugin/jquery-1.11.1.min.js"></script>
+	<script src="${CONTEXT_PATH}/html/js/plugin/bootstrap/bootstrap.min.js"></script>
+	<script src="${CONTEXT_PATH}/html/js/plugin/jquery-ui.js"></script>
+	<script src="${CONTEXT_PATH}/html/js/status-loading/status-loading.js"></script>
+	<script src="${CONTEXT_PATH}/html/js/plugin/scroll.js"></script>
+	<!-- DIALOG -->
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/dialog/modernizr.custom.71258.js"></script>
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/dialog/ohhay-dialog.js"></script>
+	<!-- END DIALOG -->
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/constants.js"></script>
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/main/ohhay.js"></script>
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/jquery-ui.js"></script>
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/web-setting/web-setting.js"></script>
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/web-setting/setting-domain.js"></script>
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/web-setting/setting-seo.js"></script>
+	<!-- TRACKING -->
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/tracking/tracking.js"></script>
+	<!-- NOTIFICATION -->
+	<link rel="stylesheet" type="text/css"
+						href="${CONTEXT_PATH}/html/css/include/evo-logined-header/evo-logined-notification.css" />
+					<script type="text/javascript"
+						src="${CONTEXT_PATH}/html/js/mysites/notification.js"></script>
+	<script>
+		$(document).ready(function() {
+			settingDomain.init();
+			settingSEO.init();
+			webSetting.init();
+			notification.init();
+			/*
+			* tracking 
+			*/
+			var fo100 = $('#qb-input-fo100').val();
+			var currentLanguage = "${pageContext.response.locale}";
+	        trackingAjax.init({
+	        	fo100:fo100,
+	        	webId:15,
+	        	currentLanguage:currentLanguage,
+	        });
+	        trackingAjax.trackingViewer();
+		});
+	</script>
+	<!-- NPROGRESS -->
+	<script type="text/javascript" src="${CONTEXT_PATH}/html/js/plugin/nprogress/nprogress.js"></script>
+	<link rel="stylesheet" type="text/css" href="${CONTEXT_PATH}/html/js/plugin/nprogress/nprogress.css" />
+	<!-- NPROGRESS -->
+	
+</head>
+<body>
+	<div class="qb-ohhay-ajax-content">
+		<div class="content">
+			<label><spring:message code="loading" /></label>
+			<img width="30" alt="" src="${CONTEXT_PATH}/html/images/ajax-loader.gif">
+		</div>
+	</div>
+<div class="qb-ohhay-setting-wrapper">
+	<%@include file="../mainpages/web-setting.html" %>
+</div>
+</body>
+</html>

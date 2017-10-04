@@ -1,0 +1,40 @@
+.background-edit-panel{background:#ffffff;box-shadow:2px 0 5px #000;float:left;height:100%;width:100%;}
+.background-edit-panel .menu{float:left;margin-bottom:19px;margin-top:19px;width:100%;}
+.background-edit-panel .menu .button-menu{cursor:pointer;float:left;padding-left:28px;text-align:center;width:100%;}
+.background-edit-panel .menu .button-menu .stt-checked{color:#1caa00;display:none;float:right;font-size:13px;font-weight:normal;line-height:26px;margin-right:20px;}
+.background-edit-panel .menu .button-menu.selected .stt-checked{display:block;}
+.background-edit-panel .menu .button-menu p{float:left;margin-left:18px;padding-top:3px;width:auto;color:#4b4e5b;font-family:Roboto-Regular;font-size:14px;}
+.background-edit-panel .menu .button-menu i{color:#4b4e5b;float:left;font-size:15px;line-height:27px;}
+.background-edit-panel .body{overflow:hidden;width:100%;}
+.background-edit-panel .body .sub-panel p{float:left;font-size:16px;margin-left:5px;margin-top:12px;width:100%;color:#3899EC;float:left;}
+.background-edit-panel .body .sub-panel ul{float:left;height:300px;overflow:auto;padding:0;width:100%;}
+.background-edit-panel .body .sub-panel ul li{cursor:pointer;float:left;height:86px;list-style:outside none none;margin:1px;width:114px;}
+.background-edit-panel .ui-widget button .dd-title{font-family: Roboto-Regular}
+
+/**/
+.background-edit-panel .menu .button-menu.selected>ul.content{display: block;}
+.background-edit-panel .menu .button-menu ul.content{display: none;float: left;list-style: outside none none;margin: 0;padding: 0;width: 100%;}
+.background-edit-panel .menu .button-menu>ul.content>li{float:left;}
+.background-edit-panel .menu .button-menu>ul.content>li .dropup{position:relative;float: left;padding: 5px}
+.background-edit-panel .menu .button-menu>ul.content>li input{float: left;height: 30px;margin: 5px;padding: 5px;width: 20%;}
+/*position*/
+.background-edit-panel .menu .button-menu.button-menu-position>ul.content{}
+.background-edit-panel .menu .button-menu.button-menu-position>ul.content>li{width: 100%;}
+.background-edit-panel .menu .button-menu.button-menu-position>ul.content>li:FIRST-CHILD{}
+.background-edit-panel .menu .button-menu.button-menu-position>ul.content>li:FIRST-CHILD .dropup:LAST-CHILD{display: none;}
+.background-edit-panel .menu .button-menu.button-menu-position>ul.content>li:LAST-CHILD{display: none;}
+/*position*/
+
+/*size*/
+.background-edit-panel .menu .button-menu.button-menu-size>ul.content{}
+.background-edit-panel .menu .button-menu.button-menu-size>ul.content>li{}
+.background-edit-panel .menu .button-menu.button-menu-size>ul.content>li:FIRST-CHILD{}
+.background-edit-panel .menu .button-menu.button-menu-size>ul.content>li:LAST-CHILD{display: none;}
+/*size*/
+
+/*
+* fix dialog
+*/
+[aria-describedby="qb-dlg-background-src"]{
+	height: auto !important;
+}

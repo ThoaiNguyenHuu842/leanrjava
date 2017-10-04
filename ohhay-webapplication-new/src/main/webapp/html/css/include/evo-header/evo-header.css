@@ -1,0 +1,273 @@
+@CHARSET "ISO-8859-1";
+
+.header-full{
+	width: 100%;
+	background: -webkit-linear-gradient(left, #6078EA , #0DD3D5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #6078EA , #0DD3D5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #6078EA , #0DD3D5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #6078EA , #0DD3D5); /* Standard syntax (must be last) */
+}
+
+.menu-top {
+/* 	margin-top: 20px; */
+	height: 77px;
+	padding: 20px 0 20px 0;
+	display: table;
+}
+
+.menu-top .logo_evo {
+	display: inline-block;
+	float: left;
+	width: 292px;
+	height: 72px;
+}
+
+.menu-top .logo_evo img {
+	width: 100%;
+	height: 100%;
+	max-width: 250px;
+}
+
+
+.menu-top .menu-content .item{
+	display: table;	
+}
+
+.menu-top .menu-content .item a,.menu-top .menu-content.nav.nav-pills .item .menu-lang{
+	display: table-cell;
+	vertical-align: middle;	
+}
+
+.menu-top .menu-content .item,.menu-top .menu-content .item a {
+	height: 100%;
+	cursor: pointer;
+	background-color: inherit;
+}
+ .menu-top .menu-content.nav.nav-pills .item .menu-lang{
+ 	padding: 0 26px;
+ }
+
+.header-full .menu-top .menu-content {
+	height: 68px !important;
+}
+
+.menu-top .menu-content.nav.nav-pills .item a.item-menu-content
+	{
+	color: #fff;
+	font-family: 'Nunito', sans-serif;
+	padding-left: 26px;
+	padding-right: 26px;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 600
+}
+
+.menu-top .menu-content.nav.nav-pills .item a.item-menu-content:not(.login-rm-hv):after,.menu-top .menu-content.nav.nav-pills .item .menu-lang:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #fff;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-top .menu-content.nav.nav-pills .item a.item-menu-content:not(.login-rm-hv):hover:after,.menu-top .menu-content.nav.nav-pills .item .menu-lang:hover:after { transform: scaleX(1); }
+
+.menu-top .menu-content.nav.nav-pills .item a.item-menu-content .radius-login{
+	padding: 8px 32px;
+    background: white;
+    border-radius: 50px;
+    color: #2eafde;
+    -webkit-box-shadow:0px 13px 25px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 13px 25px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 13px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.menu-top .menu-content.nav.nav-pills .item .menu-lang .dropdown-menu
+	{
+	min-width: 100px;
+	margin: -21px 13px 0;
+}
+
+.menu-top .menu-content.nav.nav-pills .item .menu-lang .dropdown-toggle
+	{
+	background: transparent;
+	border: none;
+	color: #fff;
+	font-size: 15px;
+	font-family: 'Nunito', sans-serif;
+	padding-left: 26px;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.menu-top .menu-content.nav.nav-pills .item .menu-lang .dropdown-toggle:focus{
+	outline-style: none;
+}
+
+.main-data-home .data-home-first .menu-top .menu-content .item a:hover {
+	background: transparent;
+}
+
+
+.qb-ohhay-setting-wrapper{
+	position: relative;
+	right: 0;
+	transition-duration: 0.5s;
+}
+
+
+.menu-top .menu-content.nav.nav-pills .item .menu-lang .hidden-pc-shownmb{
+	display: none;
+}
+
+/*
+* responsive
+*/
+
+.menu-top .fa {font-size:25px}
+
+@media (max-width:767px) { 
+	.menu-top .navbar-right {
+	    float: right;
+	    padding-right: 15px;
+	}
+	.menu-top .nav.navbar-nav.navbar-right li {
+	    float: right;
+	}
+  	.menu-top .nav.navbar-nav.navbar-right li > a {
+	    padding:8px 5px;
+	}
+	.menu-top .navbar-toggle {
+	    float: right;
+	    margin-right: -9px;
+	}
+	.menu-top .navbar-toggle .icon-bar{
+	background: white;
+	}
+	.menu-top .navbar-header {
+	    float: left;
+	    width: auto!important;
+	}
+	.menu-top .navbar-collapse {
+	    clear: both;
+	    float: none;
+	}
+	.menu-top .menu-content .item{
+		display: block;
+		width: 100%;
+	}
+	
+	.menu-top .navbar-collapse{
+		float: right;
+	}
+	
+	.menu-top .menu-content{
+		height: auto;
+	}
+	.menu-top .menu-content.nav.nav-pills .item .menu-lang{
+		padding-left: 26px;
+	}
+	.menu-top .logo_evo {
+		width: 215px !important;
+		height: 55px !important;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 480px)  {
+	.qb-ohhay-setting-wrapper{
+		overflow-x:hidden; 
+	}
+	
+	.choice-lang-caret{
+		font-size: 15px !important;
+	}
+	
+	.header-full .menu-top .menu-content.mobile-toggleside-menu{
+		visibility: visible !important;
+		display: block !important;
+	    position: fixed;
+	    width: 200px;
+	   	right: 15px !important;
+ 	    margin-left: 0px;
+	    top: 0px;
+	    background: -webkit-linear-gradient(left, #6078EA , #0DD3D5); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(right, #6078EA , #0DD3D5); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(right, #6078EA , #0DD3D5); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(to right, #6078EA , #0DD3D5); /* Standard syntax (must be last) */
+	    z-index: -1;	  
+	    height: 100% !important;
+	    opacity: 0;
+	    transition-duration: 1s;
+	}
+	
+	.menu-top .menu-content.nav.nav-pills .item a.item-menu-content .radius-login{
+		padding: 0;
+		box-shadow: none;
+		background: transparent;
+		color: white;
+	}
+	
+	.menu-top .menu-content .item, .menu-top .menu-content .item a{
+		height: auto;
+	}
+	
+	.choice-langmb-caret{
+	    background: transparent !important;
+	    box-shadow: none !important;
+	    border: none !important;
+	    color: white;
+	}
+	
+	.choice-langmb-caret a{
+		color: white !important;
+	    padding: 15px 20px !important;
+	}
+	.menu-top .menu-content.nav.nav-pills .item .menu-lang .dropdown-menu{
+		position: static;
+		margin: 0px -15px 0;
+	}
+	.menu-top .menu-content.nav.nav-pills .item .menu-lang .dropdown-toggle{
+		display: none;
+	}
+	.menu-top .menu-content.nav.nav-pills .item .menu-lang .hidden-pc-shownmb{
+		display: block;
+	}
+	
+}
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  /* Style adjustments for landscape mode goes here */
+	.header-full .menu-top .menu-content.mobile-toggleside-menu{
+		visibility: visible !important;
+		display: block !important;
+	    position: fixed;
+	    width: 200px;
+	   	right: 15px !important;
+ 	    margin-left: 0px;
+	    top: 0px;
+	    background: -webkit-linear-gradient(left, #6078EA , #0DD3D5); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(right, #6078EA , #0DD3D5); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(right, #6078EA , #0DD3D5); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(to right, #6078EA , #0DD3D5); /* Standard syntax (must be last) */
+	    z-index: -1;	  
+	    height: 100% !important;
+	    opacity: 0;
+	    transition-duration: 1s;
+	}
+	
+	.menu-top .menu-content.nav.nav-pills .item a.item-menu-content .radius-login{
+		padding: 0;
+		box-shadow: none;
+		background: transparent;
+		color: white;
+	}
+	
+	.menu-top .menu-content .item{
+		height: auto;
+	}
+}
